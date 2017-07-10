@@ -78,21 +78,13 @@ function fish_user_key_bindings
 end
 
 function fish_prompt --description 'Write out the prompt'
-
-  # Just calculate these once, to save a few cycles when displaying the prompt
-  if not set -q __fish_prompt_normal
-    set -g __fish_prompt_normal (set_color normal)
+  echo
+  set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
+  set __blue_git_branch "["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
+  if [ "(cd $HOME/.config ; git status --porcelain | wc -l | tr -d ' ')" != "0" ]
+    echo (set_color grey)'(dotfile changes)'
   end
-
-  if not set -q __git_cb
-    set __git_cb " ["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
-  end
-
-  if not set -q __fish_prompt_cwd
-    set -g __fish_prompt_cwd (set_color $fish_color_cwd)
-  end
-
-  printf '\n%s%s%s%s > ' $__fish_prompt_cwd (prompt_pwd) $__fish_prompt_normal $__git_cb
+  echo $__green_prompt $__blue_git_branch '> '
 end
 
 
