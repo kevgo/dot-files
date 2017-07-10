@@ -1,0 +1,30 @@
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	hack = town hack
+	kill = town kill
+	new-pull-request = town new-pull-request
+	prune-branches = town prune-branches
+	rename-branch = town rename-branch
+  conflicts = diff --name-only --diff-filter=U
+	repo = town repo
+	ship = town ship
+	sync = town sync
+	append = town append
+	prepend = town prepend
+[core]
+	editor = vim
+	excludesfile = /Users/kevin/.gitignore_global
+	pager = diff-so-fancy | less --tabs=2 -RFX
+[user]
+	name = Kevin Goslar
+	email = kevin.goslar@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[git-town]
+	hack-push-flag = true
