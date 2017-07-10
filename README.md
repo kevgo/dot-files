@@ -5,12 +5,15 @@
 
 - install macOS updates
 
+- install Chrome
+  - sign in
+
 - install 1Password
+  - copy SSH files to `~/.ssh` and chmod to 600
   - Safari Extension
   - Chrome Extension
-  - copy SSH files to `~/.ssh` and chmod to 600
 
-- install homebrew
+- install Homebrew
 
   ```
   brew doctor
@@ -29,7 +32,10 @@
 - configure macOS
 
   ```
+  # show dock faster
   defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
+
+  # show new windows instantaneously
   defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO ; killall Finder
   ```
 
@@ -52,16 +58,14 @@
   - MacVim
     - copy the “mvim” binary to /usr/local/bin/vim
 - Seil
-    - change Caps Lock to ESC (should be automatically with the new dotfiles)
+    - change Caps Lock to ESC (should be there automatically with the new dotfiles)
 - Karabiner
     - set keyboard repeat rate and initial delay
     - change option-right to forward-delete
     - (these settings should be automatic now)
-- Chrome
-    - sign in
 - Firefox
 - AdBlock
-- GitX (http://rowanj.github.io/gitx)
+- GitHub Desktop
 - OmniOutliner
 - OmniGraffle
 - Slack
