@@ -1,0 +1,15 @@
+# OS X files
+.DS_Store
+.hushlogin
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Vim files
+*.swp
+*.swo
+tags
+
+# Node files
+npm-debug.log

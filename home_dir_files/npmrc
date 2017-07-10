@@ -1,0 +1,7 @@
+_auth=a2V2aW5nb3NsYXI6YnJpZ2h0bGlnaHRO
+email=kevin.goslar@gmail.com
+registry.npmjs.org/:_authToken=0dbd215c-a52a-4e34-b2b8-d605ea0a2e90
+/* @rms:registry=http://hwd1-arft-04.lab.rmsonecloud.net:8081/artifactory/api/npm/rms-nodejs-internal/ */
+//registry.npmjs.org/:_authToken=8f2dfd39-6262-4225-92eb-ae39823b658e
+save-exact=true
+git-tag-version=true
