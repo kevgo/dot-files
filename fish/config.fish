@@ -129,7 +129,7 @@ end
 
 
 # PATH
-set -x PATH ~/Dropbox/bin ~/d/go/src/github.com/Originate/git-town/src /usr/local/bin /usr/local/sbin $PATH
+set -x PATH ~/bin ~/d/go/src/github.com/Originate/git-town/src /usr/local/bin /usr/local/sbin $PATH
 set -x PATH ./bin ./node_modules/.bin $PATH
 
 
