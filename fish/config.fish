@@ -81,15 +81,15 @@ function fish_prompt --description 'Write out the prompt'
 
   # Just calculate these once, to save a few cycles when displaying the prompt
   if not set -q __fish_prompt_normal
-      set -g __fish_prompt_normal (set_color normal)
+    set -g __fish_prompt_normal (set_color normal)
   end
 
   if not set -q __git_cb
-      set __git_cb " ["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
+    set __git_cb " ["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
   end
 
   if not set -q __fish_prompt_cwd
-      set -g __fish_prompt_cwd (set_color $fish_color_cwd)
+    set -g __fish_prompt_cwd (set_color $fish_color_cwd)
   end
 
   printf '\n%s%s%s%s > ' $__fish_prompt_cwd (prompt_pwd) $__fish_prompt_normal $__git_cb
@@ -158,14 +158,12 @@ set -x LESS_TERMCAP_us (printf "\e[01;32m")
 set -x PATH ./bin ./node_modules/.bin $PATH
 
 
-# PATH
+# Path
 set -x PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
 
 if [ "$PWD" = "/Users/kevin" ]
   cd ~/d
 end
-
-
 
 
 # Postgres
@@ -175,7 +173,9 @@ abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 # Ruby
 set -x PATH $PATH ~/.rbenv/shims
-rbenv rehash >/dev/null ^&1
+if which rbenv > /dev/null
+  rbenv rehash >/dev/null ^&1
+end
 set number_of_cores (sysctl -n hw.ncpu)
 if not test -f ~/.bundle/config
   bundle config --global jobs (expr $number_of_cores)
