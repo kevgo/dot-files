@@ -13,12 +13,11 @@ function ....
 end
 
 
+# Ag
 abbr -a a ag -C2
 
 
-abbr -a br git branch
-
-
+# cd
 function cd
 
   # perform the cd.
@@ -40,21 +39,6 @@ function cd
   set -e __cd_new_path
 end
 
-
-# CTags
-function t
-  ctags -a -R --exclude=node_modules .
-end
-
-abbr -a co git checkout
-
-
-function cs
-  git checkout $argv
-  git sync
-end
-
-
 function d
   if [ -z $argv ]
     cd ~/d
@@ -64,13 +48,28 @@ function d
 end
 
 
-set fish_greeting
+# CTags
+function t
+  ctags -a -R --exclude=node_modules .
+end
 
+
+# Dotfile update checker
+~/bin/check_local_dotfile_updates
+
+set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
+if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
+  $HOME/bin/pull_remote_dotfile_updates
+  date +'%m/%d/%Y' > $DAILY_UPDATE_FILE
+end
+
+
+# Fish
+set fish_greeting
 
 function fish_title
   prompt_pwd
 end
-
 
 function fish_user_key_bindings
   bind \cv backward-kill-word
@@ -78,8 +77,6 @@ function fish_user_key_bindings
   bind \cg accept-autosuggestion
 end
 
-
-# PROMPT
 function fish_prompt --description 'Write out the prompt'
 
   # Just calculate these once, to save a few cycles when displaying the prompt
@@ -99,9 +96,23 @@ function fish_prompt --description 'Write out the prompt'
 end
 
 
+# Git
+abbr -a br git branch
+abbr -a co git checkout
+abbr -a gd git diff
+abbr -a gdm git diff master
 abbr -a gp git push
 abbr -a gpf git push --force
 abbr -a gpr git new-pull-request
+abbr -a gs git sync
+abbr -a gsa git sync --abort
+abbr -a gsc git sync --continue
+abbr -a st git status
+
+function cs
+  git checkout $argv
+  git sync
+end
 
 function gac
   git add -A
@@ -117,24 +128,9 @@ function gacp
   git push
 end
 
-abbr -a gd git diff
-abbr -a gdm git diff master
-abbr -a gs git sync
-abbr -a gsa git sync --abort
-abbr -a gsc git sync --continue
 
-function l
-  ls -1
-end
-
-
-# PATH
-set -x PATH ~/bin ~/d/go/src/github.com/Originate/git-town/src /usr/local/bin /usr/local/sbin $PATH
-set -x PATH ./bin ./node_modules/.bin $PATH
-
-
-abbr -a pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
-abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
+# Git-Town
+set -x PATH ~/d/go/src/github.com/Originate/git-town/src $PATH
 
 
 # Go
@@ -142,28 +138,13 @@ set -x PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin $PATH
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
 
 
-# Ruby
-set -x PATH $PATH ~/.rbenv/shims
-rbenv rehash >/dev/null ^&1
-abbr -a rs bundle exec rails s
-abbr -a rc bundle exec rails c
-set number_of_cores (sysctl -n hw.ncpu)
-if not test -f ~/.bundle/config
-  bundle config --global jobs (expr $number_of_cores)
+# ls
+function l
+  ls -1
 end
-set -x PARALLEL_TEST_PROCESSORS (expr $number_of_cores)
-set -x COVERALLS_CONFIG nocoveralls
 
 
-abbr -a st git status
-abbr -a co git checkout
-
-
-alias v mvim
-alias vim /Applications/MacVim.app/Contents/MacOS/Vim
-
-
-# color man pages
+# Man pages
 set -x LESS_TERMCAP_mb (printf "\e[01;31m")
 set -x LESS_TERMCAP_md (printf "\e[01;31m")
 set -x LESS_TERMCAP_me (printf "\e[0m")
@@ -173,17 +154,40 @@ set -x LESS_TERMCAP_ue (printf "\e[0m")
 set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
 
-# Run this job once a day
-if [ ! -f ~/.daily_job ]; or [ (cat ~/.daily_job) != (date +'%m/%d/%Y') ]
-  echo RUNNING DAILY TASK
-  date +'%m/%d/%Y' > ~/.daily_job
-end
+# Node.JS
+set -x PATH ./bin ./node_modules/.bin $PATH
 
-# Startup path
+
+# PATH
+set -x PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
+
 if [ "$PWD" = "/Users/kevin" ]
   cd ~/d
 end
 
 
+
+
+# Postgres
+abbr -a pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
+
+
+# Ruby
+set -x PATH $PATH ~/.rbenv/shims
+rbenv rehash >/dev/null ^&1
+set number_of_cores (sysctl -n hw.ncpu)
+if not test -f ~/.bundle/config
+  bundle config --global jobs (expr $number_of_cores)
+end
+set -x PARALLEL_TEST_PROCESSORS (expr $number_of_cores)
+set -x COVERALLS_CONFIG nocoveralls
+
+
 # Tertestrial
 set -x TERTESTRIAL_PREVENT_APP_NAP 1
+
+
+# Vim
+alias v mvim
+alias vim /Applications/MacVim.app/Contents/MacOS/Vim

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+
+# This job displays whether there are uncommitted updates to the dot files
+
+cd $HOME/.config
+git status --porcelain
