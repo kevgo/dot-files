@@ -5,11 +5,10 @@
 
 ## Maintenance
 
-Uncommitted changes in the `.config` folder are indicated in the command prompt.
-
-Once a day,
-when opening a new terminal window
-it pulls changes from GitHub.
+- uncommitted changes in the `.config` folder are indicated in the command prompt
+- once a day,
+  when opening a new terminal window
+  it pulls changes from GitHub.
 
 
 ## Files
