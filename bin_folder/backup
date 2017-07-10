@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+# This tool syncs the media libraries onto an external USB hard drive.
+
+
 # check argument
 if [ "$1" == "" ]; then
 echo
