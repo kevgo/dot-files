@@ -83,6 +83,3 @@
     ```
 
 - install Gmail accounts and configure
-
-
-
