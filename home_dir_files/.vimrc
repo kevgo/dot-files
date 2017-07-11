@@ -20,7 +20,7 @@ let g:ycm_complete_in_strings = 1
 
 
 " Behavior
-set number                        " Show line numbers
+set number                        " show line numbers
 set autoread                      " reload files when changed on disk, i.e. via `git checkout`
 set nobackup                      " don't create backup files
 set nowritebackup                 " don't create backup files
@@ -28,20 +28,20 @@ set noswapfile                    " don't create .swp files
 " set clipboard=unnamed           " yank and paste with the system clipboard
 set ignorecase smartcase          " ignore case in searched
 set nocompatible                  " disable VI compatibility mode
-set noai                            " autoindent
-set nosi                            " smart indent
-set ofu=syntaxcomplete#Complete   " Enable syntax completion
+set noai                          " autoindent
+set nosi                          " smart indent
+set ofu=syntaxcomplete#Complete   " enable syntax completion
 set encoding=utf-8
 " set spell
-" set spelllang=en_us               " Set spell check language
-set nowrap                        " Disable word wrap.
+" set spelllang=en_us             " set spell check language
+set nowrap                        " disable word wrap.
 set history=200
 set hidden
 set scrolloff=45                  " show context above/below cursorline
 set cursorline
 set cursorcolumn
-set title                         " Display filename in title bar
-set ttyfast                       " Faster scrolling
+set title                         " display filename in title bar
+set ttyfast                       " faster scrolling
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
 
 " Keep the VIM content displayed when exiting VIM
@@ -73,10 +73,6 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
-
-
-" Delete key
-" nnoremap <BS> <Left><Del>
 
 
 " Folding
@@ -131,10 +127,6 @@ let g:nerdtree_tabs_open_on_new_tab=0
 let g:nerdtree_tabs_synchronize_focus=0
 let g:NERDTreeMapOpenSplit="s"
 let g:NERDTreeMapOpenVSplit="v"
-
-
-" When pressing uu in insert mode
-" :imap uu <Esc>
 
 
 " Inserting empty lines using [enter] when in normal mode.
@@ -229,11 +221,6 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
-" OLD AUTOCOMPLETE
-" Plugin 'AutoComplPop'
-" Plugin 'Shougo/neocomplete'
-" Plugin 'tsaleh/vim-supertab'
-
 Plugin 'FuzzyFinder'
 " for FuzzyFinder
 Plugin 'L9'
@@ -255,28 +242,26 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'slim-template/vim-slim'
+" Plugin 'slim-template/vim-slim'
 Plugin 'tomtom/tcomment_vim'
 " Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-cucumber'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
+" Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'lukaszkorecki/CoffeeTags'
+" Plugin 'vim-ruby/vim-ruby'
+" Plugin 'kien/rainbow_parentheses.vim'
+" Plugin 'lukaszkorecki/CoffeeTags'
 Plugin 'fatih/vim-go'
 " Plugin 'Raimondi/delimitMate'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 " Plugin 'itchyny/vim-cursorword'
 Plugin 'kannokanno/previm'
-
-
 
 " Colors
 " Plugin 'altercation/vim-colors-solarized'
@@ -289,10 +274,11 @@ filetype plugin indent on
 
 
 " Colorscheme
-" highlight ColorColumn ctermbg=235 guibg=#2c2d27
-set background=light
-let g:solarized_termcolors=256
-let g:solarized_visibility = 'low'
+hi ColorColumn ctermbg=0 guibg=#000000
+" hi ColorColumn ctermbg=246 guibg=#2d2d2d
+" set background=light
+" let g:solarized_termcolors=256
+" let g:solarized_visibility = 'low'
 " colorscheme solarized
 " call togglebg#map("<F5>")
 
