@@ -16,10 +16,10 @@
 ### Vim
 
 #### jump to definition of code
-- __[ctrl]-\__ opens the method under the cursor in a new tab
+- __[ctrl]-\\__ opens the method under the cursor in a new tab
 - __[ctrl]-]__ opens the method under cursor in the current tab
 - __[ctrl]-o__ returns to the previous code location
-- this requires `ctags`, run `t` in the terminal to update the definitions
+- this requires _ctags_, run `t` in the terminal to update the definitions
 
 #### search-and-replace
 - __[cmd]-]__ and __[cmd]-[__ jump through search results
