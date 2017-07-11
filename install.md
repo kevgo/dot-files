@@ -47,23 +47,22 @@
   ```
 
 - install visual apps
-  - MacVim
+  - [MacVim](https://github.com/macvim-dev/macvim/releases)
     - copy the “mvim” binary to /usr/local/bin/vim
-  - Seil
+  - [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
       - change Caps Lock to ESC (should be there automatically with the new dotfiles)
-  - Karabiner
+  - [Karabiner](https://pqrs.org/osx/karabiner/)
       - set keyboard repeat rate and initial delay
       - change option-right to forward-delete
       - (these settings should be automatic now)
-  - Chrome
+  - [Chrome](https://www.google.com/chrome)
     - sign in
-  - Firefox
-  - AdBlock
-  - GitHub Desktop
-  - OmniOutliner
-  - OmniGraffle
-  - Slack
-  - Skype
+  - [Firefox](https://www.mozilla.org/en-US/firefox)
+  - [AdBlock](https://getadblock.com)
+  - [GitHub Desktop](https://desktop.github.com)
+  - [OmniOutliner 4 Pro and OmniGraffle 5 Standard](https://www.omnigroup.com/download)
+  - [Slack](https://slack.com/downloads)
+  - [Skype](https://www.skype.com/en/download-skype/skype-for-computer)
   - 1Password Chrome and Safari extensions
 
 - install AppStore apps
