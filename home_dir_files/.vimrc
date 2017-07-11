@@ -225,65 +225,66 @@ nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 " Vundle
 filetype off   " important
-set rtp+=~/Dropbox/vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
 " OLD AUTOCOMPLETE
-" Bundle 'AutoComplPop'
-" Bundle 'Shougo/neocomplete'
-" Bundle 'tsaleh/vim-supertab'
+" Plugin 'AutoComplPop'
+" Plugin 'Shougo/neocomplete'
+" Plugin 'tsaleh/vim-supertab'
 
-Bundle 'FuzzyFinder'
+Plugin 'FuzzyFinder'
 " for FuzzyFinder
-Bundle 'L9'
-Bundle 'Valloric/YouCompleteMe'
-" Bundle 'alexdavid/vim-min-git-status'
-" Bundle 'bruno-/vim-husk'
-Bundle 'dag/vim-fish'
-Bundle 'digitaltoad/vim-jade'
+Plugin 'L9'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'alexdavid/vim-min-git-status'
+" Plugin 'bruno-/vim-husk'
+Plugin 'dag/vim-fish'
+Plugin 'digitaltoad/vim-jade'
 Plugin 'elixir-lang/vim-elixir'
-Bundle 'godlygeek/tabular'
-Bundle 'gkz/vim-ls'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'kchmck/vim-coffee-script'
-" Bundle 'kevgo/jumbo'
-Bundle 'kevgo/tertestrial-vim'
-Bundle 'michaeljsmith/vim-indent-object'
-" Bundle 'mileszs/ack.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'slim-template/vim-slim'
-Bundle 'tomtom/tcomment_vim'
-" Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'lukaszkorecki/CoffeeTags'
-Bundle 'fatih/vim-go'
-" Bundle 'Raimondi/delimitMate'
-Bundle 'junegunn/goyo.vim'
-Bundle 'junegunn/limelight.vim'
-" Bundle 'itchyny/vim-cursorword'
-Bundle 'kannokanno/previm'
+Plugin 'godlygeek/tabular'
+Plugin 'gkz/vim-ls'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kchmck/vim-coffee-script'
+" Plugin 'kevgo/jumbo'
+Plugin 'kevgo/tertestrial-vim'
+Plugin 'michaeljsmith/vim-indent-object'
+" Plugin 'mileszs/ack.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'slim-template/vim-slim'
+Plugin 'tomtom/tcomment_vim'
+" Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'lukaszkorecki/CoffeeTags'
+Plugin 'fatih/vim-go'
+" Plugin 'Raimondi/delimitMate'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+" Plugin 'itchyny/vim-cursorword'
+Plugin 'kannokanno/previm'
 
 
 
 " Colors
-" Bundle 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 "
 " map gs :Gministatus<CR>
 
 " This must come after Vundle
+call vundle#end()
 filetype plugin indent on
 
 
