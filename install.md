@@ -2,13 +2,8 @@
 
 - install macOS updates
 
-- install Chrome
-  - sign in
-
 - install 1Password
   - copy SSH files to `~/.ssh` and chmod to 600
-  - Safari Extension
-  - Chrome Extension
 
 - install Homebrew
 
@@ -54,19 +49,22 @@
 - install visual apps
   - MacVim
     - copy the “mvim” binary to /usr/local/bin/vim
-- Seil
-    - change Caps Lock to ESC (should be there automatically with the new dotfiles)
-- Karabiner
-    - set keyboard repeat rate and initial delay
-    - change option-right to forward-delete
-    - (these settings should be automatic now)
-- Firefox
-- AdBlock
-- GitHub Desktop
-- OmniOutliner
-- OmniGraffle
-- Slack
-- Skype
+  - Seil
+      - change Caps Lock to ESC (should be there automatically with the new dotfiles)
+  - Karabiner
+      - set keyboard repeat rate and initial delay
+      - change option-right to forward-delete
+      - (these settings should be automatic now)
+  - Chrome
+    - sign in
+  - Firefox
+  - AdBlock
+  - GitHub Desktop
+  - OmniOutliner
+  - OmniGraffle
+  - Slack
+  - Skype
+  - 1Password Chrome and Safari extensions
 
 - install AppStore apps
   - CCMenu
