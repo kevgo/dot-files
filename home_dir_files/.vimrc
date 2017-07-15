@@ -274,8 +274,9 @@ filetype plugin indent on
 
 
 " Colorscheme
-hi ColorColumn ctermbg=0 guibg=#000000
-" hi ColorColumn ctermbg=246 guibg=#2d2d2d
+" hi ColorColumn ctermbg=0 guibg=#000000
+hi CursorColumn ctermbg=255 guibg=#404040
+hi ColorColumn ctermbg=255 guibg=#2d2d2d
 " set background=light
 " let g:solarized_termcolors=256
 " let g:solarized_visibility = 'low'
