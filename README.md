@@ -38,6 +38,11 @@
 #### quick-open files:
 - __[leader]-d__
 
+#### Compile YouCompleteMe
+
+```
+compile_youcompleteme
+```
 
 
 ## Files
