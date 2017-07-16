@@ -28,3 +28,17 @@
 	required = true
 [git-town]
 	hack-push-flag = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red
+	oldHighlight = red bold
+	newNormal = green
+	newHighlight = green bold
+[color "diff"]
+	meta = blue
+	frag = magenta bold
+	commit = blue bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
