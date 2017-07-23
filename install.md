@@ -75,7 +75,7 @@
 
 - configure OS X
   - Finder Preferences
-    - show “kevin" when opening new Finder windows (faster new Finder windows)
+    - show home directory when opening new Finder windows (faster new Finder windows)
   - enable additional HiDPI modes for the Retina Macbook when connected to the TV:
 
     ```
