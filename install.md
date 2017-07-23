@@ -26,9 +26,6 @@
   ```
   # show dock faster
   defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
-
-  # show new windows instantaneously
-  defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO ; killall Finder
   ```
 
 - install the `.config` folder
