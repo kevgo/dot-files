@@ -22,10 +22,10 @@
 	name = Kevin Goslar
 	email = kevin.goslar@gmail.com
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
 [git-town]
 	hack-push-flag = true
 [color]
