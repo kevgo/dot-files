@@ -133,6 +133,10 @@ set -x PATH ~/d/go/src/github.com/Originate/git-town/src $PATH
 set -x PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin $PATH
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
 
+function gt
+  gotags -R=true -f=tags .
+end
+
 
 # ls
 function l
