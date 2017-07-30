@@ -264,6 +264,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 " Plugin 'itchyny/vim-cursorword'
 Plugin 'kannokanno/previm'
+Plugin 'jiangmiao/auto-pairs'
 
 " Colors
 " Plugin 'altercation/vim-colors-solarized'
