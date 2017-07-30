@@ -129,7 +129,7 @@ end
 set -x PATH ~/d/go/src/github.com/Originate/git-town/src $PATH
 
 
-# Go
+# Golang
 set -x PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin $PATH
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
 
