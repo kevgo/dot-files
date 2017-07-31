@@ -125,6 +125,12 @@ function gacp
 end
 
 
+function gacs
+  gac $argv
+  git sync
+end
+
+
 # Git-Town
 set -x PATH ~/d/go/src/github.com/Originate/git-town/src $PATH
 
