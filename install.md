@@ -12,7 +12,7 @@
 
   ```
   brew doctor
-  brew install git ag fish shellcheck go ctags 
+  brew install git ag fish shellcheck go ctags diff-so-fancy
   ```
 
 - install Vim
