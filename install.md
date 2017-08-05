@@ -2,6 +2,9 @@
 
 - install macOS updates
 
+- configure system preferences
+  - keyboard shortcuts to jump to desktops
+
 - install 1Password
   - copy SSH files to `~/.ssh` and chmod to 600
 
