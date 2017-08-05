@@ -37,15 +37,6 @@
   rbenv install 2.4.1
   ```
   
-- install Postgres
-
-  ```
-  brew install postgres
-  postgres -D /usr/local/var/postgres
-  createdb
-  psql
-  ```
-
 - configure macOS
 
   ```
@@ -104,3 +95,17 @@
     ```
 
 - install Gmail accounts and configure
+
+
+
+## Archive
+
+- install Postgres
+
+  ```
+  brew install postgres
+  postgres -D /usr/local/var/postgres
+  createdb
+  psql
+  ```
+  
