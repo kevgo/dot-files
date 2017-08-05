@@ -84,6 +84,7 @@
     - configure
   - BetterSnapTool
     - configure
+  - OmniFocus
 
 - configure OS X
   - Finder Preferences
