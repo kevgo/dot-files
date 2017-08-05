@@ -70,8 +70,6 @@
   - [MacVim](https://github.com/macvim-dev/macvim/releases)
     - copy the “mvim” binary to /usr/local/bin/vim
     - Run `GoInstallBinaries` inside Vim
-  - [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
-      - change Caps Lock to ESC (should be there automatically with the new dotfiles)
   - [Karabiner](https://pqrs.org/osx/karabiner/)
       - set keyboard repeat rate and initial delay
       - change option-right to forward-delete
