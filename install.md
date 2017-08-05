@@ -23,8 +23,6 @@
   vim +PlugInstall
   ```
   
-  open Vim and run `:BundleInstall`
-
 - install Node
 
   ```
