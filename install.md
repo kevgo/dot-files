@@ -10,13 +10,13 @@
   ```
   brew doctor
   brew install git ag fish shellcheck go  
-  brew install node yarn ctags cmake 
+  brew install node yarn ctags 
   ```
 
 - install Vim
   
   ```
-  brew install vim
+  brew install vim cmake
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim +PlugInstall
   ```
