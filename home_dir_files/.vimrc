@@ -218,62 +218,59 @@ nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 
 " Vundle
-filetype off   " important
-set rtp+=~/.vim/bundle/vundle
-call vundle#begin()
-Plugin 'gmarik/vundle'
+call plug#begin('~/.vim/plugged')
+Plug 'gmarik/vundle'
 
-Plugin 'FuzzyFinder'
+" Plug 'FuzzyFinder'
 " for FuzzyFinder
-Plugin 'L9'
-Plugin 'Valloric/YouCompleteMe'
-" Plugin 'alexdavid/vim-min-git-status'
-" Plugin 'bruno-/vim-husk'
-Plugin 'dag/vim-fish'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'godlygeek/tabular'
-Plugin 'gkz/vim-ls'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kchmck/vim-coffee-script'
-" Plugin 'kevgo/jumbo'
-Plugin 'kevgo/tertestrial-vim'
-Plugin 'michaeljsmith/vim-indent-object'
-" Plugin 'mileszs/ack.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-" Plugin 'slim-template/vim-slim'
-Plugin 'tomtom/tcomment_vim'
-" Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-" Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-markdown'
-" Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-" Plugin 'vim-ruby/vim-ruby'
-" Plugin 'kien/rainbow_parentheses.vim'
-" Plugin 'lukaszkorecki/CoffeeTags'
-Plugin 'fatih/vim-go'
-" Plugin 'Raimondi/delimitMate'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
-" Plugin 'itchyny/vim-cursorword'
-Plugin 'kannokanno/previm'
-Plugin 'jiangmiao/auto-pairs'
+" Plug 'L9'
+Plug 'Valloric/YouCompleteMe'
+" Plug 'alexdavid/vim-min-git-status'
+" Plug 'bruno-/vim-husk'
+Plug 'dag/vim-fish'
+Plug 'digitaltoad/vim-jade'
+Plug 'elixir-lang/vim-elixir'
+Plug 'godlygeek/tabular'
+Plug 'gkz/vim-ls'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kchmck/vim-coffee-script'
+" Plug 'kevgo/jumbo'
+Plug 'kevgo/tertestrial-vim'
+Plug 'michaeljsmith/vim-indent-object'
+" Plug 'mileszs/ack.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+" Plug 'slim-template/vim-slim'
+Plug 'tomtom/tcomment_vim'
+" Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-cucumber'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-haml'
+Plug 'tpope/vim-markdown'
+" Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+" Plug 'vim-ruby/vim-ruby'
+" Plug 'kien/rainbow_parentheses.vim'
+" Plug 'lukaszkorecki/CoffeeTags'
+Plug 'fatih/vim-go'
+" Plug 'Raimondi/delimitMate'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+" Plug 'itchyny/vim-cursorword'
+Plug 'kannokanno/previm'
+Plug 'jiangmiao/auto-pairs'
 
 " Colors
-" Plugin 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
 "
 " map gs :Gministatus<CR>
 
 " This must come after Vundle
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 
 " Colorscheme
