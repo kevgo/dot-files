@@ -28,6 +28,13 @@
   brew install node yarn
   ```
 
+- install Ruby
+
+  ```
+  brew install rbenv
+  rbenv install 2.4.1
+  ```
+  
 - install Postgres
 
   ```
