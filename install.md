@@ -13,6 +13,16 @@
   brew install node yarn ctags cmake 
   ```
 
+- install Vim
+  
+  ```
+  brew install vim
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  ```
+  
+  open Vim and run `:BundleInstall`
+
+
 - install Postgres
 
   ```
