@@ -9,7 +9,8 @@
 
   ```
   brew doctor
-  brew install git ag fish node yarn ctags shellcheck cmake go
+  brew install git ag fish vim shellcheck go  
+  brew install node yarn ctags cmake 
   ```
 
 - install Postgres
