@@ -9,7 +9,7 @@
 
   ```
   brew doctor
-  brew install git ag fish vim shellcheck go  
+  brew install git ag fish shellcheck go  
   brew install node yarn ctags cmake 
   ```
 
@@ -17,7 +17,8 @@
   
   ```
   brew install vim
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  vim +PlugInstall
   ```
   
   open Vim and run `:BundleInstall`
