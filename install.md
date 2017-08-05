@@ -79,13 +79,12 @@
   - 1Password Chrome and Safari extensions
 
 - install AppStore apps
-  - CCMenu
-    - Git Town: https://circleci.com/gh/Originate/git-town.cc.xml?ccmenu=cc.xml
   - Clear
     - configure
   - BetterSnapTool
     - configure
   - OmniFocus
+  
 
 - configure OS X
   - Finder Preferences
@@ -111,3 +110,5 @@
   psql
   ```
   
+- CCMenu
+  - Git Town: https://circleci.com/gh/Originate/git-town.cc.xml?ccmenu=cc.xml
