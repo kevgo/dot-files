@@ -9,8 +9,7 @@
 
   ```
   brew doctor
-  brew install git ag fish shellcheck go  
-  brew install node yarn ctags 
+  brew install git ag fish shellcheck go ctags 
   ```
 
 - install Vim
