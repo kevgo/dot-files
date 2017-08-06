@@ -15,12 +15,6 @@
   brew install git ag fish shellcheck ctags diff-so-fancy
   ```
 
-- install Go
-
-  ```
-  brew install go gotags
-  ```
-  
 - install Vim
   
   ```
@@ -28,7 +22,13 @@
   brew install vim cmake node
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim +PlugInstall
-  :GoInstallBinaries
+  ```
+  
+- install Go
+
+  ```
+  brew install go gotags
+  vim +GoInstallBinaries
   ```
   
 - install Node
