@@ -54,6 +54,10 @@ function t
 end
 
 
+# Dog
+set -x PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Originate/dog/shims $PATH
+
+
 # Dotfile update checker
 ~/bin/check_local_dotfile_updates
 
