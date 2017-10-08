@@ -182,7 +182,7 @@ abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
 # Ruby
-set -x PATH $PATH ~/.rbenv/shims
+set -x PATH ~/.rbenv/shims $PATH
 if which rbenv > /dev/null
   rbenv rehash >/dev/null ^&1
 end
