@@ -262,7 +262,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 " Plug 'itchyny/vim-cursorword'
 Plug 'kannokanno/previm'
-Plug 'jiangmiao/auto-pairs'
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
