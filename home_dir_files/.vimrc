@@ -34,6 +34,7 @@ set noai                          " autoindent
 set nosi                          " smart indent
 set ofu=syntaxcomplete#Complete   " enable syntax completion
 set encoding=utf-8
+set fileencoding=utf-8
 " set spell
 " set spelllang=en_us             " set spell check language
 set nowrap                        " disable word wrap.
@@ -45,6 +46,7 @@ set cursorline
 set title                         " display filename in title bar
 set ttyfast                       " faster scrolling
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
+set showmatch
 
 " Keep the VIM content displayed when exiting VIM
 " set t_ti= t_te=
@@ -75,6 +77,17 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+
+" Errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+if has("gui_macvim")
+  autocmd GUIEnter * set vb t_vb=
+endif
+
 
 
 " Folding
