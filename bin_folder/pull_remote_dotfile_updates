@@ -5,5 +5,5 @@ set -e
 
 echo "checking for dotfile updates ..."
 cd "$HOME/.config"
-git pull --quiet
+eval $HOME/d/go/bin/git-town sync
 echo "done"

@@ -63,7 +63,7 @@ set -x PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Origin
 
 set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
 if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
-  $HOME/bin/pull_remote_dotfile_updates
+  eval $HOME/bin/pull_remote_dotfile_updates
   date +'%m/%d/%Y' > $DAILY_UPDATE_FILE
 end
 
