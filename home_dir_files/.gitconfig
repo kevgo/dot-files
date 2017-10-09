@@ -37,7 +37,16 @@
 	hack-push-flag = true
 	offline = false
 [color]
+	branch = auto
+	diff = auto
+	status = auto
 	ui = true
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[commit]
+	verbose = true
 [color "diff-highlight"]
 	oldNormal = red
 	oldHighlight = red bold
