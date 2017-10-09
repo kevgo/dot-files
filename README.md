@@ -44,6 +44,13 @@
 compile_youcompleteme
 ```
 
+#### Git-add current file
+
+when resolving merge conflicts:
+
+```
+:GitAdd
+```
 
 ## Files
 

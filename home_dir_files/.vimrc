@@ -86,6 +86,10 @@ set visualbell          "no beeps on errors
 " set tildeop
 
 
+" Git
+command GitAdd silent execute "!git add ".bufname('%')
+
+
 " Golang
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
