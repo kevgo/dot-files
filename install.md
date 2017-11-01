@@ -56,6 +56,7 @@
 
   ```
   brew install go gotags
+  mkdir -p ~/d/go/bin
   ```
   
 - install Vim
