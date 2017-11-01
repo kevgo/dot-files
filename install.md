@@ -15,13 +15,6 @@
   brew install git ag fish shellcheck ctags diff-so-fancy
   ```
 
-- install Go
-
-  ```
-  brew install go gotags
-  vim +GoInstallBinaries
-  ```
-  
 - install Node
 
   ```
@@ -56,6 +49,13 @@
   brew install vim cmake node
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim +PlugInstall
+  ```
+  
+- install Go
+
+  ```
+  brew install go gotags
+  vim +GoInstallBinaries
   ```
   
 - set fish as startup shell in the Terminal app
