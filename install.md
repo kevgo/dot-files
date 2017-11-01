@@ -50,8 +50,6 @@
   git clone git@github.com:Originate/git-town.git
   ```
   
-- set fish as startup shell in the Terminal app
-
 - install GO
 
   ```
@@ -59,6 +57,8 @@
   mkdir -p ~/d/go/bin
   ```
   
+- set fish as startup shell in the Terminal app
+
 - install Vim
   
   ```
