@@ -51,6 +51,8 @@
   vim +PlugInstall
   ```
   
+- set fish as startup shell in the Terminal app
+
 - install Go
 
   ```
@@ -58,8 +60,6 @@
   vim +GoInstallBinaries
   ```
   
-- set fish as startup shell in the Terminal app
-
 - install Emacs key bindings for shell
 
   ```
