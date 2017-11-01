@@ -15,15 +15,6 @@
   brew install git ag fish shellcheck ctags diff-so-fancy
   ```
 
-- install Vim
-  
-  ```
-  # cmake and node are needed for YouCompleteMe
-  brew install vim cmake node
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  vim +PlugInstall
-  ```
-  
 - install Go
 
   ```
@@ -58,6 +49,15 @@
   .config/install/install.sh
   ```
 
+- install Vim
+  
+  ```
+  # cmake and node are needed for YouCompleteMe
+  brew install vim cmake node
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  vim +PlugInstall
+  ```
+  
 - set fish as startup shell in the Terminal app
 
 - install Emacs key bindings for shell
