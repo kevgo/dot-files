@@ -53,7 +53,13 @@
   
 - set fish as startup shell in the Terminal app
 
-- install Go
+- set up development directory
+
+  ```
+  mkdir d
+  ```
+  
+- install GO
 
   ```
   brew install go gotags
