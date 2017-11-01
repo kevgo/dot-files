@@ -83,6 +83,7 @@
   - BetterSnapTool
     - configure
   - OmniFocus
+  - Skitch
   - Slack
 
 - install visual apps
