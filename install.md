@@ -33,6 +33,9 @@
   ```
   # show dock faster
   defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
+  
+  # enable additional HiDPI modes for the Retina Macbook when connected to the TV
+  sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
   ```
 
 - install the `.config` folder
@@ -103,11 +106,6 @@
 - configure OS X
   - Finder Preferences
     - show home directory when opening new Finder windows (faster new Finder windows)
-  - enable additional HiDPI modes for the Retina Macbook when connected to the TV:
-
-    ```
-    sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
-    ```
 
 - install Gmail accounts and configure
 
