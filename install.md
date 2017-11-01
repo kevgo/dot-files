@@ -60,12 +60,14 @@
 - set fish as startup shell in the Terminal app
 
 - install Vim
+  - install [MacVim](https://github.com/macvim-dev/macvim/releases)
   
   ```
   # cmake and node are needed for YouCompleteMe
-  brew install vim cmake node
+  brew install cmake node
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim +PlugInstall
+  compile_youcompleteme
   vim +GoInstallBinaries
   ```
   
@@ -76,9 +78,6 @@
   ```
 
 - install visual apps
-  - [MacVim](https://github.com/macvim-dev/macvim/releases)
-    - copy the “mvim” binary to /usr/local/bin/vim
-    - Run `GoInstallBinaries` inside Vim
   - [Karabiner](https://pqrs.org/osx/karabiner/)
       - set keyboard repeat rate and initial delay
       - change option-right to forward-delete
