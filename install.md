@@ -77,6 +77,14 @@
   git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
   ```
 
+- install AppStore apps
+  - Clear
+    - configure
+  - BetterSnapTool
+    - configure
+  - OmniFocus
+  - Slack
+
 - install visual apps
   - [Karabiner](https://pqrs.org/osx/karabiner/)
       - set keyboard repeat rate and initial delay
@@ -88,17 +96,8 @@
   - [AdBlock](https://getadblock.com)
   - [GitHub Desktop](https://desktop.github.com)
   - [OmniOutliner 4 Pro and OmniGraffle 5 Standard](https://www.omnigroup.com/download)
-  - [Slack](https://slack.com/downloads)
   - [Skype](https://www.skype.com/en/download-skype/skype-for-computer)
   - 1Password Chrome and Safari extensions
-
-- install AppStore apps
-  - Clear
-    - configure
-  - BetterSnapTool
-    - configure
-  - OmniFocus
-  
 
 - configure OS X
   - Finder Preferences
