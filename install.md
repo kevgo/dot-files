@@ -41,15 +41,17 @@
   git clone git@github.com:kevgo/dot-files.git .config
   .config/install/install.sh
   ```
-
-- set fish as startup shell in the Terminal app
-
-- set up development directory
+  
+- clone Git Town
 
   ```
-  mkdir d
+  mkdir -p ~/d/go/src/github.com/Originate
+  cd ~/d/go/src/github.com/Originate
+  git clone git@github.com:Originate/git-town.git
   ```
   
+- set fish as startup shell in the Terminal app
+
 - install GO
 
   ```
