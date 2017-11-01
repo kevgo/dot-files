@@ -55,7 +55,9 @@ end
 
 
 # Dog
-set -x PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Originate/dog/shims $PATH
+if [ -d ~/d/go/src/github.com/Originate/dog ]
+	set -x PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Originate/dog/shims $PATH
+end
 
 
 # Dotfile update checker
@@ -135,10 +137,6 @@ function gacs
 end
 
 
-# Git Town
-set -x PATH ~/d/go/src/github.com/Originate/git-town/src $PATH
-
-
 # Golang
 set -x PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin $PATH
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
@@ -182,12 +180,14 @@ abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
 # Ruby
-set -x PATH ~/.rbenv/shims $PATH
+if [ -d ~/.rbenv ]
+	set -x PATH ~/.rbenv/shims $PATH
+end
 if which rbenv > /dev/null
   rbenv rehash >/dev/null ^&1
 end
 set number_of_cores (sysctl -n hw.ncpu)
-if not test -f ~/.bundle/config
+if [ -f ~/.bundle/config ]
   bundle config --global jobs (expr $number_of_cores)
 end
 set -x PARALLEL_TEST_PROCESSORS (expr $number_of_cores)
