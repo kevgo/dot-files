@@ -68,6 +68,13 @@
   - set `/usr/local/bin/fish` as startup shell 
   - Profiles > Shell > Ask before closing: add `-fish`
 
+- set up daily updates
+  
+  ```
+  cd ~/.config
+  git sync
+  ```
+
 - install Vim
   - install [MacVim](https://github.com/macvim-dev/macvim/releases)
   
