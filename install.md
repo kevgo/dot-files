@@ -41,8 +41,8 @@
 - install the `.config` folder
 
   ```
-  git clone git@github.com:kevgo/dot-files.git .config
-  .config/install/install.sh
+  git clone git@github.com:kevgo/dot-files.git ~/.config
+  ~/.config/install/install.sh
   ```
   
 - clone Git Town
