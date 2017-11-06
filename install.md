@@ -111,7 +111,9 @@
 
 - configure OS X
   - Finder Preferences
-    - show home directory when opening new Finder windows (faster new Finder windows)
+    - General: show home directory when opening new Finder windows (faster new Finder windows)
+    - Sidebar: New Finder windows show (user directory)
+    - Advanced: Don't show warnings before emptying the trash
 
 - install Gmail accounts and configure
 
