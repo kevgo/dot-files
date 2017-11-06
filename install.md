@@ -50,6 +50,7 @@
   ```
   brew install go gotags
   mkdir -p ~/d/go/bin
+  mkdir -p ~/d/go-external/bin
   ```
   
 - clone Git Town
