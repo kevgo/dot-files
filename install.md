@@ -104,7 +104,7 @@
     - sign in
   - [Firefox](https://www.mozilla.org/en-US/firefox)
   - [AdBlock](https://getadblock.com)
-  - [GitHub Desktop](https://desktop.github.com)
+  - [GitHub Desktop](https://central.github.com/mac/latest)
   - [OmniOutliner 4 Pro and OmniGraffle 5 Standard](https://www.omnigroup.com/download)
   - [Skype](https://www.skype.com/en/download-skype/skype-for-computer)
   - 1Password Chrome and Safari extensions
