@@ -60,7 +60,7 @@
   cd ~/d/go/src/github.com/Originate
   git clone git@github.com:Originate/git-town.git
   cd git-town
-  fish
+  fish
   bin/build
   ```
   
