@@ -64,7 +64,7 @@
   bin/build
   ```
   
-- set fish as startup shell in the Terminal app
+- set `/usr/local/bin/fish` as startup shell in the Terminal app
 
 - install Vim
   - install [MacVim](https://github.com/macvim-dev/macvim/releases)
