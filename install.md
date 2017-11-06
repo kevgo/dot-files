@@ -55,12 +55,12 @@
   
 - clone Git Town
 
-  ```
+  ```bash
   mkdir -p ~/d/go/src/github.com/Originate
   cd ~/d/go/src/github.com/Originate
   git clone git@github.com:Originate/git-town.git
   cd git-town
-  fish               # only fish contains the correct PATH to build
+  fish
   bin/build
   ```
   
