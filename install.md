@@ -101,7 +101,10 @@
       - change option-right to forward-delete
       - (these settings should be automatic now)
   - [Chrome](https://www.google.com/chrome)
-    - sign in
+    - sign into Chrome
+    - enter sync passphrase
+    - sign into Zoom extension
+    - hide the extension icons from the URL bar
   - [Firefox](https://www.mozilla.org/en-US/firefox)
   - [AdBlock](https://getadblock.com)
   - [GitHub Desktop](https://central.github.com/mac/latest)
