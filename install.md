@@ -8,7 +8,7 @@
 - install 1Password
   - copy SSH files to `~/.ssh` and chmod to 600
 
-- install Homebrew
+- install [Homebrew](https://brew.sh)
 
   ```
   brew doctor
