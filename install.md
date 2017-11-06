@@ -45,19 +45,21 @@
   ~/.config/install/install.sh
   ```
   
+- install GO
+
+  ```
+  brew install go gotags
+  mkdir -p ~/d/go/bin
+  ```
+  
 - clone Git Town
 
   ```
   mkdir -p ~/d/go/src/github.com/Originate
   cd ~/d/go/src/github.com/Originate
   git clone git@github.com:Originate/git-town.git
-  ```
-  
-- install GO
-
-  ```
-  brew install go gotags
-  mkdir -p ~/d/go/bin
+  cd git-town
+  bin/build
   ```
   
 - set fish as startup shell in the Terminal app
