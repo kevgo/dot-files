@@ -326,6 +326,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'kannokanno/previm'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-sleuth'
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
