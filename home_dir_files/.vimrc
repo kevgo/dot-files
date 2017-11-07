@@ -2,6 +2,21 @@ set shell=/bin/bash
 " runtime macros/matchit.vim
 
 
+" ALE
+" autocmd bufwritepost *.js silent !standard --fix %
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_delay = 0                       " default is 200
+let g:ale_lint_on_enter = 1                    " lint when loading files
+
+
 " Appearance
 if has("gui_running")
   set guioptions=egmrt        "Disable menu bar for gvim/macvim
@@ -111,7 +126,7 @@ let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
-let g:syntastic_go_checkers = ['golint', 'go vet']
+" let g:syntastic_go_checkers = ['golint', 'go vet']
 " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
 
@@ -146,6 +161,22 @@ let g:nerdtree_tabs_open_on_new_tab=0
 let g:nerdtree_tabs_synchronize_focus=0
 let g:NERDTreeMapOpenSplit="s"
 let g:NERDTreeMapOpenVSplit="v"
+
+function! IsNERDTreeOpen()
+  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind if NERDTree is active, current window contains a modifiable
+" file, and we're not in vimdiff
+function! SyncTree()
+  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    NERDTreeFind
+    wincmd p
+  endif
+endfunction
+
+" Highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
 
 
 " Inserting empty lines using [enter] when in normal mode.
@@ -200,7 +231,7 @@ nnoremap <silent> <Leader>- :exe "vertical resize -5"<CR>
 
 " Syntax highlighting
 syntax enable                     " enable syntax highlighting
-let g:syntastic_cucumber_checkers = []
+" let g:syntastic_cucumber_checkers = []
 " let g:ruby_operators = 1 " Enable highlighting of ruby operators
 
 
@@ -258,7 +289,8 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'pangloss/vim-javascript'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 " Plug 'slim-template/vim-slim'
 Plug 'tomtom/tcomment_vim'
 " Plug 'tpope/vim-bundler'
