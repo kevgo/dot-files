@@ -86,6 +86,13 @@
   compile_youcompleteme
   vim +GoInstallBinaries
   ```
+  
+- install [vint](https://github.com/Kuniwak/vint)
+  
+  ```
+  brew install python3
+  pip3 install vim-vint
+  ```
 
 - install Emacs key bindings for shell
 
