@@ -44,7 +44,7 @@
 #### Compile YouCompleteMe
 
 ```
-compile_youcompleteme
+$ compile_youcompleteme
 ```
 
 #### Git-add current file
