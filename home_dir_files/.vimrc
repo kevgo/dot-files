@@ -1,3 +1,6 @@
+set encoding=utf-8
+scriptencoding utf-8
+
 set shell=/bin/bash
 " runtime macros/matchit.vim
 
@@ -18,7 +21,7 @@ let g:ale_lint_on_enter = 1                    " lint when loading files
 
 
 " Appearance
-if has("gui_running")
+if has('gui_running')
   set guioptions=egmrt        "Disable menu bar for gvim/macvim
   set guifont=Menlo:h12
 endif
@@ -44,12 +47,10 @@ set nowritebackup                 " don't create backup files
 set noswapfile                    " don't create .swp files
 " set clipboard=unnamed           " yank and paste with the system clipboard
 set ignorecase smartcase          " ignore case in searched
-set nocompatible                  " disable VI compatibility mode
-set noai                          " autoindent
-set nosi                          " smart indent
-set ofu=syntaxcomplete#Complete   " enable syntax completion
-set encoding=utf-8
-set fileencoding=utf-8
+" set nocompatible                  " disable VI compatibility mode
+set noautoindent
+set nosmartindent
+set omnifunc=syntaxcomplete#Complete   " enable syntax completion
 " set spell
 " set spelllang=en_us             " set spell check language
 set nowrap                        " disable word wrap.
@@ -68,7 +69,7 @@ set showmatch
 
 
 " CoffeeScript
-let coffee_compile_vert = 1
+let g:coffee_compile_vert = 1
 au BufRead,BufNewFile *.cson set ft=coffee
 
 
@@ -83,13 +84,13 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " Cucumber Tables
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 function! s:align()
-  let p = '^\s*|\s.*\s|\s*$'
-  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+  let l:p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# l:p || getline(line('.')+1) =~# l:p)
+    let l:column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let l:position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
     Tabularize/|/l1
     normal! 0
-    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+    call search(repeat('[^|]*|',l:column).'\s\{-\}'.repeat('.',l:position),'ce',line('.'))
   endif
 endfunction
 
@@ -98,9 +99,11 @@ endfunction
 set noerrorbells
 set novisualbell
 set t_vb=
-set tm=500
-if has("gui_macvim")
-  autocmd GUIEnter * set vb t_vb=
+set timeoutlen=500
+if has('gui_macvim')
+	augroup vimrc
+		autocmd GUIEnter * set vb t_vb=
+	augroup END
 endif
 
 
@@ -125,14 +128,14 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = 'goimports'
 " let g:syntastic_go_checkers = ['golint', 'go vet']
 " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:go_list_type = "quickfix"
+let g:go_list_type = 'quickfix'
 
 
 " Indicator line at 80 col, greyed out area after 100 col.
-let &colorcolumn="80,".join(range(101,299),",")
+let &colorcolumn='80,'.join(range(101,299),',')
 
 
 " Invisible characters.
@@ -140,7 +143,7 @@ set listchars=tab:»\ ,eol:¬,trail:⍽
 
 
 " Leader key
-let mapleader = "\<space>"
+let g:mapleader = "\<space>"
 noremap \ ,
 
 
@@ -156,14 +159,14 @@ set mouse=a
 
 " " NERDTree
 map <silent> <leader>t :NERDTreeMirrorToggle<CR>
-let NERDTreeIgnore=['.vim$', '\~$']
+let g:NERDTreeIgnore=['.vim$', '\~$']
 let g:nerdtree_tabs_open_on_new_tab=0
 let g:nerdtree_tabs_synchronize_focus=0
-let g:NERDTreeMapOpenSplit="s"
-let g:NERDTreeMapOpenVSplit="v"
+let g:NERDTreeMapOpenSplit='s'
+let g:NERDTreeMapOpenVSplit='v'
 
 function! IsNERDTreeOpen()
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+  return exists('t:NERDTreeBufName') && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
 
 " Call NERDTreeFind if NERDTree is active, current window contains a modifiable
@@ -176,7 +179,9 @@ function! SyncTree()
 endfunction
 
 " Highlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
+augroup vimrc
+	autocmd BufEnter * call SyncTree()
+augroup END
 
 
 " Inserting empty lines using [enter] when in normal mode.
@@ -190,7 +195,7 @@ nnoremap <silent> <leader><space> i <ESC>
 
 
 " Previm
-let g:previm_open_cmd="open -a Safari"
+let g:previm_open_cmd='open -a Safari'
 
 
 " Quick fix window, for example for Ack
@@ -213,7 +218,9 @@ nmap <leader>d :FufFile**/<CR>
 
 " Saving
 " Stripping Whitespace on save.
-autocmd BufWritePre * :%s/\s\+$//e
+augroup vimrc
+	autocmd BufWritePre * :%s/\s\+$//e
+augroup END
 set autowriteall
 
 
@@ -378,9 +385,11 @@ let g:neocomplete#sources#syntax#min_keyword_length = 5
 
 
 " Enter normal mode on file save.
-if has("gui_running")
+if has('gui_running')
   iunmenu File.Save
   imenu <silent> File.Save <Esc>:w<CR>
 endif
 
-autocmd BufWritePost * :call TertestrialFileSaved()
+augroup vimrc
+	autocmd BufWritePost * :call TertestrialFileSaved()
+augroup END
