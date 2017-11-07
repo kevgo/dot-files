@@ -1,6 +1,10 @@
 set encoding=utf-8
 scriptencoding utf-8
 
+" Leader key
+let g:mapleader = "\<space>"
+noremap \ ,
+
 set shell=/bin/bash
 " runtime macros/matchit.vim
 
@@ -9,6 +13,8 @@ let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+nnoremap <leader>w :Ack! "\b<cword>\b" <CR>
+nnoremap \\ :cclose<CR>
 
 
 " ALE
@@ -146,11 +152,6 @@ let &colorcolumn='80,'.join(range(101,299),',')
 
 " Invisible characters.
 set listchars=tab:»\ ,eol:¬,trail:⍽
-
-
-" Leader key
-let g:mapleader = "\<space>"
-noremap \ ,
 
 
 " Mouse and scrolling support.
