@@ -21,6 +21,7 @@
 - __[ctrl]-o__ returns to the previous code location
 - this requires _ctags_, run `t` in the terminal to update the definitions
 
+
 #### search-and-replace
 - `:ag <text>` makes a full-text search for `text`
 - __[leader]-w__ searches for the word under the cursor
@@ -38,12 +39,14 @@
 #### preview markdown in Safari:
 - `:PrevimOpen`
 
+
 #### distraction-free mode
 - `:Goyo` activate distraction-free mode
 - `:Goyo 100` activate distraction-free mode with 100 characters width
 - `:Goyo!` disable distraction-free mode
 - `:Limelight` activate focus on the current paragraph
 - `:Limelight!` disable focus on the current paragraph
+
 
 #### quick-open files:
 - __[leader]-d__
@@ -65,6 +68,7 @@
 $ compile_youcompleteme
 ```
 
+
 #### Git-add current file
 
 when resolving merge conflicts:
@@ -72,6 +76,7 @@ when resolving merge conflicts:
 ```
 :GitAdd
 ```
+
 
 ## Files
 
