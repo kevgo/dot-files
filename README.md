@@ -48,6 +48,17 @@
 #### quick-open files:
 - __[leader]-d__
 
+
+#### Golang
+
+- `<leader>-b` - build files
+- `<leader>-r` - run the current file
+- `<leader>-c` - enable/disable display of test coverage
+- `:GoInstall`, `:GoBuild`, `:GoRun`, `:GoTest` with `@:` to re-run and `@@` for subsequent re-runs
+- `:GoCoverage` to see test coverage, `:GoCoverageClear` to remove the coverage highlight
+- the motion commands `if` and `af` select functions
+
+
 #### Compile YouCompleteMe
 
 ```

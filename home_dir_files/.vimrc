@@ -54,6 +54,7 @@ set completeopt=menu
 " Behavior
 set number                        " show line numbers
 set autoread                      " reload files when changed on disk, i.e. via `git checkout`
+set autowrite
 set nobackup                      " don't create backup files
 set nowritebackup                 " don't create backup files
 set noswapfile                    " don't create .swp files
@@ -144,6 +145,12 @@ let g:go_fmt_command = 'goimports'
 " let g:syntastic_go_checkers = ['golint', 'go vet']
 " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = 'quickfix'
+augroup vimrc
+  autocmd FileType go nmap <leader>b  <Plug>(go-build)
+  autocmd FileType go nmap <leader>r  <Plug>(go-run)
+  autocmd FileType go set noexpandtab
+  autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
+augroup END
 
 
 " Indent lines
@@ -261,7 +268,7 @@ syntax enable                     " enable syntax highlighting
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-" set expandtab
+set expandtab
 set smarttab
 
 
