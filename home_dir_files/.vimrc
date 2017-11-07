@@ -286,6 +286,12 @@ nnoremap <leader>7 :call TertestrialSet(7)<cr>
 nnoremap <leader>8 :call TertestrialSet(8)<cr>
 nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
+" UltiSnips
+let g:UltiSnipsSnippetsDir='~/.ultisnips'
+let g:UltiSnipsExpandTrigger="<c-h>"
+let g:UltiSnipsJumpForwardTrigger="<c-h>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
 
 " Vundle
 call plug#begin('~/.vim/plugged')
@@ -294,6 +300,7 @@ Plug 'gmarik/vundle'
 " Plug 'FuzzyFinder'
 " for FuzzyFinder
 " Plug 'L9'
+Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe'
 " Plug 'alexdavid/vim-min-git-status'
 " Plug 'bruno-/vim-husk'

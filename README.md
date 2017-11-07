@@ -28,6 +28,13 @@
 - __[cmd]-0__ applies the last operation and jumps to the next search result
 - __[backslash] [backslash]__ closes the quickfix window
 
+
+### code snippets
+
+- __[ctrl]-h__ expands snippets
+- `:UltiSnipsEdit` shows/edits the available snippets for the current file
+
+
 #### preview markdown in Safari:
 - `:PrevimOpen`
 

@@ -17,3 +17,12 @@ if [ -L "$HOME/bin" ]; then
 fi
 echo "creating symlink bin --> .config/bin_folder"
 ln -s "$HOME/.config/bin_folder" "$HOME/bin"
+
+echo
+echo "linking UltiSnips folder"
+if [ -L "$HOME/.ultisnips" ]; then
+  echo "~/.ultisnips already exists, deleting it"
+  rm "$HOME/.ultisnips"
+fi
+echo "creating symlink .ultisnips --> .config/ultisnips"
+ln -s "$HOME/.config/ultisnips" "$HOME/.ultisnips"
