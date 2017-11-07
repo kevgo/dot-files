@@ -212,8 +212,7 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 
 " Quick open files.
-nmap <leader>d :FufFile**/<CR>
-" nmap <leader>o :CommandT<CR>
+nmap <leader>d :FZF
 
 
 " Saving
@@ -318,6 +317,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 " Plug 'itchyny/vim-cursorword'
 Plug 'kannokanno/previm'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
