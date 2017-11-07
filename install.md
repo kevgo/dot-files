@@ -27,13 +27,13 @@
   brew install rbenv
   rbenv install 2.4.1
   ```
-  
+
 - configure macOS
 
   ```
   # show dock faster
   defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
-  
+
   # enable additional HiDPI modes for the Retina Macbook when connected to the TV
   sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
   ```
@@ -44,7 +44,7 @@
   git clone git@github.com:kevgo/dot-files.git ~/.config
   ~/.config/install/install.sh
   ```
-  
+
 - install GO
 
   ```
@@ -52,7 +52,7 @@
   mkdir -p ~/d/go/bin
   mkdir -p ~/d/go-external/bin
   ```
-  
+
 - clone Git Town
 
   ```bash
@@ -63,13 +63,13 @@
   fish
   bin/build
   ```
-  
+
 - configure Terminal
-  - set `/usr/local/bin/fish` as startup shell 
+  - set `/usr/local/bin/fish` as startup shell
   - Profiles > Shell > Ask before closing: add `-fish`
 
 - set up daily updates
-  
+
   ```
   cd ~/.config
   git sync
@@ -77,7 +77,7 @@
 
 - install Vim
   - install [MacVim](https://github.com/macvim-dev/macvim/releases)
-  
+
   ```
   # cmake and node are needed for YouCompleteMe
   brew install cmake node
@@ -86,7 +86,7 @@
   compile_youcompleteme
   vim +GoInstallBinaries
   ```
-  
+
 - install Emacs key bindings for shell
 
   ```
@@ -140,6 +140,6 @@
   createdb
   psql
   ```
-  
+
 - CCMenu
   - Git Town: https://circleci.com/gh/Originate/git-town.cc.xml?ccmenu=cc.xml
