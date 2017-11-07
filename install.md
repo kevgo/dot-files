@@ -123,6 +123,8 @@
   - [AdBlock](https://getadblock.com)
   - [GitHub Desktop](https://central.github.com/mac/latest)
     - install command-line tools
+  - [GitX](https://rowanj.github.io/gitx)
+    - enable terminal usage
   - [OmniOutliner 4 Pro and OmniGraffle 5 Standard](https://www.omnigroup.com/download)
   - [Skype](https://www.skype.com/en/download-skype/skype-for-computer)
   - 1Password Chrome and Safari extensions
