@@ -130,7 +130,7 @@ set visualbell          "no beeps on errors
 
 
 " Git
-command GitAdd silent execute "!git add ".bufname('%')
+command! GitAdd silent execute "!git add ".bufname('%')
 
 
 " Golang
