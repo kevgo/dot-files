@@ -4,6 +4,12 @@ scriptencoding utf-8
 set shell=/bin/bash
 " runtime macros/matchit.vim
 
+" Ag
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+
 
 " ALE
 " autocmd bufwritepost *.js silent !standard --fix %
@@ -293,7 +299,7 @@ Plug 'kevgo/tertestrial-vim'
 Plug 'michaeljsmith/vim-indent-object'
 " Plug 'mileszs/ack.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 " Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
