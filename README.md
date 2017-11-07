@@ -22,6 +22,7 @@
 - this requires _ctags_, run `t` in the terminal to update the definitions
 
 #### search-and-replace
+- `:ag <text>` makes a full-text search for `text`
 - __[leader]-w__ searches for the word under the cursor
 - __[cmd]-]__ and __[cmd]-[__ jump through search results
 - __[cmd]-0__ applies the last operation and jumps to the next search result
