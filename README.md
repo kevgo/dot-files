@@ -62,14 +62,14 @@
 - `:GoCoverage` to see test coverage, `:GoCoverageClear` to remove the coverage highlight
 - __gd__ jumps to where the identifier under the cursor is defined,
   without needing a tags file
-- __[ctrl]-t__ intelligently returns to to previous location in the code base
+- __[ctrl]-t__ intelligently returns to to previous location in the code base after using _gd_
 - the motion commands `if` and `af` select functions
 - __[[__ and __]]__ jump between functions in a file
 - `:AV` opens the alternative (test) file for the current file in a vertical split pane
-- __K__ or `:GoDoc` shows the documentation for the current identifier
-- __<leader>-i__ or `:GoInfo` shows the signature for the function under the cursor
+- __K__ or `:GoDoc` shows the documentation for the identifier under the cursor
+- __[leader]-i__ or `:GoInfo` shows the signature for the function under the cursor
 - `:GoReferrers` shows all references to the identifier under the cursor
-- `:GoImplements` shows all the interfaces that the identifier under the cursor implments
+- `:GoImplements` shows all the interfaces that the identifier under the cursor implements
 - `:GoWhicherrs` displays the possible values that the error variable under the cursor can contain
 - `:GoChannelPeers` shows all places that send or receive from the cannel under the cursor
 - `:GoCallees` shows all functions that can take the place
@@ -78,9 +78,9 @@
   this hows all the functions that could be provided as that parameter)
 - `:GoCallers` shows all places in which the function under the cursor is called
 - `:GoImpl` creates the missing methods for the struct under the cursor
-  so that it implements the interface provided by the user
-- `:GoPlay` uploads the current file to the Go Playground
-  and puts the URL into the clipboard
+  so that it implements the interface provided as a parameter
+- `:GoPlay` uploads the current file (or just the selection)
+  to the Go Playground and puts the URL into the clipboard
 
 
 #### Compile YouCompleteMe
