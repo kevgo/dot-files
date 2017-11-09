@@ -48,6 +48,9 @@ let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_echo_current_diagnostic = 0
 set completeopt=menu
 
 
@@ -142,6 +145,7 @@ let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = 'goimports'
+let g:go_auto_sameids = 1
 " let g:syntastic_go_checkers = ['golint', 'go vet']
 " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = 'quickfix'
@@ -150,6 +154,8 @@ augroup vimrc
   autocmd FileType go nmap <leader>r  <Plug>(go-run)
   autocmd FileType go set noexpandtab
   autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
+  autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+  autocmd FileType go nmap <Leader>i <Plug>(go-info)
 augroup END
 
 

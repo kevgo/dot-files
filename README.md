@@ -16,10 +16,10 @@
 ### Vim
 
 #### jump to definition of code
-- __[ctrl]-\\__ opens the method under the cursor in a new tab
-- __[ctrl]-]__ opens the method under cursor in the current tab
+- __[ctrl]-\\__ opens the definition of the identifier under the cursor in a new tab
+- __[ctrl]-]__ or `gd` opens the definition of the identifier under cursor in the current tab
 - __[ctrl]-o__ returns to the previous code location
-- this requires _ctags_, run `t` in the terminal to update the definitions
+- this requires _ctags_, run `t` or `gt` in the terminal to update the definitions
 
 
 #### search-and-replace
@@ -54,12 +54,33 @@
 
 #### Golang
 
-- `<leader>-b` - build files
-- `<leader>-r` - run the current file
-- `<leader>-c` - enable/disable display of test coverage
+- __<leader>-b__ - build files
+- __<leader>-r__ - run the current file
+- __<leader>-c__ - enable/disable display of test coverage
+- `:GoRename` renames the identifier under the cursor
 - `:GoInstall`, `:GoBuild`, `:GoRun`, `:GoTest` with `@:` to re-run and `@@` for subsequent re-runs
 - `:GoCoverage` to see test coverage, `:GoCoverageClear` to remove the coverage highlight
+- __gd__ jumps to where the identifier under the cursor is defined,
+  without needing a tags file
+- __[ctrl]-t__ intelligently returns to to previous location in the code base
 - the motion commands `if` and `af` select functions
+- __[[__ and __]]__ jump between functions in a file
+- `:AV` opens the alternative (test) file for the current file in a vertical split pane
+- __K__ or `:GoDoc` shows the documentation for the current identifier
+- __<leader>-i__ or `:GoInfo` shows the signature for the function under the cursor
+- `:GoReferrers` shows all references to the identifier under the cursor
+- `:GoImplements` shows all the interfaces that the identifier under the cursor implments
+- `:GoWhicherrs` displays the possible values that the error variable under the cursor can contain
+- `:GoChannelPeers` shows all places that send or receive from the cannel under the cursor
+- `:GoCallees` shows all functions that can take the place
+  of the higher-order function argument under the cursor
+  (when a function receives another function as its parameter,
+  this hows all the functions that could be provided as that parameter)
+- `:GoCallers` shows all places in which the function under the cursor is called
+- `:GoImpl` creates the missing methods for the struct under the cursor
+  so that it implements the interface provided by the user
+- `:GoPlay` uploads the current file to the Go Playground
+  and puts the URL into the clipboard
 
 
 #### Compile YouCompleteMe
