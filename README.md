@@ -54,20 +54,20 @@
 
 #### Golang
 
-- `<leader>-b` - build files
-- `<leader>-r` - run the current file
-- `<leader>-c` - enable/disable display of test coverage
+- __[leader]-b__ builds the current project
+- __<leader>-r__ runs the current file
+- __<leader>-c__ enables/disables display of test coverage
 - `:GoRename` renames the identifier under the cursor
 - `:GoInstall`, `:GoBuild`, `:GoRun`, `:GoTest` with `@:` to re-run and `@@` for subsequent re-runs
 - `:GoCoverage` to see test coverage, `:GoCoverageClear` to remove the coverage highlight
-- _gd_ jumps to where the identifier under the cursor is defined,
+- __gd__ jumps to where the identifier under the cursor is defined,
   without needing a tags file
-- _[ctrl]-t_ intelligently returns to to previous location in the code base
+- __[ctrl]-t__ intelligently returns to to previous location in the code base
 - the motion commands `if` and `af` select functions
-- _[[_ and __]]__ jump between functions in a file
+- __[[__ and __]]__ jump between functions in a file
 - `:AV` opens the alternative (test) file for the current file in a vertical split pane
-- `K` or `:GoDoc` shows the documentation for the current identifier
-- _<leader>-i_ or `:GoInfo` shows the signature for the function under the cursor
+- __K__ or `:GoDoc` shows the documentation for the current identifier
+- __<leader>-i__ or `:GoInfo` shows the signature for the function under the cursor
 - `:GoReferrers` shows all references to the identifier under the cursor
 - `:GoImplements` shows all the interfaces that the identifier under the cursor implments
 - `:GoWhicherrs` displays the possible values that the error variable under the cursor can contain
