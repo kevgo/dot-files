@@ -55,8 +55,8 @@
 #### Golang
 
 - __[leader]-b__ builds the current project
-- __<leader>-r__ runs the current file
-- __<leader>-c__ enables/disables display of test coverage
+- __[leader]-r__ runs the current file
+- __[leader]-c__ enables/disables display of test coverage
 - `:GoRename` renames the identifier under the cursor
 - `:GoInstall`, `:GoBuild`, `:GoRun`, `:GoTest` with `@:` to re-run and `@@` for subsequent re-runs
 - `:GoCoverage` to see test coverage, `:GoCoverageClear` to remove the coverage highlight
