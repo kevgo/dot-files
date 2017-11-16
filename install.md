@@ -134,6 +134,10 @@
     - General: show home directory when opening new Finder windows (faster new Finder windows)
     - Sidebar: New Finder windows show (user directory)
     - Advanced: Don't show warnings before emptying the trash
+  - System Preferences
+    - Keyboard > Shortcuts
+      - Launchpad & Dock: disable shortcut for turning dock hiding on/off
+      - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to disable minimizing windows)
 
 - install Gmail accounts and configure
 
