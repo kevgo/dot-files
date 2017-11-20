@@ -64,6 +64,9 @@
   bin/build
   ```
 
+  Set up the local API token to ship Git Town via the Github API
+  from 1password.
+
 - configure Terminal
   - set `/usr/local/bin/fish` as startup shell
   - Profiles > Shell > Ask before closing: add `-fish`
