@@ -22,7 +22,7 @@
   idff = diff
   sst = status
 [core]
-	editor = vim
+  editor = /Applications/MacVim.app/Contents/bin/vim
   excludesfile = /Users/kevin/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
 [user]
