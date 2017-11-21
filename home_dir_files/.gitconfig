@@ -1,61 +1,61 @@
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
-	hack = town hack
-	kill = town kill
-	new-pull-request = town new-pull-request
-	prune-branches = town prune-branches
-	rename-branch = town rename-branch
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  hack = town hack
+  kill = town kill
+  new-pull-request = town new-pull-request
+  prune-branches = town prune-branches
+  rename-branch = town rename-branch
   conflicts = diff --name-only --diff-filter=U
-	repo = town repo
-	ship = town ship
-	sync = town sync
-	append = town append
-	prepend = town prepend
+  repo = town repo
+  ship = town ship
+  sync = town sync
+  append = town append
+  prepend = town prepend
 
-	# typos
-	ad = add
-	dff = diff
-	doff = diff
-	idff = diff
-	sst = status
+  # typos
+  ad = add
+  dff = diff
+  doff = diff
+  idff = diff
+  sst = status
 [core]
 	editor = vim
-	excludesfile = /Users/kevin/.gitignore_global
-	pager = diff-so-fancy | less --tabs=2 -RFX
+  excludesfile = /Users/kevin/.gitignore_global
+  pager = diff-so-fancy | less --tabs=2 -RFX
 [user]
-	name = Kevin Goslar
-	email = kevin.goslar@gmail.com
+  name = Kevin Goslar
+  email = kevin.goslar@gmail.com
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [git-town]
-	hack-push-flag = true
-	offline = false
+  hack-push-flag = true
+  offline = false
 [color]
-	branch = auto
-	diff = auto
-	status = auto
-	ui = true
+  branch = auto
+  diff = auto
+  status = auto
+  ui = true
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 [commit]
-	verbose = true
+  verbose = true
 [color "diff-highlight"]
-	oldNormal = red
-	oldHighlight = red bold
-	newNormal = green
-	newHighlight = green bold
+  oldNormal = red
+  oldHighlight = red bold
+  newNormal = green
+  newHighlight = green bold
 [color "diff"]
-	meta = blue
-	frag = magenta bold
-	commit = blue bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+  meta = blue
+  frag = magenta bold
+  commit = blue bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
