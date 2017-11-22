@@ -137,6 +137,10 @@ function gacs
 end
 
 
+# Git Town
+abbr -a gtc git town config
+
+
 # Golang
 set -x PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin $PATH
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
