@@ -1,5 +1,6 @@
 set encoding=utf-8
 scriptencoding utf-8
+filetype plugin indent on
 
 " Leader key
 let g:mapleader = "\<space>"
@@ -301,9 +302,9 @@ nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir='~/.ultisnips'
-let g:UltiSnipsExpandTrigger="<c-h>"
-let g:UltiSnipsJumpForwardTrigger="<c-h>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsExpandTrigger="<C-h>"
+let g:UltiSnipsJumpForwardTrigger="<C-h>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 
 
 " Vundle
