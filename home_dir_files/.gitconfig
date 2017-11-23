@@ -23,16 +23,16 @@
   sst = status
 [core]
   editor = /Applications/MacVim.app/Contents/bin/vim
-  excludesfile = /Users/kevin/.gitignore_global
+	excludesfile = /Users/kevlar/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
 [user]
   name = Kevin Goslar
   email = kevin.goslar@gmail.com
 [filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
-  required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [git-town]
   hack-push-flag = true
   offline = false
