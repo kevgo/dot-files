@@ -166,7 +166,7 @@ let g:indent_guides_guide_size = 1
 " let g:indent_guides_start_level = 3
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#ffffff   ctermbg=1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#f4f4f4   ctermbg=8
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#f8f8f8 ctermbg=4
 
 " Indicator line at 80 col, greyed out area after 100 col.
