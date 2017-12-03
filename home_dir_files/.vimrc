@@ -9,6 +9,7 @@ noremap \ ,
 set shell=/bin/bash
 " runtime macros/matchit.vim
 
+
 " Ag
 let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
