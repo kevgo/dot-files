@@ -163,15 +163,6 @@ augroup vimrc
 augroup END
 
 
-" Indent lines
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_guide_size = 1
-" let g:indent_guides_start_level = 3
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#f4f4f4   ctermbg=8
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#f8f8f8 ctermbg=4
-
 " Indicator line at 80 col, greyed out area after 100 col.
 let &colorcolumn='80,'.join(range(101,299),',')
 
@@ -360,7 +351,7 @@ Plug 'kannokanno/previm'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-sleuth'
-Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'nathanaelkane/vim-indent-guides' is too slow when scrolling
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
