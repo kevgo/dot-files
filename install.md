@@ -88,6 +88,7 @@
   vim +PlugInstall
   compile_youcompleteme
   vim +GoInstallBinaries
+  npm install --global prettier standard
   ```
   
 - install [vint](https://github.com/Kuniwak/vint)
