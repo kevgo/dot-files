@@ -56,7 +56,7 @@ end
 
 # Dog
 if [ -d ~/d/go/src/github.com/Originate/dog ]
-	set -x PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Originate/dog/shims $PATH
+	set -x PATH $PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Originate/dog/shims
 end
 
 
@@ -142,7 +142,7 @@ abbr -a gtc git town config
 
 
 # Golang
-set -x PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin $PATH
+set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
 
 function gt
@@ -171,7 +171,7 @@ set -x PATH ./bin ./node_modules/.bin $PATH
 
 
 # Path
-set -x PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
+set -x PATH $PATH ~/bin /usr/local/bin /usr/local/sbin
 
 if [ "$PWD" = "/Users/kevin" ]
   cd ~/d
@@ -185,7 +185,7 @@ abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 # Ruby
 if [ -d ~/.rbenv ]
-	set -x PATH ~/.rbenv/shims $PATH
+	set -x PATH $PATH ~/.rbenv/shims
 end
 if which rbenv > /dev/null
   rbenv rehash >/dev/null ^&1
