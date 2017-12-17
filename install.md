@@ -19,6 +19,7 @@
 
   ```
   brew install node yarn
+  npm install --global prettier 
   ```
 
 - install Ruby
@@ -88,7 +89,6 @@
   vim +PlugInstall
   compile_youcompleteme
   vim +GoInstallBinaries
-  npm install --global prettier standard
   ```
   
 - install [vint](https://github.com/Kuniwak/vint)
