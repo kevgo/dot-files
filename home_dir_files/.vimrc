@@ -236,7 +236,7 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 
 " Quick open files.
-nmap <leader>d :FZF
+nmap <leader>d :FZF<CR>
 
 
 " Saving
