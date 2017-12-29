@@ -117,6 +117,11 @@ function cs
 end
 
 function gac
+  set __branch (git branch ^/dev/null | grep \* | sed 's/* //')
+  if [ "$__branch" = "master" ]
+    echo "Please don't commit to the master branch"
+    return
+  end
   git add -A
   if [ "$argv" = "" ]
     git ci -m commit
@@ -126,6 +131,11 @@ function gac
 end
 
 function gacp
+  set __branch (git branch ^/dev/null | grep \* | sed 's/* //')
+  if [ "$__branch" = "master" ]
+    echo "Please don't commit to the master branch"
+    return
+  end
   gac $argv
   git push
 end
