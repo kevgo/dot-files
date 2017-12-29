@@ -23,7 +23,7 @@ nnoremap \\ :cclose<CR>
 " autocmd bufwritepost *.js silent !standard --fix %
 " autocmd bufwritepost *.md silent !prettier --write %
 let g:ale_linters = {
-\   'javascript': ['standard'],
+\   'javascript': ['flow', 'standard'],
 \}
 let g:ale_fixers = {
 \   'javascript': ['standard'],
@@ -126,6 +126,10 @@ if has('gui_macvim')
 	augroup END
 endif
 
+
+" Flow
+let g:flow#autoclose=1
+let g:flow#showquickfix=0
 
 
 " Folding
@@ -352,6 +356,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-sleuth'
 " Plug 'nathanaelkane/vim-indent-guides' is too slow when scrolling
+Plug 'flowtype/vim-flow'
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
