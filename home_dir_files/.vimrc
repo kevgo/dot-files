@@ -104,7 +104,16 @@ au BufRead,BufNewFile *.cson set ft=coffee
 
 function! FlexGoToDefinition()
   if &filetype =~ 'javascript'
+    " NOTE: this doesn't work, l:old_tabpage gets the filename instead of the
+    "       tab page number
+    " let l:save_pos = getpos('.')
+    " let l:old_tabpage = tabpagenr()
+    " :tab split
     :FlowJumpToDef
+    " let l:new_tabpage = tabpagenr()
+    " :tabm {l:new_tabpage}
+    " :call setpos('.', l:save_pos)
+    " :tabn ".l:new_tabpage
   else
     :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
   endif
