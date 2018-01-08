@@ -98,11 +98,18 @@ au BufRead,BufNewFile *.cson set ft=coffee
 
 " CTags:nnoremap <leader>bi :!ctags -R .<CR>
 " ctrl-\ opens method under cursor in a new tab
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " Automatically update CTags index on file save.
 " au BufWritePost *.rb,*.js silent! !ctags -a -R --exclude=node_modules %
 " au BufWritePost *.rb,*.js,*.coffee silent! !ctags -a % 2> /dev/null &
 
+function! FlexGoToDefinition()
+  if &filetype =~ 'javascript'
+    :FlowJumpToDef
+  else
+    :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+  endif
+endfun
+map <C-\> :call FlexGoToDefinition()<CR>
 
 " Cucumber Tables
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
