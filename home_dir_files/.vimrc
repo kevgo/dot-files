@@ -22,8 +22,11 @@ nnoremap \\ :cclose<CR>
 " ALE
 " autocmd bufwritepost *.js silent !standard --fix %
 " autocmd bufwritepost *.md silent !prettier --write %
+
+" NOTE: cannot use standard as a linter here
+"       because it cannot handle Flow files correctly
 let g:ale_linters = {
-\   'javascript': ['flow', 'standard'],
+\   'javascript': ['flow']
 \}
 let g:ale_fixers = {
 \   'javascript': ['standard'],
@@ -129,7 +132,8 @@ endif
 
 " Flow
 let g:flow#autoclose=1
-let g:flow#showquickfix=0
+" let g:flow#showquickfix=0
+au BufNewFile,BufRead *.flow set filetype=javascript
 
 
 " Folding
