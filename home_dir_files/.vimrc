@@ -304,9 +304,9 @@ nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir='~/.config/ultisnips'
-let g:UltiSnipsExpandTrigger="<C-h>"
-let g:UltiSnipsJumpForwardTrigger="<C-h>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsExpandTrigger='<C-h>'
+let g:UltiSnipsJumpForwardTrigger='<C-h>'
+let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
 
 " Vundle
