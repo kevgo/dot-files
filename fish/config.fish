@@ -183,7 +183,7 @@ set -x PATH ./bin ./node_modules/.bin $PATH
 # Path
 set -x PATH $PATH ~/bin /usr/local/bin /usr/local/sbin
 
-if [ "$PWD" = "/Users/kevin" ]
+if [ "$PWD" = "/Users/kevlar" ]
   cd ~/d
 end
 

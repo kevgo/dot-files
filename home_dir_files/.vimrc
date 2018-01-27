@@ -30,8 +30,9 @@ let g:ale_linters = {
 \}
 let g:ale_fixers = {
 \   'javascript': ['standard'],
-\   'markdown': ['prettier'],
+\   'markdown': [],
 \}
+" markdown fixer was prettier
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'never'       " before was 'normal'
