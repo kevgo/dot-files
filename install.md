@@ -80,7 +80,7 @@
   ```
 
 - install Vim
-  - install [MacVim](https://github.com/macvim-dev/macvim/releases)
+  - install [MacVim](https://github.com/macvim-dev/macvim/releases) version 138
 
   ```
   # cmake and node are needed for YouCompleteMe
