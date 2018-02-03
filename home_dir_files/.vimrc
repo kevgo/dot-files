@@ -103,23 +103,6 @@ au BufRead,BufNewFile *.cson set ft=coffee
 " au BufWritePost *.rb,*.js silent! !ctags -a -R --exclude=node_modules %
 " au BufWritePost *.rb,*.js,*.coffee silent! !ctags -a % 2> /dev/null &
 
-function! FlexGoToDefinition()
-  if &filetype =~ 'javascript'
-    " NOTE: this doesn't work, l:old_tabpage gets the filename instead of the
-    "       tab page number
-    " let l:save_pos = getpos('.')
-    " let l:old_tabpage = tabpagenr()
-    " :tab split
-    :FlowJumpToDef
-    " let l:new_tabpage = tabpagenr()
-    " :tabm {l:new_tabpage}
-    " :call setpos('.', l:save_pos)
-    " :tabn ".l:new_tabpage
-  else
-    :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-  endif
-endfun
-map <C-\> :call FlexGoToDefinition()<CR>
 
 " Cucumber Tables
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
@@ -185,6 +168,7 @@ augroup vimrc
   autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
   autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
   autocmd FileType go nmap <Leader>i <Plug>(go-info)
+  autocmd FileType go nmap <C-\> :GoDef()<CR>
 augroup END
 
 
@@ -196,6 +180,12 @@ let &colorcolumn='80,'.join(range(101,299),',')
 set listchars=tab:»\ ,eol:¬,trail:⍽
 
 
+" Javascript
+augroup vimrc
+  autocmd FileType javascript nmap <C-\> :call FlowJumpToDef()<CR>
+augroup END
+
+
 " Mouse and scrolling support.
 set mouse=a
 
@@ -203,7 +193,6 @@ set mouse=a
 " Navigation
 " nnoremap { :call JumpToPreviousFunction()<CR>
 " nnoremap } :call JumpToNextFunction()<CR>
-
 
 
 " " NERDTree
