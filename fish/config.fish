@@ -92,7 +92,7 @@ function fish_prompt --description 'Write out the prompt'
   set dotfile_changes (git status --porcelain | wc -l | tr -d ' ')
   builtin cd $old_pwd
   if [ "$dotfile_changes" != "0" ]
-    echo (set_color grey)'(dotfile changes)'
+    echo (set_color BBBBBB)'(dotfile changes)'
   end
   echo $__green_prompt $__blue_git_branch '> '
 end
