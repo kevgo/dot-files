@@ -29,11 +29,12 @@ let g:ale_linters = {
 \   'javascript': ['flow']
 \}
 let g:ale_fixers = {
-\   'javascript': ['standard'],
+\   'javascript': ['prettier'],
 \   'markdown': [],
 \}
 " markdown fixer was prettier
 let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_text_changed = 'never'       " before was 'normal'
 let g:ale_lint_delay = 0                       " default is 200
