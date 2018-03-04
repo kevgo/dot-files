@@ -380,7 +380,7 @@ call plug#end()
 
 " Colorscheme
 " hi ColorColumn ctermbg=0 guibg=#000000
-hi CursorColumn ctermbg=255 guibg=#404040
+hi CursorColumn ctermbg=255 guibg=#f4f4f4
 
 " make sure you also change .gvimrc when changing this color!
 hi ColorColumn ctermbg=255 guibg=#f4f4f4
