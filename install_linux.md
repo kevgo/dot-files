@@ -11,6 +11,14 @@
       git clone git@github.com:kevgo/dot-files.git ~/.config
       ~/.config/install/install.sh
 
+- change Caps Lock key to ESC
+
+      sudo apt-get install gnome-tweak-tool
+      gnome-tweak-tool
+  
+  Go to `typing` > `Caps Lock key behavior`
+
+
 - install Go
 
       mkdir -p ~/d/go/bin
