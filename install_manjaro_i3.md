@@ -8,3 +8,8 @@
 
       nitrogen
       
+- install Chromium
+
+      sudo pacmac -S chromium
+      
+  change `.profile` to point to `/usr/bin/chromium`
