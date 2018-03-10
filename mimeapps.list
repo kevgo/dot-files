@@ -1,0 +1,56 @@
+[Default Applications]
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/ftp=chromium.desktop
+x-scheme-handler/chrome=userapp-Pale Moon.desktop
+text/html=chromium.desktop
+application/x-extension-htm=userapp-Pale Moon.desktop
+application/x-extension-html=userapp-Pale Moon.desktop
+application/x-extension-shtml=userapp-Pale Moon.desktop
+application/xhtml+xml=userapp-Pale Moon.desktop
+application/x-extension-xhtml=userapp-Pale Moon.desktop
+application/x-extension-xht=userapp-Pale Moon.desktop
+image/jpeg=deepin-image-viewer.desktop
+image/png=deepin-image-viewer.desktop
+text/plain=vim.desktop
+x-scheme-handler/mailto=userapp-Thunderbird.desktop
+message/rfc822=userapp-Thunderbird.desktop
+application/pdf=epdfview.desktop
+application/x-bittorrent=transmission-gtk.desktop
+text/xml=chromium.desktop
+text/xhtml_xml=chromium.desktop
+text/xhtml+xml=chromium.desktop
+image/x-png=deepin-image-viewer.desktop
+image/svg+xml=deepin-image-viewer.desktop
+image/x-xbitmap=deepin-image-viewer.desktop
+image/x-xpixmap=deepin-image-viewer.desktop
+
+[Added Associations]
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
+x-scheme-handler/ftp=userapp-Pale Moon.desktop;chromium.desktop;
+x-scheme-handler/chrome=userapp-Pale Moon.desktop;
+text/html=userapp-Pale Moon.desktop;chromium.desktop;
+application/x-extension-htm=userapp-Pale Moon.desktop;
+application/x-extension-html=userapp-Pale Moon.desktop;
+application/x-extension-shtml=userapp-Pale Moon.desktop;
+application/xhtml+xml=userapp-Pale Moon.desktop;
+application/x-extension-xhtml=userapp-Pale Moon.desktop;
+application/x-extension-xht=userapp-Pale Moon.desktop;
+image/jpeg=viewnior.desktop;gpicview.desktop;deepin-image-viewer.desktop;
+image/png=viewnior.desktop;gpicview.desktop;deepin-image-viewer.desktop;
+text/plain=mousepad.desktop;vim.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird.desktop;
+message/rfc822=userapp-Thunderbird.desktop;
+application/pdf=epdfview.desktop;
+application/x-bittorrent=transmission-gtk.desktop;
+text/xml=chromium.desktop;
+text/xhtml_xml=chromium.desktop;
+text/xhtml+xml=chromium.desktop;
+image/x-png=deepin-image-viewer.desktop;
+image/svg+xml=deepin-image-viewer.desktop;
+image/x-xbitmap=deepin-image-viewer.desktop;
+image/x-xpixmap=deepin-image-viewer.desktop;
+inode/directory=exo-file-manager.desktop
+x-scheme-handler/trash=exo-file-manager.desktop
+
