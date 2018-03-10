@@ -13,3 +13,7 @@
       sudo pacmac -S chromium
       
   change `.profile` to point to `/usr/bin/chromium`
+
+- install powersaver patch
+
+      sudo pacman -S tlp
