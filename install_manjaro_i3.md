@@ -1,6 +1,10 @@
 # Manjaro i3 installation instructions
 
-- connect to wifi
-  
-      $ nm-applet
-    
+- start wifi dock icon in case it doesn't run
+
+      nm-applet
+      
+- change desktop background
+
+      nitrogen
+      
