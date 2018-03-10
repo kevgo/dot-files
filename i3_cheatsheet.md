@@ -7,6 +7,9 @@
 - move focus: `[mod]-[movement keys]`
 - move focussed window: `[mod]-[shift]-[movement keys]`
 - change split direction: `[mod]-t` then `h` or `v`
+- enable tabbed layout: `[mod]-w`
+- enable/toggle split layout: `[mod]-e`
+- resize: `[mod]-r` then cursor keys
 
 
 ## App Management
