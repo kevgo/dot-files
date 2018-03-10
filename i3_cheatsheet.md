@@ -14,3 +14,4 @@
 
 - lock screen: `i3lock`
 - shutdown computer: `poweroff`
+- reboot computer: `reboot`
