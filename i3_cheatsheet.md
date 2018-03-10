@@ -3,9 +3,10 @@
 ## Window Management
 
 - toggle floating: `[mod]-[shift]-[space]`
-- fullscreen: `[mod]-f`
+- toggle fullscreen: `[mod]-f`
 - move focus: `[mod]-[movement keys]`
 - move focussed window: `[mod]-[shift]-[movement keys]`
+- change split direction: `[mod]-t` then `h` or `v`
 
 
 ## App Management
