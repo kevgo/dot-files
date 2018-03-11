@@ -29,25 +29,19 @@
 
 - install powersaver patch
     
-    ```
-    sudo pacman -S tlp ethtool smartmontools
-    systemctl enable tlp
-    systemctl enable tlp-sleep.service
-    ```
+      sudo pacman -S tlp ethtool smartmontools
+      systemctl enable tlp
+      systemctl enable tlp-sleep.service
+  
+  When installing on Lenovo hardware:
+  
+      sudo pacman -S acpi_call
     
-    When installing on Lenovo hardware:
-    
-    ```
-    sudo pacman -S acpi_call
-    ```
-    
-    Verify installation:
-    
-    ```
-    sudo tlp stat
-    ```
-    
-    Go through everything and fix notices and warnings.
+  Verify installation:
+  
+      sudo tlp stat
+  
+  Go through everything and fix notices and warnings.
 
 - install Go
 
