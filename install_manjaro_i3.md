@@ -95,13 +95,9 @@ add to the bottom of this file:
     SigLevel = Never
     Server = http://repo.archlinux.fr/$arch
 
-Load the new package database:
+install Yaourt from the new package database:
 
-    sudo pacman -Sy
-
-Install Yaourt:
-
-    sudo pacman -S yaourt
+    sudo pacman -Sy yaourt
 
 
 
@@ -109,12 +105,11 @@ Install Yaourt:
   
 These instructions seem weird. Are there better ones?
 
-    mkdir ~/tmp
-    cd ~/tmp
-    sudo pacman -S libcurl-compat
-    git clone https://aur.archlinux.org/slack-desktop.git
-    makepkg
-    sudo pacman -U *.pkg.tar.xz
+    yaourt -S slack-desktop
 
+
+#### Github Desktop
+
+    yaourt -S github-desktop
 
 
