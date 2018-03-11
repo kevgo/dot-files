@@ -37,6 +37,12 @@
 
       sudo pacman -S acpi_call
 
+  Verify installation:
+
+      sudo tlp stat
+
+  Go through everything and fix notices and warnings.
+
 - install Go
 
       sudo pacman -S go
