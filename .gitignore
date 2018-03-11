@@ -12,7 +12,10 @@ fish/fishd.*
 fontconfig/
 gconf/
 git/gitk
-gtk-3.0/
+git-cola/
+GitKraken/
+gtk-2\.0/
+gtk-3\.0/
 hexchat/
 hub
 i3-scrot.conf
@@ -27,10 +30,12 @@ pavucontrol.ini
 pcmanfm/
 pulse/
 qt5ct/
+QtProject\.conf
 qupzilla/
 ranger/
 Slack/
 user-dirs.*
+viewnior/
 vlc/
 volumeicon/
 xfce4/
