@@ -74,7 +74,7 @@ log out and in again to see the change
     compile_youcompleteme
     vim +GoInstallBinaries
       
-Vint:
+#### Vint
 
     sudo pacman -S python-pip
     sudo pip install vim-vint
