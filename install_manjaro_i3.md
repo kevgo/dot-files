@@ -79,5 +79,5 @@
 
 - install the Alt-Tab hotkey
 
-      sudo pacman -S python3
+      sudo pacman -S python3 gnu-netcat
       sudo pip install i3ipc
