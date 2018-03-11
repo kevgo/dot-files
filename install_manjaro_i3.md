@@ -57,3 +57,13 @@
       sudo pacman -S python-pip
       sudo pip install vim-vint
  
+- install Slack
+  
+  These instructions seem weird. Are there better ones?
+
+      mkdir ~/tmp
+      cd ~/tmp
+      sudo pacman -S libcurl-compat
+      git clone https://aur.archlinux.org/slack-desktop.git
+      makepkg
+      sudo pacman -U *.pkg.tar.xz
