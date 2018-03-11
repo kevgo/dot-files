@@ -24,9 +24,13 @@
       mkdir -p ~/d/go/bin
       mkdir -p ~/d/go-external/bin
 
+- install Node
+
+      sudo pacman -S nodejs yarn npm
+
 - install tools
 
-      sudo pacman -S the_silver_searcher prettier diff-so-fancy
+      sudo pacman -S the_silver_searcher prettier diff-so-fancy shellcheck
       
 - install fish
 
