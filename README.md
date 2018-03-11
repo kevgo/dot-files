@@ -1,7 +1,10 @@
 # Kevgo's machine configuration
 
-[installation instructions](install.md)
+- [installation instructions for macOS](install_macos.md)
+- [installation instructions for Ubuntu](install_ubuntu.md)
+- [installation instructions for Manjaro i3](install_manjaro_i3.md)
 
+[i3 cheatsheet](i3_cheatsheet.md)
 
 ## Maintenance
 
