@@ -76,3 +76,8 @@
       git clone https://aur.archlinux.org/slack-desktop.git
       makepkg
       sudo pacman -U *.pkg.tar.xz
+
+- install the Alt-Tab hotkey
+
+      sudo pacman -S python3
+      sudo pip install i3ipc
