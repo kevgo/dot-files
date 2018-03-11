@@ -266,7 +266,7 @@ set autowriteall
 " CTRL-S
 :noremap <c-s> <esc>:w<CR>
 " ALT-S
-:noremap <M-s> <esc>:w<CR>
+:nnoremap <M-s> <esc>:w<CR>
 
 " Searching
 set hlsearch          "Highlight found searches
