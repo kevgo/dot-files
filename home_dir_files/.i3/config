@@ -83,7 +83,7 @@ bindsym $mod+s focus right
 
 # Alt-Tab
 bindsym $mod+Tab exec ~/d/go-external/bin/i3-focus-last switch
-exec --no-startup-id "~/d/go-external/bin/i3-focus-last"
+exec_always --no-startup-id "~/d/go-external/bin/i3-focus-last"
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
