@@ -93,7 +93,33 @@ $ compile_youcompleteme
 ```
 
 
-#### Git-add current file
+#### Fugitive
+
+- show Git status view: `Gstatus`
+- stage/unstage entire files: in the status view, go to the file and press `-`
+
+stage hunks:
+- open a file that contains changes: hit `[enter]` in the status view
+- run `:Gdiff` inside this file
+  - left side is the index file
+  - right side is the working copy
+  - run `:diffget` while the cursor is inside a change 
+    to pull the entire hunk from the other side into this region
+  - run `:diffput` to push the current hunk to the other side
+  - if lines are selected, `:diffget` and `:diffput` work only on those lines
+    
+- run `:diffupdate` to refresh the view
+
+
+undo all changes in a file
+- open file
+- run `:Gdiff`
+- run `:Gwrite` from the index file to write the index to the working copy
+- 
+
+commit:
+- hit `[shift]-C` in the status window or run `:Gcommit`
+
 
 when resolving merge conflicts:
 
