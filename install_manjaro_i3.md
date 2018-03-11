@@ -28,26 +28,26 @@
   edit the `$BROWSER` variable in `.profile` to point to `/usr/bin/chromium`
 
 - install powersaver patch
-
-  ```
-  sudo pacman -S tlp ethtool smartmontools
-  systemctl enable tlp
-  systemctl enable tlp-sleep.service
-  ```
-
-  When installing on Lenovo hardware:
-
-  ```
-  sudo pacman -S acpi_call
-  ```
-
-  Verify installation:
-  
-  ```
-  sudo tlp stat
-  ```
-
-  Go through everything and fix notices and warnings.
+    
+    ```
+    sudo pacman -S tlp ethtool smartmontools
+    systemctl enable tlp
+    systemctl enable tlp-sleep.service
+    ```
+    
+    When installing on Lenovo hardware:
+    
+    ```
+    sudo pacman -S acpi_call
+    ```
+    
+    Verify installation:
+    
+    ```
+    sudo tlp stat
+    ```
+    
+    Go through everything and fix notices and warnings.
 
 - install Go
 
