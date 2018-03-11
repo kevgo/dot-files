@@ -24,7 +24,8 @@
 
       sudo pacmac -S chromium
       
-  change `.profile` to point to `/usr/bin/chromium`
+  to make Chromium the default browser,
+  edit the `$BROWSER` variable in `.profile` to point to `/usr/bin/chromium`
 
 - install powersaver patch
 
