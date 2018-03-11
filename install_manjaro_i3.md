@@ -30,6 +30,8 @@
 - install powersaver patch
 
       sudo pacman -S tlp
+      systemctl enable tlp
+      systemctl enable tlp-sleep.service
 
 - install Go
 
