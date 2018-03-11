@@ -43,7 +43,7 @@ let g:ale_lint_on_enter = 1                    " lint when loading files
 " Appearance
 if has('gui_running')
   set guioptions=egmrt        "Disable menu bar for gvim/macvim
-  set guifont=Menlo:h12
+  " set guifont=Menlo:h12
 endif
 
 
@@ -260,6 +260,8 @@ augroup vimrc
 augroup END
 set autowriteall
 
+" Saving in GVim
+:noremap <c-s> <esc>:w<CR>
 
 " Searching
 set hlsearch          "Highlight found searches
