@@ -32,6 +32,10 @@
       sudo pacman -S tlp
       systemctl enable tlp
       systemctl enable tlp-sleep.service
+      
+  When installing on Lenovo hardware:
+  
+      sudo pacman -S acpi_call
 
 - install Go
 
