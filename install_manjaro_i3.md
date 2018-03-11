@@ -1,95 +1,95 @@
 # Manjaro i3 installation instructions
 
-- install lxterminal
+#### lxterminal
 
-      sudo pacman -S lxterminal
+    sudo pacman -S lxterminal
+
+#### start wifi dock icon in case it doesn't run
+
+    nm-applet
       
-- start wifi dock icon in case it doesn't run
+#### change desktop background
 
-      nm-applet
+    nitrogen
       
-- change desktop background
+#### change GTK theme
 
-      nitrogen
-      
-- change GTK theme
+    gtk-chtheme
 
-      gtk-chtheme
-      
-- change GTK+ theme and mouse cursor
+#### change GTK+ theme and mouse cursor
 
-      lxappearance
+    lxappearance
 
-- install Chromium
+#### Chromium
 
-      sudo pacmac -S chromium
-      
-  to make Chromium the default browser,
-  edit the `$BROWSER` variable in `.profile` to point to `/usr/bin/chromium`
+    sudo pacmac -S chromium
 
-- install powersaver patch
-    
-      sudo pacman -S tlp ethtool smartmontools
-      systemctl enable tlp
-      systemctl enable tlp-sleep.service
+To make Chromium the default browser,
+edit the `$BROWSER` variable in `.profile` to point to `/usr/bin/chromium`
+
+#### powersaver patch
+
+    sudo pacman -S tlp ethtool smartmontools
+    systemctl enable tlp
+    systemctl enable tlp-sleep.service
+
+When installing on Lenovo hardware:
+   
+    sudo pacman -S acpi_call
+   
+Verify installation:
+   
+    sudo tlp stat
   
-  When installing on Lenovo hardware:
-  
-      sudo pacman -S acpi_call
-    
-  Verify installation:
-  
-      sudo tlp stat
-  
-  Go through everything and fix notices and warnings.
-
-- install Go
+Go through everything and fix notices and warnings.
+   
+#### Go
 
       sudo pacman -S go
       mkdir -p ~/d/go/bin
       mkdir -p ~/d/go-external/bin
 
-- install Node
+#### Node.JS
 
-      sudo pacman -S nodejs yarn npm
+    sudo pacman -S nodejs yarn npm
 
-- install tools
+#### misc tools
 
-      sudo pacman -S the_silver_searcher prettier diff-so-fancy shellcheck
+    sudo pacman -S the_silver_searcher diff-so-fancy shellcheck
       
-- install fish
+#### Fish shell
 
-      sudo pacman -S fish
-      chsh -s /usr/bin/fish
+    sudo pacman -S fish
+    chsh -s /usr/bin/fish
 
-  log out and in again to see the change
+log out and in again to see the change
 
-- install Vim
+#### Vim
 
-      sudo pacman -S cmake npm 
-      git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-      ~/.fzf/install
-      curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-      vim +PlugInstall
-      compile_youcompleteme
-      vim +GoInstallBinaries
+    sudo pacman -S cmake npm 
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    vim +PlugInstall
+    compile_youcompleteme
+    vim +GoInstallBinaries
       
-- install Vint
+Vint:
 
-      sudo pacman -S python-pip
-      sudo pip install vim-vint
- 
-- install Slack
+    sudo pacman -S python-pip
+    sudo pip install vim-vint
+
+#### Slack
   
-  These instructions seem weird. Are there better ones?
+These instructions seem weird. Are there better ones?
 
-      mkdir ~/tmp
-      cd ~/tmp
-      sudo pacman -S libcurl-compat
-      git clone https://aur.archlinux.org/slack-desktop.git
-      makepkg
-      sudo pacman -U *.pkg.tar.xz
+    mkdir ~/tmp
+    cd ~/tmp
+    sudo pacman -S libcurl-compat
+    git clone https://aur.archlinux.org/slack-desktop.git
+    makepkg
+    sudo pacman -U *.pkg.tar.xz
 
-- install the Alt-Tab hotkey
+#### Alt-Tab hotkey
 
-      go get github.com/s-urbaniak/i3-focus-last
+    go get github.com/s-urbaniak/i3-focus-last
