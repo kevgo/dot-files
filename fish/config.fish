@@ -152,7 +152,7 @@ abbr -a gtc git town config
 
 
 # Golang
-set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin /usr/local/opt/go/libexec/bin
+set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin
 set -x GOPATH $HOME/d/go-external:$HOME/d/go
 
 function gt
@@ -197,14 +197,14 @@ abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 if [ -d ~/.rbenv ]
 	set -x PATH ~/.rbenv/shims $PATH
 end
-if which rbenv > /dev/null
+if which rbenv 2> /dev/null
   rbenv rehash >/dev/null ^&1
 end
-set number_of_cores (sysctl -n hw.ncpu)
-if [ -f ~/.bundle/config ]
-  bundle config --global jobs (expr $number_of_cores)
-end
-set -x PARALLEL_TEST_PROCESSORS (expr $number_of_cores)
+# set number_of_cores (sysctl -n hw.ncpu)
+# if [ -f ~/.bundle/config ]
+#   bundle config --global jobs (expr $number_of_cores)
+# end
+# set -x PARALLEL_TEST_PROCESSORS (expr $number_of_cores)
 set -x COVERALLS_CONFIG nocoveralls
 
 
@@ -214,4 +214,4 @@ set -x TERTESTRIAL_PREVENT_APP_NAP 1
 
 # Vim
 alias v mvim
-alias vim /Applications/MacVim.app/Contents/MacOS/Vim
+# alias vim /Applications/MacVim.app/Contents/MacOS/Vim
