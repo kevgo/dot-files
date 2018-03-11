@@ -100,12 +100,13 @@ $ compile_youcompleteme
 
 stage hunks:
 - open a file that contains changes: hit `[enter]` in the status view
+- close NERDtree
 - run `:Gdiff` inside this file
   - left side is the index file
   - right side is the working copy
-  - run `:diffget` while the cursor is inside a change 
+  - run `:diffget` or type `do` (diff obtain) while the cursor is inside a change 
     to pull the entire hunk from the other side into this region
-  - run `:diffput` to push the current hunk to the other side
+  - run `:diffput` or type `dp` to push the current hunk to the other side
   - if lines are selected, `:diffget` and `:diffput` work only on those lines
     
 - run `:diffupdate` to refresh the view
