@@ -6,10 +6,6 @@
 
 configure it to the _Solaris Light_ theme
 
-#### start wifi dock icon in case it doesn't run
-
-    nm-applet
-      
 #### change desktop background
 
     nitrogen
