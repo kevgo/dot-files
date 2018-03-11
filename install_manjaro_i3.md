@@ -24,4 +24,13 @@
       mkdir -p ~/d/go/bin
       mkdir -p ~/d/go-external/bin
 
-- 
+- install tools
+
+      sudo pacman -S the_silver_searcher prettier diff-so-fancy
+      
+- install fish
+
+      sudo pacman -S fish
+      chsh -s /usr/bin/fish
+
+  log out and in again to see the change
