@@ -12,6 +12,10 @@
 
       nitrogen
       
+- change GTK theme
+
+      gtk-chtheme
+
 - install Chromium
 
       sudo pacmac -S chromium
