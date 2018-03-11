@@ -17,3 +17,11 @@
 - install powersaver patch
 
       sudo pacman -S tlp
+
+- install Go
+
+      sudo pacman -S go
+      mkdir -p ~/d/go/bin
+      mkdir -p ~/d/go-external/bin
+
+- 
