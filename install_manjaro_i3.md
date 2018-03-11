@@ -77,6 +77,34 @@ log out and in again to see the change
     sudo pacman -S python-pip
     sudo pip install vim-vint
 
+#### Alt-Tab hotkey
+
+    go get github.com/s-urbaniak/i3-focus-last
+
+
+
+## AUR packages
+
+#### Set up Yaourt
+
+    sudo vim /etc/pacman.conf
+
+add to the bottom of this file:
+
+    [archlinuxfr]
+    SigLevel = Never
+    Server = http://repo.archlinux.fr/$arch
+
+Load the new package database:
+
+    sudo pacman -Sy
+
+Install Yaourt:
+
+    sudo pacman -S yaourt
+
+
+
 #### Slack
   
 These instructions seem weird. Are there better ones?
@@ -88,6 +116,5 @@ These instructions seem weird. Are there better ones?
     makepkg
     sudo pacman -U *.pkg.tar.xz
 
-#### Alt-Tab hotkey
 
-    go get github.com/s-urbaniak/i3-focus-last
+
