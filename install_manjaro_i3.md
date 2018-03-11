@@ -34,3 +34,13 @@
       chsh -s /usr/bin/fish
 
   log out and in again to see the change
+
+- install Vim
+
+      sudo pacman -S cmake
+      git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+      ~/.fzf/install
+      curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      /usr/bin/vim +PlugInstall
+      compile_youcompleteme
+      
