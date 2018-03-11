@@ -15,6 +15,10 @@
 - change GTK theme
 
       gtk-chtheme
+      
+- change GTK+ theme and mouse cursor
+
+      lxappearance
 
 - install Chromium
 
