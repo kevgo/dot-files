@@ -41,10 +41,15 @@
 
 - install Vim
 
-      sudo pacman -S cmake npm
+      sudo pacman -S cmake npm 
       git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
       ~/.fzf/install
       curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
       /usr/bin/vim +PlugInstall
       compile_youcompleteme
       
+- install Vint
+
+      sudo pacman -S python-pip
+      sudo pip install vim-vint
+ 
