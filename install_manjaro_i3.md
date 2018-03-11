@@ -79,5 +79,4 @@
 
 - install the Alt-Tab hotkey
 
-      sudo pacman -S python3 gnu-netcat
-      sudo pip install i3ipc
+      go get github.com/s-urbaniak/i3-focus-last
