@@ -11,6 +11,7 @@ fish/fish_history
 fish/fishd.*
 fontconfig/
 gconf/
+git/gitk
 gtk-3.0/
 hexchat/
 hub
