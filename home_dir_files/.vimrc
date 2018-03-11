@@ -42,7 +42,9 @@ let g:ale_lint_on_enter = 1                    " lint when loading files
 
 " Appearance
 if has('gui_running')
-  set guioptions=egmrt        "Disable menu bar for gvim/macvim
+  set guioptions-=T        " remove toolbar
+  set guioptions-=m        " remove menu bar
+  set guioptions-=L        " remove left-hand scrollbar
   " set guifont=Menlo:h12
 endif
 
