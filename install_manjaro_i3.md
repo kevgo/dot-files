@@ -80,8 +80,7 @@ log out and in again to see the change
 #### Alt-Tab hotkey
 
     go get github.com/s-urbaniak/i3-focus-last
-
-
+    
 
 ## AUR packages
 
