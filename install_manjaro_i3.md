@@ -112,3 +112,7 @@ These instructions seem weird. Are there better ones?
     yaourt -S github-desktop
 
 
+#### Zoom
+
+    yaourt -S zoom
+
