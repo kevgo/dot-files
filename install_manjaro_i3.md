@@ -116,3 +116,14 @@ These instructions seem weird. Are there better ones?
 
     yaourt -S zoom
 
+
+
+## Fine tuning
+
+### disable ahavi
+
+```
+ln -s /dev/null /etc/systemd/system/avahi-daemon.service
+ln -s /dev/null /etc/systemd/system/avahi-daemon.socket
+ln -s /dev/null /etc/systemd/system/dbus-org.freedesktop.Avahi.service
+```
