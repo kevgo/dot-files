@@ -219,9 +219,9 @@ function! SyncTree()
 endfunction
 
 " Highlight currently open buffer in NERDTree
-augroup vimrc
-	autocmd BufEnter * call SyncTree()
-augroup END
+" augroup vimrc
+" 	autocmd BufEnter * call SyncTree()
+" augroup END
 
 
 " Inserting empty lines using [enter] when in normal mode.
