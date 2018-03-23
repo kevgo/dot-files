@@ -239,16 +239,39 @@ let g:previm_open_cmd='open -a Safari'
 
 
 " Quick fix window, for example for Ack
-nnoremap <D-]> :cnext<CR>
-nnoremap <D-[> :cprevious<CR>
+nnoremap <C-]> :cnext<CR>
+" NOTE: the line below doesn't work in Terminal VIM
+" because that is the ESC mapping.
+" The block below this makes it work
+" by creating this mapping the first time when entering insert mode
+" nnoremap <C-[> :cprevious<CR>
 " nnoremap <C-D-]> :cnfile<CR>
 " nnoremap <A-[> :cpfile<CR>
 function! ReplaceAndGoToNext()
   :normal! .
   :cnext
 endfunction
-nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
+nnoremap <silent> <C-0> :call ReplaceAndGoToNext()<CR>
 
+if !exists('g:escape_mapped')  " Only need to set the mapping up once.
+  augroup escape_mapping
+    autocmd!
+    " Create the autocommand, to fire when Insert mode is entered
+    autocmd InsertEnter * call s:setupEscapeMap()
+  augroup END
+endif
+
+function! s:setupEscapeMap()
+  " Actually create the mapping
+  nnoremap <C-[> :cprevious<CR>
+
+  " Now the map exists, so we won't ever need the autocommand again.
+  let g:escape_mapped = 1
+
+  " Tidy up the autocommand and group
+  autocmd! escape_mapping InsertEnter *
+  augroup! escape_mapping
+endfunction
 
 
 " Quick open files.
