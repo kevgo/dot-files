@@ -29,7 +29,7 @@ let g:ale_linters = {
 \   'javascript': ['flow', 'standard']
 \}
 let g:ale_fixers = {
-\   'javascript': ['prettier', 'standard'],
+\   'javascript': ['prettier_standard'],
 \   'markdown': [],
 \}
 let g:ale_fix_on_save = 1
