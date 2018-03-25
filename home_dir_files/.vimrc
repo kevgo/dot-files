@@ -99,6 +99,9 @@ let g:coffee_compile_vert = 1
 au BufRead,BufNewFile *.cson set ft=coffee
 
 
+" Cursor blink
+set guicursor+=a:blinkon0
+
 " CTags:nnoremap <leader>bi :!ctags -R .<CR>
 " ctrl-\ opens method under cursor in a new tab
 " Automatically update CTags index on file save.
