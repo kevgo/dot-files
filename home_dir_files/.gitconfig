@@ -22,8 +22,8 @@
   idff = diff
   sst = status
 [core]
-  editor = /Applications/MacVim.app/Contents/bin/vim
-	excludesfile = /Users/kevlar/.gitignore_global
+  editor = vim
+  excludesfile = /Users/kevlar/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
 [user]
   name = Kevin Goslar
