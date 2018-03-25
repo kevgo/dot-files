@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# runs "make lint-js with the right args
+
+if [ "$#" -eq 0 ]; then
+  make lint-js
+else
+  make lint-js FILE="$1"
+fi

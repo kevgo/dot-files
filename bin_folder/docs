@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# runs "make docs with the right args
+
+if [ "$#" -eq 0 ]; then
+  make docs
+else
+  make docs FILE="$1"
+fi

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# runs "make cuke-cli with the right args
+
+if [ "$#" -eq 0 ]; then
+  make cuke-cli
+else
+  make cuke-cli FILE="$1"
+fi

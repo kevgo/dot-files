@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# runs "make build" with the right args
+
+if [ "$#" -eq 0 ]; then
+  make build
+else
+  make build FILE="$1"
+fi
