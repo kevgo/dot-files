@@ -84,7 +84,7 @@ set history=200
 set hidden
 set scrolloff=45                  " show context above/below cursorline
 set cursorline
-" set cursorcolumn
+set cursorcolumn
 set title                         " display filename in title bar
 set ttyfast                       " faster scrolling
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
