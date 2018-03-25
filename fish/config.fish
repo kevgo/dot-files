@@ -213,5 +213,10 @@ set -x TERTESTRIAL_PREVENT_APP_NAP 1
 
 
 # Vim
-alias v mvim
+set sys (uname)
+if [ "$sys" = "Linux" ]
+  alias v gvim
+else
+  alias v mvim
+end
 # alias vim /Applications/MacVim.app/Contents/MacOS/Vim
