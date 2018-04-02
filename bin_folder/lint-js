@@ -3,7 +3,7 @@
 # runs "make lint-js with the right args
 
 if [ "$#" -eq 0 ]; then
-  make lint-js
+  make lintjs
 else
-  make lint-js FILE="$1"
+  make lintjs FILE="$1"
 fi

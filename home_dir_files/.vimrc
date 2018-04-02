@@ -71,7 +71,7 @@ set autowrite
 set nobackup                      " don't create backup files
 set nowritebackup                 " don't create backup files
 set noswapfile                    " don't create .swp files
-" set clipboard=unnamed           " yank and paste with the system clipboard
+set clipboard=unnamedplus         " yank and paste with the system clipboard
 set ignorecase smartcase          " ignore case in searched
 " set nocompatible                  " disable VI compatibility mode
 set noautoindent

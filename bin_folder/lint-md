@@ -3,7 +3,7 @@
 # runs "make lint-md with the right args
 
 if [ "$#" -eq 0 ]; then
-  make lint-md
+  make lintmd
 else
-  make lint-md FILE="$1"
+  make lintmd FILE="$1"
 fi

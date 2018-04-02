@@ -3,7 +3,7 @@
 # runs "make cuke-api with the right args
 
 if [ "$#" -eq 0 ]; then
-  make cuke-api
+  make cukeapi
 else
-  make cuke-api FILE="$1"
+  make cukeapi FILE="$1"
 fi
