@@ -243,11 +243,9 @@ let g:previm_open_cmd='open -a Safari'
 
 " Quick fix window, for example for Ack
 nnoremap <A-]> :cnext<CR>
-" NOTE: the line below doesn't work in Terminal VIM
-" because that is the ESC mapping.
-" The block below this makes it work
-" by creating this mapping the first time when entering insert mode
+nnoremap <D-]> :cnext<CR>
 nnoremap <A-[> :cprevious<CR>
+nnoremap <D-[> :cprevious<CR>
 " nnoremap <C-D-]> :cnfile<CR>
 " nnoremap <A-[> :cpfile<CR>
 function! ReplaceAndGoToNext()
@@ -255,6 +253,7 @@ function! ReplaceAndGoToNext()
   :cnext
 endfunction
 nnoremap <silent> <A-0> :call ReplaceAndGoToNext()<CR>
+nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 " if !exists('g:escape_mapped')  " Only need to set the mapping up once.
 "   augroup escape_mapping
