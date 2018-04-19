@@ -33,7 +33,15 @@ configure it to the _Solaris Light_ theme
 
 #### natural scrolling
 
-follow [arch linux instructions](https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Natural_scrolling)
+```
+sudo vim /usr/share/X11/xorg.conf.d/40-libinput.conf
+```
+
+add to the `touchpad` section:
+
+```
+Option  "NaturalScrolling" "True"
+```
 
 #### clone the config repo
 
