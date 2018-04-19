@@ -30,6 +30,11 @@ Then load Windows via grub.
 
 configure it to the _Solaris Light_ theme
 
+
+#### natural scrolling
+
+follow [arch linux instructions](https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Natural_scrolling)
+
 #### clone the config repo
 
     mv ~/.config ~/.config_old
