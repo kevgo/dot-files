@@ -118,21 +118,6 @@ log out and in again to see the change
 
 ## AUR packages
 
-#### Set up Yaourt
-
-    sudo vim /etc/pacman.conf
-
-add to the bottom of this file:
-
-    [archlinuxfr]
-    SigLevel = Never
-    Server = http://repo.archlinux.fr/$arch
-
-install Yaourt from the new package database:
-
-    sudo pacman -Sy yaourt
-
-
 
 #### Slack
   
