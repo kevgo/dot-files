@@ -59,6 +59,7 @@ Go through everything and fix notices and warnings.
 
     sudo pacman -S fish
     chsh -s /usr/bin/fish
+    fish   # fix errors
 
 log out and in again to see the change
 
