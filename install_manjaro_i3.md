@@ -34,12 +34,15 @@ configure it to the _Solaris Light_ theme
 
     mv ~/.config ~/.config_old
     git clone git@github.com:kevgo/dot-files.git ~/.config
-    mv ~/.config_old
+    mv ~/.config_old/*.* ~/.config
+    mv ~/.config_old/* ~/.config
+    
+Review the changes and commit any updates made by the Manjaro team.
 
 #### change desktop background
 
     nitrogen
-      
+
 #### change GTK theme
 
     gtk-chtheme
