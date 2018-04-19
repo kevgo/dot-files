@@ -1,10 +1,35 @@
 # Manjaro i3 installation instructions
 
+#### configure HiDPI screen settings
+
+- edit `~/.Xresources` to contain:
+
+  ```
+  Xft.dpi: 220
+  ```
+- reboot
+
+
+#### fix UEFI boot order if it keeps loading Windows
+
+- `mv /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi` to `/boot/efi/EFI/Microsoft/bootmgfw.efi`
+- copy the efi file you want to boot by default to the Microsoft location, e.g.:
+  `cp /boot/efi/EFI/Manjaro/grubx64.efi /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`
+- edit the Microsoft part of `/boot/grub/grub.cfg` to load the backed up file, e.g.:
+  `chainloader /EFI/Microsoft/bootmgfw.efi`
+
+
 #### lxterminal
 
     sudo pacman -S lxterminal
 
 configure it to the _Solaris Light_ theme
+
+#### clone the config repo
+
+    mv ~/.config ~/.config_old
+    git clone git@github.com:kevgo/dot-files.git ~/.config
+    mv ~/.config_old
 
 #### change desktop background
 
