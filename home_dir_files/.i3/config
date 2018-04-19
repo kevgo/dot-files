@@ -42,7 +42,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec lxterminal
+bindsym $mod+Return exec termite
 
 # keyboard
 exec xset r rate 200 25
