@@ -146,6 +146,10 @@ function gacs
   git sync
 end
 
+function gc
+  git town continue
+end
+
 
 # Git Town
 abbr -a gtc git town config
