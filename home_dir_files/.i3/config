@@ -294,7 +294,7 @@ exec --no-startup-id xfce4-power-manager
 # exec --no-startup-id pamac-tray
 # exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
-exec --no-startup-id xinput set-prop 11 286 1  # set natural scrolling
+exec --no-startup-id xinput set-prop 12 291 1  # set natural scrolling
 exec --no-startup-id setxkbmap -option caps:escape -option altwin:swap_alt_win
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
