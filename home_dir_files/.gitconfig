@@ -49,13 +49,13 @@
   verbose = true
 [color "diff-highlight"]
   oldNormal = red
-  oldHighlight = red reverse
+  oldHighlight = red bold
   newNormal = green
-  newHighlight = green reverse
+  newHighlight = green bold
 [color "diff"]
   meta = blue
   frag = magenta bold
   commit = blue bold
-  old = red reverse
-  new = green reverse
+  old = red bold
+  new = green bold
   whitespace = red reverse
