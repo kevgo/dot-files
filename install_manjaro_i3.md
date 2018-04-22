@@ -24,12 +24,14 @@ Then load Windows via grub.
   `chainloader /EFI/Microsoft/bootmgfw.efi`
 
 
-#### lxterminal
+#### pacman colors
 
-    sudo pacman -S lxterminal
+uncomment the `Color` line in `/etc/pacman.conf`
 
-configure it to the _Solaris Light_ theme
+#### termine
 
+    sudo pacman -S termite
+    
 
 #### natural scrolling
 
