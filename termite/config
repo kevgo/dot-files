@@ -1,18 +1,18 @@
 [options]
-#allow_bold = true
-#audible_bell = false
-#clickable_url = true
+allow_bold = true
+audible_bell = false
+clickable_url = true
 #dynamic_title = true
 font = Monospace 9
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
 #mouse_autohide = false
-#scroll_on_output = false
+scroll_on_output = truec
 #scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
 # and setting it to a negative value means "infinite scrollback"
-scrollback_lines = 10000
+scrollback_lines = -1
 #search_wrap = true
 #urgent_on_bell = true
 #hyperlinks = false
@@ -21,7 +21,7 @@ scrollback_lines = 10000
 #browser = xdg-open
 
 # "system", "on" or "off"
-#cursor_blink = system
+#cursor_blink = off
 
 # "block", "underline" or "ibeam"
 #cursor_shape = block
@@ -39,38 +39,54 @@ scrollback_lines = 10000
 #scrollbar = off
 
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
+# Base16 Solarized Light
+# Author: Ethan Schoonover (http://ethanschoonover.com/solarized)
 
-#foreground = #dcdccc
-#foreground_bold = #ffffff
-#background = #3f3f3f
+foreground      = #586e75
+foreground_bold = #073642
+cursor          = #073642
+background      = #fdf6e3
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+# 16 color space
 
-# If unset, will reverse foreground and background
-highlight = #2f2f2f
+# Black, Gray, Silver, White
+color0  = #fdf6e3
+color8  = #839496
+color7  = #586e75
+color15 = #002b36
 
-# Colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
+# Red
+color1  = #dc322f
+color9  = #dc322f
+
+# Green
+color2  = #859900
+color10 = #859900
+
+# Yellow
+color3  = #b58900
+color11 = #b58900
+
+# Blue
+color4  = #268bd2
+color12 = #268bd2
+
+# Purple
+color5  = #6c71c4
+color13 = #6c71c4
+
+# Teal
+color6  = #2aa198
+color14 = #2aa198
+
+# Extra colors
+color16 = #cb4b16
+color17 = #d33682
+color18 = #eee8d5
+color19 = #93a1a1
+color20 = #657b83
+color21 = #073642
+
 
 [hints]
 #font = Monospace 12
