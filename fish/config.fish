@@ -85,8 +85,7 @@ end
 
 function fish_prompt --description 'Write out the prompt'
   echo
-  set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
-  set __blue_git_branch "["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
+
   set old_pwd (pwd)
   builtin cd $HOME/.config
   set dotfile_changes (git status --porcelain | wc -l | tr -d ' ')
@@ -94,6 +93,9 @@ function fish_prompt --description 'Write out the prompt'
   if [ "$dotfile_changes" != "0" ]
     echo (set_color BBBBBB)'(dotfile changes)'
   end
+
+  set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
+  set __blue_git_branch "["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
   echo $__green_prompt $__blue_git_branch '> '
 end
 
