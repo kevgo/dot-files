@@ -371,6 +371,10 @@ bar {
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
+bindsym $mod+shift+v gaps inner current minus 10
+bindsym $mod+v gaps inner current plus 10
+
+
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
   client.focused          #556064 #556064 #80FFF9 #FDF6E3
