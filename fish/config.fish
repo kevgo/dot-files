@@ -84,6 +84,8 @@ function fish_user_key_bindings
 end
 
 function fish_prompt --description 'Write out the prompt'
+  set -l last_status $status
+
   echo
 
   set old_pwd (pwd)
@@ -96,7 +98,13 @@ function fish_prompt --description 'Write out the prompt'
 
   set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
   set __blue_git_branch "["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
-  echo $__green_prompt $__blue_git_branch '> '
+  if [ $last_status -ne 0 ]
+    set __red_last_status " "(set_color -b red)(set_color white)(echo " $last_status ")(set_color normal)
+  else
+    set __red_last_status ""
+  end
+
+  echo $__green_prompt $__blue_git_branch$__red_last_status '> '
 end
 
 
