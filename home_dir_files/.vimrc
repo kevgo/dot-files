@@ -13,6 +13,8 @@ let s:uname = system("uname")
         set pythondll=/usr/local/Frameworks/Python.framework/Versions/2.7/Python
         set pythonhome=/usr/local/Frameworks/Python.framework/Versions/2.7
     endif
+  else
+    set clipboard=unnamedplus         " yank and paste with the system clipboard
   endif
 
 
@@ -85,7 +87,6 @@ set autowrite
 set nobackup                      " don't create backup files
 set nowritebackup                 " don't create backup files
 set noswapfile                    " don't create .swp files
-set clipboard=unnamedplus         " yank and paste with the system clipboard
 set ignorecase smartcase          " ignore case in searched
 " set nocompatible                  " disable VI compatibility mode
 set noautoindent
