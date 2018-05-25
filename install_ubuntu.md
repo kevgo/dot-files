@@ -1,5 +1,11 @@
 # Installation on Linux
 
+- install hardware drivers
+
+      sudo apt-get install lm-sensors fancontrol
+      sudo sensors-detect
+      sudo apt install acpi tlp
+
 - install dependencies
 
       sudo apt-get install silversearcher-ag
