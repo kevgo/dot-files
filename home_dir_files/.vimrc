@@ -42,11 +42,12 @@ nnoremap \\ :cclose<CR>
 " NOTE: cannot use standard as a linter here
 "       because it cannot handle Flow files correctly
 let g:ale_linters = {
-\   'javascript': ['flow', 'standard']
+\   'javascript': ['flow', 'standard'],
+\   'cucumber': []
 \}
 let g:ale_fixers = {
 \   'javascript': ['prettier_standard'],
-\   'markdown': [],
+\   'markdown': []
 \}
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_use_local_config = 1
