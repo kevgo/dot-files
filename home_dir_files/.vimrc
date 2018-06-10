@@ -203,7 +203,7 @@ set listchars=tab:»\ ,eol:¬,trail:⍽
 
 " Javascript
 augroup vimrc
-  autocmd FileType javascript nmap <C-\> :call FlowJumpToDef()<CR>
+  autocmd FileType javascript nnoremap <C-\> :FlowJumpToDef<CR>
 augroup END
 
 
