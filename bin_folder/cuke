@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# runs "make cuke with the right args
+
+if [ "$#" -eq 0 ]; then
+  make cuke
+else
+  make cuke FILE="$1"
+fi
