@@ -3,6 +3,7 @@
 - [installation instructions for macOS](install_macos.md)
 - [installation instructions for Ubuntu](install_ubuntu.md)
 - [installation instructions for Manjaro i3](install_manjaro_i3.md)
+- [installation instructions for Windows](install_windows.md)
 
 [i3 cheatsheet](i3_cheatsheet.md)
 
