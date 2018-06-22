@@ -2,7 +2,7 @@
 
 1. [Git](https://git-scm.com/download/win)
 1. [Node](https://nodejs.org/en)
-  - Yarn: `npm i -g yarn`
+    - Yarn: `npm i -g yarn`
 
 
 
