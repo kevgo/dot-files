@@ -3,7 +3,8 @@
 1. [Git](https://git-scm.com/download/win)
 1. [Node](https://nodejs.org/en)
     - Yarn: `npm i -g yarn`
-
+1. [MinGW](https://sourceforge.net/projects/mingw/files)
+    - add to path
 
 
 ## Optional
