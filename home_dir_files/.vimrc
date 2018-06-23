@@ -356,6 +356,12 @@ nnoremap <leader>7 :call TertestrialSet(7)<cr>
 nnoremap <leader>8 :call TertestrialSet(8)<cr>
 nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
+" TypeScript
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
+
 " UltiSnips
 let g:UltiSnipsSnippetsDir='~/.config/ultisnips'
 let g:UltiSnipsExpandTrigger='<C-h>'
@@ -415,6 +421,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-sleuth'
 " Plug 'nathanaelkane/vim-indent-guides' is too slow when scrolling
 Plug 'flowtype/vim-flow'
+Plug 'HerringtonDarkholme/yats'
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
