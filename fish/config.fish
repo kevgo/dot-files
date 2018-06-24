@@ -118,7 +118,7 @@ abbr -a gpf git push --force
 abbr -a gpr git new-pull-request
 abbr -a gs git sync
 abbr -a gsa git sync --abort
-abbr -a gsc git sync --continue
+abbr -a gtc git town continue
 abbr -a st git status
 
 function cs
