@@ -26,3 +26,12 @@
 
 1. [Bash for Windows](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 1. [Fish shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
+
+
+## Visual Studio Code
+
+### Sidebar
+
+- **show explorer:** `ctrl-d`
+- **hide sidebar:** `ctrl-b`
+- **open file:** `enter`
