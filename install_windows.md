@@ -5,6 +5,8 @@
     - Yarn: `npm i -g yarn`
 1. [MinGW](https://sourceforge.net/projects/mingw/files)
     - add to path
+1. [Go](https://golang.org/dl)
+    - `mkdir go/src/github.com/Originate`
 1. bin folder
     - **br.cmd:** `@git branch %*`
     - **co.cmd:** `@git checkout %*`
