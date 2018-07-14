@@ -32,6 +32,6 @@
 
 ### Sidebar
 
-- **show explorer:** `ctrl-d`
-- **hide sidebar:** `ctrl-b`
+- **show/hide sidebar:** `ctrl-b`
 - **open file:** `enter`
+- **show explorer:** `ctrl-d`
