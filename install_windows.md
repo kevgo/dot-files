@@ -5,6 +5,12 @@
     - Yarn: `npm i -g yarn`
 1. [MinGW](https://sourceforge.net/projects/mingw/files)
     - add to path
+1. bin folder
+    - **br.cmd:** `@git branch %*`
+    - **co.cmd:** `@git checkout %*`
+    - **d.cmd:** `@cd c:\Users\kevin\d`
+    - **gdm.cmd:** `@git diff master`
+    - **st.cmd:** `@git status`
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
 
