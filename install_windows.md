@@ -13,6 +13,7 @@
     - **st.cmd:** `@git status`
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
+1. [Visual Studio Code](https://code.visualstudio.com)
 
 
 ## Optional
