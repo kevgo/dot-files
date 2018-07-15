@@ -20,6 +20,8 @@
     - ESLint extension
     - Flow Language Support
     - Go extension
+1. Map Caps Lock to Esc
+    - [SharpKeys](https://github.com/randyrants/sharpkeys)
 
 
 ## Optional
