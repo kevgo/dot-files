@@ -22,6 +22,8 @@
     - Go extension
 1. Map Caps Lock to Esc
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
+1. Disable Windows Defender
+    - https://www.tenforums.com/tutorials/5918-turn-off-windows-defender-windows-10-a.html
 
 
 ## Optional
