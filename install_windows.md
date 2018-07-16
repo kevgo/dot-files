@@ -108,6 +108,10 @@
         "key": "O",
         "command": "list.select",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
     }
 ]
 ```
