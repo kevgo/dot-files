@@ -34,6 +34,14 @@
 
 ## Visual Studio Code
 
+### Editor Windows
+
+- switch to next/prev editor window in current group: `ctrl+PageUp/Down`
+- switch to next editor group: `ctrl+tab`
+- move editor left/right in current group: `ctrl+shift+PageUp/Down`
+- move editor to left/right editor group: `ctrl+alt+left/right`
+
+
 ### Sidebar
 
 - **show/hide sidebar:** `ctrl-b`
