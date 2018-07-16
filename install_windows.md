@@ -86,10 +86,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
-        "key": "ctrl+d",
-        "command": "workbench.files.action.focusFilesExplorer"
-    },
-    {
         "key": "ctrl+b",
         "command": "-extension.vim_ctrl+b",
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
@@ -103,6 +99,11 @@
         "key": "S",
         "command": "extension.vim_right",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "O",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
     }
 ]
 ```
