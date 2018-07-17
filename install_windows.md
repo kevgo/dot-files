@@ -48,6 +48,12 @@
 - **open file:** `enter`
 - **show explorer:** `ctrl-d`
 
+
+### Terminal
+
+- show/hide terminal: ```ctrl+` ```
+
+
 ### User settings
 
 ```json
