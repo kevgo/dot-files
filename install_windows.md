@@ -103,7 +103,7 @@
     "npm.packageManager": "yarn",
     "npm-intellisense.scanDevDependencies": true,
     "vim.leader": " ",
-    "vim.statusBarColorControl": true
+    "vim.statusBarColorControl": false,
 }
 ```
 
