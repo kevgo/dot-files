@@ -12,6 +12,7 @@
     - **cd~.cmd:** `@cd %HOMEPATH%`
     - **co.cmd:** `@git checkout %*`
     - **d.cmd:** `@cd c:\Users\kevin\d`
+    - **gd.cmd:** `@git diff`
     - **gdm.cmd:** `@git diff master`
     - **st.cmd:** `@git status`
     - **gac.cmd:** 
