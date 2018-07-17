@@ -36,7 +36,8 @@
 
 ### Editor Windows
 
-- switch to next/prev editor window in current group: `ctrl+PageUp/Down`
+- switch to next editor window in current group: `ctrl+tab`
+- switch to prev editor window in current group: `ctrl+shift+tab`
 - switch to next editor group: `ctrl+tab`
 - move editor left/right in current group: `ctrl+shift+PageUp/Down`
 - move editor to left/right editor group: `ctrl+alt+left/right`
@@ -128,8 +129,12 @@
         "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "ctrl+tab",
+        "key": "ctrl+PageUp",
         "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+PageDown",
+        "command": "workbench.action.focusPreviousGroup"
     },
     {
         "key": "ctrl+shift+s",
@@ -138,6 +143,22 @@
     {
         "key": "ctrl+k s",
         "command": "-workbench.action.files.saveAll"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
     }
 ]
 ```
