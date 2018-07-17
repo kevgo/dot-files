@@ -11,17 +11,17 @@
     ```
     mkdir bin
     cd bin
-    echo "@git branch %*" > br.cmd
-    echo "@cd %HOMEPATH%" > "cd~.cmd"
-    echo "@git checkout %*" > co.cmd
-    echo "@cd c:\Users\kevin\d" > d.cmd
-    echo "@git diff" > gd.cmd
-    echo "@git diff master" > gdm.cmd
-    echo "@git status" > st.cmd
-    echo "@git add -A" > gac.cmd
-    echo "@git commit -m "%*" >> gac.cmd
-    echo "@git new-pull-request" > gpr.cmd
-    echo "@git sync" > gs.cmd
+    echo @git branch %* > br.cmd
+    echo @cd %HOMEPATH% > "cd~.cmd"
+    echo @git checkout %* > co.cmd
+    echo @cd c:\Users\kevin\d > d.cmd
+    echo @git diff > gd.cmd
+    echo @git diff master > gdm.cmd
+    echo @git status > st.cmd
+    echo @git add -A > gac.cmd
+    echo @git commit -m "%* >> gac.cmd
+    echo git new-pull-request > gpr.cmd
+    echo @git sync > gs.cmd
     cd ..
     ```
       
