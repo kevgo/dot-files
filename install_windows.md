@@ -20,6 +20,7 @@
     echo "@git status" > st.cmd
     echo "@git add -A" > gac.cmd
     echo "@git commit -m "%*" >> gac.cmd
+    echo "@git new-pull-request" > gpr.cmd
     cd ..
     ```
       
