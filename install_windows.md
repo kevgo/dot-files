@@ -9,6 +9,7 @@
     - `mkdir go/src/github.com/Originate`
 1. bin folder
     - **br.cmd:** `@git branch %*`
+    - **cd~.cmd:** `@cd %HOMEPATH%`
     - **co.cmd:** `@git checkout %*`
     - **d.cmd:** `@cd c:\Users\kevin\d`
     - **gdm.cmd:** `@git diff master`
