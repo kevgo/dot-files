@@ -8,18 +8,20 @@
 1. [Go](https://golang.org/dl)
     - `mkdir go/src/github.com/Originate`
 1. bin folder
-    - **br.cmd:** `@git branch %*`
-    - **cd~.cmd:** `@cd %HOMEPATH%`
-    - **co.cmd:** `@git checkout %*`
-    - **d.cmd:** `@cd c:\Users\kevin\d`
-    - **gd.cmd:** `@git diff`
-    - **gdm.cmd:** `@git diff master`
-    - **st.cmd:** `@git status`
-    - **gac.cmd:** 
-      ```
-      @git add -A
-      @git commit -m "%*"
-      ```
+    ```
+    mkdir bin
+    cd bin
+    echo "@git branch %*" > br.cmd
+    echo "@cd %HOMEPATH%" > "cd~.cmd"
+    echo "@git checkout %*" > co.cmd
+    echo "@cd c:\Users\kevin\d" > d.cmd
+    echo "@git diff" > gd.cmd
+    echo "@git diff master" > gdm.cmd
+    echo "@git status" > st.cmd
+    echo "@git add -A" > gac.cmd
+    echo "@git commit -m "%*" >> gac.cmd
+    cd ..
+    ```
       
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
