@@ -22,6 +22,9 @@
     echo @git commit -m "%* >> gac.cmd
     echo git new-pull-request > gpr.cmd
     echo @git sync > gs.cmd
+    echo @git add -A > gacp.cmd
+    echo @git commit -m "%* >> gacp.cmd
+    echo @git push >> gacp.cmd
     cd ..
     ```
       
