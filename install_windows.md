@@ -24,6 +24,7 @@
     echo @git diff master > gdm.cmd
     echo git new-pull-request > gpr.cmd
     echo @git sync > gs.cmd
+    echo @ls -1 > l.cmd
     echo @git status > st.cmd
     cd ..
     ```
