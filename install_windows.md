@@ -13,6 +13,12 @@
     - **d.cmd:** `@cd c:\Users\kevin\d`
     - **gdm.cmd:** `@git diff master`
     - **st.cmd:** `@git status`
+    - **gac.cmd:** 
+      ```
+      @git add -A
+      @git commit -m "%*"
+      ```
+      
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
 1. [Visual Studio Code](https://code.visualstudio.com)
