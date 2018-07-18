@@ -32,6 +32,7 @@
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
 1. [Visual Studio Code](https://code.visualstudio.com)
+    - Vim extension
     - Cucumber extension
     - ESLint extension
     - Flow Language Support
