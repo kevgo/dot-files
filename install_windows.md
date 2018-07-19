@@ -131,11 +131,11 @@
         "command": "extension.vim_right",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
     },
-    {
-        "key": "S",
-        "command": "extension.vim_right",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-    },
+    // {
+    //     "key": "S",
+    //     "command": "extension.vim_right",
+    //     "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+    // },
     {
         "key": "O",
         "command": "list.select",
@@ -176,6 +176,14 @@
     {
         "key": "ctrl+pagedown",
         "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+;",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "shift+cmd+p",
+        "command": "-workbench.action.showCommands"
     }
 ]
 ```
