@@ -22,7 +22,7 @@
     echo @git push >> gacp.cmd
     echo @git diff > gd.cmd
     echo @git diff master > gdm.cmd
-    echo git new-pull-request > gpr.cmd
+    echo @git new-pull-request > gpr.cmd
     echo @git sync > gs.cmd
     echo @ls -1 > l.cmd
     echo @git status > st.cmd
