@@ -31,12 +31,6 @@
       
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
-1. [Visual Studio Code](https://code.visualstudio.com)
-    - Vim extension
-    - Cucumber extension
-    - ESLint extension
-    - Flow Language Support
-    - Go extension
 1. Map Caps Lock to Esc
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
 1. Disable Windows Defender
@@ -50,6 +44,15 @@
 
 
 ## Visual Studio Code
+
+- TypeScript support
+- Vim extension
+- Cucumber extension
+- ESLint extension
+- TSLint extension
+- Flow Language Support
+- Go extension
+
 
 ### Editor Windows
 
