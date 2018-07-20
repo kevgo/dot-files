@@ -182,11 +182,20 @@
     },
     {
         "key": "shift+;",
-        "command": "workbench.action.showCommands"
+        "command": "workbench.action.showCommands",
+        "when": "vim.active && vim.mode == 'Normal'"
     },
     {
         "key": "shift+cmd+p",
         "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+alt+]",
+        "command": "workbench.action.nextEditor"
     }
 ]
 ```
