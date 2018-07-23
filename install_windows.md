@@ -63,6 +63,18 @@
 - move editor to left/right editor group: `ctrl+alt+left/right`
 
 
+#### Editing
+
+- quick fix: `cmd+.`
+- see problems: `cmd+shift+M`
+
+
+#### Git
+
+- open Git window: `ctrl+shift+G`
+- stage file: in the Git window, navigate to the file, hit `o` to open (select) it, then `s` to stage
+
+
 ### Sidebar
 
 - **show/hide sidebar:** `ctrl-b`
