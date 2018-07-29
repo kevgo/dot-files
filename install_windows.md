@@ -26,6 +26,7 @@
     echo @git sync > gs.cmd
     echo @ls -1 > l.cmd
     echo @git status > st.cmd
+    echo @cd go\src\github.com\Originate\git-town > gt.cmd
     cd ..
     ```
       
