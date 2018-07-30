@@ -23,10 +23,11 @@
     echo @git diff > gd.cmd
     echo @git diff master > gdm.cmd
     echo @git new-pull-request > gpr.cmd
+    echo @git push > gp.cmd
     echo @git sync > gs.cmd
+    echo @cd go\src\github.com\Originate\git-town > gt.cmd
     echo @ls -1 > l.cmd
     echo @git status > st.cmd
-    echo @cd go\src\github.com\Originate\git-town > gt.cmd
     cd ..
     ```
       
