@@ -49,8 +49,8 @@
 
 ### Config Files
 
-- [/windows/user-settings.json](user settings)
-
+- [user settings](/windows/user-settings.json)
+- [foo](bar)
 
 ### Install Extensions
 
