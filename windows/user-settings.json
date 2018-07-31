@@ -34,6 +34,7 @@
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-b>": false,
+        "<C-c>": false,
         "<C-t>": false
     },
     "vim.hlsearch": true,
