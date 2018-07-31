@@ -32,8 +32,9 @@
     "npm-intellisense.scanDevDependencies": true,
     "vim.debug.loggingLevel": "debug",
     "vim.handleKeys": {
-        "<C-t>": false,
-        "<C-b>": false
+        "<C-a>": false,
+        "<C-b>": false,
+        "<C-t>": false
     },
     "vim.hlsearch": true,
     "vim.leader": "<space>",
