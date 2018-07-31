@@ -19,7 +19,7 @@
     "workbench.quickOpen.closeOnFocusLost": false,
     "window.autoDetectHighContrast": false,
     "window.enableMenuBarMnemonics": false,
-    "window.title": "${activeEditorShort}${separator}${rootName}",
+    "window.title": "${rootName}${separator}${activeEditorMedium}",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "search.smartCase": true,
