@@ -47,6 +47,13 @@
 
 ## Visual Studio Code
 
+### Config Files
+
+- [/windows/user-settings.json](user settings)
+
+
+### Install Extensions
+
 - TypeScript support
 - Vim extension
 - Cucumber extension
@@ -54,6 +61,7 @@
 - TSLint extension
 - Flow Language Support
 - Go extension
+
 
 
 ### Editor Windows
