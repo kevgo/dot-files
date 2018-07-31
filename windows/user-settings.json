@@ -31,9 +31,17 @@
     "npm.packageManager": "yarn",
     "npm-intellisense.scanDevDependencies": true,
     "vim.debug.loggingLevel": "debug",
+    "vim.handleKeys": {
+        "<C-t>": false,
+        "<C-b>": false
+    },
     "vim.hlsearch": true,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["s"],
+            "after": ["l"]
+        },
         {
             "before": [":"],
             "commands": [
