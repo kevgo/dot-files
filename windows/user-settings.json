@@ -30,6 +30,27 @@
     "standard.usePackageJson": true,
     "npm.packageManager": "yarn",
     "npm-intellisense.scanDevDependencies": true,
-    "vim.leader": " ",
+    "vim.debug.loggingLevel": "debug",
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        {
+            "before": ["leader", "/"],
+            "commands": [
+                ":nohl",
+            ]
+        },
+        {
+            "before": ["<enter>"],
+            "after": ["o", "<esc>", "k"]
+        }
+    ],
     "vim.statusBarColorControl": false,
+    "window.zoomLevel": 0,
 }
