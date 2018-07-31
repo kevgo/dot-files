@@ -43,6 +43,10 @@
             "after": ["l"]
         },
         {
+            "before": ["l"],
+            "after": ["s"]
+        },
+        {
             "before": [":"],
             "commands": [
                 "workbench.action.showCommands",
