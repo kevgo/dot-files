@@ -90,46 +90,6 @@
 - show/hide terminal: ```ctrl+` ```
 
 
-### User settings
-
-```json
-{
-    "git.ignoreMissingGitWarning": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "editor.minimap.enabled": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.tabSize": 2,
-    "editor.formatOnType": true,
-    "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "editor.accessibilitySupport": "off",
-    "editor.colorDecorators": false,
-    "editor.dragAndDrop": false,
-    "editor.emptySelectionClipboard": false,
-    "editor.tabCompletion": true,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.editor.revealIfOpen": true,
-    "workbench.quickOpen.closeOnFocusLost": false,
-    "window.autoDetectHighContrast": false,
-    "window.enableMenuBarMnemonics": false,
-    "window.title": "${activeEditorShort}${separator}${rootName}",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "search.smartCase": true,
-    "flow.useNPMPackagedFlow": true,
-    "git.promptToSaveFilesBeforeCommit": true,
-    "standard.autoFixOnSave": true,
-    "standard.run": "onSave",
-    "standard.usePackageJson": true,
-    "npm.packageManager": "yarn",
-    "npm-intellisense.scanDevDependencies": true,
-    "vim.leader": " ",
-    "vim.statusBarColorControl": false,
-}
-```
-
 ### keybindings.json
 
 ```json
