@@ -63,6 +63,7 @@
 - switch to next editor group: `ctrl+tab`
 - move editor left/right in current group: `ctrl+shift+PageUp/Down`
 - move editor to left/right editor group: `ctrl+alt+left/right`
+- go to definition: `gd`
 
 
 #### Editing
