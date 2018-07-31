@@ -49,5 +49,15 @@
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+oem_6",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult"
+    },
+    {
+        "key": "ctrl+oem_4",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult"
     }
 ]
