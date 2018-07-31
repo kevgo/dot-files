@@ -63,14 +63,18 @@
 - Go extension
 
 
+### Hotkeys
 
-### Editor Windows
+#### Navigation
 
 - switch to next editor window in current group: `ctrl+tab`
 - switch to prev editor window in current group: `ctrl+shift+tab`
 - switch to next editor group: `ctrl+tab`
 - move editor left/right in current group: `ctrl+shift+PageUp/Down`
 - move editor to left/right editor group: `ctrl+alt+left/right`
+- **show/hide sidebar:** `ctrl-b`
+- **open file:** `enter`
+- **show explorer:** `ctrl-d`
 - go to definition: `gd`
 
 
@@ -86,13 +90,6 @@
 - stage file: in the Git window, navigate to the file, hit `o` to open (select) it, then `s` to stage
 
 
-### Sidebar
-
-- **show/hide sidebar:** `ctrl-b`
-- **open file:** `enter`
-- **show explorer:** `ctrl-d`
-
-
-### Terminal
+#### Terminal
 
 - show/hide terminal: ```ctrl+` ```
