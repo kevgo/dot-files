@@ -61,6 +61,10 @@
         {
             "before": ["<enter>"],
             "after": ["o", "<esc>", "k"]
+        },
+        {
+            "before": ["<leader>", "<leader>"],
+            "after": ["i", "<space>", "<esc>"]
         }
     ],
     "vim.statusBarColorControl": false,
