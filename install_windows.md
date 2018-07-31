@@ -82,6 +82,7 @@
 
 - quick fix: `cmd+.`
 - see problems: `cmd+shift+M`
+- see mouse hover information: `gh`
 
 
 #### Git
