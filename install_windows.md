@@ -20,6 +20,7 @@
     echo @git add -A > gacp.cmd
     echo @git commit -m "%*" >> gacp.cmd
     echo @git push >> gacp.cmd
+    echo @git town continue > gc.cmd
     echo @git diff > gd.cmd
     echo @git diff master > gdm.cmd
     echo @git new-pull-request > gpr.cmd
