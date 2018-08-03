@@ -91,11 +91,8 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "ctrl+n",
-        "command": "explorer.newFile"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "listFocus && !inputFocus"
     }
 ]
