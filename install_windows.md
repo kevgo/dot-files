@@ -38,7 +38,7 @@
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
 1. Disable Windows Defender
     - https://www.tenforums.com/tutorials/5918-turn-off-windows-defender-windows-10-a.html
-
+1. Disable Windows virtual memory
 
 ## Optional
 
