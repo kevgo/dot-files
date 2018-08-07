@@ -1,10 +1,15 @@
 {
     "git.ignoreMissingGitWarning": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "editor.minimap.enabled": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false,
     "editor.tabSize": 2,
     "editor.formatOnType": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
     "files.hotExit": "off",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -40,32 +45,58 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["s"],
-            "after": ["l"]
+            "before": [
+                "s"
+            ],
+            "after": [
+                "l"
+            ]
         },
         {
-            "before": ["l"],
-            "after": ["s"]
+            "before": [
+                "l"
+            ],
+            "after": [
+                "s"
+            ]
         },
         {
-            "before": [":"],
+            "before": [
+                ":"
+            ],
             "commands": [
                 "workbench.action.showCommands",
             ]
         },
         {
-            "before": ["leader", "/"],
+            "before": [
+                "leader",
+                "/"
+            ],
             "commands": [
                 ":nohl",
             ]
         },
         {
-            "before": ["<enter>"],
-            "after": ["o", "<esc>", "k"]
+            "before": [
+                "<enter>"
+            ],
+            "after": [
+                "o",
+                "<esc>",
+                "k"
+            ]
         },
         {
-            "before": ["<leader>", "<leader>"],
-            "after": ["i", "<space>", "<esc>"]
+            "before": [
+                "<leader>",
+                "<leader>"
+            ],
+            "after": [
+                "i",
+                "<space>",
+                "<esc>"
+            ]
         }
     ],
     "vim.statusBarColorControl": false,
