@@ -78,7 +78,7 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "space",
+        "key": "enter",
         "command": "acceptSelectedSuggestion",
         "when": "suggestWidgetVisible && textInputFocus"
     },
