@@ -53,16 +53,6 @@
         "when": "hasSearchResult"
     },
     {
-        "key": "ctrl+enter",
-        "command": "acceptSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "tab",
-        "command": "-acceptSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
         "key": "tab",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -86,5 +76,15 @@
         "key": "n",
         "command": "explorer.newFile",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "space",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "-acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
     }
 ]
