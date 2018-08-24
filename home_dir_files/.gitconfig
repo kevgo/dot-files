@@ -35,7 +35,7 @@
 	required = true
 [git-town]
   hack-push-flag = true
-  offline = false
+	offline = false
 [color]
   branch = auto
   diff = auto
