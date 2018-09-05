@@ -53,6 +53,8 @@
 - [user settings](/windows/user-settings.json)
 - [keybindings.json](/windows/keybindings.json)
 
+Use http://novicelab.org/jsonabc to sort JSON alphabetically.
+
 ### Install Extensions
 
 - TypeScript support
