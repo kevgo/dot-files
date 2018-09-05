@@ -1,39 +1,43 @@
 {
-    "git.ignoreMissingGitWarning": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-    "editor.formatOnType": true,
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": true,
-        "strings": true
-    },
-    "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderIndicators": false,
     "editor.accessibilitySupport": "off",
     "editor.colorDecorators": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.editor.revealIfOpen": true,
-    "workbench.quickOpen.closeOnFocusLost": false,
-    "window.autoDetectHighContrast": false,
-    "window.enableMenuBarMnemonics": false,
-    "window.title": "${rootName}${separator}${activeEditorMedium}",
+    "editor.folding": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.highlightActiveIndentGuide": false,
+    "editor.hover.sticky": false,
+    "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestions": {
+        "comments": true,
+        "other": true,
+        "strings": true
+    },
+    "editor.renderControlCharacters": true,
+    "editor.roundedSelection": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.tabSize": 2,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "search.smartCase": true,
+    "files.hotExit": "off",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
     "flow.useNPMPackagedFlow": true,
+    "git.ignoreMissingGitWarning": true,
     "git.promptToSaveFilesBeforeCommit": true,
+    "npm-intellisense.scanDevDependencies": true,
+    "npm.packageManager": "yarn",
+    "search.smartCase": true,
     "standard.autoFixOnSave": true,
     "standard.run": "onSave",
     "standard.usePackageJson": true,
-    "npm.packageManager": "yarn",
-    "npm-intellisense.scanDevDependencies": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "vim.debug.loggingLevel": "debug",
     "vim.handleKeys": {
         "<C-a>": false,
@@ -45,19 +49,49 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
+            "after": [
+                "<esc>",
+                "<space>",
+                "i"
+            ],
+            "before": [
+                "<leader>",
+                "<leader>"
+            ]
+        },
+        {
+            "after": [
+                "<esc>",
+                "k",
+                "o"
+            ],
+            "before": [
+                "<enter>"
+            ]
+        },
+        {
+            "after": [
+                "l"
+            ],
             "before": [
                 "s"
-            ],
+            ]
+        },
+        {
             "after": [
+                "s"
+            ],
+            "before": [
                 "l"
             ]
         },
         {
             "before": [
-                "l"
+                "/",
+                "leader"
             ],
-            "after": [
-                "s"
+            "commands": [
+                ":nohl"
             ]
         },
         {
@@ -65,52 +99,18 @@
                 ":"
             ],
             "commands": [
-                "workbench.action.showCommands",
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "/"
-            ],
-            "commands": [
-                ":nohl",
-            ]
-        },
-        {
-            "before": [
-                "<enter>"
-            ],
-            "after": [
-                "o",
-                "<esc>",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "<leader>"
-            ],
-            "after": [
-                "i",
-                "<space>",
-                "<esc>"
+                "workbench.action.showCommands"
             ]
         }
     ],
     "vim.statusBarColorControl": false,
+    "window.autoDetectHighContrast": false,
+    "window.enableMenuBarMnemonics": false,
+    "window.title": "${rootName}${separator}${activeEditorMedium}",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
-    "editor.renderControlCharacters": true,
     "workbench.colorTheme": "Default Light+",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "diffEditor.renderIndicators": false,
-    "editor.folding": false,
-    "editor.highlightActiveIndentGuide": false,
-    "editor.hover.sticky": false,
-    "editor.largeFileOptimizations": false,
-    "editor.roundedSelection": false,
-    "editor.scrollBeyondLastLine": false,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.statusBar.feedback.visible": false
 }
