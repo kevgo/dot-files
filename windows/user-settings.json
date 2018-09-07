@@ -51,20 +51,12 @@
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "after": ["<esc>", "<space>", "i"],
+      "after": ["i", "<space>", "<esc>"],
       "before": ["<leader>", "<leader>"]
     },
     {
-      "after": ["<esc>", "k", "o"],
+      "after": ["o", "<esc>", "k"],
       "before": ["<enter>"]
-    },
-    {
-      "after": ["g", "j"],
-      "before": ["j"]
-    },
-    {
-      "after": ["g", "k"],
-      "before": ["k"]
     },
     {
       "after": ["l"],
@@ -75,12 +67,20 @@
       "before": ["l"]
     },
     {
-      "before": ["/", "leader"],
+      "before": ["<leader>", "/"],
       "commands": [":nohl"]
     },
     {
       "before": [":"],
       "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "after": ["g", "j"],
+      "before": ["j"]
+    },
+    {
+      "after": ["g", "k"],
+      "before": ["k"]
     }
   ],
   "vim.statusBarColorControl": false,
