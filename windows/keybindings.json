@@ -1,90 +1,90 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "ctrl+d",
-        "command": "workbench.files.action.focusFilesExplorer"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-extension.vim_ctrl+b",
-        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
-    },
-    {
-        "key": "O",
-        "command": "list.select",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+L",
-        "command": "workbench.action.focusNextGroup"
-    },
-    {
-        "key": "ctrl+G",
-        "command": "workbench.action.focusPreviousGroup"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "workbench.action.files.saveAll"
-    },
-    {
-        "key": "ctrl+k s",
-        "command": "-workbench.action.files.saveAll"
-    },
-    {
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditorInGroup"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditorInGroup"
-    },
-    {
-        "key": "ctrl+oem_6",
-        "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult"
-    },
-    {
-        "key": "ctrl+oem_4",
-        "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult"
-    },
-    {
-        "key": "tab",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "down",
-        "command": "-selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "shift+tab",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "up",
-        "command": "-selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "n",
-        "command": "explorer.newFile",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "enter",
-        "command": "acceptSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "tab",
-        "command": "-acceptSelectedSuggestion",
-        "when": "suggestWidgetVisible && textInputFocus"
-    }
+  {
+    "command": "-acceptSelectedSuggestion",
+    "key": "tab",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "-extension.vim_ctrl+b",
+    "key": "ctrl+b",
+    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "command": "-selectNextSuggestion",
+    "key": "down",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "-selectPrevSuggestion",
+    "key": "up",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "-workbench.action.files.saveAll",
+    "key": "ctrl+k s"
+  },
+  {
+    "command": "acceptSelectedSuggestion",
+    "key": "ctrl+enter",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "n",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "command": "list.select",
+    "key": "O",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "command": "search.action.focusNextSearchResult",
+    "key": "ctrl+oem_6",
+    "when": "hasSearchResult"
+  },
+  {
+    "command": "search.action.focusPreviousSearchResult",
+    "key": "ctrl+oem_4",
+    "when": "hasSearchResult"
+  },
+  {
+    "command": "selectNextSuggestion",
+    "key": "tab",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "selectPrevSuggestion",
+    "key": "shift+tab",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "workbench.action.closeActiveEditor",
+    "key": "ctrl+w"
+  },
+  {
+    "command": "workbench.action.files.saveAll",
+    "key": "ctrl+shift+s"
+  },
+  {
+    "command": "workbench.action.focusNextGroup",
+    "key": "ctrl+L"
+  },
+  {
+    "command": "workbench.action.focusPreviousGroup",
+    "key": "ctrl+G"
+  },
+  {
+    "command": "workbench.action.nextEditorInGroup",
+    "key": "ctrl+tab"
+  },
+  {
+    "command": "workbench.action.previousEditorInGroup",
+    "key": "ctrl+shift+tab"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+d"
+  }
 ]
