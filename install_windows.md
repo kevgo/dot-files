@@ -39,6 +39,12 @@
 1. Disable Windows Defender
     - https://www.tenforums.com/tutorials/5918-turn-off-windows-defender-windows-10-a.html
 1. Disable Windows virtual memory
+1. diff-so-fancy
+
+    ```
+    npm i -g diff-so-fancy
+    git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+    ```
 
 ## Optional
 
