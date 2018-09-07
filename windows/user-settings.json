@@ -85,7 +85,6 @@
   ],
   "vim.statusBarColorControl": false,
   "window.autoDetectHighContrast": false,
-  "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "toggle",
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.zoomLevel": 0,
