@@ -53,7 +53,7 @@
 - [user settings](/windows/user-settings.json)
 - [keybindings.json](/windows/keybindings.json)
 
-Use http://novicelab.org/jsonabc to sort JSON alphabetically.
+To preserve alphabetic sorting and readability, sort the JSON using http://novicelab.org/jsonabc, then re-paste back into VSCode to get the VSCode formatting, then update Github with that payload.
 
 ### Install Extensions
 
