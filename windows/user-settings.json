@@ -73,6 +73,24 @@
         },
         {
             "after": [
+                "g",
+                "j"
+            ],
+            "before": [
+                "j"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "k"
+            ],
+            "before": [
+                "k"
+            ]
+        },
+        {
+            "after": [
                 "l"
             ],
             "before": [
