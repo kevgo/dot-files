@@ -91,7 +91,9 @@
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#ffffee"
+    "[Default Light+]": {
+      "editor.lineHighlightBackground": "#ffffee"
+    }
   },
   "workbench.colorTheme": "Default Light+",
   "workbench.editor.revealIfOpen": true,
