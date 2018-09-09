@@ -35,7 +35,6 @@
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "tslint.packageManager": "yarn",
   "tslint.run": "onSave",
-  "typescript.implementationsCodeLens.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.useCodeSnippetsOnMethodSuggest": true,
   "vim.debug.loggingLevel": "debug",
