@@ -1,4 +1,5 @@
 {
+  "breadcrumbs.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "editor.accessibilitySupport": "off",
@@ -15,6 +16,11 @@
   "editor.hover.sticky": false,
   "editor.largeFileOptimizations": false,
   "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": true,
+    "other": true,
+    "strings": true
+  },
   "editor.renderControlCharacters": true,
   "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
@@ -30,13 +36,13 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "npm-intellisense.scanDevDependencies": true,
   "npm.packageManager": "yarn",
+  "scm.diffDecorations": "none",
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "tslint.packageManager": "yarn",
   "tslint.run": "onSave",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.useCodeSnippetsOnMethodSuggest": true,
   "vim.debug.loggingLevel": "debug",
   "vim.handleKeys": {
     "<C-a>": false,
@@ -72,16 +78,17 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "after": ["g", "j"],
-      "before": ["j"]
+      "before": ["j"],
+      "after": ["g", "j"]
     },
     {
-      "after": ["g", "k"],
-      "before": ["k"]
+      "before": ["k"],
+      "after": ["g", "k"]
     }
   ],
   "vim.statusBarColorControl": false,
   "window.autoDetectHighContrast": false,
+  "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "toggle",
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.zoomLevel": 0,
