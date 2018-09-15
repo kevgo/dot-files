@@ -98,6 +98,12 @@
   pip3 install vim-vint
   ```
 
+- install [VSCode](https://code.visualstudio.com)
+  - [user settings](/windows/user-settings.json)
+  - [keybindings.json](/windows/keybindings.json)
+  - install command-line client
+    - `[cmd]-[shift]-P` > `shell command`
+
 - install Emacs key bindings for shell
 
   ```
