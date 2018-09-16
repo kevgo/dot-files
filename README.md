@@ -3,8 +3,8 @@
 ## Platforms
 
 - macOS [installation](install_macos.md)
-- ubuntu [installation](install_ubuntu.md)
 - Manjaro i3 [installation](install_manjaro_i3.md), [cheatsheet](i3_cheatsheet.md)
+- Ubuntu [installation](install_ubuntu.md)
 - Windows [installation](install_windows.md)
 
 
