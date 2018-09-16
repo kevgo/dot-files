@@ -45,60 +45,9 @@
     npm i -g diff-so-fancy
     git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
     ```
+1. [VSCode](vscode/README.md)
 
 ## Optional
 
 1. [Bash for Windows](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 1. [Fish shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
-
-
-## Visual Studio Code
-
-### Config Files
-
-- [user settings](/windows/user-settings.json)
-- [keybindings.json](/windows/keybindings.json)
-
-To preserve alphabetic sorting and readability, sort the JSON using http://novicelab.org/jsonabc, then re-paste back into VSCode to get the VSCode formatting, then update Github with that payload.
-
-### Install Extensions
-
-- TypeScript support
-- Vim extension
-- Cucumber 
-- TSLint 
-- Go extension
-- ScrollOff
-
-
-### Hotkeys
-
-#### Navigation
-
-- switch to next editor window in current group: `ctrl+tab`
-- switch to prev editor window in current group: `ctrl+shift+tab`
-- switch to next editor group: `ctrl+tab`
-- move editor left/right in current group: `ctrl+shift+PageUp/Down`
-- move editor to left/right editor group: `ctrl+alt+left/right`
-- **show/hide sidebar:** `ctrl-b`
-- **open file:** `enter`
-- **show explorer:** `ctrl-d`
-- go to definition: `gd`
-
-
-#### Editing
-
-- quick fix: `cmd+.`
-- see problems: `cmd+shift+M`
-- see mouse hover information: `gh`
-
-
-#### Git
-
-- open Git window: `ctrl+shift+G`
-- stage file: in the Git window, navigate to the file, hit `o` to open (select) it, then `s` to stage
-
-
-#### Terminal
-
-- show/hide terminal: ```ctrl+` ```
