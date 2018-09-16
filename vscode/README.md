@@ -10,11 +10,11 @@ but re-paste back into VSCode to get the VSCode formatting before updating Githu
 
 ### Extensions
 
-- TypeScript support
-- Vim extension
+- TypeScript
+- Vim
 - Cucumber 
 - TSLint 
-- Go extension
+- Go
 - ScrollOff
 
 
