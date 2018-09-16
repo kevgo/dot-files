@@ -21,7 +21,7 @@
 - [VSCode](vscode/README.md)
 
 
-## Files
+## Folder structure
 
 All files here belong into the `~/.config` folder, except these ones:
 - __bin_folder:__ this folder should be symlinked into `~/bin`
