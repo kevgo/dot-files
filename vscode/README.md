@@ -1,5 +1,13 @@
 ## Visual Studio Code
 
+### Config Files
+
+- [user settings](user-settings.json)
+- [keybindings.json](keybindings.json)
+
+You can sort alphabetically using http://novicelab.org/jsonabc
+but re-paste back into VSCode to get the VSCode formatting before updating Github.
+
 ### Installation
 
 - install command-line client: `[cmd]-[shift]-P` > `shell command`
@@ -12,14 +20,6 @@ Extensions:
 - Go
 - ScrollOff
 
-
-### Config Files
-
-- [user settings](user-settings.json)
-- [keybindings.json](keybindings.json)
-
-You can sort alphabetically using http://novicelab.org/jsonabc
-but re-paste back into VSCode to get the VSCode formatting before updating Github.
 
 ### Hotkeys
 
