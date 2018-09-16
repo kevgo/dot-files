@@ -37,6 +37,7 @@
   "npm-intellisense.scanDevDependencies": true,
   "npm.packageManager": "yarn",
   "scm.diffDecorations": "none",
+  "scrolloff.alwaysCenter": true,
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
@@ -101,5 +102,8 @@
   "workbench.colorTheme": "Default Light+",
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.statusBar.feedback.visible": false
+  "workbench.statusBar.feedback.visible": false,
+  "[markdown]": {
+    "editor.selectionHighlight": false
+  }
 }
