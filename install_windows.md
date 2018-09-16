@@ -65,11 +65,10 @@ To preserve alphabetic sorting and readability, sort the JSON using http://novic
 
 - TypeScript support
 - Vim extension
-- Cucumber extension
-- ESLint extension
-- TSLint extension
-- Flow Language Support
+- Cucumber 
+- TSLint 
 - Go extension
+- ScrollOff
 
 
 ### Hotkeys
