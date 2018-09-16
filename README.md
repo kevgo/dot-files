@@ -18,7 +18,7 @@
 ## Details
 
 - [Vim](vim.md)
-- [VSCode](vscode.md)
+- [VSCode](vscode/README.md)
 
 
 ## Files
