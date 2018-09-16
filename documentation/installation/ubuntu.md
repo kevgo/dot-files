@@ -1,4 +1,4 @@
-# Installation on Linux
+# Ubuntu Installation
 
 - install hardware drivers
 

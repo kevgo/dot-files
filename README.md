@@ -2,16 +2,16 @@
 
 ## Platforms
 
-- macOS [installation](install_macos.md)
-- Manjaro i3 [installation](install_manjaro_i3.md), [cheatsheet](i3_cheatsheet.md)
-- Ubuntu [installation](install_ubuntu.md)
-- Windows [installation](install_windows.md)
+- macOS [installation](documentation/installation/macos.md)
+- Manjaro i3 [installation](documentation/installation/manjaro_i3.md), [cheatsheet](documentation/i3_cheatsheet.md)
+- Ubuntu [installation](documentation/installation/ubuntu.md)
+- Windows [installation](documentation/installation/windows.md)
 
 
 ## Applications
 
-- [Vim](vim.md)
-- [VSCode](vscode/README.md)
+- [Vim](documentation/vim.md)
+- [VSCode](documentation/vscode/README.md)
 
 
 ## How it works
@@ -26,6 +26,4 @@
   - __bin_folder:__ this folder should be symlinked into `~/bin`
   - __home_dir_files:__ these files should be located in the root directory
   - __install:__ installation files
-  - __vscode:__ VSCode documentation and config files
-
-
+  - __documentation__

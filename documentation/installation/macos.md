@@ -1,4 +1,4 @@
-# Installation
+# macOS Installation
 
 - install macOS updates
 

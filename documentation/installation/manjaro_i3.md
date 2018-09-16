@@ -1,4 +1,4 @@
-# Manjaro i3 installation instructions
+# Manjaro i3 installation
 
 #### configure HiDPI screen settings
 
