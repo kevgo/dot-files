@@ -1,9 +1,9 @@
 # Kevgo's Dot Files
 
-- macOS: [installation](install_macos.md)
-- ubuntu: [installation](install_ubuntu.md)
-- Manjaro i3: [installation](install_manjaro_i3.md), [i3 cheatsheet](i3_cheatsheet.md)
-- Windows: [installation](install_windows.md)
+- macOS [installation](install_macos.md)
+- ubuntu [installation](install_ubuntu.md)
+- Manjaro i3 [installation](install_manjaro_i3.md), [cheatsheet](i3_cheatsheet.md)
+- Windows [installation](install_windows.md)
 
 
 ## Maintenance
