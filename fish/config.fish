@@ -76,14 +76,10 @@ set fish_greeting
 function __fish_preexec_clear --on-event fish_preexec
   set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
   set __blue_git_branch "["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
-  if [ $last_status -ne 0 ]
-    set __red_last_status " "(set_color -b red)(set_color white)(echo " $last_status ")(set_color normal)
-  else
-    set __red_last_status ""
-  end
+  set __cyan_args (set_color cyan)$argv(set_color normal)
 
   clear
-  echo $__green_prompt $__blue_git_branch$__red_last_status '> '$argv
+  echo $__green_prompt $__blue_git_branch$__red_last_status '> '$__cyan_args
   echo
 end
 
