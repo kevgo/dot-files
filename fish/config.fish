@@ -160,14 +160,22 @@ function gc
   git town continue
 end
 
+if test -d /c/Users/kevin/AppData/Roaming/npm
+  set -x PATH $PATH /c/Users/kevin/AppData/Roaming/npm
+end
 
 # Git Town
 abbr -a gtc git town config
 
 
 # Golang
-set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin
-set -x GOPATH $HOME/d/go-external:$HOME/d/go
+if test -d ~/d/go
+  set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin
+  set -x GOPATH $HOME/d/go-external:$HOME/d/go
+end
+if test -d /c/Go
+  set -x PATH $PATH /c/Go/bin
+end
 
 function gt
   gotags -R=true -f=tags .
@@ -192,10 +200,15 @@ set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
 # Node.JS
 set -x PATH ./bin ./node_modules/.bin $PATH
-
+if test -d "/c/Program Files/nodejs"
+  set -x PATH $PATH "/c/Program Files/nodejs"
+end
 
 # Path
-set -x PATH $PATH ~/bin /usr/local/bin /usr/local/sbin
+set -x PATH $PATH ~/bin /usr/local/bin
+if test -d /usr/local/sbin
+  set -x PATH $PATH /usr/local/sbin
+end
 
 if [ "$PWD" = "/Users/kevlar" ]
   cd ~/d
