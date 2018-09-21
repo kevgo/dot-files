@@ -1,10 +1,11 @@
 # Installation Instructions for Windows
 
 1. [Git](https://git-scm.com/download/win)
+1. try [MSYS2](http://www.msys2.org) instead of [MinGW](https://sourceforge.net/projects/mingw/files)
+    - add to path
+    - install Node, Go, fish, etc
 1. [Node](https://nodejs.org/en)
     - Yarn: `npm i -g yarn`
-1. [MinGW](https://sourceforge.net/projects/mingw/files) (next time try [MSYS2](http://www.msys2.org), it provides `make` and `fish`)
-    - add to path
 1. [Go](https://golang.org/dl)
     - `mkdir go/src/github.com/Originate`
 1. bin folder
