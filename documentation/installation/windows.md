@@ -1,10 +1,11 @@
 # Installation Instructions for Windows
 
-1. [Git](https://git-scm.com/download/win)
-1. try [MSYS2](http://www.msys2.org) instead of [MinGW](https://sourceforge.net/projects/mingw/files)
+1. [Chocolatey](https://chocolatey.org)
+1. Chrome: `choco install googlechrome`
+1. [Git](https://git-scm.com/download/win): `choco install git.install`
+1. [MinGW](https://sourceforge.net/projects/mingw/files)
     - add to path
-    - install Node, Go, fish, etc
-1. [Node](https://nodejs.org/en)
+1. [Node](https://nodejs.org/en): `choco install nodejs.install`
     - Yarn: `npm i -g yarn`
 1. [Go](https://golang.org/dl)
     - `mkdir go/src/github.com/Originate`
