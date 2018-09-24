@@ -79,7 +79,7 @@ function __fish_preexec_clear --on-event fish_preexec
   set __cyan_args (set_color cyan)$argv(set_color normal)
 
   clear
-  echo $__green_prompt $__blue_git_branch$__red_last_status '> '$__cyan_args
+  echo $__green_prompt $__blue_git_branch $__red_last_status '> '$__cyan_args
   echo
 end
 
