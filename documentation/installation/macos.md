@@ -12,14 +12,13 @@
 
   ```
   brew doctor
-  brew install git ag fish shellcheck ctags diff-so-fancy
+  brew install git ag fish shellcheck diff-so-fancy
   ```
 
 - install Node
 
   ```
   brew install node yarn
-  npm install --global prettier 
   ```
 
 - install Ruby
