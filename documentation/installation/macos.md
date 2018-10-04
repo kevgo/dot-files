@@ -113,6 +113,7 @@
   - OmniFocus
   - Skitch
   - Slack
+  - AdBlock Plus
 
 - install visual apps
   - [Karabiner](https://pqrs.org/osx/karabiner/)
@@ -125,7 +126,6 @@
     - sign into Zoom extension
     - hide the extension icons from the URL bar
   - [Firefox](https://www.mozilla.org/en-US/firefox)
-  - [AdBlock](https://getadblock.com)
   - [GitHub Desktop](https://central.github.com/mac/latest)
     - install command-line tools
   - [GitX](https://rowanj.github.io/gitx)
