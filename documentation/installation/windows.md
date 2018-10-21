@@ -2,7 +2,6 @@
 
 1. make sure the user is called "kevlar"
 1. install Windows updates
-1. remove bloatware
 
 ### Install command-line
 
@@ -59,8 +58,8 @@ echo @ls -1 > l.cmd
 echo @git status > st.cmd
 cd ..
 ```
-      
 
-## Optional
+### Cleanup
 
-1. [Fish shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
+1. remove bloatware
+1. [make Fish the default shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
