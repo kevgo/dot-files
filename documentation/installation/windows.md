@@ -22,9 +22,9 @@
     - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 1. [Node](https://nodejs.org/en/download)
     - Yarn: `npm i -g yarn`
-1. Go: `choco install golang`
-    - `mkdir go/src/github.com/Originate`
-1. [Git Town](https://github.com/Originate/git-town/releases)
+1. [Go](https://golang.org/dl)
+    - `mkdir -p go/src/github.com/Originate`
+1. Git Town](https://github.com/Originate/git-town)
     - install aliases: `git town alias true`
 1. Map Caps Lock to Esc
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
