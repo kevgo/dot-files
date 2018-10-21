@@ -1,45 +1,25 @@
-# Installation Instructions for Windows
+## Installation Instructions for Windows
 
+1. make sure the user is called "kevlar"
+1. install Windows updates
+1. remove bloatware
+
+### Install command-line
+
+3. [Cygwin](https://www.cygwin.com)
+    - add fish
 1. [Chocolatey](https://chocolatey.org)
-1. Chrome: `choco install googlechrome`
-1. [Git](https://git-scm.com/download/win): `choco install git.install`
-1. [MinGW](https://sourceforge.net/projects/mingw/files)
-    - add to path
-1. [Node](https://nodejs.org/en): `choco install nodejs.install`
+1. Git: `choco install git.install`
+    - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
+1. Node: `choco install nodejs.install`
     - Yarn: `npm i -g yarn`
-1. [Go](https://golang.org/dl): `choco install golang`
+1. Go: `choco install golang`
     - `mkdir go/src/github.com/Originate`
-1. bin folder
-    ```
-    mkdir bin
-    cd bin
-    echo @git branch %* > br.cmd
-    echo @cd %HOMEPATH% > "cd~.cmd"
-    echo @git checkout %* > co.cmd
-    echo @cd c:\Users\kevin\d > d.cmd
-    echo @git add -A > gac.cmd
-    echo @git commit -m "%*" >> gac.cmd
-    echo @git add -A > gacp.cmd
-    echo @git commit -m "%*" >> gacp.cmd
-    echo @git push >> gacp.cmd
-    echo @git town continue > gc.cmd
-    echo @git diff > gd.cmd
-    echo @git diff master > gdm.cmd
-    echo @git new-pull-request > gpr.cmd
-    echo @git push > gp.cmd
-    echo @git sync > gs.cmd
-    echo @cd go\src\github.com\Originate\git-town > gt.cmd
-    echo @ls -1 > l.cmd
-    echo @git status > st.cmd
-    cd ..
-    ```
-      
 1. [Git Town](https://github.com/Originate/git-town/releases)
     - install aliases: `git town alias true`
 1. Map Caps Lock to Esc
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
-1. Disable Windows Defender
-    - https://www.tenforums.com/tutorials/5918-turn-off-windows-defender-windows-10-a.html
 1. Disable Windows virtual memory
 1. diff-so-fancy
 
@@ -49,7 +29,38 @@
     ```
 1. [VSCode](vscode/README.md)
 
+
+### Install Home directory
+
+
+
+### Install Windows Cmd shortcuts
+
+```
+mkdir bin
+cd bin
+echo @git branch %* > br.cmd
+echo @cd %HOMEPATH% > "cd~.cmd"
+echo @git checkout %* > co.cmd
+echo @cd c:\Users\kevin\d > d.cmd
+echo @git add -A > gac.cmd
+echo @git commit -m "%*" >> gac.cmd
+echo @git add -A > gacp.cmd
+echo @git commit -m "%*" >> gacp.cmd
+echo @git push >> gacp.cmd
+echo @git town continue > gc.cmd
+echo @git diff > gd.cmd
+echo @git diff master > gdm.cmd
+echo @git new-pull-request > gpr.cmd
+echo @git push > gp.cmd
+echo @git sync > gs.cmd
+echo @cd go\src\github.com\Originate\git-town > gt.cmd
+echo @ls -1 > l.cmd
+echo @git status > st.cmd
+cd ..
+```
+      
+
 ## Optional
 
-1. [Bash for Windows](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 1. [Fish shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
