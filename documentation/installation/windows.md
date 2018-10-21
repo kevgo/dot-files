@@ -22,8 +22,10 @@
       - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
     - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 1. [Node](https://nodejs.org/en/download)
+    - install via Windows installer
     - Yarn: `npm i -g yarn`
 1. [Go](https://golang.org/dl)
+    - install via Windows installer
     - `mkdir -p go/src/github.com/Originate`
     - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
         ```
@@ -34,7 +36,6 @@
     - install aliases: `git town alias true`
 1. Map Caps Lock to Esc
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
-1. Disable Windows virtual memory
 1. diff-so-fancy
 
     ```
@@ -46,7 +47,8 @@
 
 ### Install Home directory
 
-
+1. `git clone git@github.com:kevgo/dot-files.git .config`
+1. `.config/install/install.sh`
 
 ### Install Windows Cmd shortcuts
 
@@ -78,3 +80,4 @@ cd ..
 
 1. remove bloatware
 1. [make Fish the default shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
+1. Disable Windows virtual memory
