@@ -1,9 +1,12 @@
 ## Installation Instructions for Windows
 
+### Install Windows
+
 1. hit `F11` during startup to boot into recovery mode
 1. reset this PC
 1. create user account "kevlar"
 1. install Windows updates
+1. install Chrome and log into Github
 
 ### Install command-line
 
