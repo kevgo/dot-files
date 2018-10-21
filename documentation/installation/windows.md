@@ -13,14 +13,13 @@
 3. [Cygwin](https://www.cygwin.com)
     - add fish
     - add git
-1. [Chocolatey](https://chocolatey.org)
-1. Git: `choco install git.install`
+1. Git:
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
       - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
       - if the command hangs, provide the password via `-P ""`
       - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
     - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
-1. Node: `choco install nodejs.install`
+1. [Node](https://nodejs.org/en/download)
     - Yarn: `npm i -g yarn`
 1. Go: `choco install golang`
     - `mkdir go/src/github.com/Originate`
