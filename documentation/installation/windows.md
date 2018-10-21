@@ -79,4 +79,10 @@ cd ..
 1. remove bloatware
 1. [make Fish the default shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
 1. Disable Windows virtual memory
+   - Windows search: advanced system settings
+   - "Advanced" tab
+   - "Performance" settings button
+   - "Advanced" tab
+   - "Virtual Memory" section > Change
+   - "no paging file" option
 1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
