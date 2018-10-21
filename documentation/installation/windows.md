@@ -24,7 +24,7 @@
     - Yarn: `npm i -g yarn`
 1. [Go](https://golang.org/dl)
     - `mkdir -p go/src/github.com/Originate`
-1. Git Town](https://github.com/Originate/git-town)
+1. [Git Town](https://github.com/Originate/git-town)
     - install aliases: `git town alias true`
 1. Map Caps Lock to Esc
     - [SharpKeys](https://github.com/randyrants/sharpkeys)
