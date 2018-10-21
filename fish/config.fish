@@ -231,7 +231,7 @@ abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
 # Ruby
-if [ -d ~/.rbenv ]
+if [ -d ~/.rbenv/shims ]
 	set -x PATH ~/.rbenv/shims $PATH
 end
 if which rbenv 2> /dev/null
@@ -257,3 +257,10 @@ else
   alias v mvim
 end
 # alias vim /Applications/MacVim.app/Contents/MacOS/Vim
+
+
+# Visual Studio Code
+if [ -d /cygdrive/c/Users/kevlar/AppData/Local/Programs/Microsoft\ VS\ Code/bin ]
+	set -x PATH /cygdrive/c/Users/kevlar/AppData/Local/Programs/Microsoft\ VS\ Code/bin $PATH
+end
+
