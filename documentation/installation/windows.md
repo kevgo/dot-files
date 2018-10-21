@@ -12,6 +12,7 @@
 
 3. [Cygwin](https://www.cygwin.com)
     - add fish
+    - add git
 1. [Chocolatey](https://chocolatey.org)
 1. Git: `choco install git.install`
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
