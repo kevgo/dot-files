@@ -87,3 +87,4 @@ cd ..
    - "Virtual Memory" section > Change
    - "no paging file" option
 1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
+1. add `c:\cygwin64\bin` to the PATH
