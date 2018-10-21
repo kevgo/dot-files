@@ -13,6 +13,7 @@
 3. [Cygwin](https://www.cygwin.com)
     - add fish
     - add git
+    - add make
 1. Git:
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
       - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
