@@ -24,7 +24,7 @@
     - Yarn: `npm i -g yarn`
 1. [Go](https://golang.org/dl)
     - `mkdir -p go/src/github.com/Originate`
-    - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go`: 
+    - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
         ```
         cd \Users\kevlar\go
         mklink /D go c:\cygwin64\home\kevlar\go`
