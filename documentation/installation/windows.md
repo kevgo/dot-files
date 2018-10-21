@@ -77,7 +77,8 @@ cd ..
 ### Cleanup
 
 1. remove bloatware
-1. [make Fish the default shell](https://www.kennethreitz.org/essays/fish-as-default-shell-on-windows-10)
+1. make Fish the default shell
+   - create `SHELL` environment variable containing `/usr/bin/fish`
 1. Disable Windows virtual memory
    - Windows search: advanced system settings
    - "Advanced" tab
