@@ -1,6 +1,8 @@
 ## Installation Instructions for Windows
 
-1. make sure the user is called "kevlar"
+1. hit `F11` during startup to boot into recovery mode
+1. reset this PC
+1. create user account "kevlar"
 1. install Windows updates
 
 ### Install command-line
