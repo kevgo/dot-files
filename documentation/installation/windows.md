@@ -14,7 +14,7 @@
     - add fish
 1. [Chocolatey](https://chocolatey.org)
 1. Git: `choco install git.install`
-    - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): if the command hangs, provide the password via `-P ""` 
     - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 1. Node: `choco install nodejs.install`
     - Yarn: `npm i -g yarn`
