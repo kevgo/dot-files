@@ -7,7 +7,7 @@
     - add to path
 1. [Node](https://nodejs.org/en): `choco install nodejs.install`
     - Yarn: `npm i -g yarn`
-1. [Go](https://golang.org/dl)
+1. [Go](https://golang.org/dl): `choco install golang`
     - `mkdir go/src/github.com/Originate`
 1. bin folder
     ```
