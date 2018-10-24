@@ -89,3 +89,5 @@ cd ..
    - "no paging file" option
 1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
 1. add `c:\cygwin64\bin` to the PATH
+1. disable hotkey to change keyboard language
+   - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
