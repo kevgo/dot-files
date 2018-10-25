@@ -19,6 +19,7 @@ Extensions:
 - TSLint 
 - Go
 - ScrollOff
+- Prettier
 
 
 ### Hotkeys
