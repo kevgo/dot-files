@@ -42,6 +42,7 @@
     ```
 1. [VSCode](../vscode/README.md)
 1. [Firefox](https://www.mozilla.org/en-US/firefox/new)
+1. Slack via Windows Store
 
 
 ### Install Home directory
