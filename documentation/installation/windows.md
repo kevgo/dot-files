@@ -21,6 +21,9 @@
       - if the command hangs, provide the password via `-P ""`
       - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
     - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
+    - make SSH key available in Windows CMD by copying `c:\cygwin64\home\kevlar\.ssh` to `c:\Users\kevlar\.ssh`
+    - optionally fix permissions on `c:\Users\kevlar\.ssh\id_rsa` to only be visible to your user account (remove everybody else):
+      - right-click in Explorer > Properties > Security 
 1. [Node](https://nodejs.org/en/download)
     - install via Windows installer
     - Yarn: `npm i -g yarn`
