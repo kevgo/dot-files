@@ -15,6 +15,7 @@
     - add git
     - add make
     - add vim
+    - configure terminal to use `xterm256` emulation
 1. Git (already installed via Cygwin)
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
       - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
