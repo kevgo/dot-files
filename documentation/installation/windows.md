@@ -138,6 +138,7 @@ Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
 
 1. remove bloatware
 1. go to `Turn Windows features on or off` and disable all useless options
+1. disable web results in Windows search
 1. make Fish the default shell
    - create `SHELL` environment variable containing `/usr/bin/fish`
 1. Disable Windows virtual memory
