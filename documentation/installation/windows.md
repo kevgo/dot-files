@@ -96,3 +96,5 @@ cd ..
 1. add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
 1. disable hotkey to change keyboard language
    - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
+1. disable file indexing on c: drive
+1. disable Windows Defender (it makes Git slow)
