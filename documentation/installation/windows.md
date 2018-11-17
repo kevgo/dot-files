@@ -140,6 +140,7 @@ Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
 1. go to `Turn Windows features on or off` and disable all useless options
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
+1. make Explorer open in `This PC`: Explorer > View > Options > Change folder and Search options > Open File Explorer to
 1. make Fish the default shell
    - create `SHELL` environment variable containing `/usr/bin/fish`
 1. Disable Windows virtual memory
