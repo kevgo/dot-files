@@ -1,5 +1,6 @@
 {
   "breadcrumbs.enabled": false,
+  "cucumberautocomplete.skipDocStringsFormat": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "editor.accessibilitySupport": "off",
@@ -21,9 +22,11 @@
     "other": true,
     "strings": true
   },
-  "editor.renderControlCharacters": true,
+  "editor.renderControlCharacters": false,
   "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -31,10 +34,9 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.ignoreMissingGitWarning": true,
+  "git.ignoreMissingGitWarning": false,
   "git.promptToSaveFilesBeforeCommit": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "npm-intellisense.scanDevDependencies": true,
   "npm.packageManager": "yarn",
   "scm.diffDecorations": "none",
   "scrolloff.alwaysCenter": true,
@@ -90,20 +92,20 @@
   "vim.statusBarColorControl": false,
   "window.autoDetectHighContrast": false,
   "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "toggle",
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
     "[Default Light+]": {
-      "editor.lineHighlightBackground": "#ffffee"
+      "editor.lineHighlightBackground": "#f4f4ff"
     }
   },
-  "workbench.colorTheme": "Default Light+",
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.feedback.visible": false,
   "[markdown]": {
+    "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false
   }
 }
