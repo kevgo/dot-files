@@ -131,6 +131,7 @@ Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
 Get-AppxPackage Microsoft.Print3D | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
 Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
+Get-AppxPackage Microsoft.MSPaint | Remove-AppxPackage
 ```
 
 
