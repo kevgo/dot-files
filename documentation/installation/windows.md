@@ -138,6 +138,10 @@ Get-AppxPackage Microsoft.MSPaint | Remove-AppxPackage
 ### Cleanup
 
 1. remove bloatware
+1. remove "Edit with Paint3d" file context menu entry:
+   - open `regedit`
+   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
+   - delete `3D Edit`
 1. go to `Turn Windows features on or off` and disable all useless options
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
