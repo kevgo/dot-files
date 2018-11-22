@@ -111,11 +111,6 @@ set showmatch
 " set t_ti= t_te=
 
 
-" CoffeeScript
-let g:coffee_compile_vert = 1
-au BufRead,BufNewFile *.cson set ft=coffee
-
-
 " Cursor blink
 set guicursor+=a:blinkon0
 
@@ -200,12 +195,6 @@ let &colorcolumn='80,'.join(range(101,299),',')
 
 " Invisible characters.
 set listchars=tab:»\ ,eol:¬,trail:⍽
-
-
-" Javascript
-augroup vimrc
-  autocmd FileType javascript nnoremap <C-\> :FlowJumpToDef<CR>
-augroup END
 
 
 " Mouse and scrolling support.
@@ -377,17 +366,14 @@ Plug 'gmarik/vundle'
 " Plug 'FuzzyFinder'
 " for FuzzyFinder
 " Plug 'L9'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe'
-Plug 'alexdavid/vim-min-git-status'
+" Plug 'alexdavid/vim-min-git-status'
 " Plug 'bruno-/vim-husk'
-Plug 'dag/vim-fish'
-Plug 'digitaltoad/vim-jade'
-Plug 'elixir-lang/vim-elixir'
+" Plug 'dag/vim-fish'
 Plug 'godlygeek/tabular'
-Plug 'gkz/vim-ls'
+" Plug 'gkz/vim-ls'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'kchmck/vim-coffee-script'
 " Plug 'kevgo/jumbo'
 Plug 'kevgo/tertestrial-vim'
 Plug 'michaeljsmith/vim-indent-object'
@@ -395,34 +381,25 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'pangloss/vim-javascript'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
-" Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
-" Plug 'slim-template/vim-slim'
 Plug 'tomtom/tcomment_vim'
-" Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-haml'
+" Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
-" Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-" Plug 'vim-ruby/vim-ruby'
-" Plug 'kien/rainbow_parentheses.vim'
-" Plug 'lukaszkorecki/CoffeeTags'
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 " Plug 'Raimondi/delimitMate'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
+" Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/limelight.vim'
 " Plug 'itchyny/vim-cursorword'
-Plug 'kannokanno/previm'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-sleuth'
+" Plug 'kannokanno/previm'
+" Plug '/usr/local/opt/fzf'
+" Plug 'junegunn/fzf.vim'
+" Plug 'tpope/vim-sleuth'
 " Plug 'nathanaelkane/vim-indent-guides' is too slow when scrolling
-Plug 'flowtype/vim-flow'
-Plug 'HerringtonDarkholme/yats'
+" Plug 'HerringtonDarkholme/yats'
 
 " Colors
 " Plug 'altercation/vim-colors-solarized'
