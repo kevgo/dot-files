@@ -12,15 +12,7 @@ but re-paste back into VSCode to get the VSCode formatting before updating Githu
 
 - install command-line client: `[cmd]-[shift]-P` > `shell command`
 
-Extensions:
-- TypeScript
-- Vim
-- Cucumber 
-- TSLint 
-- Go
-- ScrollOff
-- Prettier
-
+Extensions: run `~/bin/vspluginload` to install all VSCode extensions
 
 ### Hotkeys
 
