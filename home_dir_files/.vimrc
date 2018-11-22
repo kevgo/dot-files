@@ -2,20 +2,21 @@ set encoding=utf-8
 scriptencoding utf-8
 filetype plugin indent on
 
-let s:uname = system("uname")
-  if s:uname == "Darwin\n"
-    if has('python3')
-        command! -nargs=1 Py py3 <args>
-        set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.6/Python
-        set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.6
-    else
-        command! -nargs=1 Py py <args>
-        set pythondll=/usr/local/Frameworks/Python.framework/Versions/2.7/Python
-        set pythonhome=/usr/local/Frameworks/Python.framework/Versions/2.7
-    endif
-  else
-    set clipboard=unnamedplus         " yank and paste with the system clipboard
-  endif
+" NOTE: commented out because this is slow on Windows
+" let s:uname = system("uname")
+" if s:uname == "Darwin\n"
+"   if has('python3')
+"       command! -nargs=1 Py py3 <args>
+"       set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.6/Python
+"       set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.6
+"   else
+"       command! -nargs=1 Py py <args>
+"       set pythondll=/usr/local/Frameworks/Python.framework/Versions/2.7/Python
+"       set pythonhome=/usr/local/Frameworks/Python.framework/Versions/2.7
+"   endif
+" else
+"   set clipboard=unnamedplus         " yank and paste with the system clipboard
+" endif
 
 
 " Leader key
