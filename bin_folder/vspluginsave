@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Saves VSCode plugins
+
+code --list-extensions | xargs -L 1 echo code --install-extension > vscode-plugins

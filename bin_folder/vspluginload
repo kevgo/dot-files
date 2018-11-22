@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# loads the VSCode plugins
+
+sh ~/.vscode.plugins
