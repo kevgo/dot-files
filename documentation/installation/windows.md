@@ -89,7 +89,6 @@ Get-AppxPackage *3DBuilder* | Remove-AppxPackage
 Get-AppxPackage *Getstarted* | Remove-AppxPackage
 Get-AppxPackage *WindowsAlarms* | Remove-AppxPackage
 Get-AppxPackage *bing* | Remove-AppxPackage
-Get-AppxPackage *photos* | Remove-AppxPackage
 Get-AppxPackage *SkypeApp* | Remove-AppxPackage
 Get-AppxPackage *solit* | Remove-AppxPackage
 Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
