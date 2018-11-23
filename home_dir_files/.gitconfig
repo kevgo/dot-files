@@ -25,6 +25,8 @@
   editor = vim
   excludesfile = /Users/kevlar/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
+	preloadindex = true
+	fscache = true
 [user]
   name = Kevin Goslar
   email = kevin.goslar@gmail.com
@@ -59,3 +61,5 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+[gc]
+	auto = 256
