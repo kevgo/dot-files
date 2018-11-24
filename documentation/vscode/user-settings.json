@@ -25,7 +25,7 @@
   "editor.renderControlCharacters": false,
   "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
-  "editor.selectionHighlight": false,
+  "editor.selectionHighlight": true,
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
