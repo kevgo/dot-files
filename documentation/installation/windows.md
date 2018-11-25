@@ -17,6 +17,15 @@
     - add make
     - add vim
     - configure terminal to use `xterm256` emulation
+    
+    Create shortcut to Fish shell
+    - run `cmd`
+    - right-click in taskbar > Pin to taskbr
+    - right-click again in taskbar > right-click on `Command Prompt` > Properties
+    - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
+    - add shortcut key `CTRL+SHIFT+T`
+    - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
+
 1. Git (already installed via Cygwin)
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
       - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
@@ -134,15 +143,6 @@ Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
 Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
 Get-AppxPackage Microsoft.MSPaint | Remove-AppxPackage
 ```
-
-### Create shortcut to Fish shell
-
-- run `cmd`
-- right-click in taskbar > Pin to taskbr
-- right-click again in taskbar > right-click on `Command Prompt` > Properties
-- change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
-- add shortcut key `CTRL+SHIFT+T`
-- change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
 
 ### Cleanup
 
