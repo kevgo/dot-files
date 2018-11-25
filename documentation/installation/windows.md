@@ -77,6 +77,7 @@ echo @git sync > gs.cmd
 echo @cd go\src\github.com\Originate\git-town > gt.cmd
 echo @ls -1 > l.cmd
 echo @git status > st.cmd
+echo @c:\Users\kevlar\cygwin-setup\setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode  > update-cygwin.cmd
 cd ..
 ```
 
