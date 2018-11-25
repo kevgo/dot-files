@@ -70,62 +70,9 @@ inside Fish shell:
 
 in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
 
-### Remove preinstalled apps
-
-in PowerShell
-
-```
-Get-AppxPackage *3DBuilder* | Remove-AppxPackage
-Get-AppxPackage *Getstarted* | Remove-AppxPackage
-Get-AppxPackage *WindowsAlarms* | Remove-AppxPackage
-Get-AppxPackage *bing* | Remove-AppxPackage
-Get-AppxPackage *SkypeApp* | Remove-AppxPackage
-Get-AppxPackage *solit* | Remove-AppxPackage
-Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
-Get-AppxPackage *zune* | Remove-AppxPackage
-Get-AppxPackage *Sway* | Remove-AppxPackage
-Get-AppxPackage *CommsPhone* | Remove-AppxPackage
-Get-AppxPackage *ConnectivityStore* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.Messaging* | Remove-AppxPackage
-Get-AppxPackage *Facebook* | Remove-AppxPackage
-Get-AppxPackage *Twitter* | Remove-AppxPackage
-Get-AppxPackage *Drawboard PDF* | Remove-AppxPackage
-Get-AppxPackage Soda | Remove-AppxPackage
-Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage
-Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage
-Get-AppxPackage *Autodesk* | Remove-AppxPackage
-Get-AppxPackage Microsoft.BingFinance | Remove-AppxPackage
-Get-AppxPackage Microsoft.BingNews | Remove-AppxPackage
-Get-AppxPackage Microsoft.BingSports | Remove-AppxPackage
-Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage
-Get-AppxPackage *BubbleWitch* | Remove-AppxPackage
-Get-AppxPackage king.com.CandyCrush* | Remove-AppxPackage
-Get-AppxPackage Microsoft.CommsPhone | Remove-AppxPackage
-Get-AppxPackage *Dropbox* | Remove-AppxPackage
-Get-AppxPackage *Facebook* | Remove-AppxPackage
-Get-AppxPackage Microsoft.WindowsFeedbackHub | Remove-AppxPackage
-Get-AppxPackage *Keeper* | Remove-AppxPackage
-Get-AppxPackage Microsoft.WindowsMaps | Remove-AppxPackage
-Get-AppxPackage *MarchofEmpires* | Remove-AppxPackage
-Get-AppxPackage *Disney* | Remove-AppxPackage
-Get-AppxPackage *Twitter* | Remove-AppxPackage
-Get-AppxPackage *Minecraft* | Remove-AppxPackage  
-Get-AppxPackage *Netflix* | Remove-AppxPackage
-Get-AppxPackage *Plex* | Remove-AppxPackage
-Get-AppxPackage *spotify* | Remove-AppxPackage
-Get-AppxPackage *McAfee* | Remove-AppxPackage
-Get-AppxPackage Microsoft.Microsoft3DViewer | Remove-AppxPackage
-Get-AppxPackage Microsoft.GetHelp | Remove-AppxPackage
-Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
-Get-AppxPackage Microsoft.Print3D | Remove-AppxPackage
-Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
-Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
-Get-AppxPackage Microsoft.MSPaint | Remove-AppxPackage
-```
-
 ### Cleanup
 
-1. remove bloatware
+1. remove bloatware: in `cmd`: `bin\remove-win-apps.cmd`
 1. remove "Edit with Paint3d" file context menu entry:
    - open `regedit`
    - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`

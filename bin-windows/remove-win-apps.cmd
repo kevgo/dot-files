@@ -1,0 +1,1 @@
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell -ArgumentList '-NoProfile -NoExit -ExecutionPolicy Bypass -File ""c:\cygwin64\home\kevlar\.config\bin-windows\remove-win-apps.ps1""' -Verb RunAs}"
