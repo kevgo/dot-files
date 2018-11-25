@@ -81,8 +81,7 @@ in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windo
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
 1. make Explorer open in `This PC`: Explorer > View > Options > Change folder and Search options > Open File Explorer to
-1. make Fish the default shell
-   - create `SHELL` environment variable containing `/usr/bin/fish`
+1. customize start menu shortcuts: Search for `choose which folders appear on Start` > disable everything besides `Settings` > check by pressing Windows key and looking at the entries above the power icon
 1. Disable Windows virtual memory
    - Windows search: advanced system settings
    - "Advanced" tab
