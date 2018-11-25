@@ -68,30 +68,7 @@ inside Fish shell:
 
 ### Install Windows Cmd shortcuts
 
-```
-mkdir bin
-cd bin
-echo @git branch %* > br.cmd
-echo @cd %HOMEPATH% > "cd~.cmd"
-echo @git checkout %* > co.cmd
-echo @cd c:\cygwin64\home\kevlar\d > d.cmd
-echo @git add -A > gac.cmd
-echo @git commit -m "%*" >> gac.cmd
-echo @git add -A > gacp.cmd
-echo @git commit -m "%*" >> gacp.cmd
-echo @git push >> gacp.cmd
-echo @git town continue > gc.cmd
-echo @git diff > gd.cmd
-echo @git diff master > gdm.cmd
-echo @git new-pull-request > gpr.cmd
-echo @git push > gp.cmd
-echo @git sync > gs.cmd
-echo @cd go\src\github.com\Originate\git-town > gt.cmd
-echo @ls -1 > l.cmd
-echo @git status > st.cmd
-echo @c:\Users\kevlar\cygwin-setup\setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode  > update-cygwin.cmd
-cd ..
-```
+in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
 
 ### Remove preinstalled apps
 
