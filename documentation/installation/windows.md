@@ -72,7 +72,7 @@ in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windo
 
 ### Cleanup
 
-1. remove bloatware: `bin\remove-win-apps.cmd`
+1. remove bloatware: in Admin Powershell: `bin\remove-win-apps.cmd`
 1. remove "Edit with Paint3d" file context menu entry:
    - open `regedit`
    - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
