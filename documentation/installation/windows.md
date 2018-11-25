@@ -55,7 +55,7 @@
     git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
     ```
 1. [VSCode](../vscode/README.md)
-1. [Firefox](https://www.mozilla.org/en-US/firefox/new)
+1. [Firefox](https://www.mozilla.org/en-US/firefox/new) and [Chrome](https://www.google.com/chrome)
 1. Slack via Windows Store
 
 
