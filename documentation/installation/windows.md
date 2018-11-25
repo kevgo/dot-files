@@ -61,6 +61,8 @@
 
 ### Install Home directory
 
+inside Fish shell:
+
 1. `git clone git@github.com:kevgo/dot-files.git .config`
 1. `.config/install/install.sh`
 
