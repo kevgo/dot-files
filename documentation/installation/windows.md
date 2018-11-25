@@ -11,20 +11,20 @@
 ### Install command-line
 
 6. [Cygwin](https://www.cygwin.com)
-    - move the setup file to a new folder `~\cygwin-setup` before running it and keep it there
-    - add fish
-    - add git
-    - add make
-    - add vim
-    - configure terminal to use `xterm256` emulation
-    
-    Create shortcut to Fish shell
-    - run `cmd`
-    - right-click in taskbar > Pin to taskbr
-    - right-click again in taskbar > right-click on `Command Prompt` > Properties
-    - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
-    - add shortcut key `CTRL+SHIFT+T`
-    - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
+
+   - move the setup file to a new folder `~\cygwin-setup` before running it and keep it there.
+   - choose packages
+     - fish
+     - git
+     - make
+     - vim
+   - create shortcut to Fish shell:
+     - run `cmd`
+     - right-click in taskbar > Pin to taskbr
+     - right-click again in taskbar > right-click on `Command Prompt` > Properties
+     - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
+     - add shortcut key `CTRL+SHIFT+T`
+     - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
 
 1. Git (already installed via Cygwin)
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
