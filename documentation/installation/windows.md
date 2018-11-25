@@ -77,6 +77,7 @@ echo @git sync > gs.cmd
 echo @cd go\src\github.com\Originate\git-town > gt.cmd
 echo @ls -1 > l.cmd
 echo @git status > st.cmd
+echo @c:\cygwin64\bin\fish --login --interactive > fish.cmd
 cd ..
 ```
 
