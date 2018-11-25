@@ -11,6 +11,7 @@
 ### Install command-line
 
 3. [Cygwin](https://www.cygwin.com)
+    - move the setup file to a new folder `~\cygwin-setup` before running it and keep it there
     - add fish
     - add git
     - add make
