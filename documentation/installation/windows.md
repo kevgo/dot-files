@@ -77,7 +77,6 @@ echo @git sync > gs.cmd
 echo @cd go\src\github.com\Originate\git-town > gt.cmd
 echo @ls -1 > l.cmd
 echo @git status > st.cmd
-echo @c:\cygwin64\bin\fish --login --interactive --init-command=d
 cd ..
 ```
 
@@ -134,6 +133,14 @@ Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage
 Get-AppxPackage Microsoft.MSPaint | Remove-AppxPackage
 ```
 
+### Create shortcut to Fish shell
+
+- run `cmd`
+- right-click in taskbar > Pin to taskbr
+- right-click again in taskbar > right-click on `Command Prompt` > Properties
+- change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
+- add shortcut key `CTRL+SHIFT+T`
+- change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
 
 ### Cleanup
 
