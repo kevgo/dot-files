@@ -25,6 +25,7 @@
      - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
      - add shortcut key `CTRL+SHIFT+T`
      - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
+   - add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
 
 1. Git (already installed via Cygwin)
     - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
@@ -70,13 +71,16 @@ inside Fish shell:
 
 in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
 
-### Change keyboard delay and repeat rate
+### Keyboard
 
-- Control Panel > keyboard
+1. Change keyboard delay and repeat rate: Control Panel > keyboard
+1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
+1. disable hotkey to change keyboard language
+   - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
 
-### Cleanup
+### remove bloatware
 
-1. remove bloatware: in `cmd`: `bin\remove-win-apps.cmd`
+1. in `cmd`: `bin\remove-win-apps.cmd`
 1. remove "Edit with Paint3d" file context menu entry:
    - open `regedit`
    - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
@@ -84,18 +88,20 @@ in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windo
 1. go to `Turn Windows features on or off` and disable all useless options
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
+
+### Explorer
+
 1. make Explorer open in `This PC`: Explorer > View > Options > Change folder and Search options > Open File Explorer to
 1. customize start menu shortcuts: Search for `choose which folders appear on Start` > disable everything besides `Settings` > check by pressing Windows key and looking at the entries above the power icon
-1. Disable Windows virtual memory
+
+### Windows performance
+
+1. disable Windows virtual memory
    - Windows search: advanced system settings
    - "Advanced" tab
    - "Performance" settings button
    - "Advanced" tab
    - "Virtual Memory" section > Change
    - "no paging file" option
-1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
-1. add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
-1. disable hotkey to change keyboard language
-   - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
 1. disable file indexing on c: drive
 1. disable Windows Defender (it makes Git slow)
