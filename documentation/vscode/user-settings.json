@@ -41,7 +41,7 @@
   "scm.diffDecorations": "none",
   "scrolloff.alwaysCenter": true,
   "search.smartCase": true,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "tslint.packageManager": "yarn",
   "tslint.run": "onSave",
