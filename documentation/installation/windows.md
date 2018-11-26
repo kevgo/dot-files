@@ -70,6 +70,10 @@ inside Fish shell:
 
 in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
 
+### Change keyboard delay and repeat rate
+
+- Control Panel > keyboard
+
 ### Cleanup
 
 1. remove bloatware: in `cmd`: `bin\remove-win-apps.cmd`
