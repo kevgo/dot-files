@@ -4,6 +4,7 @@
 
 - [user settings](user-settings.json)
 - [keybindings.json](keybindings.json)
+- [typescript.json](typescript.json)
 
 You can sort alphabetically using http://novicelab.org/jsonabc
 but re-paste back into VSCode to get the VSCode formatting before updating Github.
