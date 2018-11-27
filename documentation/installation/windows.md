@@ -67,9 +67,11 @@ inside Fish shell:
 1. `git clone git@github.com:kevgo/dot-files.git .config`
 1. `.config/install/install.sh`
 
+
 ### Install Windows Cmd shortcuts
 
 in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
+
 
 ### Keyboard
 
@@ -77,6 +79,13 @@ in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windo
 1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
 1. disable hotkey to change keyboard language
    - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
+
+
+### install Edge extensions
+
+in Windows Store:
+- Adblock
+- Grammarly
 
 ### remove bloatware
 
