@@ -86,5 +86,21 @@
   {
     "command": "workbench.files.action.focusFilesExplorer",
     "key": "ctrl+d"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+s",
+    "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
   }
 ]
