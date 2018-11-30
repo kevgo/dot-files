@@ -117,3 +117,7 @@ in Windows Store:
    - run `regedit`
    - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
    - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
+1. stop apps from starting automaticalyl
+   - open task manager
+   - go to `Startup` tab
+   - right-click on entries and disable them
