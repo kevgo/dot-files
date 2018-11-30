@@ -114,3 +114,6 @@ in Windows Store:
    - "no paging file" option
 1. disable file indexing on c: drive
 1. disable Windows Defender (it makes Git slow)
+   - run `regedit`
+   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
+   - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
