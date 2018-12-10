@@ -34,3 +34,10 @@ npm i -g yarn
     sudo chmod 777 /usr/lib/node_modules
     sudo chmod 777 /usr/bin
     ```
+
+
+### VSCode
+
+- download the DEB installer from the VSCode homepage
+- move it to the Linux files
+- `sudo apt-get install ./code_*.deb`
