@@ -21,3 +21,16 @@ Install compiler tools for native extensions:
 ```
 sudo apt-get install gcc g++ make
 ```
+
+Install Yarn:
+
+```
+npm i -g yarn
+```
+
+- fix possible permissions errors:
+
+    ```
+    sudo chmod 777 /usr/lib/node_modules
+    sudo chmod 777 /usr/bin
+    ```
