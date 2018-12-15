@@ -1,5 +1,18 @@
 ## ChromeOS installation
 
+### Install CloudReady on external SSD drive
+ - create normal USB installer stick and boot from it
+- log into ChromeOS
+- hit `Ctrl+Alt+T` to open a terminal with crosh
+- run `shell` to go into Bash
+- determine the name of the external SSD drive
+   - `sudo fdisk -l`
+   - when unsure, remove the drive and see which drive is missing
+- `cd /usr/sbin`
+- `sudo chromeos-install --dst /dev/sdX`  (replace `X` with your drive)
+- turn off the machine: `sudo poweroff`
+
+
 ### Node.JS
 
 Install dependencies:
