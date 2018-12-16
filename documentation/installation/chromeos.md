@@ -33,6 +33,16 @@
   xclip -sel clip < ~/.ssh/id_rsa.pub
   ```
 - register SSH key with GitHub: https://github.com/settings/keys
+- clone the dotfiles: `git clone git@github.com:kevgo/dot-files.git .config`
+- install the symlinks: `.config/install/install.sh`
+
+### Fish shell
+
+```
+sudo apt-get install fish
+```
+
+
 
 ### Node.JS
 
