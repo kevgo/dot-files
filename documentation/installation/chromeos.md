@@ -21,6 +21,16 @@
    - Setting > Linux
 
 
+### Settings
+
+- Screen lock > PIN or password
+- Manage other people > disable guest and restrict login
+- Wallpaper
+- Keyboard
+  - Caps Lock: change to `Escape`
+  - set delay and repeat rate
+- Displays > Display Size
+
 ### Set up dotfiles
 
 - generate SSH key:
