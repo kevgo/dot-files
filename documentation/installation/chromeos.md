@@ -115,10 +115,10 @@ npm i -g yarn
 - create a Go workspace
 
   ```
-  mkdir -p ~/d/go/bin
-  mkdir -p ~/d/go-external/bin
-  mkdir -p ~/d/go/src/github.com/Originate
-  cd ~/d/go/src/github.com/Originate
+  mkdir -p ~/go/bin
+  mkdir -p ~/go-external/bin
+  mkdir -p ~/go/src/github.com/Originate
+  cd ~/go/src/github.com/Originate
   git clone git@github.com:Originate/git-town.git
   cd git-town
   bin/build
