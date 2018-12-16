@@ -174,6 +174,7 @@ if test -d /c/Users/kevin/AppData/Roaming/npm
   set -x PATH $PATH /c/Users/kevin/AppData/Roaming/npm
 end
 
+
 # Git Town
 abbr -a gtc git town config
 
@@ -186,6 +187,10 @@ end
 if test -d /c/Go
   set -x PATH $PATH /c/Go/bin
 end
+if test -d /usr/local/go/bin
+  set -x PATH $PATH /usr/local/go/bin
+end
+
 
 function gt
   gotags -R=true -f=tags .
@@ -263,4 +268,3 @@ end
 if [ -d /cygdrive/c/Users/kevlar/AppData/Local/Programs/Microsoft\ VS\ Code/bin ]
 	set -x PATH /cygdrive/c/Users/kevlar/AppData/Local/Programs/Microsoft\ VS\ Code/bin $PATH
 end
-
