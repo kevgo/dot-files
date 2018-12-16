@@ -13,6 +13,13 @@
 - turn off the machine: `sudo poweroff`
 
 
+### Linux
+
+- enable Google DNS
+   - Settings > Network
+- install Linux
+   - Setting > Linux
+
 ### Node.JS
 
 Install dependencies:
