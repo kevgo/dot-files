@@ -42,7 +42,17 @@
 sudo apt-get install fish
 ```
 
-
+- start fish and fix error messages
+- set fish as default shell:
+  ```
+  sudo vim /etc/pam.d/chsh
+  ```
+  
+  change: `auth       required   pam_shells.so`
+  to
+  `auth       sufficient   pam_shells.so`
+  
+  Now run: `chsh -s /usr/bin/fish`
 
 ### Node.JS
 
