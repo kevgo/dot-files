@@ -180,6 +180,9 @@ abbr -a gtc git town config
 
 
 # Golang
+if test -d ~/go
+  set -x PATH $PATH ~/go/bin ~/go-external/bin
+end
 if test -d ~/d/go
   set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin
   set -x GOPATH $HOME/d/go-external:$HOME/d/go
