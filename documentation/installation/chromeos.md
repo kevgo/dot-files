@@ -105,3 +105,21 @@ npm i -g yarn
 - download the DEB installer from the VSCode homepage
 - move it to the Linux files
 - `sudo apt-get install ./code_*.deb`
+
+
+## Golang
+
+- download Go: https://golang.org/dl
+- move downloaded file to Linux files
+- `tar -C /usr/local -xzf go*.linux-amd64.tar.gz`
+- create a Go workspace
+
+  ```
+  mkdir -p ~/d/go/bin
+  mkdir -p ~/d/go-external/bin
+  mkdir -p ~/d/go/src/github.com/Originate
+  cd ~/d/go/src/github.com/Originate
+  git clone git@github.com:Originate/git-town.git
+  cd git-town
+  bin/build
+  ```
