@@ -121,5 +121,5 @@ npm i -g yarn
   cd ~/go/src/github.com/Originate
   git clone git@github.com:Originate/git-town.git
   cd git-town
-  bin/build
+  make build
   ```
