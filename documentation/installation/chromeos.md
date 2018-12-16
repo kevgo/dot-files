@@ -107,7 +107,7 @@ npm i -g yarn
 - `sudo apt-get install ./code_*.deb`
 
 
-## Golang
+### Golang
 
 - download Go: https://golang.org/dl
 - move downloaded file to Linux files
