@@ -1,5 +1,9 @@
 ## Installation Instructions for Windows
 
+### Download Windows
+
+- this one?: https://www.microsoft.com/en-us/software-download/windows10ISO
+
 ### Install Windows
 
 1. hit `F11` during startup to boot into recovery mode
