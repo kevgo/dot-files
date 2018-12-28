@@ -126,3 +126,7 @@ in Windows Store:
    - open task manager
    - go to `Startup` tab
    - right-click on entries and disable them
+
+### Screenshot tool
+
+- [ShareX](https://getsharex.com)
