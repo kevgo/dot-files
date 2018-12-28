@@ -2,7 +2,7 @@
 
 ## Platforms
 
-- ChromeOS [installation](documentation/installation/chromeos.md)
+- ChromeOS [installation](documentation/installation/chromeos.md), [cheatsheet](documentation/chromeos-cheatsheet.md)
 - Windows [installation](documentation/installation/windows.md)
 - macOS [installation](documentation/installation/macos.md)
 - Ubuntu [installation](documentation/installation/ubuntu.md)
