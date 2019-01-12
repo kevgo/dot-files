@@ -21,6 +21,8 @@ Starting to display sharp on external monitor on ChromeOS:
 env GDK_SCALE=3 sommelier -X --scale=2 --dpi=160 /usr/share/code/code .
 ```
 
+Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
+
 ### Hotkeys
 
 #### Navigation
