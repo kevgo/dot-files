@@ -28,8 +28,8 @@
 	preloadindex = true
 	fscache = true
 [user]
-  name = Kevin Goslar
-  email = kevin.goslar@gmail.com
+	name = Kevin Goslar
+	email = kevin.goslar@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
