@@ -54,12 +54,6 @@ function t
 end
 
 
-# Dog
-if [ -d ~/d/go/src/github.com/Originate/dog ]
-	set -x PATH $PATH ~/d/go/src/github.com/Originate/dog/bin ~/d/go/src/github.com/Originate/dog/shims
-end
-
-
 # Dotfile update checker
 ~/bin/check_local_dotfile_updates
 
@@ -71,6 +65,8 @@ end
 
 
 # Fish
+set -U fish_features qmark-noglob
+
 set fish_greeting
 
 function __fish_preexec_clear --on-event fish_preexec
