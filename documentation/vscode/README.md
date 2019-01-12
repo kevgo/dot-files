@@ -18,7 +18,7 @@ Extensions: run `~/bin/vspluginload` to install all VSCode extensions
 Starting to display sharp on external monitor on ChromeOS:
 
 ```
-env GDK_SCALE=3 sommelier -X --scale=2 --dpi=208 /usr/share/code/code .
+env GDK_SCALE=3 sommelier -X --scale=2 --dpi=160 /usr/share/code/code .
 ```
 
 ### Hotkeys
