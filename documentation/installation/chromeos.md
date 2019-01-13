@@ -133,7 +133,7 @@ start vim and run `:PlugInstall`
 
 - download Go: https://golang.org/dl
 - move downloaded file to Linux files
-- `tar -C /usr/local -xzf go*.linux-amd64.tar.gz`
+- `sudo tar -C /usr/local -xzf go*.linux-amd64.tar.gz`
 - create a Go workspace
 
   ```
