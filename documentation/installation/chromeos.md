@@ -91,7 +91,7 @@ sudo apt-get install -y nodejs
 Install compiler tools for native extensions:
 
 ```
-sudo apt-get install gcc g++ make
+sudo apt-get install -y gcc g++ make
 ```
 
 Install Yarn:
