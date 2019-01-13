@@ -1,1 +1,0 @@
-.config/home_dir_files/.i3

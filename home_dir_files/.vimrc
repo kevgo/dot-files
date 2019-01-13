@@ -42,20 +42,20 @@ nnoremap \\ :cclose<CR>
 
 " NOTE: cannot use standard as a linter here
 "       because it cannot handle Flow files correctly
-let g:ale_linters = {
-\   'javascript': ['flow', 'standard'],
-\   'cucumber': []
-\}
-let g:ale_fixers = {
-\   'javascript': ['prettier_standard'],
-\   'markdown': []
-\}
-let g:ale_fix_on_save = 1
-let g:ale_javascript_prettier_use_local_config = 1
-let g:ale_lint_on_insert_leave = 1
-let g:ale_lint_on_text_changed = 'never'       " before was 'normal'
-let g:ale_lint_delay = 0                       " default is 200
-let g:ale_lint_on_enter = 1                    " lint when loading files
+" let g:ale_linters = {
+" \   'javascript': ['flow', 'standard'],
+" \   'cucumber': []
+" \}
+" let g:ale_fixers = {
+" \   'javascript': ['prettier_standard'],
+" \   'markdown': []
+" \}
+" let g:ale_fix_on_save = 1
+" let g:ale_javascript_prettier_use_local_config = 1
+" let g:ale_lint_on_insert_leave = 1
+" let g:ale_lint_on_text_changed = 'never'       " before was 'normal'
+" let g:ale_lint_delay = 0                       " default is 200
+" let g:ale_lint_on_enter = 1                    " lint when loading files
 
 
 " Appearance
@@ -68,18 +68,18 @@ endif
 
 
 " Autocomplete
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_min_num_identifier_candidate_chars = 6
-let g:ycm_complete_in_comments = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_echo_current_diagnostic = 0
-set completeopt=menu
+" let g:ycm_min_num_of_chars_for_completion = 3
+" let g:ycm_min_num_identifier_candidate_chars = 6
+" let g:ycm_complete_in_comments = 1
+" let g:ycm_complete_in_strings = 1
+" let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+" let g:ycm_collect_identifiers_from_tags_files = 1
+" let g:ycm_seed_identifiers_with_syntax = 1
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_enable_diagnostic_signs = 0
+" let g:ycm_enable_diagnostic_highlighting = 0
+" let g:ycm_echo_current_diagnostic = 0
+" set completeopt=menu
 
 
 " Behavior
@@ -93,7 +93,7 @@ set ignorecase smartcase          " ignore case in searched
 " set nocompatible                  " disable VI compatibility mode
 set noautoindent
 set nosmartindent
-set omnifunc=syntaxcomplete#Complete   " enable syntax completion
+" set omnifunc=syntaxcomplete#Complete   " enable syntax completion
 " set spell
 " set spelllang=en_us             " set spell check language
 set nowrap                        " disable word wrap.
@@ -101,7 +101,7 @@ set history=200
 set hidden
 set scrolloff=45                  " show context above/below cursorline
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 set title                         " display filename in title bar
 set ttyfast                       " faster scrolling
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
@@ -147,12 +147,6 @@ if has('gui_macvim')
 endif
 
 
-" Flow
-let g:flow#autoclose=1
-" let g:flow#showquickfix=0
-au BufNewFile,BufRead *.flow set filetype=javascript
-
-
 " Folding
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
@@ -160,10 +154,6 @@ set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 set visualbell          "no beeps on errors
 " set tildeop
-
-
-" Git
-command! GitAdd silent execute "!git add ".bufname('%')
 
 
 " Golang
@@ -190,7 +180,7 @@ augroup END
 
 
 " Indicator line at 80 col, greyed out area after 100 col.
-let &colorcolumn='80,'.join(range(101,299),',')
+" let &colorcolumn='80,'.join(range(101,299),',')
 
 
 " Invisible characters.
@@ -244,7 +234,7 @@ nnoremap <silent> <leader><space> i <ESC>
 
 
 " Previm
-let g:previm_open_cmd='open -a Safari'
+" let g:previm_open_cmd='open -a Safari'
 
 
 " Quick fix window, for example for Ack
@@ -283,7 +273,7 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 
 " Quick open files.
-nmap <leader>d :FZF<CR>
+" nmap <leader>d :FZF<CR>
 
 
 " Saving
@@ -347,16 +337,16 @@ nnoremap <leader>8 :call TertestrialSet(8)<cr>
 nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 " TypeScript
-if !exists("g:ycm_semantic_triggers")
-  let g:ycm_semantic_triggers = {}
-endif
-let g:ycm_semantic_triggers['typescript'] = ['.']
+" if !exists("g:ycm_semantic_triggers")
+"  let g:ycm_semantic_triggers = {}
+" endif
+" let g:ycm_semantic_triggers['typescript'] = ['.']
 
 " UltiSnips
-let g:UltiSnipsSnippetsDir='~/.config/ultisnips'
-let g:UltiSnipsExpandTrigger='<C-h>'
-let g:UltiSnipsJumpForwardTrigger='<C-h>'
-let g:UltiSnipsJumpBackwardTrigger='<C-k>'
+" let g:UltiSnipsSnippetsDir='~/.config/ultisnips'
+" let g:UltiSnipsExpandTrigger='<C-h>'
+" let g:UltiSnipsJumpForwardTrigger='<C-h>'
+" let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 
 
 " Vundle
@@ -367,7 +357,7 @@ Plug 'gmarik/vundle'
 " for FuzzyFinder
 " Plug 'L9'
 " Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 " Plug 'alexdavid/vim-min-git-status'
 " Plug 'bruno-/vim-husk'
 " Plug 'dag/vim-fish'
@@ -376,17 +366,17 @@ Plug 'godlygeek/tabular'
 Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'kevgo/jumbo'
 Plug 'kevgo/tertestrial-vim'
-Plug 'michaeljsmith/vim-indent-object'
+" Plug 'michaeljsmith/vim-indent-object'
 " Plug 'mileszs/ack.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-cucumber'
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 " Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-markdown'
+" " Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 " Plug 'fatih/vim-go'
@@ -412,10 +402,10 @@ call plug#end()
 
 " Colorscheme
 " hi ColorColumn ctermbg=0 guibg=#000000
-hi CursorColumn ctermbg=255 guibg=#f4f4f4
+" hi CursorColumn ctermbg=255 guibg=#f4f4f4
 
 " make sure you also change .gvimrc when changing this color!
-hi ColorColumn ctermbg=255 guibg=#f4f4f4
+" hi ColorColumn ctermbg=255 guibg=#f4f4f4
 
 " set background=light
 " let g:solarized_termcolors=256
@@ -460,10 +450,10 @@ imap <silent> <D-S-up> <esc>ddkP==i
 
 
 " Autocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#min_keyword_length = 5
-let g:neocomplete#sources#syntax#min_keyword_length = 5
+" let g:neocomplete#enable_at_startup = 1
+" let g:neocomplete#enable_smart_case = 1
+" let g:neocomplete#min_keyword_length = 5
+" let g:neocomplete#sources#syntax#min_keyword_length = 5
 
 
 " Enter normal mode on file save.
