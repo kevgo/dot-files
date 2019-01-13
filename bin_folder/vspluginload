@@ -2,4 +2,4 @@
 
 # loads the VSCode plugins
 
-sh ~/.vscode.plugins
+sh ~/bin/vscode.plugins
