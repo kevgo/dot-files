@@ -1,7 +1,15 @@
 ## ChromeOS installation
 
+### Install ChromiumOS on HDD
+
+- boot from USB stick
+- `Ctrl+Alt+T` to open a terminal with crosh
+- run `shell` to go into Bash
+- run `lsblk` to see all available block storage devices
+- run `/usr/sbin/chromeos-install --dst <device>`
+
 ### Install CloudReady on external SSD drive
- - create normal USB installer stick and boot from it
+- create normal USB installer stick and boot from it
 - log into ChromeOS
 - hit `Ctrl+Alt+T` to open a terminal with crosh
 - run `shell` to go into Bash
