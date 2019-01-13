@@ -115,6 +115,15 @@ npm i -g yarn
 - `sudo apt-get install ./code_*.deb`
 
 
+### Vim
+
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+start vim and run `:PlugInstall`
+
 ### Golang
 
 - download Go: https://golang.org/dl
