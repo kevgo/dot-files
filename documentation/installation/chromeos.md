@@ -107,6 +107,11 @@ npm i -g yarn
     sudo chmod 777 /usr/bin
     ```
 
+Install diff-so-fancy:
+
+```
+npm i -g diff-so-fancy
+```
 
 ### VSCode
 
