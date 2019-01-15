@@ -3,6 +3,7 @@
 - show history: `ctrl+H`
 - show downloads: `ctrl+J`
 - show status: `alt+shift+S`
+- reboot: close all apps, then `sudo reboot` in crosh shell
 
 ### Files
 
