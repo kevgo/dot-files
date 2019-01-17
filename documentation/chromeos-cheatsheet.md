@@ -1,9 +1,13 @@
 ## Chrome OS Cheatsheet
 
-- show history: `ctrl+H`
-- show downloads: `ctrl+J`
+### OS
+
 - show status: `alt+shift+S`
 - reboot: close all apps, then `sudo reboot` in crosh shell
+
+### Browser
+
+- show history: `ctrl+H`
 
 ### Files
 
