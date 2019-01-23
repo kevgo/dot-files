@@ -153,3 +153,9 @@ start vim and run `:PlugInstall`
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 sudo apt-get install git-lfs
 ```
+
+### Java
+
+```
+sudo apt install openjdk-8-jdk
+```
