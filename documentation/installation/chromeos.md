@@ -9,6 +9,7 @@ ChromiumOS problems:
 - Google Drive doesn't work
 - chrome://flags doesn't work
 - battery runtime is only 4 hours
+- Cog doesn't display temperatures
 
 CloudReady:
 - chrome://flags works
