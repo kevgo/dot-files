@@ -6,6 +6,7 @@ ChromiumOS problems:
 - after sleep, full-screen videos stutter unless the mouse moves
 - very infrequent updates
 - hotkey for overview mode (Fn-F5) requires pressing the Fn key 
+- chrome://flags doesn't work
 
 ### Install ChromiumOS on HDD
 
