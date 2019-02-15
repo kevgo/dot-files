@@ -6,7 +6,15 @@ ChromiumOS problems:
 - after sleep, full-screen videos stutter unless the mouse moves
 - very infrequent updates
 - hotkey for overview mode (Fn-F5) requires pressing the Fn key 
+- Google Drive doesn't work
 - chrome://flags doesn't work
+- battery runtime is only 4 hours
+
+CloudReady:
+- chrome://flags works
+- Amazon video works
+- headphones work
+- Google Drive works
 
 ### Install ChromiumOS on HDD
 
