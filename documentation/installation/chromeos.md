@@ -1,5 +1,12 @@
 ## ChromeOS installation
 
+ChromiumOS problems:
+- play video on Amazon (missing DRM component)
+- plugging in the headphones creates buzzing background noise and distorted sound
+- after sleep, full-screen videos stutter unless the mouse moves
+- very infrequent updates
+- hotkey for overview mode (Fn-F5) requires pressing the Fn key 
+
 ### Install ChromiumOS on HDD
 
 - boot from USB stick
