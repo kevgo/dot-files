@@ -16,6 +16,7 @@ CloudReady:
 - Amazon video works
 - headphones work
 - Google Drive works
+- PIN login doesn't work
 
 ### Install ChromiumOS on HDD
 
