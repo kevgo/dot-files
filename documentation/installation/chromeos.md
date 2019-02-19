@@ -75,7 +75,7 @@ CloudReady:
 ### Fish shell
 
 ```
-sudo apt-get install fish
+sudo apt-get install -y fish
 ```
 
 - start fish and fix error messages
