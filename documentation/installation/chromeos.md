@@ -89,6 +89,10 @@ sudo apt-get install -y fish
   `auth       sufficient   pam_shells.so`
   
   Now run: `chsh -s /usr/bin/fish`
+- disable glob
+  ```
+  set -U fish_features qmark-noglob
+  ```
 
 ### Node.JS
 
