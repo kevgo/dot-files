@@ -107,5 +107,11 @@
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false
-  }
+  },
+  "markdown.extension.italic.indicator": "_",
+  "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.extension.orderedList.marker": "one",
+  "markdown.extension.syntax.decorations": false,
+  "markdown.extension.toc.githubCompatibility": true,
+  "markdown.extension.toc.updateOnSave": false
 }
