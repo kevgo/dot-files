@@ -113,5 +113,6 @@
   "markdown.extension.orderedList.marker": "one",
   "markdown.extension.syntax.decorations": false,
   "markdown.extension.toc.githubCompatibility": true,
-  "markdown.extension.toc.updateOnSave": false
+  "markdown.extension.toc.updateOnSave": false,
+  "window.titleBarStyle": "custom"
 }
