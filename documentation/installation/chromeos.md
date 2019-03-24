@@ -116,11 +116,8 @@ Install compiler tools for native extensions:
 sudo apt-get install -y gcc g++ make
 ```
 
-Install Yarn:
+[Install Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
 
-```
-npm i -g yarn
-```
 
 - fix possible permissions errors:
 
