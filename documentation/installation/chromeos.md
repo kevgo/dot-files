@@ -1,17 +1,19 @@
 ## ChromeOS installation
 
 ChromiumOS problems:
+
 - play video on Amazon (missing DRM component)
 - plugging in the headphones creates buzzing background noise and distorted sound
 - after sleep, full-screen videos stutter unless the mouse moves
 - very infrequent updates
-- hotkey for overview mode (Fn-F5) requires pressing the Fn key 
+- hotkey for overview mode (Fn-F5) requires pressing the Fn key
 - Google Drive doesn't work
 - chrome://flags doesn't work
 - battery runtime is only 4 hours
 - Cog doesn't display temperatures
 
 CloudReady:
+
 - chrome://flags works
 - Amazon video works
 - headphones work
@@ -27,25 +29,24 @@ CloudReady:
 - run `/usr/sbin/chromeos-install --dst <device>`
 
 ### Install CloudReady on external SSD drive
+
 - create normal USB installer stick and boot from it
 - log into ChromeOS
 - hit `Ctrl+Alt+T` to open a terminal with crosh
 - run `shell` to go into Bash
 - determine the name of the external SSD drive
-   - `sudo fdisk -l`
-   - when unsure, remove the drive and see which drive is missing
+  - `sudo fdisk -l`
+  - when unsure, remove the drive and see which drive is missing
 - `cd /usr/sbin`
-- `sudo chromeos-install --dst /dev/sdX`  (replace `X` with your drive)
+- `sudo chromeos-install --dst /dev/sdX` (replace `X` with your drive)
 - turn off the machine: `sudo poweroff`
-
 
 ### Linux
 
 - enable Google DNS
-   - Settings > Network
+  - Settings > Network
 - install Linux
-   - Setting > Linux
-
+  - Setting > Linux
 
 ### Settings
 
@@ -60,7 +61,7 @@ CloudReady:
 ### Set up dotfiles
 
 - generate SSH key:
-  
+
   ```
   ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com"
   eval "$(ssh-agent -s)"
@@ -68,6 +69,7 @@ CloudReady:
   sudo apt-get install xclip
   xclip -sel clip < ~/.ssh/id_rsa.pub
   ```
+
 - register SSH key with GitHub: https://github.com/settings/keys
 - clone the dotfiles: `git clone git@github.com:kevgo/dot-files.git .config`
 - install the symlinks: `.config/install/install.sh`
@@ -80,15 +82,17 @@ sudo apt-get install -y fish
 
 - start fish and fix error messages
 - set fish as default shell:
+
   ```
   sudo vim /etc/pam.d/chsh
   ```
-  
-  change: `auth       required   pam_shells.so`
+
+  change: `auth required pam_shells.so`
   to
-  `auth       sufficient   pam_shells.so`
-  
+  `auth sufficient pam_shells.so`
+
   Now run: `chsh -s /usr/bin/fish`
+
 - disable glob
   ```
   set -U fish_features qmark-noglob
@@ -118,13 +122,12 @@ sudo apt-get install -y gcc g++ make
 
 [Install Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
 
-
 - fix possible permissions errors:
 
-    ```
-    sudo chmod 777 /usr/lib/node_modules
-    sudo chmod 777 /usr/bin
-    ```
+  ```
+  sudo chmod 777 /usr/lib/node_modules
+  sudo chmod 777 /usr/bin
+  ```
 
 Install diff-so-fancy:
 
@@ -137,7 +140,6 @@ npm i -g diff-so-fancy
 - download the DEB installer from the VSCode homepage
 - move it to the Linux files
 - `sudo apt-get install ./code_*.deb`
-
 
 ### Vim
 
@@ -178,7 +180,6 @@ sudo apt-get install git-lfs
 ```
 sudo apt install openjdk-8-jdk
 ```
-
 
 ### Make
 
