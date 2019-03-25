@@ -178,3 +178,12 @@ sudo apt-get install git-lfs
 ```
 sudo apt install openjdk-8-jdk
 ```
+
+
+### Make
+
+install `column` utility needed for `make help`:
+
+```
+sudo apt install bsdmainutils
+```
