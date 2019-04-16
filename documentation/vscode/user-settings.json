@@ -36,17 +36,33 @@
   "files.trimTrailingWhitespace": true,
   "git.ignoreMissingGitWarning": false,
   "git.promptToSaveFilesBeforeCommit": true,
+  "go.formatTool": "goimports",
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "go.languageServerExperimentalFeatures": {
+    "format": true,
+    "autoComplete": true
+  },
+  "go.useLanguageServer": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "[markdown]": {
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false
+  },
+  "markdown.extension.italic.indicator": "_",
+  "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.extension.orderedList.marker": "one",
+  "markdown.extension.syntax.decorations": false,
+  "markdown.extension.toc.githubCompatibility": true,
+  "markdown.extension.toc.updateOnSave": false,
   "npm.packageManager": "yarn",
   "scm.diffDecorations": "none",
   "scrolloff.alwaysCenter": true,
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
-  "tslint.packageManager": "yarn",
-  "tslint.run": "onSave",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vim.debug.loggingLevel": "debug",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-b>": false,
@@ -90,10 +106,10 @@
     }
   ],
   "vim.statusBarColorControl": false,
-  "window.autoDetectHighContrast": false,
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
-  "window.zoomLevel": 0,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": -1,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
@@ -103,16 +119,5 @@
   },
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.statusBar.feedback.visible": false,
-  "[markdown]": {
-    "editor.occurrencesHighlight": false,
-    "editor.selectionHighlight": false
-  },
-  "markdown.extension.italic.indicator": "_",
-  "markdown.extension.orderedList.autoRenumber": false,
-  "markdown.extension.orderedList.marker": "one",
-  "markdown.extension.syntax.decorations": false,
-  "markdown.extension.toc.githubCompatibility": true,
-  "markdown.extension.toc.updateOnSave": false,
-  "window.titleBarStyle": "custom"
+  "workbench.statusBar.feedback.visible": false
 }
