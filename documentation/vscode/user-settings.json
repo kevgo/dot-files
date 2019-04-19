@@ -37,14 +37,6 @@
   "git.ignoreMissingGitWarning": false,
   "git.promptToSaveFilesBeforeCommit": true,
   "go.formatTool": "goimports",
-  "go.alternateTools": {
-    "go-langserver": "gopls"
-  },
-  "go.languageServerExperimentalFeatures": {
-    "format": true,
-    "autoComplete": true
-  },
-  "go.useLanguageServer": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
@@ -119,5 +111,6 @@
   },
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
+  "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false
 }
