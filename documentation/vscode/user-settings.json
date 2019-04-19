@@ -37,6 +37,8 @@
   "git.ignoreMissingGitWarning": false,
   "git.promptToSaveFilesBeforeCommit": true,
   "go.formatTool": "goimports",
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
