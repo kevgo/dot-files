@@ -198,6 +198,8 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable"
 sudo apt update
 sudo apt install docker-ce
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 
 [complete instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9)
