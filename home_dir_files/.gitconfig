@@ -3,17 +3,7 @@
   ci = commit
   co = checkout
   br = branch
-  hack = town hack
-  kill = town kill
-  new-pull-request = town new-pull-request
-  prune-branches = town prune-branches
-  rename-branch = town rename-branch
   conflicts = diff --name-only --diff-filter=U
-  repo = town repo
-  ship = town ship
-  sync = town sync
-  append = town append
-  prepend = town prepend
 
   # typos
   ad = add
@@ -21,6 +11,16 @@
   doff = diff
   idff = diff
   sst = status
+	hack = town hack
+	append = town append
+	kill = town kill
+	new-pull-request = town new-pull-request
+	prepend = town prepend
+	prune-branches = town prune-branches
+	rename-branch = town rename-branch
+	repo = town repo
+	ship = town ship
+	sync = town sync
 [core]
   editor = vim
   excludesfile = /Users/kevlar/.gitignore_global

@@ -4,5 +4,6 @@ fish/fish_history
 fish/fishd.*
 home_dir_files/.npmrc
 hub
+Simplenote/
 thefuck/settings.pyc
 yarn/
