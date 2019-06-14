@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# runs "make spec" with the right args
-
-if [ "$#" -eq 0 ]; then
-  make spec
-else
-  make spec FILE="$1"
-fi

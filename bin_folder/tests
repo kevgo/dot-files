@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# runs "make tests" with the right args
-
-if [ "$#" -eq 0 ]; then
-  make tests
-else
-  make tests FILE="$1"
-fi

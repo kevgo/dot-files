@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# runs "make lint-md with the right args
-
-if [ "$#" -eq 0 ]; then
-  make lintmd
-else
-  make lintmd FILE="$1"
-fi

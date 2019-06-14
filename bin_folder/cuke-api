@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# runs "make cuke-api with the right args
-
-if [ "$#" -eq 0 ]; then
-  make cukeapi
-else
-  make cukeapi FILE="$1"
-fi

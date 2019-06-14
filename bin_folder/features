@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# runs "make features with the right args
-
-if [ "$#" -eq 0 ]; then
-  make features
-else
-  make features FILE="$1"
-fi
