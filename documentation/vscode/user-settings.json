@@ -97,10 +97,9 @@
     }
   ],
   "window.enableMenuBarMnemonics": false,
-  "vim.sneak": true,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
