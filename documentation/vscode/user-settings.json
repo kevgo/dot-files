@@ -40,23 +40,20 @@
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.referencesCodeLens.enabled": true,
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false
   },
-  "markdown.extension.italic.indicator": "_",
-  "markdown.extension.orderedList.autoRenumber": false,
-  "markdown.extension.orderedList.marker": "one",
-  "markdown.extension.syntax.decorations": false,
-  "markdown.extension.toc.githubCompatibility": true,
-  "markdown.extension.toc.updateOnSave": false,
   "npm.packageManager": "yarn",
   "scm.diffDecorations": "none",
   "scrolloff.alwaysCenter": true,
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "typescript.referencesCodeLens.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.changeWordIncludesWhitespace": true,
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-b>": false,
@@ -99,11 +96,11 @@
       "after": ["g", "k"]
     }
   ],
-  "vim.statusBarColorControl": false,
   "window.enableMenuBarMnemonics": false,
+  "vim.sneak": true,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
@@ -114,5 +111,7 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.statusBar.feedback.visible": false
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
