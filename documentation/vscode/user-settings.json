@@ -40,7 +40,6 @@
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.referencesCodeLens.enabled": true,
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false
@@ -51,7 +50,6 @@
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
-  "typescript.referencesCodeLens.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.changeWordIncludesWhitespace": true,
   "vim.handleKeys": {
