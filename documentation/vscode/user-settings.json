@@ -51,6 +51,7 @@
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.camelCaseMotion.enable": true,
   "vim.changeWordIncludesWhitespace": true,
   "vim.handleKeys": {
     "<C-a>": false,
