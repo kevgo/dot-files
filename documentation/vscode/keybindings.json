@@ -36,7 +36,7 @@
   },
   {
     "command": "list.select",
-    "key": "O",
+    "key": "o",
     "when": "listFocus && !inputFocus"
   },
   {
@@ -102,5 +102,13 @@
   {
     "key": "ctrl+p",
     "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+alt+w",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-workbench.action.closeAllEditors"
   }
 ]
