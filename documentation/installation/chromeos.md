@@ -1,45 +1,8 @@
 ## ChromeOS installation
 
-ChromiumOS problems:
+### Backup old machine
 
-- play video on Amazon (missing DRM component)
-- plugging in the headphones creates buzzing background noise and distorted sound
-- after sleep, full-screen videos stutter unless the mouse moves
-- very infrequent updates
-- hotkey for overview mode (Fn-F5) requires pressing the Fn key
-- Google Drive doesn't work
-- chrome://flags doesn't work
-- battery runtime is only 4 hours
-- Cog doesn't display temperatures
-
-CloudReady:
-
-- chrome://flags works
-- Amazon video works
-- headphones work
-- Google Drive works
-- PIN login doesn't work
-
-### Install ChromiumOS on HDD
-
-- boot from USB stick
-- `Ctrl+Alt+T` to open a terminal with crosh
-- run `shell` to go into Bash
-- run `lsblk` to see all available block storage devices
-- run `/usr/sbin/chromeos-install --dst <device>`
-
-### Install CloudReady on external SSD drive
-
-- create normal USB installer stick and boot from it
-- log into ChromeOS
-- hit `Ctrl+Alt+T` to open a terminal with crosh
-- run `shell` to go into Bash
-- determine the name of the external SSD drive
-  - `sudo fdisk -l`
-  - when unsure, remove the drive and see which drive is missing
-- `cd /usr/sbin`
-- `sudo chromeos-install --dst /dev/sdX` (replace `X` with your drive)
-- turn off the machine: `sudo poweroff`
+- Quick Write snippets
 
 ### Linux
 
