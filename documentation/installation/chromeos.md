@@ -24,7 +24,7 @@
   ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com"
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa
-  sudo apt-get install xclip
+  sudo apt install xclip
   xclip -sel clip < ~/.ssh/id_rsa.pub
   ```
 
@@ -35,7 +35,7 @@
 ### Fish shell
 
 ```
-sudo apt-get install -y fish
+sudo apt install -y fish
 ```
 
 - start fish and fix error messages
@@ -61,21 +61,21 @@ sudo apt-get install -y fish
 Install dependencies:
 
 ```
-sudo apt-get update
-sudo apt-get install -y curl gnupg
+sudo apt update
+sudo apt install -y curl gnupg
 ```
 
 Install Node 10:
 
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 ```
 
 Install compiler tools for native extensions:
 
 ```
-sudo apt-get install -y gcc g++ make
+sudo apt install -y gcc g++ make
 ```
 
 [Install Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
@@ -97,7 +97,7 @@ npm i -g diff-so-fancy
 
 - download the DEB installer from the VSCode homepage
 - move it to the Linux files
-- `sudo apt-get install ./code_*.deb`
+- `sudo apt install ./code_*.deb`
 
 ### Vim
 
@@ -130,7 +130,7 @@ start vim and run `:PlugInstall`
 
 ```
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-sudo apt-get install git-lfs
+sudo apt install git-lfs
 ```
 
 ### Java
