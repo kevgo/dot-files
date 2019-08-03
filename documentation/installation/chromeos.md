@@ -97,7 +97,7 @@ npm i -g diff-so-fancy
 
 - download the DEB installer from the VSCode homepage
 - move it to the Linux files
-- `sudo apt install ./code_*.deb`
+- `sudo apt install -y ./code_*.deb`
 
 ### Vim
 
