@@ -4,15 +4,9 @@
 
 - Quick Write snippets
 
-### Linux
-
-- enable Google DNS
-  - Settings > Network
-- install Linux
-  - Setting > Linux
-
 ### Settings
 
+- Wifi connection: enable Google DNS
 - Screen lock > PIN or password
 - Manage other people > disable guest and restrict login
 - Wallpaper
@@ -20,6 +14,7 @@
   - Caps Lock: change to `Escape`
   - set delay and repeat rate
 - Displays > Display Size
+- Linux: enable
 
 ### Set up dotfiles
 
