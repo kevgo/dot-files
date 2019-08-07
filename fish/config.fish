@@ -194,10 +194,6 @@ if test -d /c/Users/kevin/AppData/Roaming/npm
 end
 
 
-# Git Town
-abbr -a gtc git town config
-
-
 # Golang
 if test -d ~/go
   set -x PATH $PATH ~/go/bin ~/go-external/bin
