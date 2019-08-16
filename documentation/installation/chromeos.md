@@ -139,16 +139,17 @@ start vim and run `:PlugInstall`
 Install Goland IDE:
 
 - [download Goland](https://www.jetbrains.com/go/download/#section=linux)
-- install Goland: 
+- install Goland:
 
-    ```
-    sudo tar xzf /mnt/chromeos/MyFiles/Downloads/goland-*.tar.gz -C /opt
-    ```
+  ```
+  sudo tar xzf /mnt/chromeos/MyFiles/Downloads/goland-*.tar.gz -C /opt
+  ```
+
 - start Goland:
 
-    ```
-    /opt/GoLand-*/bin/goland.sh
-    ```
+  ```
+  /opt/GoLand-*/bin/goland.sh
+  ```
 
 ### Git-LFS
 
