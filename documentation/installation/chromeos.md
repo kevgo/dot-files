@@ -56,6 +56,12 @@ sudo apt install -y fish
   set -U fish_features qmark-noglob
   ```
 
+### Build tools
+
+```
+sudo apt install -y build-essential
+```
+
 ### Node.JS
 
 Install dependencies:
@@ -70,12 +76,6 @@ Install Node 10:
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
-```
-
-Install compiler tools for native extensions:
-
-```
-sudo apt install -y gcc g++ make
 ```
 
 [Install Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
