@@ -52,12 +52,6 @@ sudo apt update
 sudo apt install -y build-essential
 ```
 
-Install the `column` utility needed for `make help`:
-
-```
-sudo apt install bsdmainutils
-```
-
 ### Fish shell
 
 ```
