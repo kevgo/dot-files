@@ -16,6 +16,10 @@
 - Displays > Display Size
 - Linux: enable
 
+### Folder sharing
+
+- right click on `Downloads` folder, choose `Share with Linux`
+
 ### Set up dotfiles
 
 - generate SSH key:
@@ -32,6 +36,21 @@
 - clone the dotfiles: `git clone git@github.com:kevgo/dot-files.git .config`
 - install the symlinks: `.config/install/install.sh`
 
+### Build tools
+
+This installs `make` and the compilers needed for C extensions of Node.JS:
+
+```
+sudo apt update
+sudo apt install -y build-essential
+```
+
+Install the `column` utility needed for `make help`:
+
+```
+sudo apt install bsdmainutils
+```
+
 ### Fish shell
 
 ```
@@ -45,36 +64,29 @@ sudo apt install -y fish
   sudo vim /etc/pam.d/chsh
   ```
 
-  change: `auth required pam_shells.so`
-  to
+  change: `auth required pam_shells.so` to
   `auth sufficient pam_shells.so`
 
   Now run: `chsh -s /usr/bin/fish`
 
 - disable glob
+
   ```
   set -U fish_features qmark-noglob
   ```
-
-### Build tools
-
-```
-sudo apt install -y build-essential
-```
 
 ### Node.JS
 
 Install dependencies:
 
 ```
-sudo apt update
 sudo apt install -y curl gnupg
 ```
 
-Install Node 10:
+Install Node 12:
 
 ```
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
@@ -96,8 +108,7 @@ npm i -g diff-so-fancy
 ### VSCode
 
 - download the DEB installer from the VSCode homepage
-- move it to the Linux files
-- `sudo apt install -y ./code_*.deb`
+- `sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb`
 
 ### Vim
 
@@ -111,8 +122,7 @@ start vim and run `:PlugInstall`
 ### Golang
 
 - download Go: https://golang.org/dl
-- move downloaded file to Linux files
-- `sudo tar -C /usr/local -xzf go*.linux-amd64.tar.gz`
+- `sudo tar -C /usr/local -xzf /mnt/chromeos/MyFiles/Downloads/go1*.linux-amd64.tar.gz`
 - create a Go workspace
 
   ```
@@ -125,6 +135,14 @@ start vim and run `:PlugInstall`
   make setup
   make build
   ```
+  
+Install Goland IDE:
+
+- [download Goland](https://www.jetbrains.com/go/download/#section=linux)
+
+```
+sudo tar xzf /mnt/chromeos/MyFiles/Downloads/goland-*.tar.gz -C /opt
+```
 
 ### Git-LFS
 
@@ -137,14 +155,6 @@ sudo apt install git-lfs
 
 ```
 sudo apt install openjdk-8-jdk
-```
-
-### Make
-
-install `column` utility needed for `make help`:
-
-```
-sudo apt install bsdmainutils
 ```
 
 ### Docker
