@@ -36,11 +36,11 @@
   ```
 
 - register SSH key with GitHub: https://github.com/settings/keys
-- clone the dotfiles: 
+- clone the dotfiles:
 
       rm -rf .config
       git clone git@github.com:kevgo/dot-files.git .config
-    
+
 - install the symlinks: `.config/install/install.sh`
 
 ### Build tools
