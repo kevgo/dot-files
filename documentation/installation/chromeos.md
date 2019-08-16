@@ -135,7 +135,7 @@ start vim and run `:PlugInstall`
   make setup
   make build
   ```
-  
+
 Install Goland IDE:
 
 - [download Goland](https://www.jetbrains.com/go/download/#section=linux)
