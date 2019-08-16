@@ -136,7 +136,7 @@ start vim and run `:PlugInstall`
   git clone git@github.com:Originate/git-town.git
   cd git-town
   make setup
-  
+
   make build
   ```
 
