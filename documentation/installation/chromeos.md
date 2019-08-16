@@ -89,6 +89,7 @@ Install Node 12:
 
 ```
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
 sudo apt install -y nodejs
 ```
 
@@ -128,13 +129,14 @@ start vim and run `:PlugInstall`
 - create a Go workspace
 
   ```
-  mkdir -p ~/go/bin
+    mkdir -p ~/go/bin
   mkdir -p ~/go-external/bin
   mkdir -p ~/go/src/github.com/Originate
   cd ~/go/src/github.com/Originate
   git clone git@github.com:Originate/git-town.git
   cd git-town
   make setup
+  
   make build
   ```
 
@@ -157,6 +159,7 @@ Install Goland IDE:
 
 ```
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+
 sudo apt install git-lfs
 ```
 
@@ -171,10 +174,14 @@ sudo apt install openjdk-8-jdk
 ```
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable"
+
 sudo apt update
 sudo apt install docker-ce
+
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
