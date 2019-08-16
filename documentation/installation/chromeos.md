@@ -7,6 +7,7 @@
 ### Settings
 
 - Wifi connection: enable Google DNS
+- install proprietary media components
 - Screen lock > PIN or password
 - Manage other people > disable guest and restrict login
 - Wallpaper
