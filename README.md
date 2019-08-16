@@ -6,7 +6,7 @@
 - Windows [installation](documentation/installation/windows.md)
 - macOS [installation](documentation/installation/macos.md)
 - Ubuntu [installation](documentation/installation/ubuntu.md)
-- Manjaro i3 [installation](documentation/installation/manjaro_i3.md), [cheatsheet](documentation/i3_cheatsheet.md)
+- Manjaro Linux i3 [installation](documentation/installation/manjaro_i3.md), [cheatsheet](documentation/i3_cheatsheet.md)
 
 
 ## Applications
