@@ -17,7 +17,8 @@
 - Displays > Display Size
 - Linux: enable
 
-Enable Hyperthreading: 
+Enable Hyperthreading:
+
 - go to chrome://flags/#scheduler-configuration
 - set to `performance`
 
