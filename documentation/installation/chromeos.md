@@ -102,12 +102,12 @@ sudo apt update
 sudo apt install yarn
 ```
 
-- fix possible permissions errors:
+Fix possible permissions errors:
 
-  ```
-  sudo chmod 777 /usr/lib/node_modules
-  sudo chmod 777 /usr/bin
-  ```
+```
+sudo chmod 777 /usr/lib/node_modules
+sudo chmod 777 /usr/bin
+```
 
 Install diff-so-fancy:
 
