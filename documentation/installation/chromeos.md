@@ -83,12 +83,6 @@ sudo apt install -y fish
 
 ### Node.JS
 
-Install dependencies:
-
-```
-sudo apt install -y curl gnupg
-```
-
 Install Node 12:
 
 ```
