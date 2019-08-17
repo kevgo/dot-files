@@ -17,6 +17,10 @@
 - Displays > Display Size
 - Linux: enable
 
+Enable Hyperthreading: 
+- go to chrome://flags/#scheduler-configuration
+- set to `performance`
+
 ### Folder sharing
 
 - right click on `Downloads` folder, choose `Share with Linux`
