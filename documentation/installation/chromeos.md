@@ -117,7 +117,7 @@ npm i -g diff-so-fancy
 
 ### VSCode
 
-- download the DEB installer from the VSCode homepage
+- [download the DEB installer](https://code.visualstudio.com/download)
 - `sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb`
 
 ### Vim
