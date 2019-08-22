@@ -197,6 +197,7 @@ end
 # Golang
 if test -d ~/go
   set -x PATH $PATH ~/go/bin ~/go-external/bin
+  set -x GOPATH $HOME/go-external:$HOME/go
 end
 if test -d ~/d/go
   set -x PATH $PATH ~/d/go/bin ~/d/go-external/bin
