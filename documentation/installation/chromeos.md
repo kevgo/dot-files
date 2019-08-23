@@ -199,3 +199,9 @@ sudo usermod -aG docker $USER
 ### RipGrep
 
 - https://github.com/BurntSushi/ripgrep#installation
+
+### Time
+
+```
+sudo apt install -y time
+```
