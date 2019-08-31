@@ -203,6 +203,8 @@ let g:nerdtree_tabs_open_on_new_tab=0
 let g:nerdtree_tabs_synchronize_focus=0
 let g:NERDTreeMapOpenSplit='s'
 let g:NERDTreeMapOpenVSplit='v'
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 
 function! IsNERDTreeOpen()
   return exists('t:NERDTreeBufName') && (bufwinnr(t:NERDTreeBufName) != -1)
