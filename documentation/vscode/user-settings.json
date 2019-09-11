@@ -7,6 +7,8 @@
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.colorDecorators": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 35,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
   "editor.folding": false,
@@ -37,12 +39,11 @@
   "git.ignoreMissingGitWarning": false,
   "git.promptToSaveFilesBeforeCommit": true,
   "go.formatTool": "goimports",
-  "go.lintTool": "golangci-lint",
-  "go.lintFlags": ["--fast"],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "npm.packageManager": "yarn",
   "scm.diffDecorations": "none",
@@ -63,42 +64,82 @@
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "after": ["i", "<space>", "<esc>"],
-      "before": ["<leader>", "<leader>"]
+      "after": [
+        "i",
+        "<space>",
+        "<esc>"
+      ],
+      "before": [
+        "<leader>",
+        "<leader>"
+      ]
     },
     {
-      "after": ["o", "<esc>", "k"],
-      "before": ["<enter>"]
+      "after": [
+        "o",
+        "<esc>",
+        "k"
+      ],
+      "before": [
+        "<enter>"
+      ]
     },
     {
-      "after": ["l"],
-      "before": ["s"]
+      "after": [
+        "l"
+      ],
+      "before": [
+        "s"
+      ]
     },
     {
-      "after": ["s"],
-      "before": ["l"]
+      "after": [
+        "s"
+      ],
+      "before": [
+        "l"
+      ]
     },
     {
-      "before": ["<leader>", "/"],
-      "commands": [":nohl"]
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"]
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
     },
     {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
     }
   ],
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
