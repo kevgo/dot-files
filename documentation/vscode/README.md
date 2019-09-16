@@ -32,12 +32,16 @@ Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
 - switch to next editor group: `ctrl+tab`
 - move editor left/right in current group: `ctrl+shift+PageUp/Down`
 - move editor to left/right editor group: `ctrl+alt+left/right`
-- **show/hide sidebar:** `ctrl-b`
-- **open file:** `enter`
-- **show explorer:** `ctrl-d`
 - go to definition: `gd`
 - go back: `[ctrl]-[minus]`
 
+### Sidebar
+
+- **show/hide sidebar:** `ctrl-b`
+- **open file:** `enter`
+- **show explorer:** `ctrl-d`
+- **create new file:** `n`
+- **create new folder:** `shift-n`
 
 #### Editing
 
