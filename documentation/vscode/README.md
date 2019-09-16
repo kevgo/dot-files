@@ -49,13 +49,11 @@ Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
 - see problems: `cmd+shift+M`
 - see mouse hover information: `gh`
 
-
 #### Git
 
 - open Git window: `ctrl+shift+G`
 - stage file: in the Git window, navigate to the file, hit `o` to open (select) it, then `s` to stage
 
-
 #### Terminal
 
-- show/hide terminal: ```ctrl+` ```
+- show/hide terminal: `` ctrl+` ``
