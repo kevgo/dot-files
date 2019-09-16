@@ -110,5 +110,9 @@
   {
     "key": "ctrl+k ctrl+w",
     "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder"
   }
 ]
