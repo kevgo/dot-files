@@ -216,6 +216,9 @@ function gt
 end
 
 
+# homebrew
+eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
 # ls
 function l
   ls -1

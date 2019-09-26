@@ -235,6 +235,9 @@ nnoremap <leader>n :noh<CR>
 nnoremap <silent> <leader><space> i <ESC>
 
 
+" Prettier
+autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql Prettier
+
 " Previm
 " let g:previm_open_cmd='open -a Safari'
 
@@ -277,13 +280,6 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 " Quick open files.
 " nmap <leader>d :FZF<CR>
 
-
-" Saving
-" Stripping Whitespace on save.
-augroup vimrc
-	autocmd BufWritePre * :%s/\s\+$//e
-augroup END
-set autowriteall
 
 " Saving in GVim
 " CTRL-S
@@ -382,7 +378,8 @@ Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'leafgarland/typescript-vim'
-" Plug 'fatih/vim-go'
+Plug 'fatih/vim-go'
+Plug 'prettier/vim-prettier'
 " Plug 'Raimondi/delimitMate'
 " Plug 'junegunn/goyo.vim'
 " Plug 'junegunn/limelight.vim'
