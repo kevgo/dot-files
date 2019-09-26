@@ -52,16 +52,16 @@ Enable Hyperthreading:
 
 This installs `make` and the compilers needed for C extensions of Node.JS:
 
-```
-sudo apt update
-sudo apt install -y build-essential
-```
-
-### Fish shell
-
 **NEXT TIME, TRY TO INSTALL THIS USING HOMEBREW FOR LINUX, SINCE IT HAS THE LATEST VERSIONS!**
 
 https://docs.brew.sh/Homebrew-on-Linux
+
+```
+sudo apt update
+sudo apt install -y build-essential ruby
+```
+
+### Fish shell
 
 ```
 sudo apt install -y fish
