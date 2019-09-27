@@ -2,29 +2,12 @@ set encoding=utf-8
 scriptencoding utf-8
 filetype plugin indent on
 
-" NOTE: commented out because this is slow on Windows
-" let s:uname = system("uname")
-" if s:uname == "Darwin\n"
-"   if has('python3')
-"       command! -nargs=1 Py py3 <args>
-"       set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.6/Python
-"       set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.6
-"   else
-"       command! -nargs=1 Py py <args>
-"       set pythondll=/usr/local/Frameworks/Python.framework/Versions/2.7/Python
-"       set pythonhome=/usr/local/Frameworks/Python.framework/Versions/2.7
-"   endif
-" else
-"   set clipboard=unnamedplus         " yank and paste with the system clipboard
-" endif
-
 
 " Leader key
 let g:mapleader = "\<space>"
 noremap \ ,
 
 set shell=/bin/bash
-" runtime macros/matchit.vim
 
 
 " Ag
@@ -36,52 +19,6 @@ nnoremap <leader>w :Ack! "\b<cword>\b" <CR>
 nnoremap \\ :cclose<CR>
 
 
-" ALE
-" autocmd bufwritepost *.js silent !standard --fix %
-" autocmd bufwritepost *.md silent !prettier --write %
-
-" NOTE: cannot use standard as a linter here
-"       because it cannot handle Flow files correctly
-" let g:ale_linters = {
-" \   'javascript': ['flow', 'standard'],
-" \   'cucumber': []
-" \}
-" let g:ale_fixers = {
-" \   'javascript': ['prettier_standard'],
-" \   'markdown': []
-" \}
-" let g:ale_fix_on_save = 1
-" let g:ale_javascript_prettier_use_local_config = 1
-" let g:ale_lint_on_insert_leave = 1
-" let g:ale_lint_on_text_changed = 'never'       " before was 'normal'
-" let g:ale_lint_delay = 0                       " default is 200
-" let g:ale_lint_on_enter = 1                    " lint when loading files
-
-
-" Appearance
-if has('gui_running')
-  set guioptions-=T        " remove toolbar
-  set guioptions-=m        " remove menu bar
-  set guioptions-=L        " remove left-hand scrollbar
-  " set guifont=Menlo:h12
-endif
-
-
-" Autocomplete
-" let g:ycm_min_num_of_chars_for_completion = 3
-" let g:ycm_min_num_identifier_candidate_chars = 6
-" let g:ycm_complete_in_comments = 1
-" let g:ycm_complete_in_strings = 1
-" let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
-" let g:ycm_collect_identifiers_from_tags_files = 1
-" let g:ycm_seed_identifiers_with_syntax = 1
-" let g:ycm_autoclose_preview_window_after_completion = 1
-" let g:ycm_enable_diagnostic_signs = 0
-" let g:ycm_enable_diagnostic_highlighting = 0
-" let g:ycm_echo_current_diagnostic = 0
-" set completeopt=menu
-
-
 " Behavior
 set number                        " show line numbers
 set autoread                      " reload files when changed on disk, i.e. via `git checkout`
@@ -90,7 +27,7 @@ set nobackup                      " don't create backup files
 set nowritebackup                 " don't create backup files
 set noswapfile                    " don't create .swp files
 set ignorecase smartcase          " ignore case in searched
-" set nocompatible                  " disable VI compatibility mode
+set nocompatible                  " disable VI compatibility mode
 set noautoindent
 set nosmartindent
 " set omnifunc=syntaxcomplete#Complete   " enable syntax completion
@@ -106,19 +43,7 @@ set title                         " display filename in title bar
 set ttyfast                       " faster scrolling
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
 set showmatch
-
-" Keep the VIM content displayed when exiting VIM
-" set t_ti= t_te=
-
-
-" Cursor blink
-set guicursor+=a:blinkon0
-
-" CTags:nnoremap <leader>bi :!ctags -R .<CR>
-" ctrl-\ opens method under cursor in a new tab
-" Automatically update CTags index on file save.
-" au BufWritePost *.rb,*.js silent! !ctags -a -R --exclude=node_modules %
-" au BufWritePost *.rb,*.js,*.coffee silent! !ctags -a % 2> /dev/null &
+set guicursor+=a:blinkon0         " Cursor blink
 
 
 " Cucumber Tables
@@ -140,20 +65,6 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set timeoutlen=500
-if has('gui_macvim')
-	augroup vimrc
-		autocmd GUIEnter * set vb t_vb=
-	augroup END
-endif
-
-
-" Folding
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
-set visualbell          "no beeps on errors
-" set tildeop
 
 
 " Golang
@@ -187,42 +98,15 @@ augroup END
 set listchars=tab:»\ ,eol:¬,trail:⍽
 
 
-" Mouse and scrolling support.
-set mouse=a
-
-
-" Navigation
-" nnoremap { :call JumpToPreviousFunction()<CR>
-" nnoremap } :call JumpToNextFunction()<CR>
-
-
 " " NERDTree
 map <silent> <leader>t :NERDTreeMirrorToggle<CR>
 let g:NERDTreeIgnore=['.vim$', '\~$']
-let g:nerdtree_tabs_open_on_new_tab=0
-let g:nerdtree_tabs_synchronize_focus=0
+" let g:nerdtree_tabs_open_on_new_tab=0
+" let g:nerdtree_tabs_synchronize_focus=0
 let g:NERDTreeMapOpenSplit='s'
 let g:NERDTreeMapOpenVSplit='v'
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
-
-function! IsNERDTreeOpen()
-  return exists('t:NERDTreeBufName') && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
-
-" Call NERDTreeFind if NERDTree is active, current window contains a modifiable
-" file, and we're not in vimdiff
-function! SyncTree()
-  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-    NERDTreeFind
-    wincmd p
-  endif
-endfunction
-
-" Highlight currently open buffer in NERDTree
-" augroup vimrc
-" 	autocmd BufEnter * call SyncTree()
-" augroup END
 
 
 " Inserting empty lines using [enter] when in normal mode.
@@ -237,9 +121,6 @@ nnoremap <silent> <leader><space> i <ESC>
 
 " Prettier
 autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql Prettier
-
-" Previm
-" let g:previm_open_cmd='open -a Safari'
 
 
 " Quick fix window, for example for Ack
@@ -256,32 +137,12 @@ endfunction
 nnoremap <silent> <A-0> :call ReplaceAndGoToNext()<CR>
 nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
-" if !exists('g:escape_mapped')  " Only need to set the mapping up once.
-"   augroup escape_mapping
-"     autocmd!
-"     " Create the autocommand, to fire when Insert mode is entered
-"     autocmd InsertEnter * call s:setupEscapeMap()
-"   augroup END
-" endif
-"
-" function! s:setupEscapeMap()
-"   " Actually create the mapping
-"   nnoremap <C-[> :cprevious<CR>
-"
-"   " Now the map exists, so we won't ever need the autocommand again.
-"   let g:escape_mapped = 1
-"
-"   " Tidy up the autocommand and group
-"   " autocmd! escape_mapping InsertEnter *
-"   " augroup! escape_mapping
-" endfunction
-
 
 " Quick open files.
 " nmap <leader>d :FZF<CR>
 
 
-" Saving in GVim
+" Saving 
 " CTRL-S
 :noremap <c-s> <esc>:w<CR>
 " ALT-S
@@ -340,12 +201,6 @@ nnoremap <leader>9 :call TertestrialSet(9)<cr>
 " endif
 " let g:ycm_semantic_triggers['typescript'] = ['.']
 
-" UltiSnips
-" let g:UltiSnipsSnippetsDir='~/.config/ultisnips'
-" let g:UltiSnipsExpandTrigger='<C-h>'
-" let g:UltiSnipsJumpForwardTrigger='<C-h>'
-" let g:UltiSnipsJumpBackwardTrigger='<C-k>'
-
 
 " Vundle
 call plug#begin('~/.vim/plugged')
@@ -354,47 +209,23 @@ Plug 'gmarik/vundle'
 " Plug 'FuzzyFinder'
 " for FuzzyFinder
 " Plug 'L9'
-" Plug 'SirVer/ultisnips'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'alexdavid/vim-min-git-status'
-" Plug 'bruno-/vim-husk'
 Plug 'dag/vim-fish'
 Plug 'godlygeek/tabular'
-" Plug 'gkz/vim-ls'
 Plug 'jistr/vim-nerdtree-tabs'
-" Plug 'kevgo/jumbo'
 Plug 'kevgo/tertestrial-vim'
-" Plug 'michaeljsmith/vim-indent-object'
-" Plug 'mileszs/ack.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
-" Plug 'w0rp/ale'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-cucumber'
-" Plug 'tpope/vim-endwise'
-" Plug 'tpope/vim-fugitive'
 " " Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'leafgarland/typescript-vim'
 Plug 'fatih/vim-go'
 Plug 'prettier/vim-prettier'
-" Plug 'Raimondi/delimitMate'
-" Plug 'junegunn/goyo.vim'
-" Plug 'junegunn/limelight.vim'
-" Plug 'itchyny/vim-cursorword'
-" Plug 'kannokanno/previm'
-" Plug '/usr/local/opt/fzf'
-" Plug 'junegunn/fzf.vim'
-" Plug 'tpope/vim-sleuth'
-" Plug 'nathanaelkane/vim-indent-guides' is too slow when scrolling
-" Plug 'HerringtonDarkholme/yats'
-
-" Colors
-" Plug 'altercation/vim-colors-solarized'
-"
-" map gs :Gministatus<CR>
 
 " This must come after Vundle
 call plug#end()
@@ -406,12 +237,6 @@ call plug#end()
 
 " make sure you also change .gvimrc when changing this color!
 " hi ColorColumn ctermbg=255 guibg=#f4f4f4
-
-" set background=light
-" let g:solarized_termcolors=256
-" let g:solarized_visibility = 'low'
-" colorscheme solarized
-" call togglebg#map("<F5>")
 
 
 " Yanking
@@ -440,27 +265,6 @@ nmap <silent> <leader><S-J> <C-W>J
 " Duplicating lines.
 nnoremap <silent> <D-d> yyp
 imap <silent> <D-d> <esc>yypi
-
-
-" Moving lines up/down using [apple]-[shift]-[up]/[down].
-nmap <silent> <D-S-down> ddp==
-nmap <silent> <D-S-up> ddkP==
-imap <silent> <D-S-down> <esc>ddp==i
-imap <silent> <D-S-up> <esc>ddkP==i
-
-
-" Autocomplete
-" let g:neocomplete#enable_at_startup = 1
-" let g:neocomplete#enable_smart_case = 1
-" let g:neocomplete#min_keyword_length = 5
-" let g:neocomplete#sources#syntax#min_keyword_length = 5
-
-
-" Enter normal mode on file save.
-if has('gui_running')
-  iunmenu File.Save
-  imenu <silent> File.Save <Esc>:w<CR>
-endif
 
 augroup vimrc
 	autocmd BufWritePost * :call TertestrialFileSaved()
