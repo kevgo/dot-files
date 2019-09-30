@@ -251,20 +251,16 @@ nmap Y y$
 :vnoremap <silent> s l
 :vnoremap <silent> l s
 " cursor movement through panes using [leader]-[dvorak movement keys]
-nmap <silent> <leader>s :exe "setlocal nocursorline"<CR>:exe "setlocal nocursorcolumn"<CR><C-W>l:exe "setlocal cursorline"<CR>:exe "setlocal cursorcolumn"<CR>
-nmap <silent> <leader>h :exe "setlocal nocursorline"<CR>:exe "setlocal nocursorcolumn"<CR><C-W>h:exe "setlocal cursorline"<CR>:exe "setlocal cursorcolumn"<CR>
-nmap <silent> <leader>k :exe "setlocal nocursorline"<CR>:exe "setlocal nocursorcolumn"<CR><C-W>k:exe "setlocal cursorline"<CR>:exe "setlocal cursorcolumn"<CR>
-nmap <silent> <leader>j :exe "setlocal nocursorline"<CR>:exe "setlocal nocursorcolumn"<CR><C-W>j:exe "setlocal cursorline"<CR>:exe "setlocal cursorcolumn"<CR>
+nmap <silent> <leader>s :exe "setlocal nocursorline"<CR><C-W>l:exe "setlocal cursorline"<CR>
+nmap <silent> <leader>h :exe "setlocal nocursorline"<CR><C-W>h:exe "setlocal cursorline"<CR>
+nmap <silent> <leader>k :exe "setlocal nocursorline"<CR><C-W>k:exe "setlocal cursorline"<CR>
+nmap <silent> <leader>j :exe "setlocal nocursorline"<CR><C-W>j:exe "setlocal cursorline"<CR>
 " Moving panes using [leader]-[shift]-[dvorak movement keys]
 nmap <silent> <leader><S-S> <C-W>L
 nmap <silent> <leader><S-H> <C-W>H
 nmap <silent> <leader><S-K> <C-W>K
 nmap <silent> <leader><S-J> <C-W>J
 
-
-" Duplicating lines.
-nnoremap <silent> <D-d> yyp
-imap <silent> <D-d> <esc>yypi
 
 augroup vimrc
 	autocmd BufWritePost * :call TertestrialFileSaved()
