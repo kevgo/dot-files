@@ -279,7 +279,7 @@ set -x TERTESTRIAL_PREVENT_APP_NAP 1
 # Vim
 set sys (uname)
 if [ "$sys" = "Linux" ]
-  alias v gvim
+  alias v nvim
 else
   alias v mvim
 end
