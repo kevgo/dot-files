@@ -37,7 +37,7 @@ set nowrap                        " disable word wrap.
 set history=200
 set hidden
 set scrolloff=45                  " show context above/below cursorline
-set cursorline
+" set cursorline
 " set cursorcolumn
 set title                         " display filename in title bar
 set ttyfast                       " faster scrolling
@@ -251,10 +251,10 @@ nmap Y y$
 :vnoremap <silent> s l
 :vnoremap <silent> l s
 " cursor movement through panes using [leader]-[dvorak movement keys]
-nmap <silent> <leader>s :exe "setlocal nocursorline"<CR><C-W>l:exe "setlocal cursorline"<CR>
-nmap <silent> <leader>h :exe "setlocal nocursorline"<CR><C-W>h:exe "setlocal cursorline"<CR>
-nmap <silent> <leader>k :exe "setlocal nocursorline"<CR><C-W>k:exe "setlocal cursorline"<CR>
-nmap <silent> <leader>j :exe "setlocal nocursorline"<CR><C-W>j:exe "setlocal cursorline"<CR>
+nmap <silent> <leader>s <C-W>l
+nmap <silent> <leader>h <C-W>h
+nmap <silent> <leader>k <C-W>k
+nmap <silent> <leader>j <C-W>j
 " Moving panes using [leader]-[shift]-[dvorak movement keys]
 nmap <silent> <leader><S-S> <C-W>L
 nmap <silent> <leader><S-H> <C-W>H
