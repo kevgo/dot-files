@@ -23,6 +23,7 @@ Enable Hyperthreading:
 - set to `performance`
 
 Enable Reader mode:
+
 - `chrome://flags/#enable-reader-mode`
 
 ### Folder sharing
