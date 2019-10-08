@@ -22,6 +22,9 @@ Enable Hyperthreading:
 - go to chrome://flags/#scheduler-configuration
 - set to `performance`
 
+Enable Reader mode:
+- `chrome://flags/#enable-reader-mode`
+
 ### Folder sharing
 
 - right click on `Downloads` folder, choose `Share with Linux`
