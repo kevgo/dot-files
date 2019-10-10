@@ -22,7 +22,7 @@
 	ship = town ship
 	sync = town sync
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = /Users/kevlar/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
 	preloadindex = true
