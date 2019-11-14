@@ -62,16 +62,16 @@ https://docs.brew.sh/Homebrew-on-Linux
 
 ```
 sudo apt update
-sudo apt install -y build-essential ruby
+sudo apt install -y build-essential
 ```
 
 ### Fish shell
 
 ```
-sudo apt install -y fish
+brew install fish
 ```
 
-- start fish and fix error messages
+- add `/home/linuxbrew/.linuxbrew/bin/fish` to `/etc/shells`
 - set fish as default shell:
 
   ```
@@ -83,6 +83,7 @@ sudo apt install -y fish
 
   Now run: `chsh -s /usr/bin/fish`
 
+- open a new terminal windows and fix Fish shell error messages
 - disable glob
 
   ```
@@ -91,30 +92,8 @@ sudo apt install -y fish
 
 ### Node.JS
 
-Install Node 12:
-
 ```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-
-sudo apt install -y nodejs
-```
-
-Install Yarn:
-
-```
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update
-
-sudo apt install yarn
-```
-
-Fix possible permissions errors:
-
-```
-sudo chmod 777 /usr/lib/node_modules
-sudo chmod 777 /usr/bin
+brew install node yarn
 ```
 
 Install diff-so-fancy:
@@ -132,31 +111,34 @@ npm i -g diff-so-fancy
 ### Vim
 
 ```
+brew install nvim
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-start vim and run `:PlugInstall`
+start nvim and run `:PlugInstall`
 
 ### Golang
 
-- download Go: https://golang.org/dl
-- `sudo tar -C /usr/local -xzf /mnt/chromeos/MyFiles/Downloads/go1*.linux-amd64.tar.gz`
+```
+brew install go ruby
+```
+
 - create a Go workspace
 
   ```
-    mkdir -p ~/go/bin
+  mkdir -p ~/go/bin
   mkdir -p ~/go-external/bin
-  mkdir -p ~/go/src/github.com/Originate
-  cd ~/go/src/github.com/Originate
-  git clone git@github.com:Originate/git-town.git
-  cd git-town
-  make setup
-
-  make build
   ```
 
-Install Goland IDE:
+### Java
+
+```
+brew install openjdk
+```
+
+### Goland IDE
 
 - [download Goland](https://www.jetbrains.com/go/download/#section=linux)
 - install Goland:
@@ -174,42 +156,35 @@ Install Goland IDE:
 ### Git-LFS
 
 ```
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-
-sudo apt install git-lfs
+brew install git-lfs
 ```
 
-### Java
+### Git Town
 
 ```
-sudo apt install openjdk-8-jdk
+mkdir -p ~/go/src/github.com/Originate
+cd ~/go/src/github.com/Originate
+git clone git@github.com:Originate/git-town.git
+cd git-town
+make setup
+
+make build
 ```
 
 ### Docker
 
 ```
-sudo apt update
-sudo apt install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
-
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable"
-
-sudo apt update
-sudo apt install -y docker-ce
-
-sudo groupadd docker
-sudo usermod -aG docker $USER
+brew install docker
 ```
-
-[complete instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-9)
 
 ### RipGrep
 
-- https://github.com/BurntSushi/ripgrep#installation
+```
+brew install ripgrep
+```
 
 ### Time
 
 ```
-sudo apt install -y time
+brew install gnu-time
 ```
