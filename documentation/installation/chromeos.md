@@ -54,15 +54,73 @@ Enable Reader mode:
 
 ### Build tools
 
-This installs `make` and the compilers needed for C extensions of Node.JS:
-
-**NEXT TIME, TRY TO INSTALL THIS USING HOMEBREW FOR LINUX, SINCE IT HAS THE LATEST VERSIONS!**
-
-https://docs.brew.sh/Homebrew-on-Linux
+This installs `make` and the compilers needed for Homebrew and the C extensions of Node.JS:
 
 ```
 sudo apt update
 sudo apt install -y build-essential
+```
+
+### Homebrew
+
+https://docs.brew.sh/Homebrew-on-Linux
+
+### Node.JS
+
+```
+brew install node yarn
+```
+
+### Git
+
+```
+brew install git
+
+npm i -g diff-so-fancy
+```
+
+### Vim
+
+```
+brew install nvim
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+start nvim and run `:PlugInstall`
+
+### Golang
+
+```
+brew install go
+```
+
+Create a Go workspace:
+
+```
+mkdir -p ~/go/bin
+mkdir -p ~/go-external/bin
+```
+
+### Git-LFS
+
+```
+brew install git-lfs
+```
+
+### Git Town
+
+```
+brew install ruby
+
+mkdir -p ~/go/src/github.com/Originate
+cd ~/go/src/github.com/Originate
+git clone git@github.com:Originate/git-town.git
+cd git-town
+make setup
+
+make build
 ```
 
 ### Fish shell
@@ -90,47 +148,31 @@ brew install fish
   set -U fish_features qmark-noglob
   ```
 
-### Node.JS
-
-```
-brew install node yarn
-```
-
-Install diff-so-fancy:
-
-```
-npm i -g diff-so-fancy
-```
-
 ### VSCode
 
 - [download the DEB installer](https://code.visualstudio.com/download)
 - `sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb`
 - do the [VSCode setup](https://github.com/kevgo/dot-files/blob/master/documentation/vscode/README.md)
+- open the Git Town repo in VSCode and have it install the Go tools
+- if you need GCC in a particular version: `brew install gcc@5`
 
-### Vim
-
-```
-brew install nvim
-
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-start nvim and run `:PlugInstall`
-
-### Golang
+### Docker
 
 ```
-brew install go ruby
+brew install docker
 ```
 
-- create a Go workspace
+### RipGrep
 
-  ```
-  mkdir -p ~/go/bin
-  mkdir -p ~/go-external/bin
-  ```
+```
+brew install ripgrep
+```
+
+### Time
+
+```
+brew install gnu-time
+```
 
 ### Java
 
@@ -152,39 +194,3 @@ brew install openjdk
   ```
   /opt/GoLand-*/bin/goland.sh
   ```
-
-### Git-LFS
-
-```
-brew install git-lfs
-```
-
-### Git Town
-
-```
-mkdir -p ~/go/src/github.com/Originate
-cd ~/go/src/github.com/Originate
-git clone git@github.com:Originate/git-town.git
-cd git-town
-make setup
-
-make build
-```
-
-### Docker
-
-```
-brew install docker
-```
-
-### RipGrep
-
-```
-brew install ripgrep
-```
-
-### Time
-
-```
-brew install gnu-time
-```
