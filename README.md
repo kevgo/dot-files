@@ -7,6 +7,7 @@
 - macOS [installation](documentation/installation/macos.md)
 - Ubuntu [installation](documentation/installation/ubuntu.md)
 - Manjaro Linux i3 [installation](documentation/installation/manjaro_i3.md), [cheatsheet](documentation/i3_cheatsheet.md)
+- iOS [installation](documentation/installation/ios.md)
 
 ## Applications
 
