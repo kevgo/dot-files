@@ -1,5 +1,6 @@
 Code
 configstore
+dconf/
 dlv/
 fish/fish_history
 fish/fishd.*
