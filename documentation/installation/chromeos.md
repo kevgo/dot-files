@@ -65,6 +65,33 @@ sudo apt install -y build-essential
 
 https://docs.brew.sh/Homebrew-on-Linux
 
+### Fish shell
+
+This needs to come first so that we can run the remaining commands in fish, where the correct paths are set.
+
+```
+brew install fish
+```
+
+- add `/home/linuxbrew/.linuxbrew/bin/fish` to `/etc/shells`
+- set fish as default shell:
+
+  ```
+  sudo vim /etc/pam.d/chsh
+  ```
+
+  change: `auth required pam_shells.so` to
+  `auth sufficient pam_shells.so`
+
+  Now run: `chsh -s /usr/bin/fish`
+
+- open a new terminal windows and fix Fish shell error messages
+- disable glob
+
+  ```
+  set -U fish_features qmark-noglob
+  ```
+
 ### Node.JS
 
 ```
@@ -123,31 +150,6 @@ make setup
 
 make build
 ```
-
-### Fish shell
-
-```
-brew install fish
-```
-
-- add `/home/linuxbrew/.linuxbrew/bin/fish` to `/etc/shells`
-- set fish as default shell:
-
-  ```
-  sudo vim /etc/pam.d/chsh
-  ```
-
-  change: `auth required pam_shells.so` to
-  `auth sufficient pam_shells.so`
-
-  Now run: `chsh -s /usr/bin/fish`
-
-- open a new terminal windows and fix Fish shell error messages
-- disable glob
-
-  ```
-  set -U fish_features qmark-noglob
-  ```
 
 ### VSCode
 
