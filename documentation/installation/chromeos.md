@@ -148,8 +148,10 @@ git clone git@github.com:Originate/git-town.git
 cd git-town
 make setup
 
-make build
+make test
 ```
+
+If you need `gcc-5`: `brew install gcc@5`
 
 ### VSCode
 
