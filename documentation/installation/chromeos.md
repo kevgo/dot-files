@@ -96,6 +96,8 @@ brew install fish
 
 ```
 brew install node yarn
+
+yarn config set save-prefix ''
 ```
 
 ### Git
