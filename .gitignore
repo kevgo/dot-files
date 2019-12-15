@@ -5,6 +5,7 @@ dlv/
 fish/fish_history
 fish/fishd.*
 home_dir_files/.npmrc
+home_dir_files/.yarnrc
 hub
 pulse/
 Simplenote/
