@@ -11,8 +11,8 @@
 
 ## Applications
 
-- [Vim](documentation/vim.md)
 - [VSCode](documentation/vscode/README.md)
+- [Vim](documentation/vim.md)
 
 ## How it works
 
