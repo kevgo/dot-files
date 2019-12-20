@@ -38,7 +38,7 @@
     "command": "explorer.newFolder",
     "key": "shift+n",
     "when": "listFocus && !inputFocus"
-  }
+  },
   {
     "command": "list.select",
     "key": "o",
