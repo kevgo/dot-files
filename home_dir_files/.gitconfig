@@ -30,6 +30,7 @@
 [user]
 	name = Kevin Goslar
 	email = kevin.goslar@gmail.com
+	signingkey = B2ADC3C106600E46
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -49,6 +50,7 @@
   untracked = cyan
 [commit]
   verbose = true
+	gpgsign = true
 [color "diff-highlight"]
   oldNormal = red
   oldHighlight = red bold
