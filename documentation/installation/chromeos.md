@@ -3,6 +3,7 @@
 ### Backup old machine
 
 - Quick Write snippets
+- downloaded files
 
 ### Settings
 
