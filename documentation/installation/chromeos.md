@@ -154,7 +154,8 @@ make setup
 make test
 ```
 
-If you need `gcc-5`: `brew install gcc@5`
+- if you need `gcc-5`: `brew install gcc@5`
+- if Python is not found: `sudo ln -s /home/linuxbrew/.linuxbrew/bin/python /usr/bin/python`
 
 ### VSCode
 
