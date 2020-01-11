@@ -109,6 +109,10 @@ brew install git
 npm i -g diff-so-fancy
 ```
 
+To sign commits:
+
+- import the private key from Google Drive: `gpg --import <filename>`
+
 ### Vim
 
 ```
