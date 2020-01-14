@@ -38,6 +38,7 @@
   "files.trimTrailingWhitespace": true,
   "git.ignoreMissingGitWarning": false,
   "go.formatTool": "goimports",
+  "html.mirrorCursorOnMatchingTag": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
@@ -62,43 +63,43 @@
   "vim.leader": "<space>",
   "vim.insertModeKeyBindingsNonRecursive": [
     {
-      "before": ["<Esc>"],
-      "after": ["<Esc>"],
-      "commands": ["workbench.action.files.save"]
+      "before": [ "<Esc>" ],
+      "after": [ "<Esc>" ],
+      "commands": [ "workbench.action.files.save" ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "after": ["i", "<space>", "<esc>"],
-      "before": ["<leader>", "<leader>"]
+      "after": [ "i", "<space>", "<esc>" ],
+      "before": [ "<leader>", "<leader>" ]
     },
     {
-      "after": ["o", "<esc>", "k"],
-      "before": ["<enter>"]
+      "after": [ "o", "<esc>", "k" ],
+      "before": [ "<enter>" ]
     },
     {
-      "after": ["l"],
-      "before": ["s"]
+      "after": [ "l" ],
+      "before": [ "s" ]
     },
     {
-      "after": ["s"],
-      "before": ["l"]
+      "after": [ "s" ],
+      "before": [ "l" ]
     },
     {
-      "before": ["<leader>", "/"],
-      "commands": [":nohl"]
+      "before": [ "<leader>", "/" ],
+      "commands": [ ":nohl" ]
     },
     {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"]
+      "before": [ ":" ],
+      "commands": [ "workbench.action.showCommands" ]
     },
     {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "before": [ "j" ],
+      "after": [ "g", "j" ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [ "k" ],
+      "after": [ "g", "k" ]
     }
   ],
   "window.enableMenuBarMnemonics": false,
