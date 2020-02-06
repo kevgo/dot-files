@@ -18,10 +18,10 @@
 - Displays > Display Size
 - Linux: enable
 
-Enable Hyperthreading:
+Chrome settings:
 
-- go to chrome://flags/#scheduler-configuration
-- set to `performance`
+- enable Hyperthreading: go to chrome://flags/#scheduler-configuration, set to `performance`
+- disable notifications: chrome://flags/#quiet-notification-prompts
 
 Enable Reader mode:
 
