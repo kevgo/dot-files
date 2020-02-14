@@ -262,7 +262,7 @@ if [ -d ~/.rbenv/shims ]
 	set -x PATH ~/.rbenv/shims $PATH
 end
 if which rbenv 2> /dev/null
-  rbenv rehash >/dev/null ^&1
+  rbenv rehash >/dev/null 
 end
 # set number_of_cores (sysctl -n hw.ncpu)
 # if [ -f ~/.bundle/config ]
