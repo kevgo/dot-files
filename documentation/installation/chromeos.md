@@ -207,3 +207,9 @@ brew install openjdk
   ```
   /opt/GoLand-*/bin/goland.sh
   ```
+
+### Firefox
+
+```
+sudo apt install firefox-esr
+```
