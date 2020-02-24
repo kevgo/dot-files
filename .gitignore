@@ -8,6 +8,7 @@ home_dir_files/.npmrc
 home_dir_files/.yarnrc
 hub
 pulse/
+rclone/
 Simplenote/
 thefuck/settings.pyc
 yarn/
