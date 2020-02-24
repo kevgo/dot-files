@@ -11,3 +11,8 @@ rclone ls music:
 rclone lsd music:Music
 
 ```
+
+
+### Google API setup
+
+https://console.developers.google.com/apis/credentials?project=imperial-welder-226714
