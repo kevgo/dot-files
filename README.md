@@ -12,6 +12,7 @@
 ## Applications
 
 - [VSCode](documentation/vscode/README.md)
+- [RClone](documentation/rclone.md)
 - [Vim](documentation/vim.md)
 
 ## How it works
