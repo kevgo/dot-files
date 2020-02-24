@@ -1,4 +1,17 @@
-# RClone setup
+# RClone
+
+### setup
+
+run `rclone config` and choose:
+- new config
+- name: `drive`
+- type: `drive`
+- client id: (take from 1password under "rclone")
+- client secret: (take from 1password under "rclone")
+- scope: `1` (full access)
+- accept the defaults for the remaining options
+
+### usage
 
 ```bash
 # list remote folders
