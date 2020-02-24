@@ -2,17 +2,17 @@
 
 ```bash
 # list remote folders
-rclone lsd music:
+rclone lsd drive:
 
 # list all remote files
-rclone ls music:
+rclone ls drive:
 
 # list all music folders
-rclone lsd music:Music
+rclone lsd drive:Music
 
 # preview all changes when synching changes made on Chromebook to GDrive
 cd /mnt/ChromeOS/MyFiles
-rclone sync --dry-run --fast-list --size-only Music music:Music
+rclone sync --dry-run --fast-list --size-only Music drive:Music
 ```
 
 ### Google API setup
