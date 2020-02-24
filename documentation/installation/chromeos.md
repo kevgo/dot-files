@@ -189,11 +189,8 @@ brew install gnu-time
 
 ### Music
 
-```
-brew install rclone
-```
-
 - optionally copy music files from backup disc into a `Music` folder in `My Files`
+- `brew install rclone`
 - share the `Music` folder with Linux
 - run `music-down-execute` to get the latest changes from GDrive
 
