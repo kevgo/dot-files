@@ -1,6 +1,6 @@
 # RClone
 
-### setup
+## setup
 
 run `rclone config` and choose:
 
@@ -12,7 +12,7 @@ run `rclone config` and choose:
 - scope: `1` (full access)
 - accept the defaults for the remaining options
 
-### usage
+## usage
 
 ```bash
 # list remote folders
@@ -39,6 +39,6 @@ rclone sync --progress --fast-list --size-only drive:Music Music
 
 ```
 
-### Google API setup
+## Google API setup
 
 https://console.developers.google.com/apis/credentials?project=imperial-welder-226714
