@@ -2,5 +2,8 @@
 
 ```bash
 # list remote folders
-rclose lsd music:
+rclone lsd music:
+
+# list all remote files
+rclone ls music:
 ```
