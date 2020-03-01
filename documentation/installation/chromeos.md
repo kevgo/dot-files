@@ -23,6 +23,7 @@ Chrome settings:
 - enable Hyperthreading: go to chrome://flags/#scheduler-configuration, set to `performance`
 - disable notifications: chrome://flags/#quiet-notification-prompts
 - enable virtual desk gestures: chrome://flags/#enable-virtual-desks-gestures
+- quieter notification prompts: chrome://flags/#quiet-notification-prompts
 
 Enable Reader mode:
 
