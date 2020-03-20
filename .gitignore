@@ -4,6 +4,7 @@ dconf/
 dlv/
 fish/fish_history
 fish/fishd.*
+fish/fish_variables
 home_dir_files/.npmrc
 home_dir_files/.yarnrc
 hub
