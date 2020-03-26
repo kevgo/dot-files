@@ -90,6 +90,10 @@ augroup vimrc
 augroup END
 
 
+" Highlights
+nnoremap <leader>n :noh<CR>
+
+
 " Indicator line at 80 col, greyed out area after 100 col.
 " let &colorcolumn='80,'.join(range(101,299),',')
 
@@ -115,12 +119,11 @@ map <CR> o<Esc>k
 
 
 " Insert spaces using space bar when in normal mode.
-nnoremap <leader>n :noh<CR>
 nnoremap <silent> <leader><space> i <ESC>
 
 
 " Prettier
-autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql Prettier
+autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql,*.ts,*.yml Prettier
 
 
 " Quick fix window, for example for Ack
@@ -145,8 +148,6 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 " Saving 
 " CTRL-S
 :noremap <c-s> <esc>:w<CR>
-" ALT-S
-:nnoremap <M-s> <esc>:w<CR>
 
 " Searching
 set hlsearch          "Highlight found searches
@@ -162,8 +163,6 @@ nnoremap <silent> <Leader>- :exe "vertical resize -5"<CR>
 
 " Syntax highlighting
 syntax enable                     " enable syntax highlighting
-" let g:syntastic_cucumber_checkers = []
-" let g:ruby_operators = 1 " Enable highlighting of ruby operators
 
 
 " Tabbing
@@ -172,7 +171,8 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set smarttab
-
+nnoremap <c-t> <esc>:tabnext<CR>
+nnoremap <c-T> <esc>:tabprevious<CR>
 
 " TESTING
 " - start "run-tests" in the terminal.
@@ -180,26 +180,20 @@ set smarttab
 " - hit <leader>-F in a test file to run the whole test
 " - hit <leader>-L in a test file to run the test file at the given line
 " - hit <leader>-T to repeat the last test
-nnoremap <leader>e :call TertestrialAll()<cr>
-nnoremap <leader>f :call TertestrialFile()<cr>
-nnoremap <leader>l :call TertestrialLine()<cr>
-nnoremap <leader>o :call TertestrialRepeat()<cr>
-nnoremap <leader>a :call TertestrialToggle()<cr>
-nnoremap <leader>1 :call TertestrialSet(1)<cr>
-nnoremap <leader>2 :call TertestrialSet(2)<cr>
-nnoremap <leader>3 :call TertestrialSet(3)<cr>
-nnoremap <leader>4 :call TertestrialSet(4)<cr>
-nnoremap <leader>5 :call TertestrialSet(5)<cr>
-nnoremap <leader>6 :call TertestrialSet(6)<cr>
-nnoremap <leader>7 :call TertestrialSet(7)<cr>
-nnoremap <leader>8 :call TertestrialSet(8)<cr>
-nnoremap <leader>9 :call TertestrialSet(9)<cr>
-
-" TypeScript
-" if !exists("g:ycm_semantic_triggers")
-"  let g:ycm_semantic_triggers = {}
-" endif
-" let g:ycm_semantic_triggers['typescript'] = ['.']
+" nnoremap <leader>e :call TertestrialAll()<cr>
+" nnoremap <leader>f :call TertestrialFile()<cr>
+" nnoremap <leader>l :call TertestrialLine()<cr>
+" nnoremap <leader>o :call TertestrialRepeat()<cr>
+" nnoremap <leader>a :call TertestrialToggle()<cr>
+" nnoremap <leader>1 :call TertestrialSet(1)<cr>
+" nnoremap <leader>2 :call TertestrialSet(2)<cr>
+" nnoremap <leader>3 :call TertestrialSet(3)<cr>
+" nnoremap <leader>4 :call TertestrialSet(4)<cr>
+" nnoremap <leader>5 :call TertestrialSet(5)<cr>
+" nnoremap <leader>6 :call TertestrialSet(6)<cr>
+" nnoremap <leader>7 :call TertestrialSet(7)<cr>
+" nnoremap <leader>8 :call TertestrialSet(8)<cr>
+" nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 
 " Vundle
@@ -214,9 +208,9 @@ Plug 'gmarik/vundle'
 Plug 'dag/vim-fish'
 Plug 'godlygeek/tabular'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'kevgo/tertestrial-vim'
+" Plug 'kevgo/tertestrial-vim'
 Plug 'pangloss/vim-javascript'
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-cucumber'
