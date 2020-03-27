@@ -256,6 +256,6 @@ nmap <silent> <leader><S-K> <C-W>K
 nmap <silent> <leader><S-J> <C-W>J
 
 
-augroup vimrc
-	autocmd BufWritePost * :call TertestrialFileSaved()
-augroup END
+" augroup vimrc
+" 	autocmd BufWritePost * :call TertestrialFileSaved()
+" augroup END
