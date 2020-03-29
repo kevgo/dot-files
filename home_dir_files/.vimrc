@@ -47,17 +47,17 @@ set guicursor+=a:blinkon0         " Cursor blink
 
 
 " Cucumber Tables
-inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
-function! s:align()
-  let l:p = '^\s*|\s.*\s|\s*$'
-  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# l:p || getline(line('.')+1) =~# l:p)
-    let l:column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-    let l:position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
-    Tabularize/|/l1
-    normal! 0
-    call search(repeat('[^|]*|',l:column).'\s\{-\}'.repeat('.',l:position),'ce',line('.'))
-  endif
-endfunction
+" inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+" function! s:align()
+"   let l:p = '^\s*|\s.*\s|\s*$'
+"   if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# l:p || getline(line('.')+1) =~# l:p)
+"     let l:column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+"     let l:position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+"     Tabularize/|/l1
+"     normal! 0
+"     call search(repeat('[^|]*|',l:column).'\s\{-\}'.repeat('.',l:position),'ce',line('.'))
+"   endif
+" endfunction
 
 
 " Errors
@@ -68,26 +68,26 @@ set timeoutlen=500
 
 
 " Golang
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_fmt_command = 'goimports'
-let g:go_auto_sameids = 1
-" let g:syntastic_go_checkers = ['golint', 'go vet']
-" let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:go_list_type = 'quickfix'
-augroup vimrc
-  autocmd FileType go nmap <leader>b  <Plug>(go-build)
-  autocmd FileType go nmap <leader>r  <Plug>(go-run)
-  autocmd FileType go set noexpandtab
-  autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
-  autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
-  autocmd FileType go nmap <Leader>i <Plug>(go-info)
-  autocmd FileType go nmap <C-\> :GoDef()<CR>
-augroup END
+" let g:go_highlight_functions = 1
+" let g:go_highlight_methods = 1
+" let g:go_highlight_fields = 1
+" let g:go_highlight_types = 1
+" let g:go_highlight_operators = 1
+" let g:go_highlight_build_constraints = 1
+" let g:go_fmt_command = 'goimports'
+" let g:go_auto_sameids = 1
+" " let g:syntastic_go_checkers = ['golint', 'go vet']
+" " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+" let g:go_list_type = 'quickfix'
+" augroup vimrc
+"   autocmd FileType go nmap <leader>b  <Plug>(go-build)
+"   autocmd FileType go nmap <leader>r  <Plug>(go-run)
+"   autocmd FileType go set noexpandtab
+"   autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
+"   autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+"   autocmd FileType go nmap <Leader>i <Plug>(go-info)
+"   autocmd FileType go nmap <C-\> :GoDef()<CR>
+" augroup END
 
 
 " Highlights
@@ -171,8 +171,8 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set smarttab
-nnoremap <c-t> <esc>:tabnext<CR>
-nnoremap <c-T> <esc>:tabprevious<CR>
+nnoremap <C-T> <esc>:tabnext<CR>
+nnoremap <C-S-T> <esc>:tabprevious<CR>
 
 " TESTING
 " - start "run-tests" in the terminal.
@@ -206,19 +206,19 @@ Plug 'gmarik/vundle'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'alexdavid/vim-min-git-status'
 Plug 'dag/vim-fish'
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'kevgo/tertestrial-vim'
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 " Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-cucumber'
+" Plug 'tpope/vim-cucumber'
 " " Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'leafgarland/typescript-vim'
-Plug 'fatih/vim-go'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'fatih/vim-go'
 Plug 'prettier/vim-prettier'
 
 " This must come after Vundle
