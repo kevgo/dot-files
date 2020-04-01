@@ -172,7 +172,6 @@ set shiftwidth=2
 set expandtab
 set smarttab
 nnoremap <C-T> <esc>:tabnext<CR>
-nnoremap <C-S-T> <esc>:tabprevious<CR>
 
 " TESTING
 " - start "run-tests" in the terminal.
