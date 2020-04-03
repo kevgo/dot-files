@@ -8,6 +8,7 @@ fish/fish_variables
 home_dir_files/.npmrc
 home_dir_files/.yarnrc
 hub
+insight-nodejs/
 pulse/
 rclone/
 Simplenote/
