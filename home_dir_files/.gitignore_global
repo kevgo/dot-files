@@ -1,5 +1,4 @@
 # OS X files
-.DS_Store
 .hushlogin
 
 # IntelliJ files
@@ -9,7 +8,6 @@
 # Vim files
 *.swp
 *.swo
-tags
 
 # Node files
 npm-debug.log

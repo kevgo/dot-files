@@ -50,6 +50,9 @@
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.camelCaseMotion.enable": true,
   "vim.changeWordIncludesWhitespace": true,
@@ -115,8 +118,5 @@
   },
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.startupEditor": "none",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "workbench.startupEditor": "none"
 }
