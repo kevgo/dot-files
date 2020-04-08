@@ -1,10 +1,12 @@
 Code
 configstore
+cros-garcon.conf
 dconf/
 dlv/
 fish/fish_history
 fish/fishd.*
 fish/fish_variables
+git/
 home_dir_files/.npmrc
 home_dir_files/.yarnrc
 hub
@@ -12,5 +14,6 @@ insight-nodejs/
 pulse/
 rclone/
 Simplenote/
-thefuck/settings.pyc
+thefuck/
+weston.ini
 yarn/
