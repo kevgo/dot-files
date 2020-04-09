@@ -1,25 +1,8 @@
 ## Visual Studio Code
 
-### Config Files
-
-- [user settings](.config/Code/User/settings.json)
-- [keybindings.json](.config/Code/User/keybindings.json)
-- [typescript.json](.config/Code/User/snipets/typescript.json)
-
-You can sort alphabetically using http://novicelab.org/jsonabc
-but re-paste back into VSCode to get the VSCode formatting before updating Github.
-
 ### Installation
 
 Extensions: run `~/bin/vspluginload` to install all VSCode extensions
-
-Starting to display sharp on external monitor on ChromeOS:
-
-```
-env GDK_SCALE=3 sommelier -X --scale=2 --dpi=160 /usr/share/code/code .
-```
-
-Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
 
 ### Hotkeys
 
