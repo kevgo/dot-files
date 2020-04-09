@@ -11,7 +11,7 @@
       sudo apt-get install silversearcher-ag
       sudo npm install --global diff-so-fancy
       sudo npm install --global prettier
-    
+
 - install the .config folder
 
       git clone git@github.com:kevgo/dot-files.git ~/.config
@@ -21,16 +21,15 @@
 
       sudo apt-get install gnome-tweak-tool
       gnome-tweak-tool
-  
+
   Go to `typing` > `Caps Lock key behavior`
 
-
-- install Go
+* install Go
 
       mkdir -p ~/d/go/bin
       mkdir -p ~/d/go-external/bin
-    
-- clone Git Town
+
+* clone Git Town
 
       mkdir -p ~/d/go/src/github.com/Originate
       cd ~/d/go/src/github.com/Originate
@@ -41,11 +40,11 @@
 
   Set up the local API token to ship Git Town via the Github API from 1password.
 
-- configure startup shell
+* configure startup shell
 
       chsh -s /usr/bin/fish
-    
-- install Vim
+
+* install Vim
 
       sudo apt-get install cmake build-essential python-dev python3-dev
       git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf

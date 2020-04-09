@@ -11,7 +11,6 @@
 - enable/toggle split layout: `[mod]-e`
 - resize: `[mod]-r` then cursor keys
 
-
 ## App Management
 
 - start terminal: `[mod]-[enter]`
@@ -21,11 +20,9 @@
 - quit app: `[mod]-q` or `[mod]-[shift]-q`
 - force-quit GUI app: `[mod]-[ctrl]-x` and click the app
 
-
 ## i3 configuration
 
 - restart i3: `[mod]-[shift]-r`
-
 
 ## Computer Management
 

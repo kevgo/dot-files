@@ -7,12 +7,12 @@
   ```
   Xft.dpi: 220
   ```
-- reboot
 
+- reboot
 
 #### fix UEFI boot order if it keeps loading Windows
 
-HP computers are hard-coded to load Windows. 
+HP computers are hard-coded to load Windows.
 The idea is to make grub pretend it is Windows.
 Then load Windows via grub.
 
@@ -21,8 +21,7 @@ Then load Windows via grub.
 - copy the grub EFI loader to the Microsoft location, e.g.:
   `cp /boot/efi/EFI/Manjaro/grubx64.efi /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`
 - edit the Microsoft part of `/boot/grub/grub.cfg` to load the backed up EFI loader, e.g.:
-  `chainloader /EFI/Microsoft/bootmgfw.efi`
-
+   `chainloader /EFI/Microsoft/bootmgfw.efi`
 
 #### pacman colors
 
@@ -31,7 +30,6 @@ uncomment the `Color` line in `/etc/pacman.conf`
 #### termine
 
     sudo pacman -S termite
-    
 
 #### natural scrolling
 
@@ -51,7 +49,7 @@ Option  "NaturalScrolling" "True"
     git clone git@github.com:kevgo/dot-files.git ~/.config
     mv ~/.config_old/*.* ~/.config
     mv ~/.config_old/* ~/.config
-    
+
 Review the changes and commit any updates made by the Manjaro team.
 
 #### change desktop background
@@ -80,15 +78,15 @@ edit the `$BROWSER` variable in `.profile` to point to `/usr/bin/chromium`
     systemctl enable tlp-sleep.service
 
 When installing on Lenovo hardware:
-   
-    sudo pacman -S acpi_call
-   
+
+sudo pacman -S acpi_call
+
 Verify installation:
-   
+
     sudo tlp stat
-  
+
 Go through everything and fix notices and warnings.
-   
+
 #### Go
 
       sudo pacman -S go
@@ -102,7 +100,8 @@ Go through everything and fix notices and warnings.
 #### misc tools
 
     sudo pacman -S the_silver_searcher diff-so-fancy shellcheck
-      
+
+
 #### Fish shell
 
     sudo pacman -S fish
@@ -113,14 +112,15 @@ log out and in again to see the change
 
 #### Vim
 
-    sudo pacman -S cmake npm 
+    sudo pacman -S cmake npm
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     vim +PlugInstall
     compile_youcompleteme
     vim +GoInstallBinaries
-      
+
+
 #### Vint
 
     sudo pacman -S python-pip
@@ -129,28 +129,22 @@ log out and in again to see the change
 #### Alt-Tab hotkey
 
     go get github.com/s-urbaniak/i3-focus-last
-    
 
 ## AUR packages
 
-
 #### Slack
-  
+
 These instructions seem weird. Are there better ones?
 
     yaourt -S slack-desktop
-
 
 #### Github Desktop
 
     yaourt -S github-desktop
 
-
 #### Zoom
 
     yaourt -S zoom
-
-
 
 ## Fine tuning
 

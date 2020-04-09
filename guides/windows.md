@@ -32,37 +32,37 @@
    - add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
 
 1. Git (already installed via Cygwin)
-    - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent): 
-      - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-      - if the command hangs, provide the password via `-P ""`
-      - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
-    - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
-    - make SSH key available in Windows CMD by copying `c:\cygwin64\home\kevlar\.ssh` to `c:\Users\kevlar\.ssh`
-    - optionally fix permissions on `c:\Users\kevlar\.ssh\id_rsa` to only be visible to your user account (remove everybody else):
-      - right-click in Explorer > Properties > Security 
+   - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
+     - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+     - if the command hangs, provide the password via `-P ""`
+     - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+   - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
+   - make SSH key available in Windows CMD by copying `c:\cygwin64\home\kevlar\.ssh` to `c:\Users\kevlar\.ssh`
+   - optionally fix permissions on `c:\Users\kevlar\.ssh\id_rsa` to only be visible to your user account (remove everybody else):
+     - right-click in Explorer > Properties > Security
 1. [Node](https://nodejs.org/en/download)
-    - install via Windows installer
-    - Yarn: `npm i -g yarn`
+   - install via Windows installer
+   - Yarn: `npm i -g yarn`
 1. [Go](https://golang.org/dl)
-    - install via Windows installer
-    - `mkdir -p go/src/github.com/Originate`
-    - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
-        ```
-        cd \Users\kevlar\go
-        mklink /D go c:\cygwin64\home\kevlar\go`
-        ```
+   - install via Windows installer
+   - `mkdir -p go/src/github.com/Originate`
+   - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
+     ```
+     cd \Users\kevlar\go
+     mklink /D go c:\cygwin64\home\kevlar\go`
+     ```
 1. [Git Town](https://github.com/Originate/git-town)
-    - install aliases: `git town alias true`
+   - install aliases: `git town alias true`
 1. diff-so-fancy
 
-    ```
-    npm i -g diff-so-fancy
-    git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-    ```
+   ```
+   npm i -g diff-so-fancy
+   git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+   ```
+
 1. [VSCode](../vscode/README.md)
 1. [Firefox](https://www.mozilla.org/en-US/firefox/new) and [Chrome](https://www.google.com/chrome)
 1. Slack via Windows Store
-
 
 ### Install Home directory
 
@@ -71,11 +71,9 @@ inside Fish shell:
 1. `git clone git@github.com:kevgo/dot-files.git .config`
 1. `.config/install/install.sh`
 
-
 ### Install Windows Cmd shortcuts
 
 in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
-
 
 ### Keyboard
 
@@ -84,10 +82,10 @@ in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windo
 1. disable hotkey to change keyboard language
    - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
 
-
 ### install Edge extensions
 
 in Windows Store:
+
 - Adblock
 - Grammarly
 

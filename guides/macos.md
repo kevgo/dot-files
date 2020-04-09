@@ -3,9 +3,11 @@
 - install macOS updates
 
 - configure system preferences
+
   - keyboard shortcuts to jump to desktops
 
 - install 1Password
+
   - copy SSH files to `~/.ssh` and chmod to 600
 
 - install [Homebrew](https://brew.sh)
@@ -68,6 +70,7 @@
   from 1password.
 
 - configure Terminal
+
   - set `/usr/local/bin/fish` as startup shell
   - Profiles > Shell > Ask before closing: add `-fish`
 
@@ -79,6 +82,7 @@
   ```
 
 - install Vim
+
   - install [MacVim](https://github.com/macvim-dev/macvim/releases) version 138
 
   ```
@@ -89,9 +93,9 @@
   compile_youcompleteme
   vim +GoInstallBinaries
   ```
-  
+
 - install [vint](https://github.com/Kuniwak/vint)
-  
+
   ```
   brew install python3
   pip3 install vim-vint
@@ -106,6 +110,7 @@
   ```
 
 - install AppStore apps
+
   - Clear
     - configure
   - BetterSnapTool
@@ -116,10 +121,11 @@
   - AdBlock Plus
 
 - install visual apps
+
   - [Karabiner](https://pqrs.org/osx/karabiner/)
-      - set keyboard repeat rate and initial delay
-      - change option-right to forward-delete
-      - (these settings should be automatic now)
+    - set keyboard repeat rate and initial delay
+    - change option-right to forward-delete
+    - (these settings should be automatic now)
   - [Chrome](https://www.google.com/chrome)
     - sign into Chrome
     - enter sync passphrase
@@ -135,6 +141,7 @@
   - 1Password Chrome and Safari extensions
 
 - configure OS X
+
   - Finder Preferences
     - General: show home directory when opening new Finder windows (faster new Finder windows)
     - Sidebar: New Finder windows show (user directory)
@@ -150,8 +157,6 @@
         - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to disable minimizing windows)
 
 - install Gmail accounts and configure
-
-
 
 ## Archive
 

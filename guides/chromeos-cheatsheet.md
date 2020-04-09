@@ -19,7 +19,6 @@
 - reset display zoom: `ctrl-shift-0`
 - magnify screen: `search-alt-M`
 
-
 ### Text
 
 - Caps Lock: `search+alt`
