@@ -31,3 +31,4 @@
 - [bin_windows](bin_windows): content for `~/bin/` on Windows
 - [install](install): installation script
 - [guides](guides): installation guides
+- files containing confidential information are in a separate private repository
