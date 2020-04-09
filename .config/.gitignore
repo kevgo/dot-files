@@ -1,9 +1,10 @@
-Code/Backups
-Code/Cache
-Code/Network Persistent State
-Code/rapid_render.json
-Code/TransportSecurity
+Code/*
+!Code/User/
 Code/User/globalStorage/
+Code/User/workspaceStorage/
+!Code/User/snippets/*
+!Code/User/keybindings.json
+!Code/User/settings.json
 
 configstore
 cros-garcon.conf
@@ -17,5 +18,3 @@ git/
 rclone/
 Simplenote/
 weston.ini
-
-
