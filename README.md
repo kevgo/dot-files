@@ -1,6 +1,6 @@
 # Kevgo's Dot Files
 
-## platforms
+### platforms
 
 - ChromeOS [installation](guides/chromeos.md), [cheatsheet](guides/chromeos-cheatsheet.md)
 - Windows [installation](guides/windows.md)
@@ -9,7 +9,7 @@
 - Manjaro Linux i3 [installation](guides/manjaro_i3.md), [cheatsheet](guides/i3_cheatsheet.md)
 - Android [installation](guides/android.md)
 
-## applications
+### applications
 
 - [VSCode](guides/vscode.md)
 - [RClone](guides/rclone.md)
@@ -23,7 +23,7 @@
 - [scripts](scripts): installation scripts
 - [guides](guides): installation guides
 
-## configuration tracking via Fish shell
+### configuration tracking via Fish shell
 
 - the first time a new Fish shell opens on each day, it pulls changes from GitHub
 - uncommitted changes to the local `.config` folder are indicated in the Fish command prompt
