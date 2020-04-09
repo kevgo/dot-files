@@ -29,5 +29,5 @@
 - [.config](.config): content for `~/.config/`
 - [bin_folder](bin_folder): content for `~/bin/` on unix-like operating systems
 - [bin_windows](bin_windows): content for `~/bin/` on Windows
-- [install](install.sh): installation script
+- [install](install): installation script
 - [guides](guides): installation guides
