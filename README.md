@@ -26,8 +26,8 @@
 
 ### what is where
 
-- [.config](.config): this gets symlinked as the `~/.config` folder
-- [bin_folder](bin_folder): this folder gets symlinked into `~/bin` on unix-like operating systems
-- [bin_windows](bin_windows): this folder gets symlinked into `~/bin` on Windows
-- [scripts](scripts): installation scripts
+- [.config](.config): content for `~/.config/`
+- [bin_folder](bin_folder): content for `~/bin/` on unix-like operating systems
+- [bin_windows](bin_windows): content for `~/bin/` on Windows
+- [install](install): installation script
 - [guides](guides): installation guides
