@@ -54,3 +54,8 @@ Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
 #### Terminal
 
 - show/hide terminal: `` ctrl+` ``
+
+#### Zoom
+
+- zoom editor: `ctrl +-` (does not change configuration)
+- zoom entire workbench: `ctrl-shift +-` (changes configuration)
