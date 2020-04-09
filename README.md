@@ -11,7 +11,7 @@
 
 ## Applications
 
-- [VSCode](vscode/README.md)
+- [VSCode](guides/vscode.md)
 - [RClone](guides/rclone.md)
 - [Vim](guides/vim.md)
 

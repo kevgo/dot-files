@@ -101,7 +101,7 @@
   pip3 install vim-vint
   ```
 
-- [install VSCode](vscode/README.md)
+- [install VSCode](guides/vscode.md)
 
 - install Emacs key bindings for shell
 
