@@ -3,10 +3,10 @@ set -e
 
 # This job displays whether there are uncommitted updates to the dot files
 
-changes=$(cd "$HOME/.config" ; git -c color.status=always status --short)
+changes=$(cd "$HOME/.dot-files" ; git -c color.status=always status --short)
 if [ ! -z "$changes" ]; then
   tput bold
-  echo UNCOMITTED DOTFILE CHANGES
+  echo UNCOMITTED CONFIG CHANGES
   tput sgr0
   echo
   echo "$changes"

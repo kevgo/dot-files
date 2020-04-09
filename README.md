@@ -2,19 +2,18 @@
 
 ## Platforms
 
-- ChromeOS [installation](documentation/installation/chromeos.md), [cheatsheet](documentation/chromeos-cheatsheet.md)
-- Windows [installation](documentation/installation/windows.md)
-- macOS [installation](documentation/installation/macos.md)
-- Ubuntu [installation](documentation/installation/ubuntu.md)
-- Manjaro Linux i3 [installation](documentation/installation/manjaro_i3.md), [cheatsheet](documentation/i3_cheatsheet.md)
-- Android [installation](documentation/installation/android.md)
-- iOS [installation](documentation/installation/ios.md)
+- ChromeOS [installation](guides/chromeos.md), [cheatsheet](guides/chromeos-cheatsheet.md)
+- Windows [installation](guides/windows.md)
+- macOS [installation](guides/macos.md)
+- Ubuntu [installation](guides/ubuntu.md)
+- Manjaro Linux i3 [installation](guides/manjaro_i3.md), [cheatsheet](guides/i3_cheatsheet.md)
+- Android [installation](guides/android.md)
 
 ## Applications
 
-- [VSCode](documentation/vscode/README.md)
-- [RClone](documentation/rclone.md)
-- [Vim](documentation/vim.md)
+- [VSCode](vscode/README.md)
+- [RClone](guides/rclone.md)
+- [Vim](guides/vim.md)
 
 ## How it works
 
@@ -28,9 +27,9 @@ Fish shell automatically keeps the local configuration in sync with Github:
 
 ### Folder structure
 
-All files here belong into the `~/.config` folder, except these ones:
-
-- **bin_folder:** this folder should be symlinked into `~/bin`
-- **home_dir_files:** these files should be located in the root directory
-- **install:** installation files
-- **documentation**
+- [.config](.config): this gets symlinked as the `~/.config` folder
+- [bin_folder](bin_folder): this folder gets symlinked into `~/bin` on unix-like operating systems
+- [bin_windows](bin_windows): this folder gets symlinked into `~/bin` on Windows
+- home_dir_files: files in here get symlinked into the home directory
+- [scripts](scripts): installation scripts
+- [guides](guides): installation guides

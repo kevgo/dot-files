@@ -2,16 +2,14 @@
 
 ### Config Files
 
-- [user settings](user-settings.json)
-- [keybindings.json](keybindings.json)
-- [typescript.json](typescript.json)
+- [user settings](.config/Code/User/settings.json)
+- [keybindings.json](.config/Code/User/keybindings.json)
+- [typescript.json](.config/Code/User/snipets/typescript.json)
 
 You can sort alphabetically using http://novicelab.org/jsonabc
 but re-paste back into VSCode to get the VSCode formatting before updating Github.
 
 ### Installation
-
-- install command-line client: `[cmd]-[shift]-P` > `shell command`
 
 Extensions: run `~/bin/vspluginload` to install all VSCode extensions
 
@@ -39,7 +37,7 @@ Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
 
 - **show/hide sidebar:** `ctrl-b`
 - **open file:** `enter`
-- **show explorer:** `ctrl-d`
+- **show file tree:** `ctrl-d`
 - **create new file:** `n`
 - **create new folder:** `shift-n`
 
@@ -52,7 +50,6 @@ Make it use the Dvorak layout on ChromeOS: set `keyboard.dispatch` to `keyCode`
 #### Git
 
 - open Git window: `ctrl+shift+G`
-- stage file: in the Git window, navigate to the file, hit `o` to open (select) it, then `s` to stage
 
 #### Terminal
 

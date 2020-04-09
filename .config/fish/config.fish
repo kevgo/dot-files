@@ -118,11 +118,11 @@ function fish_prompt --description 'Write out the prompt'
   echo
 
   set old_pwd (pwd)
-  builtin cd $HOME/.config
-  set dotfile_changes (git status --porcelain | wc -l | tr -d ' ')
+  builtin cd $HOME/.dot-files
+  set config_changes (git status --porcelain | wc -l | tr -d ' ')
   builtin cd $old_pwd
-  if [ "$dotfile_changes" != "0" ]
-    echo (set_color BBBBBB)'(dotfile changes)'
+  if [ "$config_changes" != "0" ]
+    echo (set_color BBBBBB)'(config changes)'
   end
 
   set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
@@ -140,6 +140,7 @@ end
 # Git
 abbr -a br git branch
 abbr -a co git checkout
+abbr -a ga git add .
 abbr -a gd git diff
 abbr -a gdm git diff master
 abbr -a gp git push
@@ -156,25 +157,15 @@ function cs
 end
 
 function gac
-  set __branch (git branch ^/dev/null | grep \* | sed 's/* //')
-  # if [ "$__branch" = "master" ]
-  #   echo "Please don't commit to the master branch"
-  #   return
-  # end
   git add -A
   if [ "$argv" = "" ]
-    git ci -m commit
+    git commit -m "committing all files"
   else
-    git ci -m "$argv"
+    git commit -m "$argv"
   end
 end
 
 function gacp
-  set __branch (git branch ^/dev/null | grep \* | sed 's/* //')
-  # if [ "$__branch" = "master" ]
-  #   echo "Please don't commit to the master branch"
-  #   return
-  # end
   gac $argv
   git push
 end
@@ -195,7 +186,7 @@ end
 
 
 # Golang
-set -x PATH $PATH ~/go/bin 
+set -x PATH $PATH ~/go/bin
 
 
 # homebrew
@@ -244,7 +235,7 @@ if [ -d ~/.rbenv/shims ]
 	set -x PATH ~/.rbenv/shims $PATH
 end
 if which rbenv 2> /dev/null
-  rbenv rehash >/dev/null 
+  rbenv rehash >/dev/null
 end
 # set number_of_cores (sysctl -n hw.ncpu)
 # if [ -f ~/.bundle/config ]
