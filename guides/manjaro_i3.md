@@ -101,7 +101,6 @@ Go through everything and fix notices and warnings.
 
     sudo pacman -S the_silver_searcher diff-so-fancy shellcheck
 
-
 #### Fish shell
 
     sudo pacman -S fish
@@ -119,7 +118,6 @@ log out and in again to see the change
     vim +PlugInstall
     compile_youcompleteme
     vim +GoInstallBinaries
-
 
 #### Vint
 

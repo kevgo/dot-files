@@ -43,7 +43,8 @@
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "never"
   },
   "npm.packageManager": "yarn",
   "scm.diffDecorations": "none",

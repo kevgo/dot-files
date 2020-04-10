@@ -15,6 +15,7 @@ fish/fish_history
 fish/fishd.*
 fish/fish_variables
 git/
+pulse/
 rclone/
 Simplenote/
 weston.ini
