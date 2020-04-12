@@ -120,7 +120,7 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 
 " Quick open files.
-" nmap <leader>d :FZF<CR>
+nmap <leader>d :FZF<CR>
 
 
 " Saving
@@ -186,6 +186,7 @@ Plug 'tpope/vim-surround'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'fatih/vim-go'
 Plug 'prettier/vim-prettier'
+Plug 'junegunn/fzf'
 
 " This must come after Vundle
 call plug#end()
