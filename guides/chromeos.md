@@ -4,6 +4,7 @@
 
 - Quick Write snippets
 - downloaded files
+- uncommitted files in code bases
 
 ### Settings
 
