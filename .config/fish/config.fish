@@ -245,6 +245,9 @@ end
 set -x COVERALLS_CONFIG nocoveralls
 
 
+# Tikibase
+abbr -a tb tikibase
+
 # Tertestrial
 set -x TERTESTRIAL_PREVENT_APP_NAP 1
 
