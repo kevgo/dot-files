@@ -171,6 +171,12 @@ function gacp
 end
 
 
+function gacpr
+  gac $argv
+  git new-pull-request
+end
+
+
 function gacs
   gac $argv
   git sync
