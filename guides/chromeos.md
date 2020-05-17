@@ -48,10 +48,7 @@ Chrome settings:
 - clone the dotfiles:
 
       rm -rf .config
-      git clone git@github.com:kevgo/dot-files.git
-
-- install the symlinks:
-
+      git clone git@github.com:kevgo/dot-files.git .dot-files
       .dot-files/install
 
 ### Build tools
