@@ -124,17 +124,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 - start nvim and run `:PlugInstall`
 - install prettier globally: `npm i -g prettier`
 
-### Golang
+### Go
 
 ```
 brew install go
-```
-
-Create a Go workspace:
-
-```
-mkdir -p ~/go/bin
-mkdir -p ~/go-external/bin
 ```
 
 ### Git-LFS
