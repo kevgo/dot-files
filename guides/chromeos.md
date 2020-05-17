@@ -72,7 +72,7 @@ This needs to come first so that we can run the remaining commands in fish, wher
 /home/linuxbrew/.linuxbrew/bin/brew install fish
 ```
 
-- `vim /etc/shells` add `/home/linuxbrew/.linuxbrew/bin/fish`
+- `sudo vim /etc/shells` add `/home/linuxbrew/.linuxbrew/bin/fish`
 - set fish as default shell:
 
   ```
