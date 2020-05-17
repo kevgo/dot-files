@@ -69,7 +69,7 @@ https://docs.brew.sh/Homebrew-on-Linux
 This needs to come first so that we can run the remaining commands in fish, where the correct paths are set.
 
 ```
-brew install fish
+/home/linuxbrew/.linuxbrew/bin/brew install fish
 ```
 
 - add `/home/linuxbrew/.linuxbrew/bin/fish` to `/etc/shells`
