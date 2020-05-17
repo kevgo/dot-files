@@ -24,10 +24,7 @@ Chrome settings:
 - enable Hyperthreading: go to chrome://flags/#scheduler-configuration, set to `performance`
 - disable notifications: chrome://flags/#quiet-notification-prompts
 - enable virtual desk gestures: chrome://flags/#enable-virtual-desks-gestures
-
-Enable Reader mode:
-
-- `chrome://flags/#enable-reader-mode`
+- enable Reader mode: chrome://flags/#enable-reader-mode
 
 ### Folder sharing
 
