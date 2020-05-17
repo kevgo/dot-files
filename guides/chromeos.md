@@ -82,7 +82,7 @@ This needs to come first so that we can run the remaining commands in fish, wher
   change: `auth required pam_shells.so` to
   `auth sufficient pam_shells.so`
 
-  Now run: `chsh -s /usr/bin/fish`
+  Now run: `chsh -s /home/linuxbrew/.linuxbrew/bin/fish`
 
 - open a new terminal windows and fix Fish shell error messages
 - disable glob
