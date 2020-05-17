@@ -139,11 +139,7 @@ brew install git-lfs
 ### Git Town
 
 ```
-brew install ruby
-
-mkdir -p ~/go/src/github.com/Originate
-cd ~/go/src/github.com/Originate
-git clone git@github.com:Originate/git-town.git
+git clone git@github.com:git-town/git-town.git
 cd git-town
 make setup
 
