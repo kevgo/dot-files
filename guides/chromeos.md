@@ -49,8 +49,13 @@ Chrome settings:
 
       rm -rf .config
       git clone git@github.com:kevgo/dot-files.git .config
+- clone the private dotfiles:
 
-- install the symlinks: `.config/install/install.sh`
+      git clone git@github.com:kevgo/dot-files-private.git
+
+- install the symlinks: 
+
+      .dot-files/install/install.sh
 
 ### Build tools
 
