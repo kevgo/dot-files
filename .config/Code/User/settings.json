@@ -38,6 +38,7 @@
   "files.trimTrailingWhitespace": true,
   "git.ignoreMissingGitWarning": false,
   "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
   "html.mirrorCursorOnMatchingTag": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
@@ -109,7 +110,7 @@
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
