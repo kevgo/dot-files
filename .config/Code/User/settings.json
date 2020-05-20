@@ -120,6 +120,5 @@
   },
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.startupEditor": "none",
-  "go.useLanguageServer": true
+  "workbench.startupEditor": "none"
 }
