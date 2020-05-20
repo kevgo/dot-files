@@ -1,16 +1,25 @@
-## Installation Instructions for Windows
+# Installation Instructions for Windows
 
-### Download Windows
+## create USB installer
 
-- this one?: https://www.microsoft.com/en-us/software-download/windows10ISO
+- best to use Microsoft's media creation tool for this: https://www.microsoft.com/en-us/software-download/windows10
 
-### Install Windows
+### install Windows
+
+From scratch:
+- hold `ESC` during power-up to see BIOS options
+
+- or -
 
 1. hit `F11` during startup to boot into recovery mode
 1. reset this PC
+
+### setup Windows
+
 1. create user account "kevlar"
 1. install Windows updates
 1. install Chrome and log into Github
+1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 
 ### Install command-line
 
