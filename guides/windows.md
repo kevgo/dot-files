@@ -7,6 +7,7 @@
 ### install Windows
 
 From scratch:
+
 - hold `ESC` during power-up to see BIOS options
 
 - or -
