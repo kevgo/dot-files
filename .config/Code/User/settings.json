@@ -110,7 +110,7 @@
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
@@ -120,5 +120,6 @@
   },
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "go.useLanguageServer": true
 }
