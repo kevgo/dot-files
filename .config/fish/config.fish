@@ -206,21 +206,6 @@ abbr -a pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.l
 abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
-# Ruby
-if [ -d ~/.rbenv/shims ]
-	set -x PATH ~/.rbenv/shims $PATH
-end
-if which rbenv 2> /dev/null
-  rbenv rehash >/dev/null
-end
-# set number_of_cores (sysctl -n hw.ncpu)
-# if [ -f ~/.bundle/config ]
-#   bundle config --global jobs (expr $number_of_cores)
-# end
-# set -x PARALLEL_TEST_PROCESSORS (expr $number_of_cores)
-set -x COVERALLS_CONFIG nocoveralls
-
-
 # Tikibase
 abbr -a tb tikibase
 
