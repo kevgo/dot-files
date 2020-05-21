@@ -25,15 +25,20 @@ reinstall existing Windows:
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 1.  install Edge
 
-### install Windows terminal
+### Windows terminal
 
 https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab
 
-### install Git
+### Git
 
-https://git-scm.com/download/win
+- download [installer](https://git-scm.com/download/win)
+- [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
+   - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+   - if the command hangs, provide the password via `-P ""`
+   - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+- [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 
-### set up dot-files
+### dot-files
 
 ```
 git clone git@github.com:kevgo/dot-files.git .dot-files
@@ -45,48 +50,20 @@ in **cmd**:
 mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
 ```
 
-### set up Bash
+### Make
 
-### alternative A: native install
+```
+choco install make
+```
 
-- install Make
-  choco install make
-- configure Bash
+### Node.js
 
-### alternative B: Fish shell via Cygwin
+- download [installer](https://nodejs.org/en/download)
+- Yarn: `npm i -g yarn`
 
-6. [Cygwin](https://www.cygwin.com)
+### Go
 
-   - move the setup file to a new folder `~\cygwin-setup` before running it and keep it there.
-   - choose packages
-     - fish
-     - git
-     - make
-     - vim
-   - create shortcut to Fish shell:
-     - run `cmd`
-     - right-click in taskbar > Pin to taskbr
-     - right-click again in taskbar > right-click on `Command Prompt` > Properties
-     - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
-     - add shortcut key `CTRL+SHIFT+T`
-     - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
-   - add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
-
-1. Git (already installed via Cygwin)
-   - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
-     - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-     - if the command hangs, provide the password via `-P ""`
-     - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
-   - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
-   - make SSH key available in Windows CMD by copying `c:\cygwin64\home\kevlar\.ssh` to `c:\Users\kevlar\.ssh`
-   - optionally fix permissions on `c:\Users\kevlar\.ssh\id_rsa` to only be visible to your user account (remove everybody else):
-     - right-click in Explorer > Properties > Security
-1. [Node](https://nodejs.org/en/download)
-   - install via Windows installer
-   - Yarn: `npm i -g yarn`
-1. [Go](https://golang.org/dl)
-   - install via Windows installer
-   - `mkdir -p go/src/github.com/Originate`
+- download [installer](https://golang.org/dl)
    - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
      ```
      cd \Users\kevlar\go
@@ -170,3 +147,24 @@ in Windows Store:
 
 - search for `change system sounds`
 - set `Asterisk` and `Default Beep` to `(None)`
+
+### alternative: Fish shell via Cygwin
+
+_problem: this is too unix-y. It creates a parallel universe inside the Cygwin environment that makes tools think they are in Unix and store the wrong line endings. Requires extensive symlinking of tools from the Unix simulator into the Windows user directory in order to work with Windows tools._
+
+6. [Cygwin](https://www.cygwin.com)
+
+   - move the setup file to a new folder `~\cygwin-setup` before running it and keep it there.
+   - choose packages
+     - fish
+     - git
+     - make
+     - vim
+   - create shortcut to Fish shell:
+     - run `cmd`
+     - right-click in taskbar > Pin to taskbr
+     - right-click again in taskbar > right-click on `Command Prompt` > Properties
+     - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
+     - add shortcut key `CTRL+SHIFT+T`
+     - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
+   - add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
