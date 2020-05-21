@@ -13,10 +13,6 @@ function ....
 end
 
 
-# Ag
-abbr -a a ag -C2
-
-
 # cd
 function cd
 
