@@ -133,11 +133,6 @@ abbr -a gsa git sync --all
 abbr -a gtc git town continue
 abbr -a st git status
 
-function cs
-  git checkout $argv
-  git sync
-end
-
 function gac
   git add -A
   if [ "$argv" = "" ]
@@ -159,13 +154,7 @@ function gacpr
 end
 
 
-function gacs
-  gac $argv
-  git sync
-end
-
-
-# Golang
+# Go
 set -x PATH $PATH ~/go/bin
 
 
@@ -189,10 +178,7 @@ set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
 
 # Node.JS
-set -x PATH ./bin ./node_modules/.bin $PATH
-if test -d "/c/Program Files/nodejs"
-  set -x PATH $PATH "/c/Program Files/nodejs"
-end
+set -x PATH /node_modules/.bin $PATH
 
 # Path
 set -x PATH $PATH ~/bin /usr/local/bin
