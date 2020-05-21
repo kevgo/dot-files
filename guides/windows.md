@@ -33,9 +33,9 @@ https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:
 
 - download [installer](https://git-scm.com/download/win)
 - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
-   - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-   - if the command hangs, provide the password via `-P ""`
-   - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+  - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+  - if the command hangs, provide the password via `-P ""`
+  - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
 - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 
 ### dot-files
@@ -64,11 +64,12 @@ choco install make
 ### Go
 
 - download [installer](https://golang.org/dl)
-   - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
-     ```
-     cd \Users\kevlar\go
-     mklink /D go c:\cygwin64\home\kevlar\go`
-     ```
+  - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
+    ```
+    cd \Users\kevlar\go
+    mklink /D go c:\cygwin64\home\kevlar\go`
+    ```
+
 1. [Git Town](https://github.com/Originate/git-town)
    - install aliases: `git town alias true`
 1. diff-so-fancy
