@@ -26,6 +26,7 @@ From scratch:
 ### native install
 
 - install Git
+- install Make: `choco install make`
 
 ### Install fish
 
