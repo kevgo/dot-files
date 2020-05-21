@@ -50,7 +50,7 @@ reinstall existing Windows:
 git clone git@github.com:kevgo/dot-files.git .dot-files
 ```
 
-in **cmd**:
+in "cmd" shell:
 
 ```
 mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
