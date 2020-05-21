@@ -48,7 +48,6 @@ end
 
 # Fish
 set -U fish_features qmark-noglob
-
 set fish_greeting
 
 function fish_title
@@ -86,9 +85,7 @@ end
 
 function fish_prompt --description 'Write out the prompt'
   set -l last_status $status
-
   echo
-
   set old_pwd (pwd)
   builtin cd $HOME/.dot-files
   set config_changes (git status --porcelain | wc -l | tr -d ' ')
@@ -96,7 +93,6 @@ function fish_prompt --description 'Write out the prompt'
   if [ "$config_changes" != "0" ]
     echo (set_color BBBBBB)'(config changes)'
   end
-
   set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
   set __blue_git_branch "["(set_color blue)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"]"
   if [ $last_status -ne 0 ]
@@ -104,7 +100,6 @@ function fish_prompt --description 'Write out the prompt'
   else
     set __red_last_status ""
   end
-
   echo $__green_prompt $__blue_git_branch$__red_last_status '> '
 end
 
