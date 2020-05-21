@@ -60,7 +60,7 @@ in "cmd" shell:
 
 ```
 mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
-
+mklink C:\Users\kevin\.gitconfig C:\Users\kevin\.dot-files-private\home_dir_files\.gitconfig
 ```
 
 ### Make
