@@ -2,18 +2,18 @@
 
 ### install Windows
 
-From scratch:
+from scratch:
 
 - create USB installer
   - best to use Microsoft's [media creation tool](https://www.microsoft.com/en-us/software-download/windows10) for this
 - on HP Spectre, hold `ESC` during power-up to see BIOS options
 
-Reinstall existing Windows:
+reinstall existing Windows:
 
 1. hit `F11` during startup to boot into recovery mode
 1. reset this PC
 
-### setup Windows
+### set up Windows
 
 1.  choose account
     - the online account syncs many of the settings, but enforces username "kevin"
@@ -24,13 +24,27 @@ Reinstall existing Windows:
 1.  install Windows updates
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 1.  install Edge
-1.  clone dot-files
 
-           git clone git@github.com:kevgo/dot-files.git .dot-files
+### install Windows terminal
+
+https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab
+
+### install Git
+
+https://git-scm.com/download/win
+
+### set up dot-files
+
+clone dot-files:
+
+        git clone git@github.com:kevgo/dot-files.git .dot-files
+
+### set up Bash
+
+
 
 ### alternative A: native install
 
-- install Git
 - install Make
   choco install make
 - configure Bash
