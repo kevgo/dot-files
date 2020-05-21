@@ -48,12 +48,6 @@ function d
 end
 
 
-# CTags
-function t
-  ctags -a -R --exclude=node_modules .
-end
-
-
 # Dotfile update checker
 ~/bin/check_local_dotfile_updates
 
