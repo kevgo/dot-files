@@ -52,7 +52,6 @@ mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
 - install Make
   choco install make
 - configure Bash
-  
 
 ### alternative B: Fish shell via Cygwin
 
