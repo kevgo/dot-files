@@ -35,14 +35,6 @@ function cd
   set -e __cd_new_path
 end
 
-function d
-  if [ -z $argv ]
-    cd ~/d
-  else
-    cd ~/d/$argv
-  end
-end
-
 
 # Dotfile update checker
 ~/bin/check_local_dotfile_updates
