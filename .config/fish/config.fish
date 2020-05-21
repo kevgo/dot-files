@@ -164,14 +164,6 @@ function gacs
   git sync
 end
 
-function gc
-  git town continue
-end
-
-if test -d /c/Users/kevin/AppData/Roaming/npm
-  set -x PATH $PATH /c/Users/kevin/AppData/Roaming/npm
-end
-
 
 # Golang
 set -x PATH $PATH ~/go/bin
@@ -206,10 +198,6 @@ end
 set -x PATH $PATH ~/bin /usr/local/bin
 if test -d /usr/local/sbin
   set -x PATH $PATH /usr/local/sbin
-end
-
-if [ "$PWD" = "/Users/kevlar" ]
-  cd ~/d
 end
 
 
