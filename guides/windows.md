@@ -1,37 +1,143 @@
 # Installation Instructions for Windows
 
-## create USB installer
-
-- best to use Microsoft's media creation tool for this: https://www.microsoft.com/en-us/software-download/windows10
-
 ### install Windows
 
-From scratch:
+from scratch:
 
-- hold `ESC` during power-up to see BIOS options
+- create USB installer
+  - best to use Microsoft's [media creation tool](https://www.microsoft.com/en-us/software-download/windows10) for this
+- on HP Spectre, hold `ESC` during power-up to see BIOS options
 
-**- or -**
+reinstall existing Windows:
 
 1. hit `F11` during startup to boot into recovery mode
 1. reset this PC
 
-### setup Windows
+### set up Windows
 
-1. create user account "kevlar"
-1. right-click C: drive > properties > disable content indexing
-1. install Windows updates
-1. install Chrome and log into Github
-1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
+1.  choose account
+    - the online account syncs many of the settings but enforces username "kevin"
+    - the local account can be named "kevlar"
+1.  prevent slowness and heat before we start major filesystem activities
 
-### alternative A: native install
+    - in Explorer: right-click C: drive > properties > disable content indexing
+    - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
+    - in `regedit`
+      - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
+      - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
 
-- install Git
-- install Make
-  choco install make
-- configure Bash
-  mklink /J c:\Users\kevlar\.config\bin c:\cygwin64\home\kevlar\.config\bin-windows
+1.  install Windows updates
+1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 
-### alternative B: Fish shell via Cygwin
+### Edge
+
+- install Edge
+- Edge extensions
+  - uBlock
+  - Grammarly
+
+### Windows terminal
+
+[installer](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
+
+### Git
+
+- [installer](https://git-scm.com/download/win)
+- [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
+  - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+  - if the command hangs, provide the password via `-P ""`
+  - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+- [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
+
+### dot-files
+
+```
+git clone git@github.com:kevgo/dot-files.git .dot-files
+```
+
+in "cmd" shell:
+
+```
+mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
+```
+
+### Make
+
+```
+choco install make
+```
+
+### Node.js
+
+- [installer](https://nodejs.org/en/download)
+- Yarn: `npm i -g yarn`
+
+### Go
+
+- [installer](https://golang.org/dl)
+
+### Git Town
+
+- [installer](https://github.com/Originate/git-town)
+- install aliases: `git town alias true`
+
+### diff-so-fancy
+
+```
+npm i -g diff-so-fancy
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+```
+
+### VSCode
+
+- [installer](https://code.visualstudio.com)
+- [configuration](../vscode/README.md)
+
+### keyboard
+
+- change keyboard delay and repeat rate: Control Panel > keyboard
+- Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
+- disable hotkey to change keyboard language: modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
+
+### Explorer
+
+1. make Explorer open in `This PC`: Explorer > View > Options > Change folder and Search options > Open File Explorer to
+1. customize start menu shortcuts: Search for `choose which folders appear on Start` > disable everything besides `Settings` > check by pressing Windows key and looking at the entries above the power icon
+
+### Windows performance
+
+1. disable Windows virtual memory
+   - Windows search: advanced system settings
+   - "Advanced" tab
+   - "Performance" settings button
+   - "Advanced" tab
+   - "Virtual Memory" section > Change
+   - "no paging file" option
+1. stop apps from starting automaticalyl
+   - open task manager
+   - go to `Startup` tab
+   - right-click on entries and disable them
+
+### sounds
+
+- search for `change system sounds`
+- set `Asterisk` and `Default Beep` to `(None)`
+
+### remove bloatware
+
+1. run [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
+1. in `cmd`: `bin\remove-win-apps.cmd`
+1. remove "Edit with Paint3d" file context menu entry:
+   - open `regedit`
+   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
+   - delete `3D Edit`
+1. go to `Turn Windows features on or off` and disable all useless options
+1. disable web results in Windows search
+1. search for `mobile hotspot` and disable
+
+### alternative: Fish shell via Cygwin
+
+_problem: this is too unix-y for Windows. It creates a parallel universe inside the Cygwin environment that makes tools think they are in Unix and store the wrong line endings. Requires extensive symlinking of tools from the Unix simulator into the Windows user directory in order to work with Windows tools, or the Windows Go version._
 
 6. [Cygwin](https://www.cygwin.com)
 
@@ -49,106 +155,3 @@ From scratch:
      - add shortcut key `CTRL+SHIFT+T`
      - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
    - add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
-
-1. Git (already installed via Cygwin)
-   - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
-     - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-     - if the command hangs, provide the password via `-P ""`
-     - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
-   - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
-   - make SSH key available in Windows CMD by copying `c:\cygwin64\home\kevlar\.ssh` to `c:\Users\kevlar\.ssh`
-   - optionally fix permissions on `c:\Users\kevlar\.ssh\id_rsa` to only be visible to your user account (remove everybody else):
-     - right-click in Explorer > Properties > Security
-1. [Node](https://nodejs.org/en/download)
-   - install via Windows installer
-   - Yarn: `npm i -g yarn`
-1. [Go](https://golang.org/dl)
-   - install via Windows installer
-   - `mkdir -p go/src/github.com/Originate`
-   - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
-     ```
-     cd \Users\kevlar\go
-     mklink /D go c:\cygwin64\home\kevlar\go`
-     ```
-1. [Git Town](https://github.com/Originate/git-town)
-   - install aliases: `git town alias true`
-1. diff-so-fancy
-
-   ```
-   npm i -g diff-so-fancy
-   git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-   ```
-
-1. [VSCode](../vscode/README.md)
-1. [Firefox](https://www.mozilla.org/en-US/firefox/new) and [Chrome](https://www.google.com/chrome)
-1. Slack via Windows Store
-
-### Install Home directory
-
-inside Fish shell:
-
-1. `git clone git@github.com:kevgo/dot-files.git .config`
-1. `.config/install/install.sh`
-
-### Install Windows Cmd shortcuts
-
-in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
-
-### Keyboard
-
-1. Change keyboard delay and repeat rate: Control Panel > keyboard
-1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
-1. disable hotkey to change keyboard language
-   - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
-
-### install Edge extensions
-
-in Windows Store:
-
-- Adblock
-- Grammarly
-
-### remove bloatware
-
-1. run [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
-1. in `cmd`: `bin\remove-win-apps.cmd`
-1. remove "Edit with Paint3d" file context menu entry:
-   - open `regedit`
-   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
-   - delete `3D Edit`
-1. go to `Turn Windows features on or off` and disable all useless options
-1. disable web results in Windows search
-1. search for `mobile hotspot` and disable
-
-### Explorer
-
-1. make Explorer open in `This PC`: Explorer > View > Options > Change folder and Search options > Open File Explorer to
-1. customize start menu shortcuts: Search for `choose which folders appear on Start` > disable everything besides `Settings` > check by pressing Windows key and looking at the entries above the power icon
-
-### Windows performance
-
-1. disable Windows virtual memory
-   - Windows search: advanced system settings
-   - "Advanced" tab
-   - "Performance" settings button
-   - "Advanced" tab
-   - "Virtual Memory" section > Change
-   - "no paging file" option
-1. disable file indexing on c: drive
-1. disable Windows Defender (it makes Git slow)
-   - run `regedit`
-   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
-   - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
-1. stop apps from starting automaticalyl
-   - open task manager
-   - go to `Startup` tab
-   - right-click on entries and disable them
-
-### sounds
-
-- search for `change system sounds`
-- set `Asterisk` and `Default Beep` to `(None)`
-
-### Screenshot tool
-
-- [ShareX](https://getsharex.com)
