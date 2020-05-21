@@ -86,7 +86,7 @@ choco install make
 ### diff-so-fancy
 
 ```
-npm i -g yarn diff-so-fancy 
+npm i -g yarn diff-so-fancy
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ```
 
