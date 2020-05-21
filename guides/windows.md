@@ -21,6 +21,10 @@ reinstall existing Windows:
 1.  prevent slowness and heat before we start major filesystem activities
     - in Explorer: right-click C: drive > properties > disable content indexing
     - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
+    - in `regedit`
+      - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
+      - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
+
 1.  install Windows updates
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 
@@ -108,11 +112,6 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
    - "Advanced" tab
    - "Virtual Memory" section > Change
    - "no paging file" option
-1. disable file indexing on c: drive
-1. disable Windows Defender (it makes Git slow)
-   - run `regedit`
-   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
-   - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
 1. stop apps from starting automaticalyl
    - open task manager
    - go to `Startup` tab
