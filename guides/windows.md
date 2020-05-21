@@ -39,9 +39,9 @@ https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:
 
 - [installer](https://git-scm.com/download/win)
 - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
-   - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-   - if the command hangs, provide the password via `-P ""`
-   - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+  - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+  - if the command hangs, provide the password via `-P ""`
+  - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
 - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 
 ### dot-files
