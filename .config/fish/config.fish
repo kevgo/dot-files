@@ -224,21 +224,10 @@ set -x COVERALLS_CONFIG nocoveralls
 # Tikibase
 abbr -a tb tikibase
 
-# Tertestrial
-set -x TERTESTRIAL_PREVENT_APP_NAP 1
-
-
 # Vim
 set sys (uname)
 if [ "$sys" = "Linux" ]
   alias v nvim
 else
   alias v mvim
-end
-# alias vim /Applications/MacVim.app/Contents/MacOS/Vim
-
-
-# Visual Studio Code
-if [ -d /cygdrive/c/Users/kevlar/AppData/Local/Programs/Microsoft\ VS\ Code/bin ]
-	set -x PATH /cygdrive/c/Users/kevlar/AppData/Local/Programs/Microsoft\ VS\ Code/bin $PATH
 end
