@@ -39,7 +39,7 @@ https://git-scm.com/download/win
 git clone git@github.com:kevgo/dot-files.git .dot-files
 ```
 
-in `CMD`:
+in **cmd**:
 
 ```
 mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
