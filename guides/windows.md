@@ -10,7 +10,7 @@ From scratch:
 
 - hold `ESC` during power-up to see BIOS options
 
-- or -
+**- or -**
 
 1. hit `F11` during startup to boot into recovery mode
 1. reset this PC
