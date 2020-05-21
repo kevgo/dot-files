@@ -18,6 +18,7 @@ From scratch:
 ### setup Windows
 
 1. create user account "kevlar"
+1. right-click C: drive > properties > disable content indexing
 1. install Windows updates
 1. install Chrome and log into Github
 1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
