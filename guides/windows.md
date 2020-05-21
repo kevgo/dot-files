@@ -23,7 +23,13 @@ reinstall existing Windows:
     - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
 1.  install Windows updates
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
-1.  install Edge
+
+### Edge
+
+- install Edge
+- Edge extensions
+  - uBlock
+  - Grammarly
 
 ### Windows terminal
 
@@ -31,11 +37,11 @@ https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:
 
 ### Git
 
-- download [installer](https://git-scm.com/download/win)
+- [installer](https://git-scm.com/download/win)
 - [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
-  - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-  - if the command hangs, provide the password via `-P ""`
-  - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+   - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+   - if the command hangs, provide the password via `-P ""`
+   - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
 - [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
 
 ### dot-files
@@ -58,67 +64,35 @@ choco install make
 
 ### Node.js
 
-- download [installer](https://nodejs.org/en/download)
+- [installer](https://nodejs.org/en/download)
 - Yarn: `npm i -g yarn`
 
 ### Go
 
-- download [installer](https://golang.org/dl)
-  - create a soft link `c:\Users\kevlar\go --> c:\cygwin64\home\kevlar\go` in the Windows CMD:
-    ```
-    cd \Users\kevlar\go
-    mklink /D go c:\cygwin64\home\kevlar\go`
-    ```
+- [installer](https://golang.org/dl)
 
-1. [Git Town](https://github.com/Originate/git-town)
-   - install aliases: `git town alias true`
-1. diff-so-fancy
+### Git Town
 
-   ```
-   npm i -g diff-so-fancy
-   git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-   ```
+- [installer](https://github.com/Originate/git-town)
+- install aliases: `git town alias true`
 
-1. [VSCode](../vscode/README.md)
-1. [Firefox](https://www.mozilla.org/en-US/firefox/new) and [Chrome](https://www.google.com/chrome)
-1. Slack via Windows Store
+### diff-so-fancy
 
-### Install Home directory
+```
+npm i -g diff-so-fancy
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+```
 
-inside Fish shell:
+### VSCode
 
-1. `git clone git@github.com:kevgo/dot-files.git .config`
-1. `.config/install/install.sh`
+- [installer](https://code.visualstudio.com)
+- [configuration](../vscode/README.md)
 
-### Install Windows Cmd shortcuts
+### keyboard
 
-in Cmd: `mklink /J c:\Users\kevlar\bin c:\cygwin64\home\kevlar\.config\bin-windows`
-
-### Keyboard
-
-1. Change keyboard delay and repeat rate: Control Panel > keyboard
-1. Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
-1. disable hotkey to change keyboard language
-   - Modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
-
-### install Edge extensions
-
-in Windows Store:
-
-- Adblock
-- Grammarly
-
-### remove bloatware
-
-1. run [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
-1. in `cmd`: `bin\remove-win-apps.cmd`
-1. remove "Edit with Paint3d" file context menu entry:
-   - open `regedit`
-   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
-   - delete `3D Edit`
-1. go to `Turn Windows features on or off` and disable all useless options
-1. disable web results in Windows search
-1. search for `mobile hotspot` and disable
+- change keyboard delay and repeat rate: Control Panel > keyboard
+- Map Caps Lock to Esc via [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
+- disable hotkey to change keyboard language: modern Settings app > Region and Language > Advanced keyboard settings > Language bar options > Advanced Key Settings tab
 
 ### Explorer
 
@@ -149,9 +123,21 @@ in Windows Store:
 - search for `change system sounds`
 - set `Asterisk` and `Default Beep` to `(None)`
 
+### remove bloatware
+
+1. run [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
+1. in `cmd`: `bin\remove-win-apps.cmd`
+1. remove "Edit with Paint3d" file context menu entry:
+   - open `regedit`
+   - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.jpeg\Shell`
+   - delete `3D Edit`
+1. go to `Turn Windows features on or off` and disable all useless options
+1. disable web results in Windows search
+1. search for `mobile hotspot` and disable
+
 ### alternative: Fish shell via Cygwin
 
-_problem: this is too unix-y. It creates a parallel universe inside the Cygwin environment that makes tools think they are in Unix and store the wrong line endings. Requires extensive symlinking of tools from the Unix simulator into the Windows user directory in order to work with Windows tools._
+_problem: this is too unix-y for Windows. It creates a parallel universe inside the Cygwin environment that makes tools think they are in Unix and store the wrong line endings. Requires extensive symlinking of tools from the Unix simulator into the Windows user directory in order to work with Windows tools, or the Windows Go version._
 
 6. [Cygwin](https://www.cygwin.com)
 
