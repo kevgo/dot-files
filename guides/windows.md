@@ -15,16 +15,16 @@ Reinstall existing Windows:
 
 ### setup Windows
 
-1. choose account
-   - the online account syncs many of the settings, but enforces username "kevin"
-   - the local account can be named "kevlar"
-1. prevent slowness and heat before we start major changes
-   - in Explorer: right-click C: drive > properties > disable content indexing
-   - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
-1. install Windows updates
-1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
-1. install Edge
-1. clone dot-files
+1.  choose account
+    - the online account syncs many of the settings, but enforces username "kevin"
+    - the local account can be named "kevlar"
+1.  prevent slowness and heat before we start major changes
+    - in Explorer: right-click C: drive > properties > disable content indexing
+    - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
+1.  install Windows updates
+1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
+1.  install Edge
+1.  clone dot-files
 
            git clone git@github.com:kevgo/dot-files.git .dot-files
 
