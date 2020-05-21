@@ -18,7 +18,7 @@ reinstall existing Windows:
 1.  choose account
     - the online account syncs many of the settings but enforces username "kevin"
     - the local account can be named "kevlar"
-1.  prevent slowness and heat before we start major changes
+1.  prevent slowness and heat before we start major filesystem activities
     - in Explorer: right-click C: drive > properties > disable content indexing
     - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
 1.  install Windows updates
@@ -35,9 +35,15 @@ https://git-scm.com/download/win
 
 ### set up dot-files
 
-clone dot-files:
+```
+git clone git@github.com:kevgo/dot-files.git .dot-files
+```
 
-        git clone git@github.com:kevgo/dot-files.git .dot-files
+in `CMD`:
+
+```
+mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
+```
 
 ### set up Bash
 
@@ -46,7 +52,7 @@ clone dot-files:
 - install Make
   choco install make
 - configure Bash
-  mklink /J c:\Users\kevlar\.config\bin c:\cygwin64\home\kevlar\.config\bin-windows
+  
 
 ### alternative B: Fish shell via Cygwin
 
