@@ -16,8 +16,8 @@ Reinstall existing Windows:
 ### setup Windows
 
 1. choose account
-    - the online account syncs many of the settings, but enforces username "kevin"
-    - the local account can be named "kevlar"
+   - the online account syncs many of the settings, but enforces username "kevin"
+   - the local account can be named "kevlar"
 1. in Explorer: right-click C: drive > properties > disable content indexing
 1. install Windows updates
 1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
