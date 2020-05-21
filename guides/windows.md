@@ -170,7 +170,3 @@ in Windows Store:
 
 - search for `change system sounds`
 - set `Asterisk` and `Default Beep` to `(None)`
-
-### Screenshot tool
-
-- [ShareX](https://getsharex.com)
