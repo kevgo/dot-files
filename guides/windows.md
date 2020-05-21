@@ -23,12 +23,15 @@ From scratch:
 1. install Chrome and log into Github
 1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 
-### native install
+### alternative A: native install
 
 - install Git
-- install Make: `choco install make`
+- install Make
+          choco install make
+- configure Bash 
+          mklink /J c:\Users\kevlar\.config\bin c:\cygwin64\home\kevlar\.config\bin-windows
 
-### Install fish
+### alternative B: Fish shell via Cygwin
 
 6. [Cygwin](https://www.cygwin.com)
 
@@ -141,6 +144,12 @@ in Windows Store:
    - go to `Startup` tab
    - right-click on entries and disable them
 
+### sounds
+
+- search for `change system sounds`
+- set `Asterisk` and `Default Beep` to `(None)`
+
 ### Screenshot tool
 
 - [ShareX](https://getsharex.com)
+
