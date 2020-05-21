@@ -27,9 +27,9 @@ From scratch:
 
 - install Git
 - install Make
-          choco install make
-- configure Bash 
-          mklink /J c:\Users\kevlar\.config\bin c:\cygwin64\home\kevlar\.config\bin-windows
+  choco install make
+- configure Bash
+  mklink /J c:\Users\kevlar\.config\bin c:\cygwin64\home\kevlar\.config\bin-windows
 
 ### alternative B: Fish shell via Cygwin
 
@@ -152,4 +152,3 @@ in Windows Store:
 ### Screenshot tool
 
 - [ShareX](https://getsharex.com)
-
