@@ -69,14 +69,14 @@ mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
 choco install make
 ```
 
+### Go
+
+- [installer](https://golang.org/dl)
+
 ### Node.js
 
 - [installer](https://nodejs.org/en/download)
 - Yarn: `npm i -g yarn`
-
-### Go
-
-- [installer](https://golang.org/dl)
 
 ### Git Town
 
@@ -86,7 +86,7 @@ choco install make
 ### diff-so-fancy
 
 ```
-npm i -g diff-so-fancy
+npm i -g yarn diff-so-fancy 
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ```
 
@@ -115,7 +115,7 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
    - "Advanced" tab
    - "Virtual Memory" section > Change
    - "no paging file" option
-1. stop apps from starting automaticalyl
+1. stop apps from starting automatically
    - open task manager
    - go to `Startup` tab
    - right-click on entries and disable them
