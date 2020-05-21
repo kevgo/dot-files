@@ -16,7 +16,7 @@ reinstall existing Windows:
 ### set up Windows
 
 1.  choose account
-    - the online account syncs many of the settings, but enforces username "kevin"
+    - the online account syncs many of the settings but enforces username "kevin"
     - the local account can be named "kevlar"
 1.  prevent slowness and heat before we start major changes
     - in Explorer: right-click C: drive > properties > disable content indexing
