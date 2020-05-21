@@ -25,7 +25,8 @@ Reinstall existing Windows:
 1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 1. install Edge
 1. clone dot-files
-   git clone git@github.com:kevgo/dot-files.git .dot-files
+
+           git clone git@github.com:kevgo/dot-files.git .dot-files
 
 ### alternative A: native install
 
