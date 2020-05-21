@@ -22,7 +22,11 @@ From scratch:
 1. install Chrome and log into Github
 1. install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 
-### Install command-line
+### native install
+
+- install Git
+
+### Install fish
 
 6. [Cygwin](https://www.cygwin.com)
 
