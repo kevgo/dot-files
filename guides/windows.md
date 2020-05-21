@@ -41,8 +41,6 @@ clone dot-files:
 
 ### set up Bash
 
-
-
 ### alternative A: native install
 
 - install Make
