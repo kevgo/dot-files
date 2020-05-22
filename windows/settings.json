@@ -97,19 +97,52 @@
 
     // Pane Management
     { "command": "closePane", "keys": "ctrl+d" },
-    { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "alt+shift+-" },
-    { "command": { "action": "splitPane", "split": "vertical" }, "keys": "alt+shift+plus" },
-    { "command": { "action": "resizePane", "direction": "down" }, "keys": "alt+shift+down" },
-    { "command": { "action": "resizePane", "direction": "left" }, "keys": "alt+shift+left" },
-    { "command": { "action": "resizePane", "direction": "right" }, "keys": "alt+shift+right" },
-    { "command": { "action": "resizePane", "direction": "up" }, "keys": "alt+shift+up" },
-    { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+down" },
-    { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+left" },
-    { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+right" },
-    { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+up" },
+    {
+      "command": { "action": "splitPane", "split": "horizontal" },
+      "keys": "alt+shift+-"
+    },
+    {
+      "command": { "action": "splitPane", "split": "vertical" },
+      "keys": "alt+shift+plus"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "down" },
+      "keys": "alt+shift+down"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "left" },
+      "keys": "alt+shift+left"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "right" },
+      "keys": "alt+shift+right"
+    },
+    {
+      "command": { "action": "resizePane", "direction": "up" },
+      "keys": "alt+shift+up"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "down" },
+      "keys": "alt+down"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "left" },
+      "keys": "alt+left"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "right" },
+      "keys": "alt+right"
+    },
+    {
+      "command": { "action": "moveFocus", "direction": "up" },
+      "keys": "alt+up"
+    },
 
     // Clipboard Integration
-    { "command": { "action": "copy", "singleLine": false }, "keys": "ctrl+shift+c" },
+    {
+      "command": { "action": "copy", "singleLine": false },
+      "keys": "ctrl+shift+c"
+    },
     { "command": "paste", "keys": "ctrl+shift+v" },
 
     // Scrollback
@@ -120,7 +153,10 @@
 
     // Visual Adjustments
     { "command": { "action": "adjustFontSize", "delta": 1 }, "keys": "ctrl+=" },
-    { "command": { "action": "adjustFontSize", "delta": -1 }, "keys": "ctrl+-" },
+    {
+      "command": { "action": "adjustFontSize", "delta": -1 },
+      "keys": "ctrl+-"
+    },
     { "command": "resetFontSize", "keys": "ctrl+0" }
   ]
 }
