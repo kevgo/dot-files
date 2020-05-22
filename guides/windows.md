@@ -60,7 +60,7 @@ git clone git@github.com:kevgo/dot-files-private.git .dot-files-private
 in "cmd" shell with elevated privileges (start Admin PowerShell, then run `cmd`):
 
 ```
-mklink /J c:\Users\kevin\.dot-files\bin_window c:\Users\kevin\bin
+mklink /J c:\Users\kevin\bin c:\Users\kevin\.dot-files\bin_windows
 mklink C:\Users\kevin\.gitconfig C:\Users\kevin\.dot-files-private\home_dir_files\.gitconfig
 mklink c:\Users\kevin\.bashrc c:\Users\kevin\.dot-files\windows\.bashrc
 ```
