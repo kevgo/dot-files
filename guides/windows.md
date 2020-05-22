@@ -38,7 +38,8 @@ reinstall existing Windows:
 
 ### Windows terminal
 
-[installer](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
+- [installer](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
+- [settings]()
 
 ### Git
 
