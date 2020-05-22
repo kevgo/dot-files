@@ -6,4 +6,6 @@ PS1="$PS1"'\[\033[33m\]'       # change to brownish yellow
 PS1="$PS1"'\w'                 # current working directory
 PS1="$PS1"'\[\033[0m\]'        # change color
 PS1="$PS1"'\n'                 # new line
-PS1="$PS1"'>22oo '                 # prompt: always $
+PS1="$PS1"'> '             # prompt
+PS1="$PS1"'\[\033[1;33m\]'        # change color
+trap 'tput sgr0' DEBUG
