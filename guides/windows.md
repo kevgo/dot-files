@@ -61,7 +61,7 @@ in "cmd" shell with elevated privileges (start Admin PowerShell, then run `cmd`)
 
 ```
 mklink /J c:\Users\kevin\bin c:\Users\kevin\.dot-files\bin_windows
-mklink /J C:\Users\kevin\.config C:\Users\kevin\.dot-files\.config\
+mklink /J C:\Users\kevin\.config C:\Users\kevin\.dot-files\.config
 mklink C:\Users\kevin\.gitconfig C:\Users\kevin\.dot-files-private\home_dir_files\.gitconfig
 mklink c:\Users\kevin\.bashrc c:\Users\kevin\.dot-files\windows\.bashrc
 ```
