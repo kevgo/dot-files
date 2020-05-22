@@ -29,6 +29,7 @@
       "guid": "{e6a05218-bf74-4452-a2f9-6b4fda2de5c3}",
       "name": "Bash",
       "commandline": "bash.exe",
+      "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
       "colorScheme": "Campbell Powershell",
       "antialiasingMode": "grayscale",
       "closeOnExit": "graceful",
