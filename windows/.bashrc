@@ -20,11 +20,11 @@ function la {
 
 
 function br {
-  git branch
+  git branch "$@"
 }
 
 function co {
-  git checkout
+  git checkout "$@"
 }
 
 function ga {
@@ -32,7 +32,7 @@ function ga {
 }
 
 function gd {
-  git diff
+  git diff "$@"
 }
 
 function gdm {
@@ -40,7 +40,7 @@ function gdm {
 }
 
 function gp {
-  git push
+  git push "$@"
 }
 
 function gpf {
@@ -52,7 +52,7 @@ function gpr {
 }
 
 function gs {
-  git sync
+  git sync "$@"
 }
 
 function gsa {
@@ -64,5 +64,5 @@ function gtc {
 }
 
 function st {
-  git status
+  git status "$@"
 }
