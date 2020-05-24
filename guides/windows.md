@@ -1,5 +1,9 @@
 # Installation Instructions for Windows
 
+### backup data on old Windows
+
+- settings of new terminal
+
 ### install Windows
 
 from scratch:
