@@ -146,6 +146,9 @@ set -x PATH $PATH ~/go/bin
 # homebrew
 eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
+# Java
+set -g fish_user_paths "/home/linuxbrew/.linuxbrew/opt/openjdk/bin" $fish_user_paths
+
 # ls
 function l
   ls -1
