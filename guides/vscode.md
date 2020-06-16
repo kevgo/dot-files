@@ -8,9 +8,11 @@ Extensions: run `~/bin/vspluginload` to install all VSCode extensions
 
 #### Navigation
 
+- go to file: `[ctrl]-t`
+- go to symbol: `[ctrl]-[alt]-t`
 - switch to next editor window in current group: `ctrl+tab`
 - switch to prev editor window in current group: `ctrl+shift+tab`
-- switch to next editor group: `ctrl+tab`
+- switch editor groups: `ctrl+1`, `ctrl-2`, etc
 - move editor left/right in current group: `ctrl+shift+PageUp/Down`
 - move editor to left/right editor group: `ctrl+alt+left/right`
 - go to definition: `gd`
