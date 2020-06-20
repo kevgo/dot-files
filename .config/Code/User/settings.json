@@ -131,5 +131,7 @@
   "workbench.startupEditor": "none",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.list.smoothScrolling": true
+  "workbench.list.smoothScrolling": true,
+  "markdown.extension.toc.levels": "2..6",
+  "java.refactor.renameFromFileExplorer": "autoApply"
 }
