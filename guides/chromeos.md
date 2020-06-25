@@ -25,6 +25,8 @@ Chrome settings:
 - disable notifications: chrome://flags/#quiet-notification-prompts
 - enable virtual desk gestures: chrome://flags/#enable-virtual-desks-gestures
 - enable Reader mode: chrome://flags/#enable-reader-mode
+- enable tab strip: chrome://flags/#webui-tab-strip
+- chrome://flags/#ash-limit-alt-tab-to-active-desk
 
 ### Folder sharing
 
