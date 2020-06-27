@@ -144,24 +144,3 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 1. go to `Turn Windows features on or off` and disable all useless options
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
-
-### alternative: Fish shell via Cygwin
-
-_problem: this is too unix-y for Windows. It creates a parallel universe inside the Cygwin environment that makes tools think they are in Unix and store the wrong line endings. Requires extensive symlinking of tools from the Unix simulator into the Windows user directory in order to work with Windows tools, or the Windows Go version._
-
-6. [Cygwin](https://www.cygwin.com)
-
-   - move the setup file to a new folder `~\cygwin-setup` before running it and keep it there.
-   - choose packages
-     - fish
-     - git
-     - make
-     - vim
-   - create shortcut to Fish shell:
-     - run `cmd`
-     - right-click in taskbar > Pin to taskbr
-     - right-click again in taskbar > right-click on `Command Prompt` > Properties
-     - change `Target` to `C:\cygwin64\bin\fish.exe --login --interactive --init-command=d`
-     - add shortcut key `CTRL+SHIFT+T`
-     - change icon to `c:\cygwin64\home\kevlar\.config\install\fish.ico`
-   - add `c:\cygwin64\bin` and `c:\Users\kevlar\bin` to the PATH
