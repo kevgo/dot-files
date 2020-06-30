@@ -31,6 +31,17 @@ function ga {
   git add .
 }
 
+function gac {
+  git add .
+  git commit -m "'$*'"
+}
+
+function gacp {
+  git add .
+  git commit -m "'$*'"
+  git push
+}
+
 function gd {
   git diff "$@"
 }
