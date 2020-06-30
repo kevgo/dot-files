@@ -92,6 +92,8 @@ choco install make
 
 ### diff-so-fancy
 
+Note: this slows down Windows 10, might want to skip
+
 ```
 npm i -g yarn diff-so-fancy
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
