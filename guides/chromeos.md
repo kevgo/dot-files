@@ -95,7 +95,9 @@ This needs to come first so that we can run the remaining commands in fish, wher
 ### Node.JS
 
 ```
-brew install node yarn
+brew install node
+
+npm i -g yarn
 
 yarn config set save-prefix ''
 ```
