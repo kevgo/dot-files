@@ -46,6 +46,7 @@ Chrome settings:
   ```
 
 - register SSH key with GitHub: https://github.com/settings/keys
+- don't create a GPG key, we'll import the existing one later
 - clone the dotfiles:
 
       rm -rf .config
