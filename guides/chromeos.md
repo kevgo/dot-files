@@ -9,10 +9,8 @@
 ### Settings
 
 - Wifi connection: enable Google DNS
-- install proprietary media components
 - Screen lock > PIN or password
 - Manage other people > disable guest and restrict login
-- Wallpaper
 - Keyboard
   - Caps Lock: change to `Escape`
   - set delay and repeat rate
@@ -21,11 +19,11 @@
 
 Chrome settings:
 
-- enable Hyperthreading: go to chrome://flags/#scheduler-configuration, set to `performance`
-- disable notifications: chrome://flags/#quiet-notification-prompts
-- enable virtual desk gestures: chrome://flags/#enable-virtual-desks-gestures
-- enable Reader mode: chrome://flags/#enable-reader-mode
-- enable tab strip: chrome://flags/#webui-tab-strip
+- chrome://flags/#scheduler-configuration, set to `performance`
+- chrome://flags/#quiet-notification-prompts
+- chrome://flags/#enable-virtual-desks-gestures
+- chrome://flags/#enable-reader-mode
+- chrome://flags/#webui-tab-strip
 - chrome://flags/#ash-limit-alt-tab-to-active-desk
 
 ### Folder sharing
