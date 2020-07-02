@@ -156,7 +156,7 @@ make test
 
 - [download the DEB installer](https://code.visualstudio.com/download)
 - `sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb`
-- do the [VSCode setup](https://github.com/kevgo/dot-files/blob/master/documentation/vscode/README.md)
+- do the [VSCode setup](https://github.com/kevgo/dot-files/blob/master/guides/vscode.md)
 - open the Git Town repo in VSCode and have it install the Go tools
 - if you need GCC in a particular version: `brew install gcc@5`
 
