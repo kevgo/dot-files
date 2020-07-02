@@ -86,7 +86,7 @@ This needs to come first so that we can run the remaining commands in fish, wher
 
   Now run: `chsh -s /home/linuxbrew/.linuxbrew/bin/fish`
 
-- open a new terminal windows and fix Fish shell error messages
+- open a new terminal window
 - disable glob
 
   ```
