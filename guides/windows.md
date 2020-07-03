@@ -22,13 +22,14 @@ reinstall existing Windows:
 1.  choose account
     - the online account syncs many of the settings but enforces username "kevin"
     - the local account can be named "kevlar"
-1.  prevent slowness and/or CPU heat before we start major filesystem activities
+1.  prevent slowness and CPU heat before we start major filesystem activities
 
     - in Explorer: right-click C: drive > properties > disable content indexing
     - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
     - in `regedit`
       - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
       - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
+    - disable search indexing: https://windowsreport.com/indexing-windows-8
 
 1.  install Windows updates
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
