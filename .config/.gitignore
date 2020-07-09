@@ -8,6 +8,7 @@ Code/User/workspaceStorage/
 
 configstore
 cros-garcon.conf
+Cypress/
 dconf/
 dlv/
 gtk-3.0
