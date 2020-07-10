@@ -133,5 +133,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.list.smoothScrolling": true,
   "markdown.extension.toc.levels": "2..6",
-  "java.refactor.renameFromFileExplorer": "autoApply"
+  "java.refactor.renameFromFileExplorer": "autoApply",
+  "git.ignoreLimitWarning": true
 }
