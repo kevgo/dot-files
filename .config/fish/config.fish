@@ -174,6 +174,9 @@ set -x PATH $PATH ~/bin /usr/local/bin
 if test -d /usr/local/sbin
   set -x PATH $PATH /usr/local/sbin
 end
+if test -d ~/bin_local
+  set -x PATH $PATH ~/bin_local
+end
 
 
 # Postgres
