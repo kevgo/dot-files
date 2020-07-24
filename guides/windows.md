@@ -138,6 +138,7 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
 ### remove bloatware
 
+1. try https://github.com/builtbybel/bloatbox
 1. run [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
 1. in `cmd`: `bin\remove-win-apps.cmd`
 1. remove "Edit with Paint3d" file context menu entry:
