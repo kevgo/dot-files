@@ -25,10 +25,7 @@ reinstall existing Windows:
 1.  prevent slowness and CPU heat before we start major filesystem activities
 
     - in Explorer: right-click C: drive > properties > disable content indexing
-    - search for `Virus & threat protection` > Virus & thread protection settings > Manage settings > disable Real-time protection
-    - in `regedit`
-      - go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
-      - edit or create a DWORD (32 bit) called `DisableAntiSpyware` with value `1`
+    - https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently`
     - disable search indexing: https://windowsreport.com/indexing-windows-8
 
 1.  install Windows updates
