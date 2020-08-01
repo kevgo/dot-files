@@ -50,7 +50,7 @@ reinstall existing Windows:
   - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
   - if the command hangs, provide the password via `-P ""`
   - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
-- [add SSH key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account)
+- [add SSH key to Github](https://github.com/settings/keys)
 
 ### dot-files
 
