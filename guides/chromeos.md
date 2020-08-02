@@ -64,6 +64,8 @@ sudo apt install -y build-essential
 
 ### Homebrew
 
+Try this instead of Homebrew: https://chromeunboxed.com/how-to-add-the-sid-testing-repository-and-get-the-latest-linux-apps-on-your-chromebook
+
 https://docs.brew.sh/Homebrew-on-Linux
 
 ### Fish shell
