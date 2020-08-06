@@ -131,7 +131,7 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ### sounds
 
 - search for `change system sounds`
-- set to `(None)`: `Asterisk`, `Default Beep`, `Notification` 
+- set to `(None)`: `Asterisk`, `Default Beep`, `Notification`
 
 ### remove bloatware
 
