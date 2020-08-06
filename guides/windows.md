@@ -27,6 +27,7 @@ reinstall existing Windows:
     - in Explorer: right-click C: drive > properties > disable content indexing
     - https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently`
     - disable search indexing: https://windowsreport.com/indexing-windows-8
+    - [disable real-time scanning permanently](https://mspoweruser.com/how-to-temporarily-or-permanently-disable-and-re-enable-windows-defender-on-windows-10)
 
 1.  install Windows updates
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
@@ -126,7 +127,6 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
    - open task manager
    - go to `Startup` tab
    - right-click on entries and disable them
-1. [disable real-time scanning permanently](https://mspoweruser.com/how-to-temporarily-or-permanently-disable-and-re-enable-windows-defender-on-windows-10)
 
 ### sounds
 
