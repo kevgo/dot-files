@@ -100,7 +100,7 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 ### VSCode
 
 - [installer](https://code.visualstudio.com)
-- [configuration](../vscode/README.md)
+- [configuration](../.config/Code/User/settings.json)
 
 ### keyboard
 
