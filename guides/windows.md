@@ -44,6 +44,14 @@ reinstall existing Windows:
 - [installer](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
 - [settings](https://raw.githubusercontent.com/kevgo/dot-files/master/windows/settings.json)
 
+### Vim
+
+NeoVim is needed as the editor for Git: 
+
+```
+choco install neovim
+```
+
 ### Git
 
 - [installer](https://git-scm.com/download/win)
