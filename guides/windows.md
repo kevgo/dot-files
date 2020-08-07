@@ -42,7 +42,7 @@ reinstall existing Windows:
 ### Windows terminal
 
 - [installer](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
-- [settings](https://raw.githubusercontent.com/kevgo/dot-files/master/windows/settings.json)
+- [settings](../windows/settings.json)
 
 ### Vim
 
