@@ -97,7 +97,7 @@
     { "command": "prevTab", "keys": "ctrl+shift+tab" },
 
     // Pane Management
-    { "command": "closePane", "keys": "ctrl+d" },
+    { "command": "closePane", "keys": "ctrl+w" },
     {
       "command": { "action": "splitPane", "split": "horizontal" },
       "keys": "alt+shift+-"
