@@ -46,7 +46,7 @@ reinstall existing Windows:
 
 ### Vim
 
-NeoVim is needed as the editor for Git: 
+NeoVim is needed as the editor for Git:
 
 ```
 choco install neovim
