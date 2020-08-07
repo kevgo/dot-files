@@ -47,11 +47,18 @@ reinstall existing Windows:
 ### Git
 
 - [installer](https://git-scm.com/download/win)
-- [create SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent):
-  - `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
-  - if the command hangs, provide the password via `-P ""`
-  - if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
+
+Create an SSH key:
+
+- `ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com" -P ""`
+- if `ssh-agent` doesn't start, run `Set-Service ssh-agent -StartupType Manual` in admin PowerShell
 - [add SSH key to Github](https://github.com/settings/keys)
+
+Set up the signing key:
+
+- create a file `private.key` containing the signing key from 1Password
+- run `gpg --import private.key`
+- `rm private.key`
 
 ### dot-files
 
