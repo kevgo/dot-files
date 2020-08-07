@@ -32,13 +32,13 @@ function ga {
 }
 
 function gac {
-  git add .
-  git commit -m "$@"
+  git add -A
+  git commit -m "$*"
 }
 
 function gacp {
-  git add .
-  git commit -m "$@"
+  git add -A
+  git commit -m "$*"
   git push
 }
 
