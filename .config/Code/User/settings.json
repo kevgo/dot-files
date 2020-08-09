@@ -118,7 +118,7 @@
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}${separator}${activeEditorMedium}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
