@@ -47,7 +47,6 @@
   "go.formatTool": "goimports",
   "go.useLanguageServer": true,
   "html.mirrorCursorOnMatchingTag": false,
-  "java.semanticHighlighting.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
@@ -130,10 +129,8 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.list.smoothScrolling": true,
   "markdown.extension.toc.levels": "2..6",
-  "java.refactor.renameFromFileExplorer": "autoApply",
   "git.ignoreLimitWarning": true,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
