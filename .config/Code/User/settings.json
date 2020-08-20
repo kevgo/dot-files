@@ -15,7 +15,6 @@
   "editor.folding": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "editor.highlightActiveIndentGuide": false,
   "editor.hover.sticky": false,
   "editor.largeFileOptimizations": false,
