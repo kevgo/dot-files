@@ -40,9 +40,7 @@ Chrome settings:
 
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa
-  sudo apt install xclip
-
-  xclip -sel clip < ~/.ssh/id_rsa.pub
+  cat ~/.ssh/id_rsa.pub
   ```
 
 - register SSH key with GitHub: https://github.com/settings/keys
