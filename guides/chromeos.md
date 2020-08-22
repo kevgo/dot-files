@@ -58,6 +58,24 @@ Add the Debian unstable repo:
 - `sudo vim /etc/apt/sources.list`
 - add `deb http://http.us.debian.org/debian sid main non-free contrib`
 
+set
+
+- `sudo vim /etc/apt/preferences`
+
+```
+Package: *
+Pin: release a=stable
+Pin-Priority: 700
+
+Package: *
+Pin: release a=testing
+Pin-Priority: 650
+
+Package: *
+Pin: release a=unstable
+Pin-Priority: 600
+```
+
 ### Homebrew
 
 Try this instead of Homebrew: https://chromeunboxed.com/how-to-add-the-sid-testing-repository-and-get-the-latest-linux-apps-on-your-chromebook
