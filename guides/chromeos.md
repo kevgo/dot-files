@@ -51,18 +51,14 @@ Chrome settings:
       git clone git@github.com:kevgo/dot-files.git .dot-files
       .dot-files/install
 
-### Build tools
+### Homebrew
 
-This installs `make` and the compilers needed for Homebrew and the C extensions of Node.JS:
+Install `make` and the compilers needed for Homebrew and the C extensions of Node.JS:
 
 ```
 sudo apt update
 sudo apt install -y build-essential
 ```
-
-### Homebrew
-
-Try this instead of Homebrew: https://chromeunboxed.com/how-to-add-the-sid-testing-repository-and-get-the-latest-linux-apps-on-your-chromebook
 
 https://docs.brew.sh/Homebrew-on-Linux
 
