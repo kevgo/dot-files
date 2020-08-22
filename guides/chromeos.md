@@ -51,18 +51,23 @@ Chrome settings:
       git clone git@github.com:kevgo/dot-files.git .dot-files
       .dot-files/install
 
-### Build tools
+### Debian unstable
 
-This installs `make` and the compilers needed for Homebrew and the C extensions of Node.JS:
+Add the Debian unstable repo:
+
+- `sudo vim /etc/apt/sources.list`
+- add `deb http://http.us.debian.org/debian sid main non-free contrib`
+
+### Homebrew
+
+Try this instead of Homebrew: https://chromeunboxed.com/how-to-add-the-sid-testing-repository-and-get-the-latest-linux-apps-on-your-chromebook
+
+Install `make` and the compilers needed for Homebrew and the C extensions of Node.JS:
 
 ```
 sudo apt update
 sudo apt install -y build-essential
 ```
-
-### Homebrew
-
-Try this instead of Homebrew: https://chromeunboxed.com/how-to-add-the-sid-testing-repository-and-get-the-latest-linux-apps-on-your-chromebook
 
 https://docs.brew.sh/Homebrew-on-Linux
 
