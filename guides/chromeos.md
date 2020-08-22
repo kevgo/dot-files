@@ -49,7 +49,7 @@ Chrome settings:
 
       rm -rf .config
       git clone git@github.com:kevgo/dot-files.git .dot-files
-      
+
       .dot-files/install
 
 ### Homebrew
