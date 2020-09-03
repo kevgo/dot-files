@@ -85,7 +85,6 @@
     { "command": "toggleFullscreen", "keys": "alt+enter" },
     { "command": "toggleFullscreen", "keys": "f11" },
     { "command": "openNewTabDropdown", "keys": "ctrl+shift+space" },
-    { "command": "openSettings", "keys": "ctrl+," },
     { "command": "find", "keys": "ctrl+shift+f" },
 
     // Tab Management
@@ -97,7 +96,7 @@
     { "command": "prevTab", "keys": "ctrl+shift+tab" },
 
     // Pane Management
-    { "command": "closePane", "keys": "ctrl+w" },
+    { "command": "closePane", "keys": "ctrl+d" },
     {
       "command": { "action": "splitPane", "split": "horizontal" },
       "keys": "alt+shift+-"
