@@ -105,6 +105,7 @@ yarn config set save-prefix ''
 ```
 brew install git
 
+brew install icdiff
 npm i -g diff-so-fancy
 ```
 
