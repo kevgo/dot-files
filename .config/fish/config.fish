@@ -105,18 +105,26 @@ end
 
 
 # Git
-abbr -a br git branch
-abbr -a co git checkout
-abbr -a ga git add .
-abbr -a gd git diff
-abbr -a gdm git diff master
-abbr -a gp git push
-abbr -a gpf git push --force
-abbr -a gpr git new-pull-request
-abbr -a gs git sync
-abbr -a gsa git sync --all
-abbr -a gtc git town continue
-abbr -a st git status
+abbr -ag br git branch
+abbr -ag co git checkout
+abbr -ag ga git add .
+abbr -ag gp git push
+abbr -ag gpf git push --force
+abbr -ag gpr git new-pull-request
+abbr -ag gs git sync
+abbr -ag gsa git sync --all
+abbr -ag gtc git town continue
+abbr -ag st git status
+
+
+function gd
+  echo hello
+  git icdiff | less --tabs=2 -RFX 
+end
+
+function gdm 
+  git icdiff master | less --tabs=2 -RFX
+end
 
 function gac
   git add -A
@@ -180,12 +188,12 @@ end
 
 
 # Postgres
-abbr -a pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
-abbr -a pg_stop pg_ctl -D /usr/local/var/postgres stop
+abbr -ag pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
 # Tikibase
-abbr -a tb tikibase
+abbr -ag tb tikibase
 
 # Vim
 set sys (uname)
