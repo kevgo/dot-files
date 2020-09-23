@@ -125,5 +125,8 @@
   "git.ignoreLimitWarning": true,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
-  "prettier.arrowParens": "avoid"
+  "prettier.arrowParens": "avoid",
+  "prettier.packageManager": "yarn",
+  "prettier.useEditorConfig": false,
+  "prettier.ignorePath": ""
 }
