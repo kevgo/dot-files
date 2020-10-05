@@ -23,3 +23,5 @@ Termux:
   - new remote
   - name: "Google"
   - "drive"
+  - enter access credentials from 1password
+  - choose defaults for the options
