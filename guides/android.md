@@ -23,4 +23,3 @@ Termux:
   - new remote
   - name: "Google"
   - "drive"
-   
