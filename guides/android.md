@@ -19,3 +19,8 @@
 Termux:
 
 - pkg install rclone
+- rclone config
+  - new remote
+  - name: "Google"
+  - "drive"
+   
