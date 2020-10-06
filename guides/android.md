@@ -16,7 +16,13 @@
 - Whatsapp
 - Wholefoods and enter Daisy's account
 
-Termux:
+### Termux
+
+- install the SSH server: `pkg install openssh`
+- set the password: `passwd`
+- get the username: `whoami`
+- get the IP address of the phone: `ifconfig`
+- SSH into the phone: `ssh -p 8022 [user]@[ip]`
 
 - pkg install rclone
 - rclone config
