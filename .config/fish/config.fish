@@ -119,11 +119,11 @@ abbr -ag st git status
 
 function gd
   echo hello
-  git icdiff | less --tabs=2 -RFX 
+  git diff --color-words | less --tabs=2 -RFX 
 end
 
 function gdm 
-  git icdiff master | less --tabs=2 -RFX
+  git diff --color-words | less --tabs=2 -RFX
 end
 
 function gac
