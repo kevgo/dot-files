@@ -56,7 +56,6 @@
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
-  "npm.packageManager": "yarn",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
