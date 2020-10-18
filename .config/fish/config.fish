@@ -118,7 +118,6 @@ abbr -ag st git status
 
 
 function gd
-  echo hello
   git diff --color-words | less --tabs=2 -RFX 
 end
 
