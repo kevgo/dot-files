@@ -26,6 +26,7 @@ Chrome settings:
 - chrome://flags/#webui-tab-strip
 - chrome://flags/#ash-limit-alt-tab-to-active-desk
 - chrome://flags/#impulse-scroll-animations
+- chrome://flags/#ash-limit-shelf-items-to-active-desk
 
 ### Folder sharing
 
