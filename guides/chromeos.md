@@ -19,12 +19,13 @@
 
 Chrome settings:
 
-- chrome://flags/#scheduler-configuration, set to `performance`
+- chrome://flags/#scheduler-configuration
 - chrome://flags/#quiet-notification-prompts
 - chrome://flags/#enable-virtual-desks-gestures
 - chrome://flags/#enable-reader-mode
 - chrome://flags/#webui-tab-strip
 - chrome://flags/#ash-limit-alt-tab-to-active-desk
+- chrome://flags/#impulse-scroll-animations
 
 ### Folder sharing
 
