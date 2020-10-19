@@ -19,15 +19,15 @@
 
 Chrome settings:
 
-- [scheduler-configuration](chrome://flags/#scheduler-configuration)
-- [quiet-notification-prompts](chrome://flags/#quiet-notification-prompts)
-- [enable-virtual-desks-gestures](chrome://flags/#enable-virtual-desks-gestures)
-- [enable-reader-mode](chrome://flags/#enable-reader-mode)
-- [webui-tab-strip](chrome://flags/#webui-tab-strip)
-- [ash-limit-alt-tab-to-active-desk](chrome://flags/#ash-limit-alt-tab-to-active-desk)
-- [impulse-scroll-animations](chrome://flags/#impulse-scroll-animations)
-- [ash-limit-shelf-items-to-active-desk](chrome://flags/#ash-limit-shelf-items-to-active-desk)
-- [enhanced_clipboard](chrome://flags/#enhanced_clipboard)
+- chrome://flags/#scheduler-configuration
+- chrome://flags/#quiet-notification-prompts
+- chrome://flags/#enable-virtual-desks-gestures
+- chrome://flags/#enable-reader-mode
+- chrome://flags/#webui-tab-strip
+- chrome://flags/#ash-limit-alt-tab-to-active-desk
+- chrome://flags/#impulse-scroll-animations
+- chrome://flags/#ash-limit-shelf-items-to-active-desk
+- chrome://flags/#enhanced_clipboard
 
 ### Folder sharing
 
