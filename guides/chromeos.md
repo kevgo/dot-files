@@ -28,6 +28,7 @@ Chrome settings:
 - chrome://flags/#impulse-scroll-animations
 - chrome://flags/#ash-limit-shelf-items-to-active-desk
 - chrome://flags/#enhanced_clipboard
+- chrome://flags/#percent-based-scrolling
 
 ### Folder sharing
 
