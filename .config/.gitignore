@@ -11,10 +11,11 @@ cros-garcon.conf
 Cypress/
 dconf/
 dlv/
-gtk-3.0
 fish/fish_history
 fish/fishd.*
 fish/fish_variables
+gtk-3.0
+inkscape/
 pulse/
 rclone/
 Simplenote/
