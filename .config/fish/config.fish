@@ -154,8 +154,8 @@ set -x PATH $PATH ~/go/bin
 eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # Java
-set -g fish_user_paths "/home/linuxbrew/.linuxbrew/opt/openjdk/bin" $fish_user_paths
-set -x JAVA_HOME (dirname (dirname (realpath (which javac))))
+# set -g fish_user_paths "/home/linuxbrew/.linuxbrew/opt/openjdk/bin" $fish_user_paths
+# set -x JAVA_HOME (dirname (dirname (realpath (which javac))))
 
 # ls
 function l
