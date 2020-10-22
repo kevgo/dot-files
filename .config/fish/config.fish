@@ -118,11 +118,11 @@ abbr -ag st git status
 
 
 function gd
-  git diff --color-words | less --tabs=2 -RFX 
+  git diff --color-words 
 end
 
 function gdm 
-  git diff --color-words | less --tabs=2 -RFX
+  git diff --color-words 
 end
 
 function gac
