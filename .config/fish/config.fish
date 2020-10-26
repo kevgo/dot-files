@@ -122,7 +122,7 @@ function gd
 end
 
 function gdm 
-  git diff --color-words 
+  git diff master --color-words 
 end
 
 function gac
