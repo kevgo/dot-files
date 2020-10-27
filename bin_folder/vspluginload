@@ -5,7 +5,6 @@ code --install-extension dawhite.mustache
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
-code --install-extension kevgo.tikibase
 code --install-extension kevgo.vscode-markdown-ide
 code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension travisthetechie.write-good-linter
