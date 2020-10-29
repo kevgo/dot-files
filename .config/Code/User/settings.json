@@ -49,6 +49,9 @@
   "go.useLanguageServer": true,
   "html.mirrorCursorOnMatchingTag": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
