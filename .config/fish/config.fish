@@ -121,8 +121,16 @@ function gd
   git diff --color-words 
 end
 
+function gdl
+  git diff 
+end
+
 function gdm 
   git diff master --color-words 
+end
+
+function gdml 
+  git diff master 
 end
 
 function gac
