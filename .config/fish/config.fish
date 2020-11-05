@@ -118,19 +118,19 @@ abbr -ag st git status
 
 
 function gd
-  git diff --color-words 
+  git diff 
 end
 
-function gdl
-  git diff 
+function gdw
+  git diff --color-words 
 end
 
 function gdm 
   git diff master --color-words 
 end
 
-function gdml 
-  git diff master 
+function gdmw 
+  git diff master --color-words 
 end
 
 function gac
