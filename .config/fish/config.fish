@@ -126,7 +126,7 @@ function gdw
 end
 
 function gdm 
-  git diff master --color-words 
+  git diff master 
 end
 
 function gdmw 
