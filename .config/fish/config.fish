@@ -136,7 +136,7 @@ end
 function gac
   git add -A
   if [ "$argv" = "" ]
-    git commit -m "committing all files"
+    git commit -m progress
   else
     git commit -m "$argv"
   end
