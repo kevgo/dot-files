@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+GDK_SCALE=2 sommelier -X --scale=2 --dpi=96 /usr/share/code/code "$@" 2> /dev/null > /dev/null &

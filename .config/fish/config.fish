@@ -185,7 +185,7 @@ set -x LESS_TERMCAP_us (printf "\e[01;32m")
 set -x PATH ./node_modules/.bin $PATH
 
 # Path
-set -x PATH $PATH ~/bin /usr/local/bin
+set -x PATH ~/bin $PATH /usr/local/bin 
 if test -d /usr/local/sbin
   set -x PATH $PATH /usr/local/sbin
 end
