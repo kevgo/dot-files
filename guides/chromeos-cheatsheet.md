@@ -22,3 +22,7 @@
 ### Text
 
 - Caps Lock: `search+alt`
+
+### Running apps
+
+- run VSCode sharp on HiDPI displays: `~/bin/code .`
