@@ -73,5 +73,6 @@ make install
 
 ### final touches
 
+- import the key for signing commits: `gpg --import ~/.dot-files-private/private.pgp`
 - if Chromium complains that it isn't the default browser: https://forum.manjaro.org/t/each-time-i-open-chromium-it-tells-me-it-isnt-my-default-browser/26680
 - reduce tearing when scrolling: `system settings > Display and monitor > Compositor > Tearing prevention: Full-screen repaints`
