@@ -15,7 +15,6 @@ git clone git@github.com:kevgo/dot-files.git .dot-files
 .dot-files/install
 ```
 
-
 ### configure KDE
 
 - remove window titlebars: https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f
