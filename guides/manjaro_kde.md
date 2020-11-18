@@ -1,15 +1,19 @@
 # Manjaro KDE installation instructions
 
-### adjust to 4k display
+### initial configuration to get going
+
+Adjust to 4k display
 
 - set screen zoom level: system settings > Display and Monitor > Global scale
-- set tray icon zoom level: add `export PLASMA_USE_QT_SCALING=1` to `.bash_profile`
+- set tray icon zoom level: add `export PLASMA_USE_QT_SCALING=1` to `.bash_profile` and reboot
 
 ### chrome
 
 ```
 sudo pacman -S chromium
 ```
+
+log in to get auto-completion
 
 ### github
 
