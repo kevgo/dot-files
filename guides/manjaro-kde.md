@@ -9,6 +9,12 @@
 
 - remove window titlebars: https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f
 
+### Chrome
+
+```
+sudo pacman -S chromium
+```
+
 ### Go
 
 ```
