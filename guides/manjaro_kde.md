@@ -9,31 +9,31 @@
 
 - remove window titlebars: https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f
 
-### Fish
+### fish
 
 ```
 sudo pacman -S fish
 ```
 
-### Chrome
+### chrome
 
 ```
 sudo pacman -S chromium
 ```
 
-### Go
+### go
 
 ```
 sudo pacman -S go
 ```
 
-### Node
+### node
 
 ```
 sudo pacman -S nodejs
 ```
 
-### Vim
+### vim
 
 ```
 sudo pacman -S neovim
@@ -45,7 +45,7 @@ sudo pacman -S neovim
 pacman -S make
 ```
 
-### Git Town
+### git town
 
 ```
 git clone git@github.com:git-town/git-town.git
