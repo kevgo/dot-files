@@ -115,7 +115,7 @@ npm i -g diff-so-fancy
 
 To sign commits:
 
-- import the private key from Google Drive: `gpg --import /mnt/chromeos/GoogleDrive/MyDrive/Documents/Legal/github-signing-secret-key.asc`
+- import the private key from Google Drive: `gpg --import ~/.dot-files-private/private.pgp`
 
 Git-LFS:
 
