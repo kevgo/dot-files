@@ -6,6 +6,7 @@
 - Windows [installation](guides/windows.md)
 - macOS [installation](guides/macos.md)
 - Ubuntu [installation](guides/ubuntu.md)
+- Manjaro KDE Linux [installation](guides/manjaro-kde.md), [cheatsheet](guides/kde_cheatsheet.md)
 - Manjaro i3 Linux [installation](guides/manjaro_i3.md), [cheatsheet](guides/i3_cheatsheet.md)
 - Android [installation](guides/android.md)
 
