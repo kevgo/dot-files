@@ -5,6 +5,16 @@
 - set screen zoom level: system settings > Display and Monitor > Global scale
 - set tray icon zoom level: add `export PLASMA_USE_QT_SCALING=1` to `.bash_profile`
 
+### chrome
+
+```
+sudo pacman -S chromium
+```
+
+### github
+
+- create new SSH key: https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 ### clone dot files
 
 This should happen early because any configuration change you try out will be lost after we do this.
@@ -15,6 +25,7 @@ git clone git@github.com:kevgo/dot-files.git .dot-files
 .dot-files/install
 ```
 
+
 ### configure KDE
 
 - remove window titlebars: https://medium.com/@CodyReichert/how-to-hide-title-bars-in-kde-plasma-5-348e0df4087f
@@ -24,14 +35,6 @@ git clone git@github.com:kevgo/dot-files.git .dot-files
 ```
 sudo pacman -S fish
 ```
-
-### chrome
-
-```
-sudo pacman -S chromium
-```
-
-If Chromium complains that it isn't the default browser: https://forum.manjaro.org/t/each-time-i-open-chromium-it-tells-me-it-isnt-my-default-browser/26680
 
 ### go
 
@@ -64,3 +67,7 @@ git clone git@github.com:git-town/git-town.git
 cd git-town
 make install
 ```
+
+### final touches
+
+- if Chromium complains that it isn't the default browser: https://forum.manjaro.org/t/each-time-i-open-chromium-it-tells-me-it-isnt-my-default-browser/26680
