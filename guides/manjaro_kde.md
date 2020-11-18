@@ -38,3 +38,17 @@ sudo pacman -S nodejs
 ```
 sudo pacman -S neovim
 ```
+
+### make
+
+```
+pacman -S make
+```
+
+### Git Town
+
+```
+git clone git@github.com:git-town/git-town.git
+cd git-town
+make install
+```
