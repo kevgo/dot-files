@@ -28,7 +28,9 @@
   "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
   "editor.selectionHighlight": true,
-  "editor.suggestSelection": "first",
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.showStatusBar": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
@@ -131,7 +133,7 @@
     }
   },
   "workbench.editor.revealIfOpen": true,
+  "workbench.list.smoothScrolling": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.startupEditor": "none",
-  "workbench.list.smoothScrolling": true
+  "workbench.startupEditor": "none"
 }
