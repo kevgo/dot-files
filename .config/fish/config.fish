@@ -105,6 +105,7 @@ end
 
 
 # Git
+abbr -ag b git b
 abbr -ag br git branch
 abbr -ag co git checkout
 abbr -ag ga git add .
