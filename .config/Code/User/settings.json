@@ -122,7 +122,7 @@
     }
   ],
   "window.enableMenuBarMnemonics": false,
-  "window.title": "${rootName}${separator}${activeEditorMedium}",
+  "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 2,
   "workbench.activityBar.visible": false,
@@ -134,6 +134,7 @@
   },
   "workbench.editor.revealIfOpen": true,
   "workbench.list.smoothScrolling": true,
+  "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none"
 }
