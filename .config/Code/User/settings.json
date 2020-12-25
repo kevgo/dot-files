@@ -87,7 +87,6 @@
     "<C-t>": false
   },
   "vim.hlsearch": true,
-  "vim.leader": "<space>",
   "vim.insertModeKeyBindingsNonRecursive": [
     {
       "before": ["<Esc>"],
@@ -98,7 +97,7 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": ["i", "<space>", "<esc>"],
-      "before": ["<leader>", "<leader>"]
+      "before": ["<space>"]
     },
     {
       "after": ["o", "<esc>", "k"],
