@@ -200,6 +200,11 @@ abbr -ag pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.
 abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
+# Rust
+if test -d ~/.cargo
+  set -x PATH $PATH ~/.cargo/bin
+end
+
 # Tikibase
 abbr -ag tb tikibase
 
