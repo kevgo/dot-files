@@ -164,7 +164,8 @@ make test
 
 ### Docker
 
-https://docs.docker.com/engine/install/debian/
+- this one works: https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
+- alternative: https://docs.docker.com/engine/install/debian/
 
 ### RipGrep
 
