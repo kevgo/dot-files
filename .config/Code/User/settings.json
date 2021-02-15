@@ -70,6 +70,8 @@
   "prettier.packageManager": "yarn",
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
+  "rust.build_on_save": true,
+  "rust.clippy_preference": "on",
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
