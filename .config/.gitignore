@@ -18,8 +18,13 @@ fish/fish_variables
 gtk-2.0
 gtk-3.0
 inkscape/
+insight-nodejs/
 MusicBrainz/
+nextjs-nodejs/
+nvim/
 pulse/
 rclone/
+rust-analyzer/
 Simplenote/
 weston.ini
+
