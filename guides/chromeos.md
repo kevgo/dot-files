@@ -21,6 +21,7 @@ Chrome settings:
 
 - chrome://flags/#scheduler-configuration
 - chrome://flags/#quiet-notification-prompts
+- chrome://flags/#enable-tab-search (disable)
 - chrome://flags/#enable-virtual-desks-gestures
 - chrome://flags/#enable-reader-mode
 - chrome://flags/#webui-tab-strip
@@ -58,7 +59,8 @@ Chrome settings:
 
 ### Homebrew
 
-Install `make` and the compilers needed for Homebrew and the C extensions of Node.JS:
+Install `make` and the compilers needed for Homebrew and the C extensions of
+Node.JS:
 
 ```
 sudo apt update
@@ -69,7 +71,8 @@ https://docs.brew.sh/Homebrew-on-Linux
 
 ### Fish shell
 
-This needs to come first so that we can run the remaining commands in fish, where the correct paths are set.
+This needs to come first so that we can run the remaining commands in fish,
+where the correct paths are set.
 
 ```
 /home/linuxbrew/.linuxbrew/bin/brew install fish
@@ -82,8 +85,7 @@ This needs to come first so that we can run the remaining commands in fish, wher
   sudo vim /etc/pam.d/chsh
   ```
 
-  change: `auth required pam_shells.so` to
-  `auth sufficient pam_shells.so`
+  change: `auth required pam_shells.so` to `auth sufficient pam_shells.so`
 
   Now run: `chsh -s /home/linuxbrew/.linuxbrew/bin/fish`
 
@@ -104,18 +106,24 @@ npm i -g yarn
 yarn config set save-prefix ''
 ```
 
+### Rust
+
+- https://www.rust-lang.org/tools/install
+
+```
+cargo install git-delta
+```
+
 ### Git
 
 ```
 brew install git
-
-brew install icdiff
-npm i -g diff-so-fancy
 ```
 
 To sign commits:
 
-- import the key for signing commits: `gpg --import ~/.dot-files-private/private.pgp`
+- import the key for signing commits:
+  `gpg --import ~/.dot-files-private/private.pgp`
 
 Git-LFS:
 
@@ -158,13 +166,15 @@ make test
 
 - [download the DEB installer](https://code.visualstudio.com/download)
 - `sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb`
-- do the [VSCode setup](https://github.com/kevgo/dot-files/blob/master/guides/vscode.md)
+- do the
+  [VSCode setup](https://github.com/kevgo/dot-files/blob/master/guides/vscode.md)
 - open the Git Town repo in VSCode and have it install the Go tools
 - if you need GCC in a particular version: `brew install gcc@5`
 
 ### Docker
 
-- this one works: https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
+- this one works:
+  https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
 - alternative: https://docs.docker.com/engine/install/debian/
 
 ### RipGrep
@@ -181,7 +191,8 @@ brew install gnu-time
 
 ### Music
 
-- optionally copy music files from backup disc into a `Music` folder in `My Files`
+- optionally copy music files from backup disc into a `Music` folder in
+  `My Files`
 - `brew install rclone`
 - share the `Music` folder with Linux
 - run `music-down-execute` to get the latest changes from GDrive
