@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-# This job updates the dot files
-
-echo "checking for dotfile updates ..."
-cd "$HOME/.config"
-~/go/bin/git-town sync
-echo "done"

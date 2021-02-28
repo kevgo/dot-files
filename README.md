@@ -2,14 +2,28 @@
 
 ### platforms
 
-- ChromeOS [installation](guides/chromeos.md), [cheatsheet](guides/chromeos-cheatsheet.md)
+Linux:
+
+- ChromeOS [installation](guides/chromeos.md),
+  [cheatsheet](guides/chromeos-cheatsheet.md)
+- Manjaro [installation](guides/manjaro.md)
+- KDE [cheat sheet](guides/kde-cheatsheet.md)
+- [fix the HP UEFI setup](guides/fix-hp-uefi.md)
+
+other platforms:
+
+- Android [installation](guides/android.md)
 - Windows [installation](guides/windows.md)
 - macOS [installation](guides/macos.md)
+
+archive:
+
 - Ubuntu [installation](guides/ubuntu.md)
-- Manjaro Linux i3 [installation](guides/manjaro_i3.md), [cheatsheet](guides/i3_cheatsheet.md)
-- Manjaro Linux [installation](guides/manjaro.md)
-- [fix the HP UEFI setup](guides/fix-hp-uefi.md)
-- Android [installation](guides/android.md)
+- Manjaro Linux i3 [installation](guides/manjaro_i3.md),
+  [cheatsheet](guides/i3_cheatsheet.md)
+- Manjaro i3 [installation](guides/manjaro_i3.md),
+  [cheatsheet](guides/i3_cheatsheet.md)
+- Ubuntu [installation](guides/ubuntu.md)
 
 ### applications
 
@@ -24,7 +38,8 @@
 ### configuration tracking via Fish shell
 
 - the first time a new Fish shell opens each day it pulls changes from GitHub
-- the Fish command prompt indicates uncommitted changes to the local `.config` folder
+- the Fish command prompt indicates uncommitted changes to the local `.config`
+  folder
 
 ### what is where
 
