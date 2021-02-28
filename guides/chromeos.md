@@ -8,13 +8,7 @@
 
 ### Settings
 
-- Wifi connection: enable Google DNS
-- Screen lock > PIN or password
 - Manage other people > disable guest and restrict login
-- Keyboard
-  - Caps Lock: change to `Escape`
-  - set delay and repeat rate
-- Displays > Display Size
 - Linux: enable
 
 Chrome settings:
@@ -38,24 +32,7 @@ Chrome settings:
 
 ### Set up dotfiles
 
-- generate SSH key:
-
-  ```
-  ssh-keygen -t rsa -b 4096 -C "kevin.goslar@gmail.com"
-
-  eval "$(ssh-agent -s)"
-  ssh-add ~/.ssh/id_rsa
-  cat ~/.ssh/id_rsa.pub
-  ```
-
-- register SSH key with GitHub: https://github.com/settings/keys
-- don't create a GPG key, we'll import the existing one later
-- clone the dotfiles:
-
-      rm -rf .config
-      git clone git@github.com:kevgo/dot-files.git .dot-files
-
-      .dot-files/install
+- [GitHub setup](guides/../github.md)
 
 ### Homebrew
 

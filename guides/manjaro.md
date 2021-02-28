@@ -6,6 +6,8 @@
 sudo pacman -S chromium
 ```
 
+log in to get auto-completion
+
 To make Chromium the default browser, edit the `$BROWSER` variable in `.profile`
 to point to `/usr/bin/chromium`
 
