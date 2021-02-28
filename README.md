@@ -6,7 +6,8 @@
 - Windows [installation](guides/windows.md)
 - macOS [installation](guides/macos.md)
 - Ubuntu [installation](guides/ubuntu.md)
-- Manjaro i3 Linux [installation](guides/manjaro_i3.md), [cheatsheet](guides/i3_cheatsheet.md)
+- Manjaro Linux [installation](guides/manjaro_i3.md), [cheatsheet](guides/i3_cheatsheet.md)
+- [fix the HP UEFI setup](guides/fix-hp-uefi.md)
 - Android [installation](guides/android.md)
 
 ### applications
