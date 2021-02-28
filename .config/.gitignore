@@ -34,10 +34,13 @@ kgammarc
 khotkeys*
 kglobalshortcuts*
 kinfocenter*
+kfont*
+khelpcenter*
 kio*
 kmix*
 knfsshare*
 konsole*
+krunner*
 kscreen*
 ksms*
 ksplash*
@@ -47,7 +50,7 @@ kwallet*
 kwin*
 kxk*
 libaccounts-glib
-manjaro/manjaro-settings-manager-Notifier.conf
+manjaro/
 menus
 mimeapps.list
 okularpartrc
