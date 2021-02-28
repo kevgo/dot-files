@@ -8,6 +8,7 @@ Linux:
   [cheatsheet](guides/chromeos-cheatsheet.md)
 - Manjaro [installation](guides/manjaro.md)
 - KDE [cheat sheet](guides/kde-cheatsheet.md)
+- [fix the HP UEFI setup](guides/fix-hp-uefi.md)
 
 other platforms:
 
@@ -17,7 +18,9 @@ other platforms:
 
 archive:
 
-- [fix the HP UEFI setup](guides/fix-hp-uefi.md)
+- Ubuntu [installation](guides/ubuntu.md)
+- Manjaro Linux i3 [installation](guides/manjaro_i3.md),
+  [cheatsheet](guides/i3_cheatsheet.md)
 - Manjaro i3 [installation](guides/manjaro_i3.md),
   [cheatsheet](guides/i3_cheatsheet.md)
 - Ubuntu [installation](guides/ubuntu.md)
