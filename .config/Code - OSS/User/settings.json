@@ -133,5 +133,6 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.list.smoothScrolling": true
+  "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "Default Light+"
 }

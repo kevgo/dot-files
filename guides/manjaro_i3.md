@@ -14,7 +14,7 @@
 
 uncomment the `Color` line in `/etc/pacman.conf`
 
-#### termine
+#### termite
 
     sudo pacman -S termite
 
@@ -51,48 +51,9 @@ Review the changes and commit any updates made by the Manjaro team.
 
     lxappearance
 
-#### Chromium
-
-    sudo pacmac -S chromium
-
-To make Chromium the default browser,
-edit the `$BROWSER` variable in `.profile` to point to `/usr/bin/chromium`
-
-#### powersaver patch
-
-    sudo pacman -S tlp ethtool smartmontools
-    systemctl enable tlp
-    systemctl enable tlp-sleep.service
-
-When installing on Lenovo hardware:
-
-sudo pacman -S acpi_call
-
-Verify installation:
-
-    sudo tlp stat
-
-Go through everything and fix notices and warnings.
-
-#### Go
-
-      sudo pacman -S go
-      mkdir -p ~/d/go/bin
-      mkdir -p ~/d/go-external/bin
-
-#### Node.JS
-
-    sudo pacman -S nodejs yarn npm
-
 #### misc tools
 
     sudo pacman -S the_silver_searcher diff-so-fancy shellcheck
-
-#### Fish shell
-
-    sudo pacman -S fish
-    chsh -s /usr/bin/fish
-    fish   # fix errors
 
 log out and in again to see the change
 
