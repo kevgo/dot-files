@@ -105,6 +105,7 @@ end
 
 
 # Git
+abbr -ag b git b
 abbr -ag br git branch
 abbr -ag co git checkout
 abbr -ag ga git add .
@@ -198,6 +199,11 @@ end
 abbr -ag pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
 abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
+
+# Rust
+if test -d ~/.cargo
+  set -x PATH $PATH ~/.cargo/bin
+end
 
 # Tikibase
 abbr -ag tb tikibase

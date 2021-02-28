@@ -29,12 +29,7 @@ SSH into the phone from the outside:
 Set up RClone:
 
 - `pkg install rclone`
-- `rclone config`
-  - new remote
-  - name: "Google"
-  - "drive"
-  - enter access credentials from 1password
-  - choose defaults for the options
+- [RClone setup](rclone.md)
 
 Enable Termux to access the phone storage:
 

@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-rclone sync --dry-run --fast-list Music drive:Music

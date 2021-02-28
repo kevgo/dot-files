@@ -28,7 +28,9 @@
   "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
   "editor.selectionHighlight": true,
-  "editor.suggestSelection": "first",
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.showStatusBar": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
@@ -68,6 +70,8 @@
   "prettier.packageManager": "yarn",
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
+  "rust.build_on_save": true,
+  "rust.clippy_preference": "on",
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
@@ -85,7 +89,6 @@
     "<C-t>": false
   },
   "vim.hlsearch": true,
-  "vim.leader": "<space>",
   "vim.insertModeKeyBindingsNonRecursive": [
     {
       "before": ["<Esc>"],
@@ -93,10 +96,11 @@
       "commands": ["workbench.action.files.save"]
     }
   ],
+  "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": ["i", "<space>", "<esc>"],
-      "before": ["<leader>", "<leader>"]
+      "before": ["<space>"]
     },
     {
       "after": ["o", "<esc>", "k"],
@@ -120,7 +124,7 @@
     }
   ],
   "window.enableMenuBarMnemonics": false,
-  "window.title": "${rootName}${separator}${activeEditorMedium}",
+  "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
@@ -131,7 +135,8 @@
     }
   },
   "workbench.editor.revealIfOpen": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.startupEditor": "none",
-  "workbench.list.smoothScrolling": true
+  "workbench.startupEditor": "none"
 }

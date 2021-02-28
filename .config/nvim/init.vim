@@ -32,6 +32,16 @@ set guicursor+=a:blinkon0         " Cursor blink
 set shell=/bin/bash
 
 
+" ALE
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\   'markdown': ['prettier'],
+\}
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
+
+
 " Cucumber Tables
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 " function! s:align()
@@ -100,8 +110,8 @@ map <CR> o<Esc>k
 nnoremap <silent> <leader><space> i <ESC>
 
 
-" Prettier
-autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql,*.ts,*.yml Prettier
+" Prettier-vim
+" autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql,*.ts,*.yml Prettier
 
 
 " Quick fix window, for example for Ack
@@ -185,7 +195,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'fatih/vim-go'
-Plug 'prettier/vim-prettier'
+" Plug 'prettier/vim-prettier'
+Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf'
 
 " This must come after Vundle

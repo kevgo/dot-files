@@ -23,21 +23,9 @@ rclone ls drive:
 
 # list all music folders
 rclone lsd drive:Music
-
-# preview all changes when synching changes made on Chromebook to GDrive
-cd /mnt/ChromeOS/MyFiles
-rclone sync --dry-run --fast-list --size-only Music drive:Music
-
-# sync all changes when synching changes made on Chromebook to GDrive
-cd /mnt/ChromeOS/MyFiles
-rclone sync --progress --fast-list --size-only Music drive:Music
-
-# sync all changes from GDrive to Chromebook
-cd /mnt/ChromeOS/MyFiles
-rclone sync --progress --fast-list --size-only drive:Music Music
-
-
 ```
+
+Run the `music-*` scripts in the [bin_folder](../bin_folder) to sync files.
 
 ## Google API setup
 
