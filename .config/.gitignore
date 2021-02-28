@@ -1,3 +1,88 @@
+# ChromeOS
+configstore
+cros-garcon.conf
+Cypress/
+dconf/
+dlv/
+weston.ini
+
+# Chromium
+chromium/
+
+# Fish
+fish/fish_history
+fish/fishd.*
+fish/fish_variables
+
+# Inkscape
+inkscape/
+
+# KDE
+akregatorrc
+baloofilerc
+bluedevilglobalrc
+dolphin*
+emaildefaults
+gtk*
+gwenviewrc
+kactivitymanager*
+kateschemarc
+kcm*
+kconf_updaterc
+kde*
+kgammarc
+khotkeys*
+kglobalshortcuts*
+kinfocenter*
+kio*
+kmix*
+knfsshare*
+konsole*
+kscreen*
+ksms*
+ksplash*
+ksysguardrc
+ktimezone*
+kwallet*
+kwin*
+kxk*
+libaccounts-glib
+manjaro/manjaro-settings-manager-Notifier.conf
+menus
+mimeapps.list
+okularpartrc
+pamac/
+pipewire-media-session
+plasma*
+powerdevil*
+powermanagement*
+QtProject.conf
+sddmthemeinstallerrc
+session/
+spectaclerc
+systemmonitorrc
+systemsettingsrc
+trashrc
+Trolltech.conf
+touchpad*
+UserFeedback*
+user-dirs*
+xsettingsd/
+
+# MP3 tag editor
+insight-nodejs/
+MusicBrainz/
+nextjs-nodejs/
+nvim/
+pulse/
+
+# RClone
+rclone/
+
+# SimpleNote
+Simplenote/
+
+# VSCode
 Code/*
 !Code/User/
 Code/User/globalStorage/
@@ -6,24 +91,11 @@ Code/User/workspaceStorage/
 !Code/User/keybindings.json
 !Code/User/settings.json
 
-configstore
-cros-garcon.conf
-Cypress/
-dconf/
-dlv/
-easytag/
-fish/fish_history
-fish/fishd.*
-fish/fish_variables
-gtk-2.0
-gtk-3.0
-inkscape/
-insight-nodejs/
-MusicBrainz/
-nextjs-nodejs/
-nvim/
-pulse/
-rclone/
+# VSCodium
+Code - OSS/*
+!Code - OSS/User/
+Code - OSS/User/globalStorage/
+Code - OSS/User/workspaceStorage/
 rust-analyzer/
 Simplenote/
 weston.ini

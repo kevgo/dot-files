@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd ~/.vim/plugged/YouCompleteMe
+./install.py --gocode-completer --tern-completer

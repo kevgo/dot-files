@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+FULL=`which $1`
+shift
+GDK_SCALE=2 sommelier -X --scale=2 --dpi=96 $FULL "$@" 2> /dev/null > /dev/null &
