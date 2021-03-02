@@ -34,6 +34,11 @@ Chrome settings:
 
 - [GitHub setup](guides/../github.md)
 
+```
+ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
+ln -s ~/.dot-files/bin_linux/ ~/bin_linux
+```
+
 ### Homebrew
 
 Install `make` and the compilers needed for Homebrew and the C extensions of
