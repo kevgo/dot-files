@@ -36,9 +36,6 @@ function cd
 end
 
 
-# Dotfile update checker
-~/bin/check_local_dotfile_updates
-
 set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
 if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
   eval $HOME/bin/pull_remote_dotfile_updates
@@ -221,3 +218,6 @@ if [ "$sys" = "Linux" ]
 else
   alias v mvim
 end
+
+# Dotfile update checker
+check_local_dotfile_updates
