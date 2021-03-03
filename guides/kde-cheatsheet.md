@@ -5,3 +5,5 @@
 - move window to right part of screen: `meta-right`
 - close window: `ctrl-q` or `alt-f4`
 - restart compositor: `alt-shift-fn-f12`
+- read external monitor brightness: `sudo ddcutil getvcp 10`
+- set external monitor brightness: `sudo ddcutil setvcp 10 50`
