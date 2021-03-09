@@ -44,7 +44,7 @@ end
 
 set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
 if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
-  eval $HOME/bin/pull_remote_dotfile_updates
+  eval $HOME/bin_linux/pull_remote_dotfile_updates
   date +'%m/%d/%Y' > $DAILY_UPDATE_FILE
 end
 
@@ -163,7 +163,9 @@ set -x PATH $PATH ~/go/bin
 
 
 # homebrew
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+if test -d /home/linuxbrew/.linuxbrew/bin
+  eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
 
 # Java
 # set -g fish_user_paths "/home/linuxbrew/.linuxbrew/opt/openjdk/bin" $fish_user_paths
