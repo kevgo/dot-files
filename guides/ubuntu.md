@@ -1,54 +1,81 @@
 # Ubuntu Installation
 
-- install hardware drivers
+### Set up dotfiles
 
-      sudo apt-get install lm-sensors fancontrol
-      sudo sensors-detect
-      sudo apt install acpi tlp
+- [GitHub setup](guides/../github.md)
 
-- install dependencies
+```
+git clone git@github.com:kevgo/dot-files.git ~/.config
+~/.config/install
+ln -s ~/.dot-files/bin_linux/ ~/bin_linux
+```
 
-      sudo apt-get install silversearcher-ag
-      sudo npm install --global diff-so-fancy
-      sudo npm install --global prettier
+### change Caps Lock key to ESC
 
-- install the .config folder
+- https://medium.com/@ahmaddynugroho/swap-caps-lock-and-escape-in-ubuntu-19-10-and-use-esc-easily-in-vim-vs-code-1d3d68f18764
 
-      git clone git@github.com:kevgo/dot-files.git ~/.config
-      ~/.config/install/install.sh
+### Neovim
 
-- change Caps Lock key to ESC
+- install build prerequisites:
+  https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites
 
-      sudo apt-get install gnome-tweak-tool
-      gnome-tweak-tool
+```
+git clone git@github.com:neovim/neovim.git
+git checkout stable
+make CMAKE_BUILD_TYPE=Release
+sudo make install
+```
 
-  Go to `typing` > `Caps Lock key behavior`
+### Go
 
-* install Go
+- download at https://golang.org/dl
 
-      mkdir -p ~/d/go/bin
-      mkdir -p ~/d/go-external/bin
+### Git Town
 
-* clone Git Town
+```
+git clone git@github.com:Originate/git-town.git
+cd git-town
+/usr/local/go/bin/go install
+```
 
-      mkdir -p ~/d/go/src/github.com/Originate
-      cd ~/d/go/src/github.com/Originate
-      git clone git@github.com:Originate/git-town.git
-      cd git-town
-      fish
-      bin/build
+Set up the local API token to ship Git Town via the Github API from 1password.
 
-  Set up the local API token to ship Git Town via the Github API from 1password.
+### Fish
 
-* configure startup shell
+```
+sudo apt install fish
+```
 
-      chsh -s /usr/bin/fish
+start `fish` and fix all errors
 
-* install Vim
+```
+chsh -s /usr/bin/fish
+```
 
-      sudo apt-get install cmake build-essential python-dev python3-dev
-      git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-      ~/.fzf/install
-      curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-      vim +PlugInstall
-      compile_youcompleteme
+### Rust
+
+- https://rustup.rs
+
+### Node.js
+
+- download at https://nodejs.org/en
+
+```
+tar -xJvf node-*.tar.xz
+sudo mkdir -p /usr/local/lib/nodejs
+sudo mv node-*/* /usr/local/lib/nodejs/
+rm -rf node-*
+```
+
+### hardware drivers
+
+```
+sudo apt install acpi tlp
+```
+
+### Rust shell commands
+
+```
+cargo install --locked bat
+cargo install --locked ripgrep
+```

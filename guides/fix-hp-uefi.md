@@ -1,7 +1,8 @@
 # Fix the HP UEFI
 
 HP computers are hard-coded to load Windows. The idea is to make grub pretend it
-is Windows. Then load Windows via grub.
+is Windows. Then load Windows via grub. This might make it impossible to boot
+Windows.
 
 - back up the Windows EFI loader: `mv /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi`
   to `/boot/efi/EFI/Microsoft/bootmgfw.efi`

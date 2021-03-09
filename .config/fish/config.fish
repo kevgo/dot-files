@@ -189,6 +189,9 @@ set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
 # Node.JS
 set -x PATH ./node_modules/.bin $PATH
+if test -d /usr/local/lib/nodejs/bin
+  set -x PATH $PATH /usr/local/lib/nodejs/bin
+end
 
 # Path
 set -x PATH ~/bin $PATH /usr/local/bin 
