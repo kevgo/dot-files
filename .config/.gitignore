@@ -17,6 +17,16 @@ fish/fish_variables
 # Inkscape
 inkscape/
 
+
+# Ubuntu Unity
+compiz-1/
+enchant/
+evolution/
+gedit/
+ibus/
+nemo/
+unity/
+
 # KDE
 akregatorrc
 baloofilerc
