@@ -2,7 +2,7 @@
 
 # Saves VSCode plugins
 
-FILE=~/bin/vspluginload
+FILE=~/bin_linux/vspluginload
 echo "#!/usr/bin/env bash" > $FILE
 code --list-extensions | xargs -L 1 echo code --install-extension >> $FILE
 chmod +x $FILE
