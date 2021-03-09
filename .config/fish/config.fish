@@ -190,11 +190,11 @@ end
 if test -d ~/bin_local
   set -x PATH ~/bin_local $PATH 
 end
-if test -d ~/bin_linux
-  set -x PATH ~/bin_linux $PATH 
-end
 if test -d ~/bin_chromeos
   set -x PATH ~/bin_chromeos $PATH 
+end
+if test -d ~/bin_linux
+  set -x PATH ~/bin_linux $PATH 
 end
 
 
