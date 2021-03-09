@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+code --install-extension 2gua.rainbow-brackets
 code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension bungcip.better-toml
 code --install-extension dawhite.mustache
@@ -7,6 +8,7 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
 code --install-extension kevgo.vscode-markdown-ide
 code --install-extension kumar-harsh.graphql-for-vscode
+code --install-extension matklad.rust-analyzer
 code --install-extension travisthetechie.write-good-linter
 code --install-extension vscodevim.vim
 code --install-extension yzhang.markdown-all-in-one
