@@ -138,5 +138,6 @@
   "workbench.list.smoothScrolling": true,
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "keyboard.dispatch": "keyCode"
 }
