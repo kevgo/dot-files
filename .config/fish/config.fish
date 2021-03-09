@@ -13,6 +13,12 @@ function ....
 end
 
 
+# bat
+if test -f /home/kevlar/.cargo/bin/bat
+  set -x BAT_STYLE plain
+end
+
+
 # cd
 function cd
 
