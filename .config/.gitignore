@@ -20,12 +20,14 @@ inkscape/
 
 # Ubuntu Unity
 compiz-1/
+config-kupfer*
 enchant/
 evolution/
 gedit/
 ibus/
+mnemonics*
 nemo/
-unity/
+unity*
 
 # KDE
 akregatorrc
