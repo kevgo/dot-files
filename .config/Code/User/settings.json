@@ -75,7 +75,7 @@
   "rust.clippy_preference": "on",
   "scm.diffDecorations": "none",
   "search.smartCase": true,
-  "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\fish.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
