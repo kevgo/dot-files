@@ -8,7 +8,7 @@
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
-  "editor.cursorSurroundingLines": 35,
+  "editor.cursorSurroundingLines": 45,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
   "editor.folding": false,
@@ -50,7 +50,6 @@
   "go.formatTool": "goimports",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
-  "html.mirrorCursorOnMatchingTag": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -71,8 +70,11 @@
   "prettier.packageManager": "yarn",
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
-  "rust.build_on_save": true,
-  "rust.clippy_preference": "on",
+  "rust-analyzer.inlayHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints": false,
+  "rust-analyzer.inlayHints.parameterHints": false,
+  "rust-analyzer.inlayHints.typeHints": false,
+  "rust-analyzer.lens.implementations": false,
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
@@ -127,9 +129,7 @@
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
     "[Default Light+]": {
       "editor.lineHighlightBackground": "#f4f4ff"
@@ -140,5 +140,7 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "keyboard.dispatch": "keyCode"
+  "keyboard.dispatch": "keyCode",
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Default Light+"
 }
