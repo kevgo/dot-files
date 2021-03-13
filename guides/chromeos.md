@@ -111,7 +111,7 @@ gpg --import ~/.dot-files-private/private.pgp
 Git-LFS:
 
 ```
-brew install git-lfs
+sudo apt install git-lfs
 ```
 
 ### Vim
