@@ -7,7 +7,6 @@ Linux:
 - ChromeOS [installation](guides/chromeos.md),
   [cheatsheet](guides/chromeos-cheatsheet.md)
 - Ubuntu [installation](guides/ubuntu.md)
-- [fix the HP UEFI setup](guides/fix-hp-uefi.md)
 
 other platforms:
 
