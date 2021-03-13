@@ -34,9 +34,7 @@ Chrome settings:
 - [GitHub setup](github.md)
 - [install dot-files](install-dotfiles.md)
 
-```
-ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
-```
+We'll install the `bin_chromeos` link later because it interferes with loading VSCode extensions.
 
 ### update base system
 
@@ -158,6 +156,13 @@ make test
 ### VSCode
 
 - [VSCode setup](vscode.md)
+
+Not on the tiny Chromebook:
+
+```
+ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
+```
+
 
 ### Docker
 
