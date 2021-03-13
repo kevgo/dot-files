@@ -163,7 +163,6 @@ Not on the tiny Chromebook:
 ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
 ```
 
-
 ### Docker
 
 - this one works:
