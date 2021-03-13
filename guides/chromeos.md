@@ -61,10 +61,9 @@ This needs to come first so that we can run the remaining commands in fish,
 where the correct paths are set.
 
 ```
-/home/linuxbrew/.linuxbrew/bin/brew install fish
+sudo apt install fish
 ```
 
-- `sudo vim /etc/shells` add `/home/linuxbrew/.linuxbrew/bin/fish`
 - set fish as default shell:
 
   ```

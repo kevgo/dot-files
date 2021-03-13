@@ -4,7 +4,7 @@ set -e
 # This file installs the symlinks into the home directory.
 # You can run it multiple times.
 
-# check if we have private files
+# check if we have the private files
 if [ ! -d ~/.dot-files-private ]; then
   echo "Cloning the private dot files"
   git clone git@github.com:kevgo/dot-files-private.git ~/.dot-files-private
@@ -39,5 +39,8 @@ if [ -d "$HOME/bin" ]; then
 fi
 echo "symlinking ~/bin_linux folder"
 ln -s "$HOME/.dot-files/bin_linux" "$HOME/bin_linux"
+
+# import the GPG signing key
+gpg --import ~/.dot-files-private/private.pgp
 
 echo

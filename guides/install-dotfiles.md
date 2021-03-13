@@ -17,3 +17,10 @@
   ```
   .dot-files/install
   ```
+
+- merge the two config folders
+
+  ```
+  mv .confold/* .config
+  rm -rf .confold
+  ```
