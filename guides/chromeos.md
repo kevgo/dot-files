@@ -39,17 +39,15 @@ Chrome settings:
 ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
 ```
 
-### Homebrew
+### Compilers
 
-Install `make` and the compilers needed for Homebrew and the C extensions of
+Install `make` and the compilers needed for the C extensions of
 Node.JS:
 
 ```
 sudo apt update
 sudo apt install -y build-essential
 ```
-
-https://docs.brew.sh/Homebrew-on-Linux
 
 ### Fish shell
 

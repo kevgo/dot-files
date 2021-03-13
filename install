@@ -22,15 +22,6 @@ echo
 echo "symlinking .config folder"
 ln -s "$HOME/.dot-files/.config/" "$HOME/.config"
 
-# symlink the '.bin' folder
-echo
-if [ -d "$HOME/bin" ]; then
-  echo "~/bin already exists, removing it"
-  rm "$HOME/bin"
-fi
-echo "symlinking ~/bin folder"
-ln -s "$HOME/.dot-files/bin_folder" "$HOME/bin"
-
 # symlink the `.gitconfig` file
 echo
 if [ -L "$HOME/.gitconfig" ]; then
@@ -39,5 +30,14 @@ if [ -L "$HOME/.gitconfig" ]; then
 fi
 ln -s "$HOME/.dot-files-private/home_dir_files/.gitconfig" "$HOME/.gitconfig"
 echo "symlinking ~/.gitconfig"
+
+# symlink the '.bin_linux' folder
+echo
+if [ -d "$HOME/bin" ]; then
+  echo "~/bin already exists, removing it"
+  rm "$HOME/bin"
+fi
+echo "symlinking ~/bin_linux folder"
+ln -s "$HOME/.dot-files/bin_linux" "$HOME/bin_linux"
 
 echo
