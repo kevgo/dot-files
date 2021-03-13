@@ -32,7 +32,8 @@ Chrome settings:
 
 ### Set up dotfiles
 
-- [GitHub setup](guides/../github.md)
+- [GitHub setup](github.md)
+- [install dot-files](install-dotfiles.md)
 
 ```
 ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
