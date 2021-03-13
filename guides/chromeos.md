@@ -136,6 +136,15 @@ brew install go
 
 ### Git Town
 
+Stand-alone install: https://github.com/git-town/git-town/releases/latest
+
+
+```
+sudo apt install /mnt/chromeos/MyFiles/Downloads/git-town*.deb
+```
+
+Manual install:
+
 ```
 git clone git@github.com:git-town/git-town.git
 cd git-town
