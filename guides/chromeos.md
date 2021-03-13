@@ -39,13 +39,19 @@ Chrome settings:
 ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
 ```
 
+### update base system
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
 ### Compilers
 
 Install `make` and the compilers needed for the C extensions of
 Node.JS:
 
 ```
-sudo apt update
 sudo apt install -y build-essential
 ```
 
