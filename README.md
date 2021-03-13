@@ -15,20 +15,29 @@
 - RClone [installation](guides/rclone.md)
 - Vim [cheatsheet](guides/vim_cheatsheet.md)
 
-### installation
+### how it works
 
-- run `scripts/install` from your home directory
+Creates this setup in your user directory:
 
-### configuration tracking via Fish shell
+- `.dot-files`: this repo
+- `.dot-files-private`: separate repo with private info
+- `.config` --> `.dot-files/.config`: config files tracked by Git
+- `.gitconfig` --> `.dot-files-private/home_dir_files/.gitconfig`: Git configuration file mapped to home directory where Git looks for it
+- `bin_linux` --> `.dot-files/bin_linux`: Linux tools
+- `bin_chromeos` --> `.dot-files/bin_chromeos`: ChromeOS-specific Linux tools
+- `bin_windows` --> `.dot-files/bin_windows`: Windows-specific CLI tools
+
+The local Git repo is automatically syncronized with its remote once a day:
 
 - the first time a new Fish shell opens each day it pulls changes from GitHub
-- the Fish command prompt indicates uncommitted changes to the local `.config`
+- the Fish command prompt indicates uncommitted changes in the local `.dot-files`
   folder
 
 ### what is where
 
 - [.config](.config): content for `~/.config/`
-- [bin_folder](bin_folder): content for `~/bin/` on unix-like operating systems
+- [bin_chromeos](bin_chromeos): content for `~/bin_chromeos/` on ChromeOS
+- [bin_linux](bin_linux): content for `~/bin_linux/` on unix-like operating systems
 - [bin_windows](bin_windows): content for `~/bin/` on Windows
 - [install](install): installation script
 - [guides](guides): installation guides
