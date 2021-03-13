@@ -28,7 +28,6 @@ Chrome settings:
 ### Folder sharing
 
 - right click on `Downloads` folder, choose `Share with Linux`
-- right click on `MyDrive` folder in Google Drive, choose `Share with Linux`
 
 ### Set up dotfiles
 
