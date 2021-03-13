@@ -112,9 +112,15 @@ sudo apt install git-lfs
 
 ### Vim
 
+To use the built-in Neovim:
+
 ```
 sudo apt install -y neovim
+```
 
+or [build from source](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source).
+
+```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
