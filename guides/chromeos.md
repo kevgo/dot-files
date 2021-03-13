@@ -72,7 +72,9 @@ sudo apt install fish
 
   change: `auth required pam_shells.so` to `auth sufficient pam_shells.so`
 
-  Now run: `chsh -s /home/linuxbrew/.linuxbrew/bin/fish`
+  ```
+  chsh -s /usr/bin/fish
+  ```
 
 - open a new terminal window
 - disable glob
