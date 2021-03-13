@@ -18,12 +18,13 @@ Chrome settings:
 - chrome://flags/#enable-tab-search (disable)
 - chrome://flags/#enable-virtual-desks-gestures
 - chrome://flags/#enable-reader-mode
-- chrome://flags/#webui-tab-strip
 - chrome://flags/#ash-limit-alt-tab-to-active-desk
-- chrome://flags/#impulse-scroll-animations
 - chrome://flags/#ash-limit-shelf-items-to-active-desk
-- chrome://flags/#enhanced_clipboard
 - chrome://flags/#percent-based-scrolling
+
+on tablet:
+
+- chrome://flags/#webui-tab-strip
 
 ### Folder sharing
 
