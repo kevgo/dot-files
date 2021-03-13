@@ -104,12 +104,6 @@ cargo install git-delta
 
 ### Git
 
-import the key for signing commits:
-
-```
-gpg --import ~/.dot-files-private/private.pgp
-```
-
 Git-LFS:
 
 ```
