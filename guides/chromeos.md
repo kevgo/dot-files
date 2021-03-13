@@ -133,13 +133,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 
 - start nvim and run `:PlugInstall`
-- install prettier globally: `npm i -g prettier`
+- install prettier globally:
+
+  ```
+  sudo npm install -g prettier --unsafe-perm=true
+  ```
 
 ### Go
 
-```
-brew install go
-```
+- download installer at https://golang.org/dl
 
 ### Git Town
 
