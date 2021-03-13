@@ -42,7 +42,7 @@ ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
 
 ```
 sudo apt update
-sudo apt upgrade
+sudo apt -y upgrade
 ```
 
 ### Compilers
