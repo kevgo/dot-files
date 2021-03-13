@@ -126,6 +126,10 @@ sudo npm install -g prettier --unsafe-perm=true
 
 - download installer at https://golang.org/dl
 
+```
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf <FILE>
+```
+
 ### Git Town
 
 Stand-alone install: https://github.com/git-town/git-town/releases/latest
