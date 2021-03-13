@@ -128,7 +128,7 @@ sudo npm install -g prettier --unsafe-perm=true
 Stand-alone install: https://github.com/git-town/git-town/releases/latest
 
 ```
-sudo apt install /mnt/chromeos/MyFiles/Downloads/git-town*.deb
+sudo apt install git-town*.deb
 ```
 
 Manual install:
@@ -187,6 +187,10 @@ sudo apt install bat
 or
 
 download the installer at https://github.com/sharkdp/bat/releases/latest
+
+```
+sudo apt install bat*.deb
+```
 
 ### Time
 
