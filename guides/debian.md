@@ -27,7 +27,7 @@ This needs to come first so that we can run the remaining commands in fish,
 where the correct paths are set.
 
 ```
-sudo apt install fish
+sudo apt install -y fish
 ```
 
 set fish as default shell:
