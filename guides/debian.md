@@ -178,6 +178,16 @@ sudo apt-get install ripgrep
 cargo install --locked bat
 ```
 
+or
+
+```
+sudo apt install bat
+```
+
+or
+
+download the installer at https://github.com/sharkdp/bat/releases/latest
+
 ### Time
 
 ```
