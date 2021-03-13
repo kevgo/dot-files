@@ -47,6 +47,7 @@ sudo apt upgrade
 
 ### Compilers
 
+If you want to code on this laptop:
 Install `make` and the compilers needed for the C extensions of
 Node.JS:
 
