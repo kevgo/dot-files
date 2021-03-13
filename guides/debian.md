@@ -3,8 +3,7 @@
 ### update base system
 
 ```
-sudo apt update
-sudo apt -y upgrade
+sudo apt update && sudo apt -y upgrade
 ```
 
 ### Set up dotfiles
