@@ -108,6 +108,15 @@ Git-LFS:
 sudo apt install git-lfs
 ```
 
+Delta:
+
+Download the `x86_64-unknown-linux-gnu.tar.gz` file at https://github.com/dandavison/delta/releases/latest
+
+```
+tar xf <file>
+sudo cp <subfolder>/delta /usr/local/bin
+```
+
 ### Vim
 
 To use the built-in Neovim:

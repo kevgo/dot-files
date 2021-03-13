@@ -2,33 +2,18 @@
 
 ### platforms
 
-Linux:
-
 - ChromeOS [installation](guides/chromeos.md),
   [cheatsheet](guides/chromeos-cheatsheet.md)
 - Ubuntu [installation](guides/ubuntu.md)
-
-other platforms:
-
 - Android [installation](guides/android.md)
 - Windows [installation](guides/windows.md)
 - macOS [installation](guides/macos.md)
 
-archive:
-
-- Manjaro [installation](guides/manjaro.md)
-- KDE [cheat sheet](guides/kde-cheatsheet.md)
-- Manjaro Linux i3 [installation](guides/manjaro_i3.md),
-  [cheatsheet](guides/i3_cheatsheet.md)
-- Manjaro i3 [installation](guides/manjaro_i3.md),
-  [cheatsheet](guides/i3_cheatsheet.md)
-- Ubuntu [installation](guides/ubuntu.md)
-
 ### applications
 
-- [VSCode](guides/vscode.md)
-- [RClone](guides/rclone.md)
-- [Vim](guides/vim.md)
+- VSCode [installation](guides/vscode.md), [cheatsheet](guides/vscode_cheatsheet.md)
+- RClone [installation](guides/rclone.md)
+- Vim [cheatsheet](guides/vim_cheatsheet.md)
 
 ### installation
 
