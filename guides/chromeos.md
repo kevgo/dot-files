@@ -37,7 +37,6 @@ Chrome settings:
 
 ```
 ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
-ln -s ~/.dot-files/bin_linux/ ~/bin_linux
 ```
 
 ### Homebrew
