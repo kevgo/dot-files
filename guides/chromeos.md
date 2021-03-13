@@ -30,16 +30,9 @@ on tablet:
 
 - right click on `Downloads` folder, choose `Share with Linux`
 
-### Set up dotfiles
-
-- [GitHub setup](github.md)
-- [install dot-files](install-dotfiles.md)
-
-We'll install the `bin_chromeos` symlink later because it interferes with loading VSCode extensions.
-
 ### basic installation
 
-Follow the steps for [Debian-based systems](debian.md)
+do the [Debian setup](debian.md)
 
 ### Music
 

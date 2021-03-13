@@ -7,6 +7,13 @@ sudo apt update
 sudo apt -y upgrade
 ```
 
+### Set up dotfiles
+
+- [GitHub setup](github.md)
+- [install dot-files](install-dotfiles.md)
+
+We'll install the `bin_chromeos` symlink later because it interferes with loading VSCode extensions.
+
 ### Compilers
 
 Install `make` and the compilers needed (on developer laptops):
@@ -55,11 +62,7 @@ yarn config set save-prefix ''
 
 ### Rust
 
-- https://www.rust-lang.org/tools/install
-
-```
-cargo install git-delta
-```
+- https://rustup.rs
 
 ### Git
 
@@ -71,7 +74,11 @@ sudo apt install git-lfs
 
 Delta:
 
-Download the `x86_64-unknown-linux-gnu.tar.gz` file at https://github.com/dandavison/delta/releases/latest
+```
+cargo install git-delta
+```
+
+or manually: download the `x86_64-unknown-linux-gnu.tar.gz` file at https://github.com/dandavison/delta/releases/latest
 
 ```
 tar xf <file>
@@ -86,19 +93,31 @@ To use the built-in Neovim:
 sudo apt install -y neovim
 ```
 
-or [build from source](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source).
+or to build from source:
+
+install build prerequisites: https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites
+
+```
+git clone git@github.com:neovim/neovim.git
+git checkout stable
+make CMAKE_BUILD_TYPE=Release
+sudo make install
+```
+
+install plugins:
 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-- start nvim and run `:PlugInstall`
-- install prettier globally:
+start nvim and run `:PlugInstall`
 
-  ```
-  sudo npm install -g prettier --unsafe-perm=true
-  ```
+install prettier globally:
+
+```
+sudo npm install -g prettier --unsafe-perm=true
+```
 
 ### Go
 
@@ -144,7 +163,19 @@ ln -s ~/.dot-files/bin_chromeos/ ~/bin_chromeos
 ### RipGrep
 
 ```
-brew install ripgrep
+cargo install --locked ripgrep
+```
+
+or
+
+```
+sudo apt-get install ripgrep
+```
+
+### Bat
+
+```
+cargo install --locked bat
 ```
 
 ### Time
