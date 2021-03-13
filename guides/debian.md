@@ -63,6 +63,10 @@ yarn config set save-prefix ''
 
 - https://rustup.rs
 
+```
+rustup default nightly
+```
+
 ### Git
 
 Git-LFS:
