@@ -2,7 +2,17 @@
 
 ### Installation
 
-Extensions: run `~/bin/vspluginload` to install all VSCode extensions
+[download the DEB installer](https://code.visualstudio.com/download) 
+
+```
+sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb
+```
+
+open VSCode to let it do its first-time initialization
+
+```
+~/bin/vspluginload
+```
 
 ### Hotkeys
 
