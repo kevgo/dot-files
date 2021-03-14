@@ -124,11 +124,11 @@ function gdw
 end
 
 function gdm 
-  git diff master 
+  git diff main 
 end
 
 function gdmw 
-  git diff master --color-words 
+  git diff main --color-words 
 end
 
 function gac
