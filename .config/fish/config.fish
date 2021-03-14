@@ -13,12 +13,6 @@ function ....
 end
 
 
-# bat
-if test -f /home/kevlar/.cargo/bin/bat
-  set -x BAT_STYLE plain
-end
-
-
 # cd
 function cd
 
@@ -196,6 +190,7 @@ if test -d /usr/local/lib/nodejs/bin
   set -x PATH $PATH /usr/local/lib/nodejs/bin
 end
 
+
 # Path
 set -x PATH ~/bin $PATH /usr/local/bin 
 if test -d /usr/local/sbin
@@ -222,8 +217,10 @@ if test -d ~/.cargo
   set -x PATH $PATH ~/.cargo/bin
 end
 
+
 # Tikibase
 abbr -ag tb tikibase
+
 
 # Vim
 set sys (uname)
@@ -233,5 +230,14 @@ else
   alias v mvim
 end
 
+
 # Dotfile update checker
 check_local_dotfile_updates
+
+
+# bat
+# Note: this must come after Rust since it uses the PATH set in that section
+if test -f /home/kevlar/.cargo/bin/bat
+  alias cat bat
+end
+
