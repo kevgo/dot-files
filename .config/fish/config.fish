@@ -160,6 +160,9 @@ end
 
 # Go
 set -x PATH $PATH ~/go/bin
+if test -d /usr/local/go/bin
+  set -x PATH $PATH /usr/local/go/bin
+end
 
 
 # homebrew
