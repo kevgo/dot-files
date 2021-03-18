@@ -63,6 +63,7 @@
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
+  "markdownIDE.autocompleteTitleRegex": ".*",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
