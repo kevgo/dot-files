@@ -1,6 +1,7 @@
 {
   "breadcrumbs.enabled": false,
   "cucumberautocomplete.skipDocStringsFormat": true,
+  "debug.javascript.suggestPrettyPrinting": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "editor.accessibilitySupport": "off",

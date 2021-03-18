@@ -11,7 +11,8 @@ sudo apt update && sudo apt -y upgrade
 - [GitHub setup](github.md)
 - [install dot-files](install-dotfiles.md)
 
-We'll install the `bin_chromeos` symlink later because it interferes with loading VSCode extensions.
+We'll install the `bin_chromeos` symlink later because it interferes with
+loading VSCode extensions.
 
 ### Compilers
 
@@ -69,6 +70,24 @@ rustup default nightly
 
 ### Git
 
+The built-in Git is really old and doesn't work when deploying Prettifier.
+Remove the built-in Git:
+
+```
+sudo apt remove git
+sudo apt autoremove
+```
+
+[Compile from source](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+Add `subtree` command:
+
+```
+cd git/contrib/subtree
+make
+sudo make prefix=/usr install
+```
+
 Git-LFS:
 
 ```
@@ -81,7 +100,8 @@ Delta:
 cargo install git-delta
 ```
 
-or manually: download the `x86_64-unknown-linux-gnu.tar.gz` file at https://github.com/dandavison/delta/releases/latest
+or manually: download the `x86_64-unknown-linux-gnu.tar.gz` file at
+https://github.com/dandavison/delta/releases/latest
 
 ```
 tar xf <file>
@@ -98,7 +118,8 @@ sudo apt install -y neovim
 
 or to build from source:
 
-install build prerequisites: https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites
+install build prerequisites:
+https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites
 
 ```
 git clone git@github.com:neovim/neovim.git
