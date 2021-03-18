@@ -145,6 +145,8 @@ git clone git@github.com:git-town/git-town.git
 cd git-town
 make setup
 
+make install
+
 make test
 ```
 
