@@ -216,5 +216,5 @@ brew install openjdk
 ### Firefox
 
 ```
-sudo apt install firefox-esr
+sudo apt install -y firefox-esr
 ```
