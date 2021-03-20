@@ -140,7 +140,7 @@ start nvim and run `:PlugInstall`
 install prettier globally:
 
 ```
-sudo npm install -g prettier --unsafe-perm=true
+npm install -g prettier --unsafe-perm=true
 ```
 
 ### Go
