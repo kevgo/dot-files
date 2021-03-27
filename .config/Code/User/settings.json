@@ -79,7 +79,6 @@
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -142,5 +141,13 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "keyboard.dispatch": "keyCode",
-  "workbench.colorTheme": "Default Light+"
+  "window.zoomLevel": 2,
+  "grammarly.severity": {
+    "Capitalization": 3,
+    "Colon expected": 3,
+    "Closing punctuation": 3,
+    "Possibly confused word": 3
+  },
+  "workbench.colorTheme": "Default Light+",
+  "editor.folding": false
 }
