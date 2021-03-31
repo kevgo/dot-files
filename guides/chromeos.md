@@ -21,6 +21,7 @@ Chrome settings:
 - chrome://flags/#ash-limit-alt-tab-to-active-desk
 - chrome://flags/#ash-limit-shelf-items-to-active-desk
 - chrome://flags/#percent-based-scrolling
+- chrome://flags/#enable-holding-space
 
 on tablet:
 
