@@ -12,6 +12,7 @@
   "editor.cursorSurroundingLines": 45,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
+  "editor.folding": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
@@ -50,6 +51,9 @@
   "go.formatTool": "goimports",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -142,5 +146,5 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "keyboard.dispatch": "keyCode",
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Light+",
 }
