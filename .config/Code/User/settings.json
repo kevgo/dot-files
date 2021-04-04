@@ -146,5 +146,5 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "keyboard.dispatch": "keyCode",
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Default Light+"
 }
