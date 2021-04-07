@@ -36,6 +36,7 @@
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -67,6 +68,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "keyboard.dispatch": "keyCode",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
@@ -139,6 +141,7 @@
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
   "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "[Default Light+]": {
@@ -150,7 +153,6 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "keyboard.dispatch": "keyCode",
   "workbench.colorTheme": "Default Light+",
-  "window.zoomLevel": 1
+  "workbench.editor.decorations.badges": false
 }
