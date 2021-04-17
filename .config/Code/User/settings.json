@@ -12,6 +12,7 @@
   "editor.cursorSurroundingLines": 45,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
+  "editor.folding": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
