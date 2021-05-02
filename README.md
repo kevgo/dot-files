@@ -4,6 +4,7 @@
 
 - ChromeOS [installation](guides/chromeos.md),
   [cheatsheet](guides/chromeos-cheatsheet.md)
+- Fedora [installation](guides/fedora.md)
 - Ubuntu [installation](guides/ubuntu.md)
 - Android [installation](guides/android.md)
 - Windows [installation](guides/windows.md)
