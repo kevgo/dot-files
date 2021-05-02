@@ -7,6 +7,12 @@
 - [GitHub setup](github.md)
 - [install dot-files](install-dotfiles.md)
 
+### Git
+
+```
+git-lfs
+```
+
 ### Fish shell
 
 - run `fish`
@@ -25,3 +31,4 @@ yarn config set save-prefix ''
 ### Rust
 
 - https://rustup.rs (custom installation, install `nightly`)
+
