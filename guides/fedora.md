@@ -10,3 +10,19 @@
 ### Fish shell
 
 - run `fish`
+- run again to start fish?
+
+### Node
+
+```
+node
+
+yarn
+
+yarn config set save-prefix ''
+```
+
+### Rust
+
+- https://rustup.rs (custom installation, install `nightly`)
+
