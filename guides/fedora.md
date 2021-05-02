@@ -7,6 +7,12 @@
 - [GitHub setup](github.md)
 - [install dot-files](install-dotfiles.md)
 
+### swap Caps lock and ESC
+
+- run `gnome-tweaks`
+- Keyboard & Mouse > Additional Layout Options
+- Caps Lock behavior
+
 ### Vim
 
 ```
