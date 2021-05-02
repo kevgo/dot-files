@@ -11,6 +11,7 @@
 
 ```
 git-lfs
+git-delta
 ```
 
 ### Fish shell
