@@ -48,3 +48,15 @@ sudo dnf install golang
 ### VS Code
 
 https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
+
+### RipGrep
+
+```
+sudo dnf install ripgrep
+```
+
+### Bat
+
+```
+sudo dnf install bat
+```
