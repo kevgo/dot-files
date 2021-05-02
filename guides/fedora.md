@@ -7,6 +7,12 @@
 - [GitHub setup](github.md)
 - [install dot-files](install-dotfiles.md)
 
+### Vim
+
+```
+nvim
+```
+
 ### Git
 
 ```
