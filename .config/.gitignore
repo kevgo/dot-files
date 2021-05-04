@@ -6,8 +6,17 @@ dconf/
 dlv/
 weston.ini
 
-# Chromium
-chromium/
+# Fedora
+dleyna-server-service*
+gnome-initial-setup-done
+google-chrome
+gtk-3.0
+menus
+mimeapps.list
+pipewire
+totem
+user-dirs.*
+yelp
 
 # Fish
 fish/fish_history
@@ -30,62 +39,6 @@ mnemonics*
 nemo/
 unity*
 
-# KDE
-akregatorrc
-baloofilerc
-bluedevilglobalrc
-dolphin*
-emaildefaults
-gtk*
-gwenviewrc
-kactivitymanager*
-kateschemarc
-kcm*
-kconf_updaterc
-kde*
-kgammarc
-khotkeys*
-kglobalshortcuts*
-kinfocenter*
-kfont*
-khelpcenter*
-kio*
-kmix*
-kminesrc*
-knfsshare*
-konsole*
-krunner*
-kscreen*
-ksms*
-ksplash*
-ksysguardrc
-ktimezone*
-kwallet*
-kwin*
-kxk*
-libaccounts-glib
-manjaro/
-menus
-mimeapps.list
-okularpartrc
-pamac/
-pipewire-media-session
-plasma*
-powerdevil*
-powermanagement*
-QtProject.conf
-sddmthemeinstallerrc
-session/
-spectaclerc
-systemmonitorrc
-systemsettingsrc
-trashrc
-Trolltech.conf
-touchpad*
-UserFeedback*
-user-dirs*
-xsettingsd/
-
 # MP3 tag editor
 insight-nodejs/
 MusicBrainz/
@@ -107,13 +60,4 @@ Code/User/workspaceStorage/
 !Code/User/snippets/*
 !Code/User/keybindings.json
 !Code/User/settings.json
-
-# VSCodium
-Code - OSS/*
-!Code - OSS/User/
-Code - OSS/User/globalStorage/
-Code - OSS/User/workspaceStorage/
-rust-analyzer/
-Simplenote/
-weston.ini
 
