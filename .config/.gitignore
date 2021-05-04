@@ -13,7 +13,7 @@ google-chrome
 gtk-3.0
 menus
 mimeapps.list
-monitors.xml
+monitors.xml*
 pipewire
 totem
 user-dirs.*
