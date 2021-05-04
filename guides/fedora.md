@@ -73,3 +73,11 @@ sudo dnf install ripgrep
 ```
 sudo dnf install bat
 ```
+
+### Firefox
+
+change scroll distance:
+
+- go to `about:config`
+- search for `toolkit.scrollbox.verticalScrollDistance`
+- set to 15
