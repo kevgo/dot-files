@@ -17,22 +17,22 @@ end
 function cd
 
   # perform the cd.
-  set __cd_old_path (pwd | wc -c)
+  set old_path (pwd | wc -c)
   builtin cd $argv
-  set __cd_new_path (pwd | wc -c)
+  set new_path (pwd | wc -c)
 
   # show new files.
   ls -1
   echo
-  if test $__cd_old_path -lt $__cd_new_path
+  if test $old_path -lt $new_path
     if test -d .git
       git pull --rebase
       git status
       echo
     end
   end
-  set -e __cd_old_path
-  set -e __cd_new_path
+  set -e old_path
+  set -e new_path
 end
 
 

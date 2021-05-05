@@ -12,7 +12,6 @@
   "editor.cursorSurroundingLines": 45,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
-  "editor.folding": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
@@ -156,6 +155,5 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Light+",
-  "workbench.editor.decorations.badges": false,
-  "editor.folding": false
+  "workbench.editor.decorations.badges": false
 }
