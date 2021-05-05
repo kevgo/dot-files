@@ -10,11 +10,13 @@ weston.ini
 dleyna-server-service*
 gnome-initial-setup-done
 google-chrome
+gtk-2.0
 gtk-3.0
 menus
 mimeapps.list
 monitors.xml*
 pipewire
+rust-analyzer
 totem
 user-dirs.*
 yelp
