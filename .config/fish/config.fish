@@ -17,22 +17,51 @@ end
 function cd
 
   # perform the cd.
-  set old_path (pwd | wc -c)
+  set old_git_path (git_path)
   builtin cd $argv
-  set new_path (pwd | wc -c)
+  set new_git_path (git_path)
 
-  # show new files.
+  # show the files in the new folder
   ls -1
   echo
-  if test $old_path -lt $new_path
-    if test -d .git
-      git pull --rebase
-      git status
-      echo
-    end
+
+  # check if we entered a new Git repo
+  if test -z $new_git_path
+    # new folder is not a Git repo
+    return
   end
-  set -e old_path
-  set -e new_path
+  if test "$old_git_path" = "$new_git_path"
+    # cd within the same Git repo
+    return
+  end
+
+  # pull Git updates
+  git pull --rebase
+  git status
+  echo
+end
+
+# Prints the root path of the current Git directory,
+# or nothing it this isn't a Git directory.
+# Doesn't traverse above the home directory.
+function git_path
+  set cwd (pwd)
+  while true
+    set git_folder (string join / $cwd ".git")
+    if test -d $git_folder
+      echo $cwd
+      return
+    end
+    if test $cwd = $HOME
+      # we reached the home dir
+      return
+    end
+    if test $cwd = "/"
+      # we reached the root dir
+      return
+    end
+    set cwd (dirname $cwd)
+  end
 end
 
 
