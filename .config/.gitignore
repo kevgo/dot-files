@@ -8,6 +8,7 @@ weston.ini
 
 # Fedora
 dleyna-server-service*
+gnome-control-center
 gnome-initial-setup-done
 google-chrome
 gtk-2.0
