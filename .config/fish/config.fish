@@ -47,8 +47,8 @@ end
 function git_path
   set cwd (pwd)
   while true
-    set git_folder (string join / $cwd ".git")
-    if test -d $git_folder
+    if test -d (string join / $cwd ".git")
+      # $cwd contains a ".git" dir
       echo $cwd
       return
     end
