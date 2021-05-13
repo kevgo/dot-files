@@ -243,7 +243,7 @@ abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 # Rust
 if test -d ~/.cargo
-  set -x PATH $PATH ~/.cargo/bin
+  set -x PATH ~/.cargo/bin $PATH 
 end
 
 
