@@ -41,6 +41,7 @@ function cd
   echo
 end
 
+
 # Prints the root path of the current Git directory,
 # or nothing it this isn't a Git directory.
 # Doesn't traverse above the home directory.
@@ -62,13 +63,6 @@ function git_path
     end
     set cwd (dirname $cwd)
   end
-end
-
-
-set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
-if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
-  eval $HOME/bin_linux/pull_remote_dotfile_updates
-  date +'%m/%d/%Y' > $DAILY_UPDATE_FILE
 end
 
 
@@ -270,3 +264,9 @@ if test -f /home/kevlar/.cargo/bin/bat
   alias cat bat
 end
 
+
+set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
+if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
+  eval $HOME/bin_linux/pull_remote_dotfile_updates
+  date +'%m/%d/%Y' > $DAILY_UPDATE_FILE
+end
