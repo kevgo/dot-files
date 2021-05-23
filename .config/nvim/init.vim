@@ -68,7 +68,7 @@ let g:netrw_banner = 0
 
 
 " Fuzzy finder
-nnoremap <C-F> :FuzzyOpen<CR>
+nnoremap <C-F> :FuzzyOpen "."<CR>
 
 
 " Golang
