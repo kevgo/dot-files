@@ -63,6 +63,14 @@ set t_vb=
 set timeoutlen=500
 
 
+" File explorer
+let g:netrw_banner = 0
+
+
+" Fuzzy finder
+nnoremap <C-F> :FuzzyOpen<CR>
+
+
 " Golang
 " let g:go_highlight_functions = 1
 " let g:go_highlight_methods = 1
@@ -197,7 +205,7 @@ Plug 'tpope/vim-surround'
 " Plug 'fatih/vim-go'
 " Plug 'prettier/vim-prettier'
 Plug 'dense-analysis/ale'
-Plug 'junegunn/fzf'
+Plug 'cloudhead/neovim-fuzzy'
 
 " This must come after Vundle
 call plug#end()
