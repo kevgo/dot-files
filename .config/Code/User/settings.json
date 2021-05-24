@@ -149,11 +149,11 @@
       "editor.lineHighlightBackground": "#f4f4ff"
     }
   },
+  "workbench.editor.decorations.badges": false,
   "workbench.editor.revealIfOpen": true,
   "workbench.list.smoothScrolling": true,
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Light+",
-  "workbench.editor.decorations.badges": false
+  "workbench.colorTheme": "Default Light+"
 }
