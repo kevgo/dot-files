@@ -263,6 +263,9 @@ check_local_dotfile_updates
 if test -f /home/kevlar/.cargo/bin/bat
   alias cat bat
 end
+if test -f /usr/bin/bat
+  alias cat bat
+end
 
 
 set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
