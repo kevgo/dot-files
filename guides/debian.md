@@ -219,7 +219,7 @@ or
 download the installer at https://github.com/sharkdp/bat/releases/latest
 
 ```
-sudo apt install bat*.deb
+sudo apt install -y /mnt/chromeos/MyFiles/Downloads/bat*.deb
 ```
 
 ### Time
