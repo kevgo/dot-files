@@ -140,7 +140,7 @@ start nvim and run `:PlugInstall`
 install prettier globally:
 
 ```
-npm install -g prettier --unsafe-perm=true
+yarn add global prettier
 ```
 
 ### Go
