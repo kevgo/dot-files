@@ -20,6 +20,12 @@ open terminal with [ctrl]-[alt]-T:
 - system settings > keyboard > customize shortcuts
 - Custom Shortcuts
 
+limit alt-tab to current desktop:
+
+```
+gsettings set org.gnome.shell.app-switcher current-workspace-only true
+```
+
 ### Vim
 
 ```
