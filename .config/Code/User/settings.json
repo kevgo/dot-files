@@ -36,6 +36,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
+  "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -155,6 +156,5 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Light+",
-  "window.zoomLevel": 1
+  "workbench.colorTheme": "Default Light+"
 }
