@@ -155,5 +155,6 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Light+",
+  "window.zoomLevel": 1
 }
