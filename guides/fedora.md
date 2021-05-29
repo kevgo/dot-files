@@ -26,6 +26,10 @@ limit alt-tab to current desktop:
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 ```
 
+Stop airplane mode when opening the laptop
+
+- https://askubuntu.com/questions/965595/why-does-airplane-mode-keep-toggling-on-my-hp-laptop-in-ubuntu-18-04/965596#965596
+
 ### Vim
 
 ```
