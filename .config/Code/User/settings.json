@@ -83,7 +83,6 @@
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
-  "prettier.packageManager": "yarn",
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
   "rust-analyzer.inlayHints.enable": false,
