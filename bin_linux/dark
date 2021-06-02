@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-content="$(jq --arg new 'Default Dark+' '. + {"workbench.colorTheme": $new}' .config/Code/User/settings.json)" 
-echo "${content}" > .config/Code/User/settings.json
+content="$(jq --arg new 'Default Dark+' '. + {"workbench.colorTheme": $new}' ~/.config/Code/User/settings.json)" 
+echo "${content}" > ~/.config/Code/User/settings.json
