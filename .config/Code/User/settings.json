@@ -85,6 +85,7 @@
   "prettier.arrowParens": "avoid",
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
+  "python.formatting.provider": "black",
   "rust-analyzer.inlayHints.enable": false,
   "rust-analyzer.inlayHints.chainingHints": false,
   "rust-analyzer.inlayHints.parameterHints": false,
