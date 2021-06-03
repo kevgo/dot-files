@@ -152,6 +152,12 @@
   },
   "workbench.editor.decorations.badges": false,
   "workbench.editor.revealIfOpen": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "workbench.list.smoothScrolling": true,
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
