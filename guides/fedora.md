@@ -105,3 +105,10 @@ https://docs.fedoraproject.org/en-US/quick-docs/installing-java
 ### Docker
 
 https://developer.fedoraproject.org/tools/docker/docker-installation.html
+
+### Chrome
+
+enable Wayland mode:
+
+- `sudo nvim /usr/share/applications/google-chrome.desktop`
+- at the `Exec` key, add `-enable-features=UseOzonePlatform -ozone-platform=wayland`
