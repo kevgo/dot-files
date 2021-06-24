@@ -93,7 +93,6 @@
   "rust-analyzer.lens.implementations": false,
   "scm.diffDecorations": "none",
   "search.smartCase": true,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -152,12 +151,6 @@
   },
   "workbench.editor.decorations.badges": false,
   "workbench.editor.revealIfOpen": true,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
   "workbench.list.smoothScrolling": true,
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
