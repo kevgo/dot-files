@@ -112,3 +112,9 @@ enable Wayland mode:
 
 - `sudo nvim /usr/share/applications/google-chrome.desktop`
 - at the `Exec` key, add `-enable-features=UseOzonePlatform -ozone-platform=wayland`
+
+### CPU scaling
+
+enable better framerate (at battery cost)
+
+https://extensions.gnome.org/extension/1082/cpufreq
