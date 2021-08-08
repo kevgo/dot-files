@@ -46,6 +46,7 @@ git-delta
 
 - run `fish`
 - run again to start fish?
+- `chsh -s $(which fish)`
 
 ### Node
 
