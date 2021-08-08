@@ -116,3 +116,5 @@ enable Wayland mode:
 ### CPU scaling
 
 enable better framerate (battery cost): https://extensions.gnome.org/extension/1082/cpufreq
+
+More info: https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-governor-and-reducing-swappiness/10006
