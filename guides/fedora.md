@@ -115,6 +115,4 @@ enable Wayland mode:
 
 ### CPU scaling
 
-enable better framerate (at battery cost)
-
-https://extensions.gnome.org/extension/1082/cpufreq
+enable better framerate (battery cost): https://extensions.gnome.org/extension/1082/cpufreq
