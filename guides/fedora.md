@@ -19,6 +19,7 @@ open terminal with [ctrl]-[alt]-T:
 
 - system settings > keyboard > customize shortcuts
 - Custom Shortcuts
+- app name: `gnome-terminal`, shortcut: `ctrl-alt-T`
 
 limit alt-tab to current desktop:
 
