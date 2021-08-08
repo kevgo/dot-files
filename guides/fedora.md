@@ -51,9 +51,7 @@ git-delta
 ### Node
 
 ```
-node
-
-yarn
+sudo dnf install node yarn
 
 yarn config set save-prefix ''
 ```
