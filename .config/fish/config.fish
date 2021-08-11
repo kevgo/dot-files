@@ -157,7 +157,9 @@ end
 function gac
   git add -A
   if [ "$argv" = "" ]
-    git commit -m progress
+    set -l files (git status --porcelain | cut -c4- | xargs -L1 basename | sed -r 's/\\.\w+$//')
+    echo FILES: $files
+    git commit -m "$files"
   else
     git commit -m "$argv"
   end
