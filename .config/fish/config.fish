@@ -158,9 +158,8 @@ function gac
   git add -A
   if [ "$argv" = "" ]
     set -l files (git status --porcelain | cut -c4- | xargs -L1 basename | sed 's/\\.md$//')
-    #                                                                      remove extension only if there is something before the dot
-    #                                                                      to keep filenames like ".gitignore" unaffected
-    #                                                 remove parent directory names
+    #                                      |          |                    remove ".md" extensions
+    #                                      |          remove parent directory names
     #                                      remove Git status indicators
     git commit -m "$files"
   else
