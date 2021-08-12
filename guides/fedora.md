@@ -142,3 +142,7 @@ https://extensions.gnome.org/extension/2236/night-theme-switcher
 ### sound IO device chooser
 
 https://extensions.gnome.org/extension/906/sound-output-device-chooser
+
+### Gnome terminal
+
+- preferences > shortcuts > tabs
