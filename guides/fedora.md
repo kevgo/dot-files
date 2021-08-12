@@ -125,3 +125,4 @@ https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-go
 ### Gnome configuration
 
 - enable maximize button: `gnome-tweaks` > Window Titlebars
+- show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
