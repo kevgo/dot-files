@@ -2,6 +2,19 @@
 
 - install system updates: using the "Software" app
 
+### Gnome configuration
+
+- enable maximize button: `gnome-tweaks` > Window Titlebars
+- show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
+- disable the shutdown/restart confirmation dialogs:
+  - `gsettings set org.gnome.SessionManager logout-prompt false`
+  - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
+
+### Grub configuration
+
+- `grub-customizer`
+- re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
+
 ### Set up dotfiles
 
 - [GitHub setup](github.md)
@@ -122,15 +135,6 @@ https://extensions.gnome.org/extension/1082/cpufreq
 More info:
 https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-governor-and-reducing-swappiness/10006
 
-### Gnome configuration
+### automatic dark mode at sunset
 
-- enable maximize button: `gnome-tweaks` > Window Titlebars
-- show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
-- disable the shutdown/restart confirmation dialogs:
-  - `gsettings set org.gnome.SessionManager logout-prompt false`
-  - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
-
-### Grub configuration
-
-- `grub-customizer`
-- re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
+https://extensions.gnome.org/extension/2236/night-theme-switcher/
