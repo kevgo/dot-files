@@ -94,8 +94,6 @@ change scroll distance:
 
 install https://addons.mozilla.org/en-US/firefox/addon/ublock-origin
 
-try out https://github.com/wilfredwee/photon-australis
-
 ### Postgres
 
 https://developer.fedoraproject.org/tech/database/postgresql/about.html
