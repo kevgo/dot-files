@@ -143,20 +143,7 @@ make CMAKE_BUILD_TYPE=Release
 sudo make install
 ```
 
-install plugins:
-
-```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-start nvim and run `:PlugInstall`
-
-install prettier globally:
-
-```
-yarn add global prettier
-```
+[Vim installation](vim_installation.md)
 
 ### Go
 

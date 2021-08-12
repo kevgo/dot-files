@@ -35,6 +35,8 @@ gsettings set org.gnome.shell.app-switcher current-workspace-only true
 nvim
 ```
 
+[Vim installation](vim_installation.md)
+
 ### Git
 
 ```
@@ -111,10 +113,13 @@ https://developer.fedoraproject.org/tools/docker/docker-installation.html
 enable Wayland mode:
 
 - `sudo nvim /usr/share/applications/google-chrome.desktop`
-- at the `Exec` key, add `-enable-features=UseOzonePlatform -ozone-platform=wayland`
+- at the `Exec` key, add
+  `-enable-features=UseOzonePlatform -ozone-platform=wayland`
 
 ### CPU scaling
 
-enable better framerate (battery cost): https://extensions.gnome.org/extension/1082/cpufreq
+enable better framerate (battery cost):
+https://extensions.gnome.org/extension/1082/cpufreq
 
-More info: https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-governor-and-reducing-swappiness/10006
+More info:
+https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-governor-and-reducing-swappiness/10006
