@@ -137,4 +137,8 @@ https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-go
 
 ### automatic dark mode at sunset
 
-https://extensions.gnome.org/extension/2236/night-theme-switcher/
+https://extensions.gnome.org/extension/2236/night-theme-switcher
+
+### sound IO device chooser
+
+https://extensions.gnome.org/extension/906/sound-output-device-chooser
