@@ -126,7 +126,9 @@ https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-go
 
 - enable maximize button: `gnome-tweaks` > Window Titlebars
 - show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
-- disable the shutdown/restart confirmation dialogs: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
+- disable the shutdown/restart confirmation dialogs: 
+  - `gsettings set org.gnome.SessionManager logout-prompt false`
+  - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
 
 ### Grub configuration
 
