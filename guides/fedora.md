@@ -126,3 +126,8 @@ https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-go
 
 - enable maximize button: `gnome-tweaks` > Window Titlebars
 - show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
+
+### Grub configuration
+
+- `grub-customizer`
+- re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
