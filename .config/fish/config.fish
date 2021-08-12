@@ -157,9 +157,10 @@ end
 function gac
   git add -A
   if [ "$argv" = "" ]
-    set -l files (git status --porcelain | cut -c4- | xargs -L1 basename | sed 's/\\.md$//')
-    #                                      |          |                    remove ".md" extensions
-    #                                      |          remove parent directory names
+    set -l files (git status --porcelain | cut -c4- | awk '{print $NF}' | xargs -L1 basename | sed 's/\\.md$//')
+    #                                      |          |                   |                    remove ".md" extensions
+    #                                      |          |                   remove parent directory names
+    #                                      |          use only the last filename (when renaming files)
     #                                      remove Git status indicators
     git commit -m "$files"
   else
