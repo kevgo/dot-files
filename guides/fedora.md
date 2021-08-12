@@ -123,3 +123,7 @@ https://extensions.gnome.org/extension/1082/cpufreq
 
 More info:
 https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-governor-and-reducing-swappiness/10006
+
+### Gnome configuration
+
+- enable maximize button: `gnome-tweaks` > Window Titlebars
