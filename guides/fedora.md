@@ -4,7 +4,13 @@
 
 ### Gnome configuration
 
-- enable maximize button: `gnome-tweaks` > Window Titlebars
+in `gnome-tweaks`:
+
+- enable maximize button: Window Titlebars
+- disable "activities" hot corner: Top Bar > Activities Overview Hot Corner
+- Top Bar > Clock > Weekday
+
+
 - show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
 - disable the shutdown/restart confirmation dialogs:
   - `gsettings set org.gnome.SessionManager logout-prompt false`
