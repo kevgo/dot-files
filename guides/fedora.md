@@ -10,7 +10,6 @@ in `gnome-tweaks`:
 - disable "activities" hot corner: Top Bar > Activities Overview Hot Corner
 - Top Bar > Clock > Weekday
 
-
 - show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
 - disable the shutdown/restart confirmation dialogs:
   - `gsettings set org.gnome.SessionManager logout-prompt false`
