@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+if [ "$1" = "-h" ]; then
+  echo "Changes brightness on the external monitor."
+  echo "Press up/down, then Q to exit."
+  exit
+fi
+
+function brighter() {
+  sudo ddccontrol dev:/dev/i2c-7 -r 0x10 -W 10 &> /dev/null
+}
+
+function darker() {
+  sudo ddccontrol dev:/dev/i2c-7 -r 0x10 -W -10 &> /dev/null
+}
+
+escape_char=$(printf "\u1b")
+while true; do
+  read -rsn1 mode       # get 1 character
+  if [[ $mode == "$escape_char" ]]; then
+      read -rsn2 mode   # read 2 more chars
+  fi
+  case $mode in
+      'q') exit ;;
+      '[A') brighter ;;  # up
+      '[B') darker   ;;  # dow n
+      '[D') brighter ;;  # lef t
+      '[C') darker   ;;  # right
+      *) >&2 echo 'ERR bad input'; exit ;;
+  esac
+done
