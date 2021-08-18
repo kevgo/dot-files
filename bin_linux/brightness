@@ -22,9 +22,10 @@ while true; do
   fi
   case $mode in
       'q') exit ;;
+      '') exit ;;
       '[A') brighter ;;  # up
-      '[B') darker   ;;  # dow n
-      '[D') brighter ;;  # lef t
+      '[B') darker   ;;  # down
+      '[D') brighter ;;  # left
       '[C') darker   ;;  # right
       *) >&2 echo 'ERR bad input'; exit ;;
   esac
