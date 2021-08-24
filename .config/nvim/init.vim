@@ -69,6 +69,7 @@ let g:netrw_banner = 0
 
 " Fuzzy finder
 nnoremap <C-F> :FuzzyOpen "."<CR>
+nnoremap <leader>d :FuzzyOpen "."<CR>
 
 
 " Golang
@@ -135,10 +136,6 @@ function! ReplaceAndGoToNext()
 endfunction
 nnoremap <silent> <A-0> :call ReplaceAndGoToNext()<CR>
 nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
-
-
-" Quick open files.
-nmap <leader>d :FZF<CR>
 
 
 " Saving
