@@ -138,7 +138,6 @@ find . -type f -exec sudo mv '{}' '/usr/local/{}' \;
 
 optionally to verify : `find . -type d -empty -delete`
 
-
 To use the built-in Neovim (which is severely outdated):
 
 ```
