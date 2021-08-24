@@ -100,14 +100,26 @@ set listchars=tab:»\ ,eol:¬,trail:⍽
 
 
 " " NERDTree
-map <silent> <leader>t :NERDTreeMirrorToggle<CR>
-let g:NERDTreeIgnore=['.vim$', '\~$']
-" let g:nerdtree_tabs_open_on_new_tab=0
-" let g:nerdtree_tabs_synchronize_focus=0
-let g:NERDTreeMapOpenSplit='s'
-let g:NERDTreeMapOpenVSplit='v'
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+" map <silent> <leader>t :NERDTreeMirrorToggle<CR>
+" let g:NERDTreeIgnore=['.vim$', '\~$']
+" " let g:nerdtree_tabs_open_on_new_tab=0
+" " let g:nerdtree_tabs_synchronize_focus=0
+" let g:NERDTreeMapOpenSplit='s'
+" let g:NERDTreeMapOpenVSplit='v'
+" let g:NERDTreeDirArrowExpandable = '+'
+" let g:NERDTreeDirArrowCollapsible = '-'
+
+" NVimTree
+map <silent> <leader>t :NvimTreeToggle<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+let g:nvim_tree_follow = 1
+let g:nvim_tree_show_icons = {
+    \ 'git': 0,
+    \ 'folders': 0,
+    \ 'files': 0,
+    \ 'folder_arrows': 0,
+    \ }
+
 
 
 " Inserting empty lines using [enter] when in normal mode.
@@ -145,7 +157,8 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 " Searching
 map <silent> <leader>/ :noh<CR>
-nnoremap <leader>n :noh<CR>
+" disabled for NVimTree
+" nnoremap <leader>n :noh<CR>
 
 
 " Split window resizing
@@ -189,10 +202,10 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'Valloric/YouCompleteMe'
 Plug 'dag/vim-fish'
 " Plug 'godlygeek/tabular'
-Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'kevgo/tertestrial-vim'
 " Plug 'pangloss/vim-javascript'
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 Plug 'tomtom/tcomment_vim'
 " Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-markdown'
@@ -203,6 +216,8 @@ Plug 'tpope/vim-surround'
 " Plug 'prettier/vim-prettier'
 Plug 'dense-analysis/ale'
 Plug 'cloudhead/neovim-fuzzy'
+" Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " This must come after Vundle
 call plug#end()
