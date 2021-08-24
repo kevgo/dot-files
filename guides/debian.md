@@ -137,12 +137,10 @@ or download the [latest release](https://github.com/neovim/neovim/releases/lates
 cd /mnt/chromeos/MyFiles/Downloads
 tar -xvf nvim-linux64.tar.gz
 find . -type d -exec sudo mkdir -p '/usr/local/{}' \;
-
-sudo cp nvim-linux64/bin/nvim /usr/local/bin/
-sudo cp -r nvim-linux64/lib/nvim /usr/local/lib/
-
-
+find . -type f -exec sudo mv '{}' '/usr/local/{}' \;
 ```
+
+optionally to verify : `find . -type d -empty -delete`
 
 or to build from source:
 
