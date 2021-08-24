@@ -125,22 +125,25 @@ sudo cp <subfolder>/delta /usr/local/bin
 
 ### Vim
 
-To use the built-in Neovim:
-
-```
-sudo apt install -y neovim
-```
-
-or download the [latest release](https://github.com/neovim/neovim/releases/latest) and install manually:
+download the [latest release](https://github.com/neovim/neovim/releases/latest) and install manually:
 
 ```
 cd /mnt/chromeos/MyFiles/Downloads
 tar -xvf nvim-linux64.tar.gz
+cd nvim-linux64
 find . -type d -exec sudo mkdir -p '/usr/local/{}' \;
+
 find . -type f -exec sudo mv '{}' '/usr/local/{}' \;
 ```
 
 optionally to verify : `find . -type d -empty -delete`
+
+
+To use the built-in Neovim (which is severely outdated):
+
+```
+sudo apt install -y neovim
+```
 
 or to build from source:
 
