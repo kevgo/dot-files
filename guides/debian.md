@@ -131,12 +131,15 @@ To use the built-in Neovim:
 sudo apt install -y neovim
 ```
 
-or download the latest release and install manually:
+or download the [latest release](https://github.com/neovim/neovim/releases/latest) and install manually:
 
 ```
 cd /mnt/chromeos/MyFiles/Downloads
 tar -xvf nvim-linux64.tar.gz
+find . -type d -exec sudo mkdir -p '/usr/local/{}' \;
+
 sudo cp nvim-linux64/bin/nvim /usr/local/bin/
+sudo cp -r nvim-linux64/lib/nvim /usr/local/lib/
 
 
 ```
