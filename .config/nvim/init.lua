@@ -56,7 +56,6 @@ map('n', '<leader>d', ':FuzzyOpen "."<CR>', {silent = true, noremap = true})
 
 -- NVimTree
 map('n', '<leader>t', ':NvimTreeToggle<CR>', {silent = true, noremap = true})
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', {silent = true, noremap = true})
 g.nvim_tree_follow = 1
 g.nvim_tree_auto_close = 1
 g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
@@ -84,6 +83,7 @@ cmd('augroup END')
 
 -- search
 map('n', '<leader>/', ':noh<CR>', {silent = true, noremap = true})
+map('n', '<leader>n', ':noh<CR>', {silent = true, noremap = true})
 
 
 -- split window resizing
