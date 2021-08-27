@@ -118,25 +118,13 @@ nnoremap <C-T> <esc>:tabnext<CR>
 " Plug
 call plug#begin(stdpath('data') . '/plugged')
 
-" Plug 'Valloric/YouCompleteMe'
 Plug 'dag/vim-fish'
-" Plug 'godlygeek/tabular'
-" Plug 'jistr/vim-nerdtree-tabs'
-" Plug 'kevgo/tertestrial-vim'
-" Plug 'pangloss/vim-javascript'
-" Plug 'scrooloose/nerdtree'
 Plug 'mhartington/formatter.nvim'
 Plug 'tomtom/tcomment_vim'
-" Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'fatih/vim-go'
-" Plug 'prettier/vim-prettier'
-" Plug 'dense-analysis/ale'
 Plug 'cloudhead/neovim-fuzzy'
-" Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " This must come after Plug
