@@ -15,29 +15,9 @@ set history=200
 set scrolloff=45                  " show context above/below cursorline
 " set cursorline
 " set cursorcolumn
+set timeoutlen=500
 set title titlestring=%f          " display filename in title bar
 set shell=/bin/bash
-
-
-" Cucumber Tables
-" inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
-" function! s:align()
-"   let l:p = '^\s*|\s.*\s|\s*$'
-"   if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# l:p || getline(line('.')+1) =~# l:p)
-"     let l:column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-"     let l:position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
-"     Tabularize/|/l1
-"     normal! 0
-"     call search(repeat('[^|]*|',l:column).'\s\{-\}'.repeat('.',l:position),'ce',line('.'))
-"   endif
-" endfunction
-
-
-" Errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set timeoutlen=500
 
 
 " File explorer
@@ -49,43 +29,6 @@ nnoremap <C-F> :FuzzyOpen "."<CR>
 nnoremap <leader>d :FuzzyOpen "."<CR>
 
 
-" Golang
-" let g:go_highlight_functions = 1
-" let g:go_highlight_methods = 1
-" let g:go_highlight_fields = 1
-" let g:go_highlight_types = 1
-" let g:go_highlight_operators = 1
-" let g:go_highlight_build_constraints = 1
-" let g:go_fmt_command = 'goimports'
-" let g:go_auto_sameids = 1
-" " let g:syntastic_go_checkers = ['golint', 'go vet']
-" " let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-" let g:go_list_type = 'quickfix'
-" augroup vimrc
-"   autocmd FileType go nmap <leader>b  <Plug>(go-build)
-"   autocmd FileType go nmap <leader>r  <Plug>(go-run)
-"   autocmd FileType go set noexpandtab
-"   autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
-"   autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
-"   autocmd FileType go nmap <Leader>i <Plug>(go-info)
-"   autocmd FileType go nmap <C-\> :GoDef()<CR>
-" augroup END
-
-
-" Invisible characters.
-set listchars=tab:»\ ,eol:¬,trail:⍽
-
-
-" " NERDTree
-" map <silent> <leader>t :NERDTreeMirrorToggle<CR>
-" let g:NERDTreeIgnore=['.vim$', '\~$']
-" " let g:nerdtree_tabs_open_on_new_tab=0
-" " let g:nerdtree_tabs_synchronize_focus=0
-" let g:NERDTreeMapOpenSplit='s'
-" let g:NERDTreeMapOpenVSplit='v'
-" let g:NERDTreeDirArrowExpandable = '+'
-" let g:NERDTreeDirArrowCollapsible = '-'
-
 " NVimTree
 map <silent> <leader>t :NvimTreeToggle<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
@@ -96,7 +39,6 @@ let g:nvim_tree_show_icons = {
     \ 'files': 0,
     \ 'folder_arrows': 0,
     \ }
-
 
 
 " Inserting empty lines using [enter] when in normal mode.
@@ -135,8 +77,6 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 
 " Searching
 map <silent> <leader>/ :noh<CR>
-" disabled for NVimTree
-" nnoremap <leader>n :noh<CR>
 
 
 " Split window resizing
@@ -145,11 +85,9 @@ nnoremap <silent> <Leader>- :exe "vertical resize -5"<CR>
 
 
 " Tabbing
-set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set smarttab
 nnoremap <C-T> <esc>:tabnext<CR>
 
 " TESTING
@@ -174,7 +112,7 @@ nnoremap <C-T> <esc>:tabnext<CR>
 " nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 
-" Vundle
+" Plug
 call plug#begin(stdpath('data') . '/plugged')
 
 " Plug 'Valloric/YouCompleteMe'
@@ -198,7 +136,7 @@ Plug 'cloudhead/neovim-fuzzy'
 " Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
-" This must come after Vundle
+" This must come after Plug
 call plug#end()
 
 
