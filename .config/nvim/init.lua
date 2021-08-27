@@ -4,25 +4,25 @@ local map = vim.api.nvim_set_keymap
 
 
 -- Leader key
-g.mapleader = " "
+g.mapleader = ' '
 
 
 -- Behavior
-o.number = true                        -- show line numbers
+o.number = true                   -- show line numbers
 o.autowriteall = true
-o.writebackup = false                -- don't create backup files
-o.swapfile = false                    -- don't create .swp files
+o.writebackup = false             -- don't create backup files
+o.swapfile = false                -- don't create .swp files
 o.ignorecase = true
-o.smartcase = true          -- ignore case in searched
+o.smartcase = true                -- ignore case in searched
 o.autoindent = false
-o.wrap = false                      -- disable word wrap.
+o.wrap = false                    -- disable word wrap.
 o.history=200
-o.scrolloff=45                  -- show context above/below cursorline
+o.scrolloff=45                    -- show context above/below cursorline
 -- set cursorline
 -- set cursorcolumn
 o.timeoutlen=500
 o.title = true
-o.titlestring='%f'          -- display filename in title bar
+o.titlestring='%f'                -- display filename in title bar
 o.shell='/bin/bash'
 
 
@@ -50,30 +50,30 @@ g.netrw_banner = 0
 
 
 -- Fuzzy finder
-map('n', '<C-F>', ':FuzzyOpen "."<CR>', {noremap = true})
-map('n', '<leader>d', ':FuzzyOpen "."<CR>', {noremap = true})
+map('n', '<C-F>', ':FuzzyOpen "."<CR>', {silent = true, noremap = true})
+map('n', '<leader>d', ':FuzzyOpen "."<CR>', {silent = true, noremap = true})
 
 
 -- NVimTree
-map('n', '<leader>t', ':NvimTreeToggle<CR>', {noremap = true})
-map('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
+map('n', '<leader>t', ':NvimTreeToggle<CR>', {silent = true, noremap = true})
+map('n', '<leader>n', ':NvimTreeFindFile<CR>', {silent = true, noremap = true})
 g.nvim_tree_follow = 1
 g.nvim_tree_auto_close = 1
 g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
 
 
 -- Inserting empty lines using [enter] when in normal mode.
-map('n', '<S-Enter>', 'O<Esc>', {noremap = true})
-map('n', '<CR>', 'o<Esc>k', {noremap = true})
+map('n', '<S-Enter>', 'O<Esc>', {silent = true, noremap = true})
+map('n', '<CR>', 'o<Esc>k', {silent = true, noremap = true})
 
 
 -- Insert spaces using space bar when in normal mode.
-map('n', '<leader><space>', 'i <ESC>', {noremap = true})
+map('n', '<leader><space>', 'i <ESC>', {silent = true, noremap = true})
 
 
 -- Saving
 -- CTRL-S
-map('n', '<c-s>', '<esc>:w<CR>', {noremap = true})
+map('n', '<c-s>', '<esc>:w<CR>', {silent = true, noremap = true})
 -- format on save
 -- augroup FormatAutogroup
 --   autocmd!
@@ -97,9 +97,13 @@ o.expandtab = true
 map('n', '<C-T>', '<esc>:tabnext<CR>', {noremap = true})
 
 
+-- Yanking
+map('n', 'Y', 'y$', {noremap = true})
+
+
 -- Paq
-require "paq" {
-  "savq/paq-nvim";
+require 'paq' {
+  'savq/paq-nvim';
   'dag/vim-fish';
   'mhartington/formatter.nvim';
   'tomtom/tcomment_vim';
@@ -117,15 +121,11 @@ require('formatter').setup({
     markdown = {
       function()
         return {
-          exe = "dprint",
-          args = {"fmt", "--stdin", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))},
+          exe = 'dprint',
+          args = {'fmt', '--stdin', vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))},
           stdin = true
         }
       end
     },
   }
 })
-
-
--- Yanking
-map('n', 'Y', 'y$', {noremap = true})
