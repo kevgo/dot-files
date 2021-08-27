@@ -142,7 +142,7 @@ find . -type d -exec sudo mkdir -p '/usr/local/{}' \;
 find . -type f -exec sudo mv '{}' '/usr/local/{}' \;
 ```
 
-optionally to verify: 
+optionally to verify:
 
 ```
 find . -type d -empty -delete
