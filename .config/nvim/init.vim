@@ -16,9 +16,6 @@ set scrolloff=45                  " show context above/below cursorline
 " set cursorline
 " set cursorcolumn
 set title titlestring=%f          " display filename in title bar
-set backspace=indent,eol,start    " allow backspacing over everything in insert mode
-set showmatch
-set guicursor+=a:blinkon0         " Cursor blink
 set shell=/bin/bash
 
 
