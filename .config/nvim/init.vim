@@ -1,6 +1,3 @@
-filetype plugin indent on
-
-
 " Leader key
 let g:mapleader = "\<space>"
 noremap \ ,
