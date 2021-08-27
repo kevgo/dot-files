@@ -5,17 +5,13 @@ noremap \ ,
 
 " Behavior
 set number                        " show line numbers
-set autoread                      " reload files when changed on disk, i.e. via `git checkout`
-set autowrite
-set nobackup                      " don't create backup files
+set autowriteall
 set nowritebackup                 " don't create backup files
 set noswapfile                    " don't create .swp files
 set ignorecase smartcase          " ignore case in searched
 set noautoindent
-set nosmartindent
 set nowrap                        " disable word wrap.
 set history=200
-set hidden
 set scrolloff=45                  " show context above/below cursorline
 " set cursorline
 " set cursorcolumn
