@@ -76,6 +76,7 @@ map('n', '<leader><space>', 'i <ESC>', {silent = true, noremap = true})
 -- CTRL-S
 map('n', '<c-s>', '<esc>:w<CR>', {silent = true, noremap = true})
 -- format on save
+-- TODO: use the native bindings once https://github.com/neovim/neovim/pull/14661 ships
 cmd('augroup FormatAutogroup')
 cmd('autocmd!')
 cmd('autocmd BufWritePost *.md,*.ts FormatWrite')
