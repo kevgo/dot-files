@@ -20,16 +20,6 @@ set title titlestring=%f          " display filename in title bar
 set shell=/bin/bash
 
 
-" ALE
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'css': ['prettier'],
-\   'markdown': ['prettier'],
-\}
-let g:ale_linters_explicit = 1
-let g:ale_fix_on_save = 1
-
-
 " File explorer
 let g:netrw_banner = 0
 
@@ -61,7 +51,7 @@ nnoremap <silent> <leader><space> i <ESC>
 
 
 " Prettier-vim
-" autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql,*.ts,*.yml Prettier
+" autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql,*.ts,*.yml FormatWrite
 
 
 " Quick fix window, for example for Ack
@@ -82,6 +72,10 @@ nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
 " Saving
 " CTRL-S
 :noremap <c-s> <esc>:w<CR>
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost *.md,*.ts FormatWrite
+augroup END
 
 
 " Searching
@@ -131,6 +125,7 @@ Plug 'dag/vim-fish'
 " Plug 'kevgo/tertestrial-vim'
 " Plug 'pangloss/vim-javascript'
 " Plug 'scrooloose/nerdtree'
+Plug 'mhartington/formatter.nvim'
 Plug 'tomtom/tcomment_vim'
 " Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-markdown'
@@ -139,13 +134,31 @@ Plug 'tpope/vim-surround'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'fatih/vim-go'
 " Plug 'prettier/vim-prettier'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'cloudhead/neovim-fuzzy'
 " Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " This must come after Plug
 call plug#end()
+
+
+" Formatter
+lua << EOF
+require('formatter').setup({
+  filetype = {
+    markdown = {
+      function()
+        return {
+          exe = "dprint",
+          args = {"fmt", "--stdin", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))},
+          stdin = true
+        }
+      end
+    },
+  }
+})
+EOF
 
 
 " Yanking
