@@ -50,35 +50,17 @@ map <CR> o<Esc>k
 nnoremap <silent> <leader><space> i <ESC>
 
 
-" Prettier-vim
-" autocmd BufWritePre *.md,*.js,*.json,*.css,*.graphql,*.ts,*.yml FormatWrite
-
-
-" Quick fix window, for example for Ack
-nnoremap <A-]> :cnext<CR>
-nnoremap <D-]> :cnext<CR>
-nnoremap <A-[> :cprevious<CR>
-nnoremap <D-[> :cprevious<CR>
-" nnoremap <C-D-]> :cnfile<CR>
-" nnoremap <A-[> :cpfile<CR>
-function! ReplaceAndGoToNext()
-  :normal! .
-  :cnext
-endfunction
-nnoremap <silent> <A-0> :call ReplaceAndGoToNext()<CR>
-nnoremap <silent> <D-0> :call ReplaceAndGoToNext()<CR>
-
-
 " Saving
 " CTRL-S
 :noremap <c-s> <esc>:w<CR>
+" format on save
 augroup FormatAutogroup
   autocmd!
   autocmd BufWritePost *.md,*.ts FormatWrite
 augroup END
 
 
-" Searching
+" Search
 map <silent> <leader>/ :noh<CR>
 
 
@@ -92,27 +74,6 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 nnoremap <C-T> <esc>:tabnext<CR>
-
-" TESTING
-" - start "run-tests" in the terminal.
-"   If you run this script in the background, the terminal remains usable
-" - hit <leader>-F in a test file to run the whole test
-" - hit <leader>-L in a test file to run the test file at the given line
-" - hit <leader>-T to repeat the last test
-" nnoremap <leader>e :call TertestrialAll()<cr>
-" nnoremap <leader>f :call TertestrialFile()<cr>
-" nnoremap <leader>l :call TertestrialLine()<cr>
-" nnoremap <leader>o :call TertestrialRepeat()<cr>
-" nnoremap <leader>a :call TertestrialToggle()<cr>
-" nnoremap <leader>1 :call TertestrialSet(1)<cr>
-" nnoremap <leader>2 :call TertestrialSet(2)<cr>
-" nnoremap <leader>3 :call TertestrialSet(3)<cr>
-" nnoremap <leader>4 :call TertestrialSet(4)<cr>
-" nnoremap <leader>5 :call TertestrialSet(5)<cr>
-" nnoremap <leader>6 :call TertestrialSet(6)<cr>
-" nnoremap <leader>7 :call TertestrialSet(7)<cr>
-" nnoremap <leader>8 :call TertestrialSet(8)<cr>
-" nnoremap <leader>9 :call TertestrialSet(9)<cr>
 
 
 " Plug
@@ -170,8 +131,3 @@ nmap <silent> <leader><S-S> <C-W>L
 nmap <silent> <leader><S-H> <C-W>H
 nmap <silent> <leader><S-K> <C-W>K
 nmap <silent> <leader><S-J> <C-W>J
-
-
-" augroup vimrc
-" 	autocmd BufWritePost * :call TertestrialFileSaved()
-" augroup END
