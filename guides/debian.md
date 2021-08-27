@@ -128,7 +128,7 @@ sudo cp <subfolder>/delta /usr/local/bin
 Install dprint:
 
 ```
-curl -fsSL https://dprint.dev/install.sh | sh
+cargo install dprint
 ```
 
 Download the [latest NeoVim release](https://github.com/neovim/neovim/releases/latest) and install manually:
