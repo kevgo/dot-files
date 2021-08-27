@@ -1,56 +1,79 @@
+local g = vim.g
+local o = vim.opt
+local map = vim.api.nvim_set_keymap
+
+
 -- Leader key
-vim.g.mapleader = " "
---noremap \ ,
+g.mapleader = " "
 
 
 -- Behavior
-vim.opt.number = true                        -- show line numbers
-vim.opt.autowriteall = true
-vim.opt.writebackup = false                -- don't create backup files
-vim.opt.swapfile = false                    -- don't create .swp files
-vim.opt.ignorecase = true
-vim.opt.smartcase = true          -- ignore case in searched
-vim.opt.autoindent = false
-vim.opt.wrap = false                      -- disable word wrap.
-vim.opt.history=200
-vim.opt.scrolloff=45                  -- show context above/below cursorline
+o.number = true                        -- show line numbers
+o.autowriteall = true
+o.writebackup = false                -- don't create backup files
+o.swapfile = false                    -- don't create .swp files
+o.ignorecase = true
+o.smartcase = true          -- ignore case in searched
+o.autoindent = false
+o.wrap = false                      -- disable word wrap.
+o.history=200
+o.scrolloff=45                  -- show context above/below cursorline
 -- set cursorline
 -- set cursorcolumn
-vim.opt.timeoutlen=500
-vim.opt.title = true
-vim.opt.titlestring='%f'          -- display filename in title bar
-vim.opt.shell='/bin/bash'
+o.timeoutlen=500
+o.title = true
+o.titlestring='%f'          -- display filename in title bar
+o.shell='/bin/bash'
+
+
+-- DVORAK CUSTOMIZATIONS
+-- This has to be last for some reason.
+-- Cursor movement
+map('n', 's', 'l', {silent = true, noremap = true})
+map('n', 'l', 's', {silent = true, noremap = true})
+map('v', 's', 'l', {silent = true, noremap = true})
+map('v', 'l', 's', {silent = true, noremap = true})
+-- cursor movement through panes using [leader]-[dvorak movement keys]
+map('n', '<leader>s', '<C-W>l', {silent = true, noremap = true})
+map('n', '<leader>h', '<C-W>h', {silent = true, noremap = true})
+map('n', '<leader>k', '<C-W>k', {silent = true, noremap = true})
+map('n', '<leader>j', '<C-W>j', {silent = true, noremap = true})
+-- Moving panes using [leader]-[shift]-[dvorak movement keys]
+map('n', '<leader><S-S>', '<C-W>L', {silent = true, noremap = true})
+map('n', '<leader><S-H>', '<C-W>H', {silent = true, noremap = true})
+map('n', '<leader><S-K>', '<C-W>K', {silent = true, noremap = true})
+map('n', '<leader><S-J>', '<C-W>J', {silent = true, noremap = true})
 
 
 -- File explorer
-vim.g.netrw_banner = 0
+g.netrw_banner = 0
 
 
 -- Fuzzy finder
-vim.api.nvim_set_keymap('n', '<C-F>', ':FuzzyOpen "."<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<leader>d', ':FuzzyOpen "."<CR>', {noremap = true})
+map('n', '<C-F>', ':FuzzyOpen "."<CR>', {noremap = true})
+map('n', '<leader>d', ':FuzzyOpen "."<CR>', {noremap = true})
 
 
 -- NVimTree
-vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
-vim.g.nvim_tree_follow = 1
-vim.g.nvim_tree_auto_close = 1
-vim.g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
+map('n', '<leader>t', ':NvimTreeToggle<CR>', {noremap = true})
+map('n', '<leader>n', ':NvimTreeFindFile<CR>', {noremap = true})
+g.nvim_tree_follow = 1
+g.nvim_tree_auto_close = 1
+g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
 
 
 -- Inserting empty lines using [enter] when in normal mode.
-vim.api.nvim_set_keymap('n', '<S-Enter>', 'O<Esc>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<CR>', 'o<Esc>k', {noremap = true})
+map('n', '<S-Enter>', 'O<Esc>', {noremap = true})
+map('n', '<CR>', 'o<Esc>k', {noremap = true})
 
 
 -- Insert spaces using space bar when in normal mode.
-vim.api.nvim_set_keymap('n', '<leader><space>', 'i <ESC>', {noremap = true})
+map('n', '<leader><space>', 'i <ESC>', {noremap = true})
 
 
 -- Saving
 -- CTRL-S
-vim.api.nvim_set_keymap('n', '<c-s>', '<esc>:w<CR>', {noremap = true})
+map('n', '<c-s>', '<esc>:w<CR>', {noremap = true})
 -- format on save
 -- augroup FormatAutogroup
 --   autocmd!
@@ -59,19 +82,19 @@ vim.api.nvim_set_keymap('n', '<c-s>', '<esc>:w<CR>', {noremap = true})
 
 
 -- Search
-vim.api.nvim_set_keymap('n', '<leader>/', ':noh<CR>', {silent = true, noremap = true})
+map('n', '<leader>/', ':noh<CR>', {silent = true, noremap = true})
 
 
 -- Split window resizing
-vim.api.nvim_set_keymap('n', '<Leader>=', ':exe "vertical resize +5"<CR>', {silent = true, noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>-', ':exe "vertical resize -5"<CR>', {silent = true, noremap = true})
+map('n', '<Leader>=', ':exe "vertical resize +5"<CR>', {silent = true, noremap = true})
+map('n', '<Leader>-', ':exe "vertical resize -5"<CR>', {silent = true, noremap = true})
 
 
 -- Tabbing
-vim.opt.softtabstop=2
-vim.opt.shiftwidth=2
-vim.opt.expandtab = true
-vim.api.nvim_set_keymap('n', '<C-T>', '<esc>:tabnext<CR>', {noremap = true})
+o.softtabstop=2
+o.shiftwidth=2
+o.expandtab = true
+map('n', '<C-T>', '<esc>:tabnext<CR>', {noremap = true})
 
 
 -- Paq
@@ -105,23 +128,4 @@ require('formatter').setup({
 
 
 -- Yanking
-vim.api.nvim_set_keymap('n', 'Y', 'y$', {noremap = true})
-
-
--- DVORAK CUSTOMIZATIONS
--- This has to be last for some reason.
--- Cursor movement
--- :nnoremap <silent> s l
--- :nnoremap <silent> l s
--- :vnoremap <silent> s l
--- :vnoremap <silent> l s
--- -- cursor movement through panes using [leader]-[dvorak movement keys]
--- nmap <silent> <leader>s <C-W>l
--- nmap <silent> <leader>h <C-W>h
--- nmap <silent> <leader>k <C-W>k
--- nmap <silent> <leader>j <C-W>j
--- -- Moving panes using [leader]-[shift]-[dvorak movement keys]
--- nmap <silent> <leader><S-S> <C-W>L
--- nmap <silent> <leader><S-H> <C-W>H
--- nmap <silent> <leader><S-K> <C-W>K
--- nmap <silent> <leader><S-J> <C-W>J
+map('n', 'Y', 'y$', {noremap = true})
