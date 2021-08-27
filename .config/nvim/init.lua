@@ -28,8 +28,7 @@ o.shell='/bin/bash'
 
 
 -- DVORAK CUSTOMIZATIONS
--- This has to be last for some reason.
--- Cursor movement
+-- cursor movement inside panes
 map('n', 's', 'l', {silent = true, noremap = true})
 map('n', 'l', 's', {silent = true, noremap = true})
 map('v', 's', 'l', {silent = true, noremap = true})
@@ -39,18 +38,18 @@ map('n', '<leader>s', '<C-W>l', {silent = true, noremap = true})
 map('n', '<leader>h', '<C-W>h', {silent = true, noremap = true})
 map('n', '<leader>k', '<C-W>k', {silent = true, noremap = true})
 map('n', '<leader>j', '<C-W>j', {silent = true, noremap = true})
--- Moving panes using [leader]-[shift]-[dvorak movement keys]
+-- moving panes using [leader]-[shift]-[dvorak movement keys]
 map('n', '<leader><S-S>', '<C-W>L', {silent = true, noremap = true})
 map('n', '<leader><S-H>', '<C-W>H', {silent = true, noremap = true})
 map('n', '<leader><S-K>', '<C-W>K', {silent = true, noremap = true})
 map('n', '<leader><S-J>', '<C-W>J', {silent = true, noremap = true})
 
 
--- File explorer
+-- file explorer
 g.netrw_banner = 0
 
 
--- Fuzzy finder
+-- fuzzy finder
 map('n', '<C-F>', ':FuzzyOpen "."<CR>', {silent = true, noremap = true})
 map('n', '<leader>d', ':FuzzyOpen "."<CR>', {silent = true, noremap = true})
 
@@ -63,16 +62,16 @@ g.nvim_tree_auto_close = 1
 g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
 
 
--- Inserting empty lines using [enter] when in normal mode.
+-- inserting empty lines using [enter] when in normal mode.
 map('n', '<S-Enter>', 'O<Esc>', {silent = true, noremap = true})
 map('n', '<CR>', 'o<Esc>k', {silent = true, noremap = true})
 
 
--- Insert spaces using space bar when in normal mode.
+-- insert spaces using space bar when in normal mode.
 map('n', '<leader><space>', 'i <ESC>', {silent = true, noremap = true})
 
 
--- Saving
+-- saving
 -- CTRL-S
 map('n', '<c-s>', '<esc>:w<CR>', {silent = true, noremap = true})
 -- format on save
@@ -83,27 +82,27 @@ cmd('autocmd BufWritePost *.md,*.ts FormatWrite')
 cmd('augroup END')
 
 
--- Search
+-- search
 map('n', '<leader>/', ':noh<CR>', {silent = true, noremap = true})
 
 
--- Split window resizing
+-- split window resizing
 map('n', '<Leader>=', ':exe "vertical resize +5"<CR>', {silent = true, noremap = true})
 map('n', '<Leader>-', ':exe "vertical resize -5"<CR>', {silent = true, noremap = true})
 
 
--- Tabbing
+-- tabbing
 o.softtabstop=2
 o.shiftwidth=2
 o.expandtab = true
 map('n', '<C-T>', '<esc>:tabnext<CR>', {noremap = true})
 
 
--- Yanking
+-- yanking
 map('n', 'Y', 'y$', {noremap = true})
 
 
--- Paq
+-- paq
 require 'paq' {
   'savq/paq-nvim';
   'dag/vim-fish';
@@ -117,7 +116,7 @@ require 'paq' {
 }
 
 
--- Formatter
+-- formatter
 require('formatter').setup({
   filetype = {
     markdown = {
