@@ -148,6 +148,15 @@ optionally to verify:
 find . -type d -empty -delete
 ```
 
+Install the package manager:
+
+```
+git clone --depth=1 https://github.com/savq/paq-nvim.git \
+    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/start/paq-nvim
+```
+
+Start nvim and run `:PaqInstall`
+
 Alternatively, use the built-in Neovim (which is severely outdated):
 
 ```
