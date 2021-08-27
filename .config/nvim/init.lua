@@ -1,6 +1,7 @@
 local g = vim.g
 local o = vim.opt
 local map = vim.api.nvim_set_keymap
+local cmd = vim.api.nvim_command
 
 
 -- Leader key
@@ -75,10 +76,10 @@ map('n', '<leader><space>', 'i <ESC>', {silent = true, noremap = true})
 -- CTRL-S
 map('n', '<c-s>', '<esc>:w<CR>', {silent = true, noremap = true})
 -- format on save
--- augroup FormatAutogroup
---   autocmd!
---   autocmd BufWritePost *.md,*.ts FormatWrite
--- augroup END
+cmd('augroup FormatAutogroup')
+cmd('autocmd!')
+cmd('autocmd BufWritePost *.md,*.ts FormatWrite')
+cmd('augroup END')
 
 
 -- Search
