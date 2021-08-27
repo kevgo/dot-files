@@ -125,7 +125,13 @@ sudo cp <subfolder>/delta /usr/local/bin
 
 ### Vim
 
-download the [latest release](https://github.com/neovim/neovim/releases/latest) and install manually:
+Install dprint:
+
+```
+curl -fsSL https://dprint.dev/install.sh | sh
+```
+
+Download the [latest NeoVim release](https://github.com/neovim/neovim/releases/latest) and install manually:
 
 ```
 cd /mnt/chromeos/MyFiles/Downloads
@@ -136,15 +142,19 @@ find . -type d -exec sudo mkdir -p '/usr/local/{}' \;
 find . -type f -exec sudo mv '{}' '/usr/local/{}' \;
 ```
 
-optionally to verify : `find . -type d -empty -delete`
+optionally to verify: 
 
-To use the built-in Neovim (which is severely outdated):
+```
+find . -type d -empty -delete
+```
+
+Alternatively, use the built-in Neovim (which is severely outdated):
 
 ```
 sudo apt install -y neovim
 ```
 
-or to build from source:
+Or build from source:
 
 install build prerequisites:
 https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites
