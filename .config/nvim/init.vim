@@ -33,6 +33,7 @@ nnoremap <leader>d :FuzzyOpen "."<CR>
 map <silent> <leader>t :NvimTreeToggle<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 let g:nvim_tree_follow = 1
+let g:nvim_tree_auto_close = 1
 let g:nvim_tree_show_icons = {
     \ 'git': 0,
     \ 'folders': 0,
