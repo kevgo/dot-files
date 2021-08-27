@@ -59,23 +59,23 @@
     "Possibly confused word": 3
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "dprint.dprint",
     "updateImportsOnFileMove.enabled": "always"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "keyboard.dispatch": "keyCode",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "dprint.dprint",
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
@@ -94,7 +94,7 @@
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.camelCaseMotion.enable": true,
