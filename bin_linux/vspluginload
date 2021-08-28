@@ -4,6 +4,7 @@ code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension bungcip.better-toml
 code --install-extension dawhite.mustache
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension dprint.dprint
 code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
 code --install-extension kevgo.vscode-markdown-ide
