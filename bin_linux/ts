@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# set -x
 
 function usage() {
   echo "Usage: ts [-f '<glob>'] [-I] [-C<num>] term1 [term2] ..."
@@ -72,20 +73,33 @@ fi
 
 # find matching files
 searchCmd="grep -rl $ignoreCase '$1' $glob"
-highlightRE="$1"
+colors=(yellow magenta cyan green)
+filterRE="$1"
+highlightRE="rg --passthru $ignoreCase --color=always --colors match:none --colors match:fg:blue --colors match:style:bold $1"
+
 shift
 while [ -n "$1" ]; do
   searchCmd="$searchCmd | xargs -d '\n' grep -l '$1'"
-  highlightRE="$highlightRE|$1"
+  filterRE="$filterRE|$1"
+  col=${colors[-1]}
+  highlightRE="$highlightRE | rg --passthru $ignoreCase --color=always --colors match:none --colors match:fg:$col --colors match:style:bold $1"
   shift
+  unset 'colors[-1]'
 done
 searchResults=$(eval "$searchCmd")
 
 # display matching files with content snippets
+# NOTE: I write the shell commands to execute into a temp file and source that
+# because Bash metaprogramming is too limited to handle pipes in eval'ed strings.
+# See http://mywiki.wooledge.org/BashFAQ/050.
+f="/tmp/ts.sh"
+touch $f
 for file in $searchResults; do
-  tput bold
-  echo $file
-  tput sgr0
-  rg --line-number --color=always $ignoreCase $context $highlightRE $file
-  echo
+  echo "tput bold" >> $f
+  echo "echo $file" >> $f
+  echo "tput sgr0" >> $f
+  echo "rg --line-number --color=never $ignoreCase $context '$filterRE' $file | $highlightRE" >> $f
+  echo "echo" >> $f
 done
+source $f
+rm $f
