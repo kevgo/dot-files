@@ -75,22 +75,21 @@ fi
 searchCmd="grep -rl $ignoreCase '$1' $glob"
 colors=(yellow magenta cyan green)
 filterRE="$1"
-highlightRE="rg --passthru $ignoreCase --color=always --colors match:fg:blue $1"
+highlightCmd="rg --passthru $ignoreCase --color=always --colors match:fg:blue $1"
 
 shift
 while [ -n "$1" ]; do
   searchCmd="$searchCmd | xargs -d '\n' grep -l '$1'"
   filterRE="$filterRE|$1"
-  col=${colors[-1]}
-  highlightRE="$highlightRE | rg --passthru $ignoreCase --color=always --colors match:fg:$col $1"
+  highlightCmd="$highlightCmd | rg --passthru $ignoreCase --color=always --colors match:fg:${colors[-1]} $1"
   shift
   unset 'colors[-1]'
 done
 searchResults=$(eval "$searchCmd")
 
 # display matching files with content snippets
-# NOTE: I write the shell commands to execute into a temp file and source that
-# because Bash metaprogramming is too limited to handle pipes in eval'ed strings.
+# HACK: I write the shell commands to execute into a temp file and source that
+# because Bash metaprogramming is too flimsy in subtle ways for pipes in eval'ed strings.
 # See http://mywiki.wooledge.org/BashFAQ/050.
 f="/tmp/ts.sh"
 touch $f
@@ -98,7 +97,7 @@ for file in $searchResults; do
   echo "tput bold" >> $f
   echo "echo $file" >> $f
   echo "tput sgr0" >> $f
-  echo "rg --line-number --color=never $ignoreCase $context '$filterRE' $file | $highlightRE" >> $f
+  echo "rg --line-number --color=never $ignoreCase $context '$filterRE' $file | $highlightCmd" >> $f
   echo "echo" >> $f
 done
 source $f
