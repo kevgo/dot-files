@@ -28,6 +28,13 @@ while : ; do
     continue
   fi
 
+  if [ "$1" = "-C" ]; then
+    shift
+    context="-C$1"
+    shift
+    continue
+  fi
+
   if [[ $1 =~ ^-C[0-9]+$ ]]; then
     context="$1"
     shift
