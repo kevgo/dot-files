@@ -1,19 +1,30 @@
 #!/usr/bin/env bash
 
-function help() {
-  echo "TikiSearch v0.1 finds files that contain multiple search terms"
-  echo
-  echo "Usage: ts [-f '<glob>'] [-C<num>] [-I] term1 term2 ..."
+function usage() {
+  echo "Usage: ts [-f '<glob>'] [-I] [-C<num>] term1 [term2] ..."
   echo
   echo "Parameters:"
-  echo "-C 1, -C2, etc: \"context\" - print the given number of lines around search results, default=0"
-  echo "-f: \"files\" - glob expression describing the files to search, default='*'"
+  echo "-C 1, -C2, etc: \"context\" - output the given number of lines around search results, default=0"
+  echo "-f: \"files\" - glob expression describing the files to search, please wrap in quotes, default='*'"
   echo "-I: \"ignore case\" - when given, disables case insensitivity, default=case insensitive"
   echo
 }
 
+function version() {
+  echo "TikiSearch v0.1"
+}
+
 if [ "$1" = "-h" ]; then
-  help
+  version
+  echo
+  echo "Finds files that contain multiple search terms"
+  echo
+  usage
+  exit
+fi
+
+if [ "$1" = "-v" ]; then
+  version
   exit
 fi
 
@@ -53,8 +64,9 @@ while : ; do
 done
 
 if [ "$1" = "" ]; then
-  help
   echo Error: please provide terms to search for
+  echo
+  usage
   exit 1
 fi
 
@@ -74,6 +86,6 @@ for file in $searchResults; do
   tput bold
   echo $file
   tput sgr0
-  grep --line-number --color=always $ignoreCase $context $highlightRE $file
+  rg --line-number --color=always $ignoreCase $context $highlightRE $file
   echo
 done
