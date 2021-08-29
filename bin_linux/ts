@@ -75,14 +75,14 @@ fi
 searchCmd="grep -rl $ignoreCase '$1' $glob"
 colors=(yellow magenta cyan green)
 filterRE="$1"
-highlightRE="rg --passthru $ignoreCase --color=always --colors match:none --colors match:fg:blue --colors match:style:bold $1"
+highlightRE="rg --passthru $ignoreCase --color=always --colors match:fg:blue $1"
 
 shift
 while [ -n "$1" ]; do
   searchCmd="$searchCmd | xargs -d '\n' grep -l '$1'"
   filterRE="$filterRE|$1"
   col=${colors[-1]}
-  highlightRE="$highlightRE | rg --passthru $ignoreCase --color=always --colors match:none --colors match:fg:$col --colors match:style:bold $1"
+  highlightRE="$highlightRE | rg --passthru $ignoreCase --color=always --colors match:fg:$col $1"
   shift
   unset 'colors[-1]'
 done
