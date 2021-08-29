@@ -6,7 +6,7 @@ function help() {
   echo "Usage: ts [-f '<glob>'] [-C<num>] term1 term2 ..."
   echo
   echo "Parameters:"
-  echo "-C1, -C2, ...: context - print the given number of lines around search results, default=0"
+  echo "-C 1, -C2, etc: context - print the given number of lines around search results, default=0"
   echo "-f: files - glob expression describing the files to search for, default='*'"
   echo
 }
