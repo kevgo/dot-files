@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+function help() {
+  echo TikiSearch v0.1 finds files that contain multiple words
+  echo
+  echo Usage: ts [-C<num>] term1 term2 ...
+  echo
+  echo Parameters:
+  echo -C1, -C2, ...: context - print the given number of lines around search results
+  echo
+}
+
+if [ "$1" = "-h" ]; then
+  help
+  exit
+fi
+
+# determine configuration
+context="-C0"
+if [[ $1 =~ ^-C[0-9]+$ ]]; then
+  context="$1"
+  shift
+fi
+if [ "$1" = "" ]; then
+  help
+  echo Error: please provide terms to search for
+  exit 1
+fi
+
+# find matching files
+searchCmd="grep -rl '$1' *"
+highlightRE="$1"
+shift
+while [ -n "$1" ]; do
+  searchCmd="$searchCmd | xargs -d '\n' grep -l '$1'"
+  highlightRE="$highlightRE|$1"
+  shift
+done
+searchResults=$(eval "$searchCmd")
+
+# display matching files together with content snippets
+for file in $searchResults; do
+  tput bold
+  echo $file
+  tput sgr0
+  rg -i $context $highlightRE $file
+  echo
+done
