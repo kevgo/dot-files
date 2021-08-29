@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
 function help() {
-  echo TikiSearch v0.1 finds files that contain multiple words
+  echo "TikiSearch v0.1 finds files that contain multiple words"
   echo
-  echo Usage: ts [-C<num>] term1 term2 ...
+  echo "Usage: ts [-f '<glob>'] [-C<num>] term1 term2 ..."
   echo
-  echo Parameters:
-  echo -C1, -C2, ...: context - print the given number of lines around search results
+  echo "Parameters:"
+  echo "-C1, -C2, ...: context - print the given number of lines around search results, default=0"
+  echo "-f: files - glob expression describing the files to search for, default='*'"
   echo
 }
 
@@ -15,12 +16,27 @@ if [ "$1" = "-h" ]; then
   exit
 fi
 
-# determine configuration
+# parse parameters
+glob="*"
 context="-C0"
-if [[ $1 =~ ^-C[0-9]+$ ]]; then
-  context="$1"
-  shift
-fi
+while : ; do
+
+  if [ "$1" = "-f" ]; then
+    shift
+    glob="$1"
+    shift
+    continue
+  fi
+
+  if [[ $1 =~ ^-C[0-9]+$ ]]; then
+    context="$1"
+    shift
+    continue
+  fi
+
+  break
+done
+
 if [ "$1" = "" ]; then
   help
   echo Error: please provide terms to search for
@@ -28,7 +44,7 @@ if [ "$1" = "" ]; then
 fi
 
 # find matching files
-searchCmd="grep -rl '$1' *"
+searchCmd="grep -rl '$1' $glob"
 highlightRE="$1"
 shift
 while [ -n "$1" ]; do
@@ -38,7 +54,7 @@ while [ -n "$1" ]; do
 done
 searchResults=$(eval "$searchCmd")
 
-# display matching files together with content snippets
+# display matching files with content snippets
 for file in $searchResults; do
   tput bold
   echo $file
