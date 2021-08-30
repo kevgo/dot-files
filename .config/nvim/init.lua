@@ -53,6 +53,15 @@ require('formatter').setup({
         }
       end
     },
+    json = {
+      function()
+        return {
+          exe = 'dprint',
+          args = {'fmt', '--stdin', vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))},
+          stdin = true
+        }
+      end
+    },
   }
 })
 
@@ -108,7 +117,7 @@ map('n', '<c-s>', '<esc>:w<CR>', {silent = true, noremap = true})
 -- TODO: use the native Lua bindings once https://github.com/neovim/neovim/pull/14661 ships
 cmd('augroup FormatAutogroup')
 cmd('autocmd!')
-cmd('autocmd BufWritePost *.md,*.ts FormatWrite')
+cmd('autocmd BufWritePost *.md,*.ts,*.json FormatWrite')
 cmd('augroup END')
 
 
