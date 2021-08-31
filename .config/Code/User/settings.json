@@ -91,6 +91,9 @@
   "rust-analyzer.inlayHints.parameterHints": false,
   "rust-analyzer.inlayHints.typeHints": false,
   "rust-analyzer.lens.implementations": false,
+  "[rust]": {
+    "editor.detectIndentation": true
+  },
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "[typescript]": {
