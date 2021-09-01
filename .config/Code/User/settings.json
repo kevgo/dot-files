@@ -92,7 +92,8 @@
   "rust-analyzer.inlayHints.typeHints": false,
   "rust-analyzer.lens.implementations": false,
   "[rust]": {
-    "editor.detectIndentation": true
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4
   },
   "scm.diffDecorations": "none",
   "search.smartCase": true,
