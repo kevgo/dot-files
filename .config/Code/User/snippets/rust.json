@@ -19,7 +19,7 @@
 			"mod tests {",
       "",
       "  #[test]",
-      "  fn no_args() {",
+      "  fn foo() {",
       "    // TODO",
 			"  }"
 		],
