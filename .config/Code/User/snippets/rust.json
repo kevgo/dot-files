@@ -21,9 +21,9 @@
       "    #[test]",
       "    fn foo() {",
       "        // TODO",
-			"    }",
-			"}"
-		],
-		"description": "scaffold for unit tests"
-	}
+      "    }",
+      "}"
+    ],
+    "description": "scaffold for unit tests"
+  }
 }
