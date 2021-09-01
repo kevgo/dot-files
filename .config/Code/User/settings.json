@@ -25,6 +25,7 @@
     "strings": true
   },
   "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
   "editor.roundedSelection": false,
   "editor.scrollBeyondLastLine": false,
   "editor.selectionHighlight": true,
