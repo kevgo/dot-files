@@ -14,6 +14,7 @@ function darker() {
   sudo ddccontrol dev:/dev/i2c-7 -r 0x10 -W -10 &> /dev/null
 }
 
+sudo echo foo > /dev/null
 escape_char=$(printf "\u1b")
 while true; do
   read -rsn1 mode       # get 1 character
