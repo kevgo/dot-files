@@ -7,6 +7,7 @@
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.bracketPairColorization.enabled": true,
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 45,
