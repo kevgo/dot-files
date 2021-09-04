@@ -32,6 +32,7 @@
   "editor.selectionHighlight": true,
   "editor.suggest.insertMode": "replace",
   "editor.suggest.showStatusBar": true,
+  "editor.suggest.preview": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
