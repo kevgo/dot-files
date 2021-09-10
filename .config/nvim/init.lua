@@ -66,8 +66,8 @@ require('formatter').setup({
 })
 
 -- colors
-cmd("highlight Search ctermbg=green ctermfg=16")  -- make search results readable
-cmd("highlight Todo ctermbg=blue ctermfg=16")  -- make TODO readable
+cmd("highlight Search ctermbg=green ctermfg=16")  -- give search highlights readabale colors
+cmd("highlight Todo ctermbg=blue ctermfg=16")  -- give "TODO" readable colors
 
 
 
@@ -140,5 +140,4 @@ map('n', '<C-T>', '<esc>:tabnext<CR>', {noremap = true})
 
 -- yanking
 map('n', 'Y', 'y$', {noremap = true})
-
 
