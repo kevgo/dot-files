@@ -10,6 +10,7 @@ dlv/
 weston.ini
 
 # Fedora
+brasero
 dleyna-server-service*
 gnome-control-center
 gnome-initial-setup-done
