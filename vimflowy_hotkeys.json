@@ -1,1309 +1,236 @@
 {
   "NORMAL": {
-    "move-cursor-normal": [
-      [
-        "<motion>"
-      ]
-    ],
-    "toggle-help": [
-      [
-        "?"
-      ],
-      [
-        "ctrl+s"
-      ]
-    ],
-    "enter-visual-mode": [
-      [
-        "v"
-      ]
-    ],
-    "enter-visual-line-mode": [
-      [
-        "V"
-      ]
-    ],
-    "enter-insert-before-cursor": [
-      [
-        "i"
-      ]
-    ],
-    "enter-insert-after-cursor": [
-      [
-        "a"
-      ]
-    ],
-    "enter-insert-line-beginning": [
-      [
-        "I"
-      ]
-    ],
-    "enter-insert-line-end": [
-      [
-        "A"
-      ]
-    ],
-    "enter-insert-below-line": [
-      [
-        "o"
-      ]
-    ],
-    "enter-insert-above-line": [
-      [
-        "O"
-      ]
-    ],
-    "visit-link": [
-      [
-        "g",
-        "x"
-      ]
-    ],
-    "fold-toggle": [
-      [
-        "z"
-      ]
-    ],
+    "move-cursor-normal": [["<motion>"]],
+    "toggle-help": [["?"], ["ctrl+s"]],
+    "enter-visual-mode": [["v"]],
+    "enter-visual-line-mode": [["V"]],
+    "enter-insert-before-cursor": [["i"]],
+    "enter-insert-after-cursor": [["a"]],
+    "enter-insert-line-beginning": [["I"]],
+    "enter-insert-line-end": [["A"]],
+    "enter-insert-below-line": [["o"]],
+    "enter-insert-above-line": [["O"]],
+    "visit-link": [["g", "x"]],
+    "fold-toggle": [["z"]],
     "fold-open": [],
     "fold-close": [],
-    "replace-char": [
-      [
-        "l"
-      ]
-    ],
-    "delete-blocks": [
-      [
-        "d",
-        "d"
-      ]
-    ],
-    "delete-motion": [
-      [
-        "d",
-        "<motion>"
-      ]
-    ],
-    "change-line": [
-      [
-        "c",
-        "c"
-      ]
-    ],
-    "change-to-line-end": [
-      [
-        "C"
-      ]
-    ],
-    "change-blocks": [
-      [
-        "c",
-        "r"
-      ]
-    ],
-    "change-motion": [
-      [
-        "c",
-        "<motion>"
-      ]
-    ],
-    "yank-line": [
-      [
-        "y",
-        "y"
-      ]
-    ],
-    "yank-to-line-end": [
-      [
-        "Y"
-      ]
-    ],
-    "yank-blocks": [
-      [
-        "y",
-        "r"
-      ]
-    ],
-    "yank-motion": [
-      [
-        "y",
-        "<motion>"
-      ]
-    ],
-    "yank-clone": [
-      [
-        "y",
-        "c"
-      ]
-    ],
-    "normal-delete-char": [
-      [
-        "x"
-      ]
-    ],
-    "normal-delete-char-before": [
-      [
-        "X"
-      ]
-    ],
-    "change-char": [
-      [
-        "r"
-      ]
-    ],
+    "replace-char": [["l"]],
+    "delete-blocks": [["d", "d"]],
+    "delete-motion": [["d", "<motion>"]],
+    "change-line": [["c", "c"]],
+    "change-to-line-end": [["C"]],
+    "change-blocks": [["c", "r"]],
+    "change-motion": [["c", "<motion>"]],
+    "yank-line": [["y", "y"]],
+    "yank-to-line-end": [["Y"]],
+    "yank-blocks": [["y", "r"]],
+    "yank-motion": [["y", "<motion>"]],
+    "yank-clone": [["y", "c"]],
+    "normal-delete-char": [["x"]],
+    "normal-delete-char-before": [["X"]],
+    "change-char": [["r"]],
     "delete-to-line-beginning": [],
-    "delete-to-line-end": [
-      [
-        "D"
-      ]
-    ],
+    "delete-to-line-end": [["D"]],
     "delete-to-word-beginning": [],
-    "paste-after": [
-      [
-        "p"
-      ]
-    ],
-    "paste-before": [
-      [
-        "P"
-      ]
-    ],
-    "join-line": [
-      [
-        "J"
-      ]
-    ],
-    "split-line": [
-      [
-        "K"
-      ]
-    ],
-    "scroll-down": [
-      [
-        "page down"
-      ],
-      [
-        "ctrl+d"
-      ]
-    ],
-    "scroll-up": [
-      [
-        "page up"
-      ],
-      [
-        "ctrl+u"
-      ]
-    ],
-    "undo": [
-      [
-        "u"
-      ]
-    ],
-    "redo": [
-      [
-        "ctrl+r"
-      ]
-    ],
-    "replay-command": [
-      [
-        "."
-      ]
-    ],
-    "record-macro": [
-      [
-        "q"
-      ]
-    ],
-    "play-macro": [
-      [
-        "@"
-      ]
-    ],
-    "unindent-row": [
-      [
-        "<"
-      ]
-    ],
-    "indent-row": [
-      [
-        ">"
-      ]
-    ],
-    "unindent-blocks": [
-      [
-        "shift+tab"
-      ],
-      [
-        "ctrl+h"
-      ]
-    ],
-    "indent-blocks": [
-      [
-        "tab"
-      ],
-      [
-        "ctrl+l"
-      ]
-    ],
-    "swap-block-down": [
-      [
-        "ctrl+j"
-      ]
-    ],
-    "swap-block-up": [
-      [
-        "ctrl+k"
-      ]
-    ],
-    "search-local": [
-      [
-        "ctrl+/"
-      ],
-      [
-        "ctrl+f"
-      ]
-    ],
-    "search-global": [
-      [
-        "/"
-      ]
-    ],
-    "export-file": [
-      [
-        "ctrl+1"
-      ]
-    ],
-    "zoom-prev-sibling": [
-      [
-        "alt+k"
-      ]
-    ],
-    "zoom-next-sibling": [
-      [
-        "alt+j"
-      ]
-    ],
-    "zoom-in": [
-      [
-        "]"
-      ],
-      [
-        "alt+l"
-      ],
-      [
-        "ctrl+right"
-      ]
-    ],
-    "zoom-out": [
-      [
-        "["
-      ],
-      [
-        "alt+h"
-      ],
-      [
-        "ctrl+left"
-      ]
-    ],
-    "zoom-cursor": [
-      [
-        "enter"
-      ],
-      [
-        "ctrl+shift+right"
-      ]
-    ],
-    "zoom-root": [
-      [
-        "shift+enter"
-      ],
-      [
-        "ctrl+shift+left"
-      ]
-    ],
-    "jump-prev": [
-      [
-        "ctrl+o"
-      ]
-    ],
-    "jump-next": [
-      [
-        "ctrl+i"
-      ]
-    ],
-    "swap-case": [
-      [
-        "~"
-      ]
-    ],
-    "go-next-clone": [
-      [
-        "g",
-        "c"
-      ]
-    ],
-    "motion-left": [
-      [
-        "left"
-      ],
-      [
-        "h"
-      ]
-    ],
-    "motion-right": [
-      [
-        "right"
-      ],
-      [
-        "s"
-      ]
-    ],
-    "motion-up": [
-      [
-        "up"
-      ],
-      [
-        "k"
-      ]
-    ],
-    "motion-down": [
-      [
-        "down"
-      ],
-      [
-        "j"
-      ]
-    ],
-    "motion-line-beginning": [
-      [
-        "home"
-      ],
-      [
-        "0"
-      ],
-      [
-        "^"
-      ]
-    ],
-    "motion-line-end": [
-      [
-        "end"
-      ],
-      [
-        "$"
-      ]
-    ],
-    "motion-word-beginning": [
-      [
-        "b"
-      ]
-    ],
-    "motion-word-end": [
-      [
-        "e"
-      ]
-    ],
-    "motion-word-next": [
-      [
-        "w"
-      ]
-    ],
-    "motion-Word-beginning": [
-      [
-        "B"
-      ]
-    ],
-    "motion-Word-end": [
-      [
-        "E"
-      ]
-    ],
-    "motion-Word-next": [
-      [
-        "W"
-      ]
-    ],
-    "motion-visible-beginning": [
-      [
-        "g",
-        "g"
-      ]
-    ],
-    "motion-visible-end": [
-      [
-        "G"
-      ],
-      [
-        "g",
-        "G"
-      ]
-    ],
-    "motion-parent": [
-      [
-        "g",
-        "p"
-      ]
-    ],
-    "motion-next-sibling": [
-      [
-        "}"
-      ]
-    ],
-    "motion-prev-sibling": [
-      [
-        "{"
-      ]
-    ],
-    "motion-find-next-char": [
-      [
-        "f"
-      ]
-    ],
-    "motion-find-prev-char": [
-      [
-        "F"
-      ]
-    ],
-    "motion-to-next-char": [
-      [
-        "t"
-      ]
-    ],
-    "motion-to-prev-char": [
-      [
-        "T"
-      ]
-    ],
-    "begin-mark": [
-      [
-        "m"
-      ]
-    ],
-    "go-mark": [
-      [
-        "g",
-        "m"
-      ]
-    ],
-    "delete-mark": [
-      [
-        "d",
-        "m"
-      ]
-    ],
-    "search-marks": [
-      [
-        "'"
-      ],
-      [
-        "`"
-      ]
-    ]
+    "paste-after": [["p"]],
+    "paste-before": [["P"]],
+    "join-line": [["J"]],
+    "split-line": [["K"]],
+    "scroll-down": [["page down"], ["ctrl+d"]],
+    "scroll-up": [["page up"], ["ctrl+u"]],
+    "undo": [["u"]],
+    "redo": [["ctrl+r"]],
+    "replay-command": [["."]],
+    "record-macro": [["q"]],
+    "play-macro": [["@"]],
+    "unindent-row": [["<"]],
+    "indent-row": [[">"]],
+    "unindent-blocks": [["shift+tab"], ["ctrl+h"]],
+    "indent-blocks": [["tab"], ["ctrl+l"]],
+    "swap-block-down": [["ctrl+j"]],
+    "swap-block-up": [["ctrl+k"]],
+    "search-local": [["ctrl+/"], ["ctrl+f"]],
+    "search-global": [["/"]],
+    "export-file": [["ctrl+1"]],
+    "zoom-prev-sibling": [["alt+k"]],
+    "zoom-next-sibling": [["alt+j"]],
+    "zoom-in": [["]"], ["alt+l"], ["ctrl+right"]],
+    "zoom-out": [["["], ["alt+h"], ["ctrl+left"]],
+    "zoom-cursor": [["enter"], ["ctrl+shift+right"]],
+    "zoom-root": [["shift+enter"], ["ctrl+shift+left"]],
+    "jump-prev": [["ctrl+o"]],
+    "jump-next": [["ctrl+i"]],
+    "swap-case": [["~"]],
+    "go-next-clone": [["g", "c"]],
+    "motion-left": [["left"], ["h"]],
+    "motion-right": [["right"], ["s"]],
+    "motion-up": [["up"], ["k"]],
+    "motion-down": [["down"], ["j"]],
+    "motion-line-beginning": [["home"], ["0"], ["^"]],
+    "motion-line-end": [["end"], ["$"]],
+    "motion-word-beginning": [["b"]],
+    "motion-word-end": [["e"]],
+    "motion-word-next": [["w"]],
+    "motion-Word-beginning": [["B"]],
+    "motion-Word-end": [["E"]],
+    "motion-Word-next": [["W"]],
+    "motion-visible-beginning": [["g", "g"]],
+    "motion-visible-end": [["G"], ["g", "G"]],
+    "motion-parent": [["g", "p"]],
+    "motion-next-sibling": [["}"]],
+    "motion-prev-sibling": [["{"]],
+    "motion-find-next-char": [["f"]],
+    "motion-find-prev-char": [["F"]],
+    "motion-to-next-char": [["t"]],
+    "motion-to-prev-char": [["T"]],
+    "begin-mark": [["m"]],
+    "go-mark": [["g", "m"]],
+    "delete-mark": [["d", "m"]],
+    "search-marks": [["'"], ["`"]]
   },
   "INSERT": {
-    "move-cursor-insert": [
-      [
-        "<motion>"
-      ]
-    ],
-    "toggle-help": [
-      [
-        "ctrl+?"
-      ]
-    ],
-    "exit-mode": [
-      [
-        "esc"
-      ],
-      [
-        "ctrl+c"
-      ],
-      [
-        "ctrl+["
-      ]
-    ],
-    "fold-toggle": [
-      [
-        "ctrl+space"
-      ]
-    ],
-    "fold-open": [
-      [
-        "meta+down"
-      ]
-    ],
-    "fold-close": [
-      [
-        "meta+up"
-      ]
-    ],
-    "delete-blocks": [
-      [
-        "meta+shift+delete"
-      ]
-    ],
-    "delete-char-after": [
-      [
-        "delete"
-      ]
-    ],
-    "delete-char-before": [
-      [
-        "backspace"
-      ],
-      [
-        "shift+backspace"
-      ]
-    ],
-    "delete-to-line-beginning": [
-      [
-        "ctrl+u"
-      ]
-    ],
-    "delete-to-line-end": [
-      [
-        "ctrl+k"
-      ]
-    ],
-    "delete-to-word-beginning": [
-      [
-        "ctrl+w"
-      ],
-      [
-        "ctrl+backspace"
-      ]
-    ],
-    "paste-before": [
-      [
-        "ctrl+y"
-      ]
-    ],
-    "split-line": [
-      [
-        "enter"
-      ]
-    ],
-    "scroll-down": [
-      [
-        "page down"
-      ]
-    ],
-    "scroll-up": [
-      [
-        "page up"
-      ]
-    ],
-    "undo": [
-      [
-        "ctrl+z"
-      ]
-    ],
-    "redo": [
-      [
-        "ctrl+Z"
-      ]
-    ],
+    "move-cursor-insert": [["<motion>"]],
+    "toggle-help": [["ctrl+?"]],
+    "exit-mode": [["esc"], ["ctrl+c"], ["ctrl+["]],
+    "fold-toggle": [["ctrl+space"]],
+    "fold-open": [["meta+down"]],
+    "fold-close": [["meta+up"]],
+    "delete-blocks": [["meta+shift+delete"]],
+    "delete-char-after": [["delete"]],
+    "delete-char-before": [["backspace"], ["shift+backspace"]],
+    "delete-to-line-beginning": [["ctrl+u"]],
+    "delete-to-line-end": [["ctrl+k"]],
+    "delete-to-word-beginning": [["ctrl+w"], ["ctrl+backspace"]],
+    "paste-before": [["ctrl+y"]],
+    "split-line": [["enter"]],
+    "scroll-down": [["page down"]],
+    "scroll-up": [["page up"]],
+    "undo": [["ctrl+z"]],
+    "redo": [["ctrl+Z"]],
     "unindent-row": [],
     "indent-row": [],
-    "unindent-blocks": [
-      [
-        "shift+tab"
-      ]
-    ],
-    "indent-blocks": [
-      [
-        "tab"
-      ]
-    ],
+    "unindent-blocks": [["shift+tab"]],
+    "indent-blocks": [["tab"]],
     "swap-block-down": [],
     "swap-block-up": [],
-    "zoom-prev-sibling": [
-      [
-        "alt+k"
-      ]
-    ],
-    "zoom-next-sibling": [
-      [
-        "alt+j"
-      ]
-    ],
-    "zoom-in": [
-      [
-        "ctrl+right"
-      ]
-    ],
-    "zoom-out": [
-      [
-        "ctrl+left"
-      ]
-    ],
-    "zoom-cursor": [
-      [
-        "ctrl+shift+right"
-      ]
-    ],
-    "zoom-root": [
-      [
-        "ctrl+shift+left"
-      ]
-    ],
-    "motion-left": [
-      [
-        "left"
-      ]
-    ],
-    "motion-right": [
-      [
-        "right"
-      ]
-    ],
-    "motion-up": [
-      [
-        "up"
-      ]
-    ],
-    "motion-down": [
-      [
-        "down"
-      ]
-    ],
-    "motion-line-beginning": [
-      [
-        "home"
-      ],
-      [
-        "ctrl+a"
-      ],
-      [
-        "meta+left"
-      ]
-    ],
-    "motion-line-end": [
-      [
-        "end"
-      ],
-      [
-        "ctrl+e"
-      ],
-      [
-        "meta+right"
-      ]
-    ],
-    "motion-word-beginning": [
-      [
-        "alt+b"
-      ],
-      [
-        "alt+left"
-      ]
-    ],
+    "zoom-prev-sibling": [["alt+k"]],
+    "zoom-next-sibling": [["alt+j"]],
+    "zoom-in": [["ctrl+right"]],
+    "zoom-out": [["ctrl+left"]],
+    "zoom-cursor": [["ctrl+shift+right"]],
+    "zoom-root": [["ctrl+shift+left"]],
+    "motion-left": [["left"]],
+    "motion-right": [["right"]],
+    "motion-up": [["up"]],
+    "motion-down": [["down"]],
+    "motion-line-beginning": [["home"], ["ctrl+a"], ["meta+left"]],
+    "motion-line-end": [["end"], ["ctrl+e"], ["meta+right"]],
+    "motion-word-beginning": [["alt+b"], ["alt+left"]],
     "motion-word-end": [],
-    "motion-word-next": [
-      [
-        "alt+f"
-      ],
-      [
-        "alt+right"
-      ]
-    ],
+    "motion-word-next": [["alt+f"], ["alt+right"]],
     "motion-Word-beginning": [],
     "motion-Word-end": [],
     "motion-Word-next": [],
-    "motion-visible-beginning": [
-      [
-        "meta+home"
-      ]
-    ],
-    "motion-visible-end": [
-      [
-        "meta+end"
-      ]
-    ],
-    "motion-parent": [
-      [
-        "ctrl+g",
-        "p"
-      ]
-    ],
-    "motion-next-sibling": [
-      [
-        "alt+down"
-      ]
-    ],
-    "motion-prev-sibling": [
-      [
-        "alt+up"
-      ]
-    ]
+    "motion-visible-beginning": [["meta+home"]],
+    "motion-visible-end": [["meta+end"]],
+    "motion-parent": [["ctrl+g", "p"]],
+    "motion-next-sibling": [["alt+down"]],
+    "motion-prev-sibling": [["alt+up"]]
   },
   "VISUAL": {
-    "move-cursor-visual": [
-      [
-        "<motion>"
-      ]
-    ],
-    "toggle-help": [
-      [
-        "?"
-      ]
-    ],
-    "exit-mode": [
-      [
-        "esc"
-      ],
-      [
-        "ctrl+c"
-      ],
-      [
-        "ctrl+["
-      ]
-    ],
-    "swap-visual-cursor": [
-      [
-        "o"
-      ],
-      [
-        "O"
-      ]
-    ],
-    "visual-delete": [
-      [
-        "d"
-      ],
-      [
-        "x"
-      ]
-    ],
-    "visual-change": [
-      [
-        "c"
-      ]
-    ],
-    "visual-yank": [
-      [
-        "y"
-      ]
-    ],
-    "visual-swap-case": [
-      [
-        "~"
-      ]
-    ],
-    "motion-left": [
-      [
-        "left"
-      ],
-      [
-        "h"
-      ]
-    ],
-    "motion-right": [
-      [
-        "right"
-      ],
-      [
-        "s"
-      ]
-    ],
-    "motion-line-beginning": [
-      [
-        "home"
-      ],
-      [
-        "0"
-      ],
-      [
-        "^"
-      ]
-    ],
-    "motion-line-end": [
-      [
-        "end"
-      ],
-      [
-        "$"
-      ]
-    ],
-    "motion-word-beginning": [
-      [
-        "b"
-      ]
-    ],
-    "motion-word-end": [
-      [
-        "e"
-      ]
-    ],
-    "motion-word-next": [
-      [
-        "w"
-      ]
-    ],
-    "motion-Word-beginning": [
-      [
-        "B"
-      ]
-    ],
-    "motion-Word-end": [
-      [
-        "E"
-      ]
-    ],
-    "motion-Word-next": [
-      [
-        "W"
-      ]
-    ],
-    "motion-find-next-char": [
-      [
-        "f"
-      ]
-    ],
-    "motion-find-prev-char": [
-      [
-        "F"
-      ]
-    ],
-    "motion-to-next-char": [
-      [
-        "t"
-      ]
-    ],
-    "motion-to-prev-char": [
-      [
-        "T"
-      ]
-    ]
+    "move-cursor-visual": [["<motion>"]],
+    "toggle-help": [["?"]],
+    "exit-mode": [["esc"], ["ctrl+c"], ["ctrl+["]],
+    "swap-visual-cursor": [["o"], ["O"]],
+    "visual-delete": [["d"], ["x"]],
+    "visual-change": [["c"]],
+    "visual-yank": [["y"]],
+    "visual-swap-case": [["~"]],
+    "motion-left": [["left"], ["h"]],
+    "motion-right": [["right"], ["s"]],
+    "motion-line-beginning": [["home"], ["0"], ["^"]],
+    "motion-line-end": [["end"], ["$"]],
+    "motion-word-beginning": [["b"]],
+    "motion-word-end": [["e"]],
+    "motion-word-next": [["w"]],
+    "motion-Word-beginning": [["B"]],
+    "motion-Word-end": [["E"]],
+    "motion-Word-next": [["W"]],
+    "motion-find-next-char": [["f"]],
+    "motion-find-prev-char": [["F"]],
+    "motion-to-next-char": [["t"]],
+    "motion-to-prev-char": [["T"]]
   },
   "VISUAL_LINE": {
-    "move-cursor-visual-line": [
-      [
-        "<motion>"
-      ]
-    ],
-    "toggle-help": [
-      [
-        "?"
-      ]
-    ],
-    "exit-mode": [
-      [
-        "esc"
-      ],
-      [
-        "ctrl+c"
-      ],
-      [
-        "ctrl+["
-      ]
-    ],
-    "swap-visual-cursor": [
-      [
-        "o"
-      ],
-      [
-        "O"
-      ]
-    ],
-    "visual-line-delete": [
-      [
-        "d"
-      ],
-      [
-        "x"
-      ]
-    ],
-    "visual-line-change": [
-      [
-        "c"
-      ]
-    ],
-    "visual-line-join": [
-      [
-        "J"
-      ]
-    ],
-    "visual-line-yank": [
-      [
-        "y"
-      ]
-    ],
-    "visual-line-yank-clone": [
-      [
-        "Y"
-      ]
-    ],
-    "visual-line-indent": [
-      [
-        ">"
-      ],
-      [
-        "tab"
-      ],
-      [
-        "ctrl+l"
-      ]
-    ],
-    "visual-line-unindent": [
-      [
-        "<"
-      ],
-      [
-        "shift+tab"
-      ],
-      [
-        "ctrl+h"
-      ]
-    ],
-    "visual-line-swap-case": [
-      [
-        "~"
-      ]
-    ],
-    "motion-left": [
-      [
-        "left"
-      ],
-      [
-        "h"
-      ]
-    ],
-    "motion-right": [
-      [
-        "right"
-      ],
-      [
-        "s"
-      ]
-    ],
-    "motion-up": [
-      [
-        "up"
-      ],
-      [
-        "k"
-      ]
-    ],
-    "motion-down": [
-      [
-        "down"
-      ],
-      [
-        "j"
-      ]
-    ],
-    "motion-line-beginning": [
-      [
-        "home"
-      ],
-      [
-        "0"
-      ],
-      [
-        "^"
-      ]
-    ],
-    "motion-line-end": [
-      [
-        "end"
-      ],
-      [
-        "$"
-      ]
-    ],
-    "motion-word-beginning": [
-      [
-        "b"
-      ]
-    ],
-    "motion-word-end": [
-      [
-        "e"
-      ]
-    ],
-    "motion-word-next": [
-      [
-        "w"
-      ]
-    ],
-    "motion-Word-beginning": [
-      [
-        "B"
-      ]
-    ],
-    "motion-Word-end": [
-      [
-        "E"
-      ]
-    ],
-    "motion-Word-next": [
-      [
-        "W"
-      ]
-    ],
-    "motion-visible-beginning": [
-      [
-        "g",
-        "g"
-      ]
-    ],
-    "motion-visible-end": [
-      [
-        "G"
-      ],
-      [
-        "g",
-        "G"
-      ]
-    ],
-    "motion-parent": [
-      [
-        "g",
-        "p"
-      ]
-    ],
-    "motion-next-sibling": [
-      [
-        "}"
-      ]
-    ],
-    "motion-prev-sibling": [
-      [
-        "{"
-      ]
-    ],
-    "motion-find-next-char": [
-      [
-        "f"
-      ]
-    ],
-    "motion-find-prev-char": [
-      [
-        "F"
-      ]
-    ],
-    "motion-to-next-char": [
-      [
-        "t"
-      ]
-    ],
-    "motion-to-prev-char": [
-      [
-        "T"
-      ]
-    ]
+    "move-cursor-visual-line": [["<motion>"]],
+    "toggle-help": [["?"]],
+    "exit-mode": [["esc"], ["ctrl+c"], ["ctrl+["]],
+    "swap-visual-cursor": [["o"], ["O"]],
+    "visual-line-delete": [["d"], ["x"]],
+    "visual-line-change": [["c"]],
+    "visual-line-join": [["J"]],
+    "visual-line-yank": [["y"]],
+    "visual-line-yank-clone": [["Y"]],
+    "visual-line-indent": [[">"], ["tab"], ["ctrl+l"]],
+    "visual-line-unindent": [["<"], ["shift+tab"], ["ctrl+h"]],
+    "visual-line-swap-case": [["~"]],
+    "motion-left": [["left"], ["h"]],
+    "motion-right": [["right"], ["s"]],
+    "motion-up": [["up"], ["k"]],
+    "motion-down": [["down"], ["j"]],
+    "motion-line-beginning": [["home"], ["0"], ["^"]],
+    "motion-line-end": [["end"], ["$"]],
+    "motion-word-beginning": [["b"]],
+    "motion-word-end": [["e"]],
+    "motion-word-next": [["w"]],
+    "motion-Word-beginning": [["B"]],
+    "motion-Word-end": [["E"]],
+    "motion-Word-next": [["W"]],
+    "motion-visible-beginning": [["g", "g"]],
+    "motion-visible-end": [["G"], ["g", "G"]],
+    "motion-parent": [["g", "p"]],
+    "motion-next-sibling": [["}"]],
+    "motion-prev-sibling": [["{"]],
+    "motion-find-next-char": [["f"]],
+    "motion-find-prev-char": [["F"]],
+    "motion-to-next-char": [["t"]],
+    "motion-to-prev-char": [["T"]]
   },
   "SEARCH": {
-    "move-cursor-search": [
-      [
-        "<motion>"
-      ]
-    ],
-    "toggle-help": [
-      [
-        "ctrl+?"
-      ]
-    ],
-    "exit-mode": [
-      [
-        "esc"
-      ],
-      [
-        "ctrl+c"
-      ],
-      [
-        "ctrl+["
-      ]
-    ],
-    "search-delete-char-after": [
-      [
-        "delete"
-      ]
-    ],
-    "search-delete-char-before": [
-      [
-        "backspace"
-      ],
-      [
-        "shift+backspace"
-      ]
-    ],
-    "search-select": [
-      [
-        "enter"
-      ]
-    ],
-    "search-up": [
-      [
-        "ctrl+k"
-      ],
-      [
-        "up"
-      ],
-      [
-        "shift+tab"
-      ]
-    ],
-    "search-down": [
-      [
-        "ctrl+j"
-      ],
-      [
-        "down"
-      ],
-      [
-        "tab"
-      ]
-    ],
-    "motion-left": [
-      [
-        "left"
-      ]
-    ],
-    "motion-right": [
-      [
-        "right"
-      ]
-    ],
-    "motion-line-beginning": [
-      [
-        "home"
-      ],
-      [
-        "ctrl+a"
-      ],
-      [
-        "meta+left"
-      ]
-    ],
-    "motion-line-end": [
-      [
-        "end"
-      ],
-      [
-        "ctrl+e"
-      ],
-      [
-        "meta+right"
-      ]
-    ],
-    "motion-word-beginning": [
-      [
-        "alt+b"
-      ],
-      [
-        "alt+left"
-      ]
-    ],
+    "move-cursor-search": [["<motion>"]],
+    "toggle-help": [["ctrl+?"]],
+    "exit-mode": [["esc"], ["ctrl+c"], ["ctrl+["]],
+    "search-delete-char-after": [["delete"]],
+    "search-delete-char-before": [["backspace"], ["shift+backspace"]],
+    "search-select": [["enter"]],
+    "search-up": [["ctrl+k"], ["up"], ["shift+tab"]],
+    "search-down": [["ctrl+j"], ["down"], ["tab"]],
+    "motion-left": [["left"]],
+    "motion-right": [["right"]],
+    "motion-line-beginning": [["home"], ["ctrl+a"], ["meta+left"]],
+    "motion-line-end": [["end"], ["ctrl+e"], ["meta+right"]],
+    "motion-word-beginning": [["alt+b"], ["alt+left"]],
     "motion-word-end": [],
-    "motion-word-next": [
-      [
-        "alt+f"
-      ],
-      [
-        "alt+right"
-      ]
-    ],
+    "motion-word-next": [["alt+f"], ["alt+right"]],
     "motion-Word-beginning": [],
     "motion-Word-end": [],
     "motion-Word-next": []
   },
   "SETTINGS": {
-    "exit-mode": [
-      [
-        "esc"
-      ],
-      [
-        "ctrl+c"
-      ],
-      [
-        "ctrl+["
-      ]
-    ]
+    "exit-mode": [["esc"], ["ctrl+c"], ["ctrl+["]]
   },
   "MARK": {
-    "toggle-help": [
-      [
-        "ctrl+?"
-      ]
-    ],
-    "move-cursor-mark": [
-      [
-        "<motion>"
-      ]
-    ],
-    "finish-mark": [
-      [
-        "enter"
-      ]
-    ],
-    "mark-delete-char-after": [
-      [
-        "delete"
-      ]
-    ],
-    "mark-delete-char-before": [
-      [
-        "backspace"
-      ],
-      [
-        "shift+backspace"
-      ]
-    ],
-    "exit-mode": [
-      [
-        "esc"
-      ],
-      [
-        "ctrl+c"
-      ]
-    ],
-    "motion-left": [
-      [
-        "left"
-      ]
-    ],
-    "motion-right": [
-      [
-        "right"
-      ]
-    ],
-    "motion-line-beginning": [
-      [
-        "home"
-      ],
-      [
-        "ctrl+a"
-      ],
-      [
-        "meta+left"
-      ]
-    ],
-    "motion-line-end": [
-      [
-        "end"
-      ],
-      [
-        "ctrl+e"
-      ],
-      [
-        "meta+right"
-      ]
-    ],
-    "motion-word-beginning": [
-      [
-        "alt+b"
-      ],
-      [
-        "alt+left"
-      ]
-    ],
-    "motion-word-next": [
-      [
-        "alt+f"
-      ],
-      [
-        "alt+right"
-      ]
-    ]
+    "toggle-help": [["ctrl+?"]],
+    "move-cursor-mark": [["<motion>"]],
+    "finish-mark": [["enter"]],
+    "mark-delete-char-after": [["delete"]],
+    "mark-delete-char-before": [["backspace"], ["shift+backspace"]],
+    "exit-mode": [["esc"], ["ctrl+c"]],
+    "motion-left": [["left"]],
+    "motion-right": [["right"]],
+    "motion-line-beginning": [["home"], ["ctrl+a"], ["meta+left"]],
+    "motion-line-end": [["end"], ["ctrl+e"], ["meta+right"]],
+    "motion-word-beginning": [["alt+b"], ["alt+left"]],
+    "motion-word-next": [["alt+f"], ["alt+right"]]
   }
 }
