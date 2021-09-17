@@ -115,36 +115,71 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
-      "before": ["<Esc>"],
-      "after": ["<Esc>"],
-      "commands": ["workbench.action.files.save"]
+      "before": [
+        "<Esc>"
+      ],
+      "after": [
+        "<Esc>"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     }
   ],
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "after": ["i", "<space>", "<esc>"],
-      "before": ["<space>"]
+      "after": [
+        "i",
+        "<space>",
+        "<esc>"
+      ],
+      "before": [
+        "<space>"
+      ]
     },
     {
-      "after": ["o", "<esc>", "k"],
-      "before": ["<enter>"]
+      "after": [
+        "o",
+        "<esc>",
+        "k"
+      ],
+      "before": [
+        "<enter>"
+      ]
     },
     {
-      "after": ["l"],
-      "before": ["s"]
+      "after": [
+        "l"
+      ],
+      "before": [
+        "s"
+      ]
     },
     {
-      "after": ["s"],
-      "before": ["l"]
+      "after": [
+        "s"
+      ],
+      "before": [
+        "l"
+      ]
     },
     {
-      "before": ["<leader>", "/"],
-      "commands": [":nohl"]
+      "before": [
+        "<leader>",
+        "/"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"]
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
     }
   ],
   "window.enableMenuBarMnemonics": false,
