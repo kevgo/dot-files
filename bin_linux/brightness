@@ -6,12 +6,15 @@ if [ "$1" = "-h" ]; then
   exit
 fi
 
+# To see all available monitor codes, run
+# sudo ddccontrol -p
+
 function brighter() {
-  sudo ddccontrol dev:/dev/i2c-7 -r 0x10 -W 10 &> /dev/null
+  sudo ddccontrol dev:/dev/i2c-6 -r 0x10 -W 10 &> /dev/null &
 }
 
 function darker() {
-  sudo ddccontrol dev:/dev/i2c-7 -r 0x10 -W -10 &> /dev/null
+  sudo ddccontrol dev:/dev/i2c-6 -r 0x10 -W -10 &> /dev/null &
 }
 
 sudo echo foo > /dev/null
