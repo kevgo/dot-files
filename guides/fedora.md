@@ -20,6 +20,14 @@ in `gnome-tweaks`:
 - `grub-customizer`
 - re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
+### clipboard access
+
+This provides `wl-copy` and `wl-paste`:
+
+```
+sudo dnf install wl-clipboard
+```
+
 ### Set up dotfiles
 
 - [GitHub setup](github.md)
