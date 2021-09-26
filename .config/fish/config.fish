@@ -217,8 +217,8 @@ set -x PATH ./node_modules/.bin $PATH
 if test -d /usr/local/lib/nodejs/bin
   set -x PATH $PATH /usr/local/lib/nodejs/bin
 end
-if test -d ~/.yarn/bin
-  set -x PATH $PATH ~/.yarn/bin
+if test -d ~/.config/yarn/global/node_modules/.bin
+  set -x PATH $PATH ~/.config/yarn/global/node_modules/.bin
 end
 
 
