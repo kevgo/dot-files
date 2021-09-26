@@ -155,5 +155,9 @@
   {
     "key": "ctrl+t",
     "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "g l",
+    "command": "editor.action.openLink"
   }
 ]
