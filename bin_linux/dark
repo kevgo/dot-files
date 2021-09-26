@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 content="$(jq '. + {"workbench.colorTheme": "Default Dark+"}' ~/.config/Code/User/settings.json)" 
-echo "${content}" > ~/.config/Code/User/settings.json
+echo "${content}" | prettier --stdin-filepath=foo.json > ~/.config/Code/User/settings.json
