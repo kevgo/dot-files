@@ -1,0 +1,4 @@
+excludeFiles:
+  # don't format VSCode config file because it is formatted using jq
+  # as part of switching VSCode to the dark/light theme
+  - .config/Code/User/settings.json
