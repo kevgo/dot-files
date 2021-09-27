@@ -158,6 +158,7 @@
   },
   {
     "key": "g l",
-    "command": "editor.action.openLink"
+    "command": "editor.action.openLink",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]
