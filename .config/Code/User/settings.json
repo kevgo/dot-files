@@ -55,12 +55,6 @@
   "go.formatTool": "goimports",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
-  "grammarly.severity": {
-    "Capitalization": 3,
-    "Colon expected": 3,
-    "Closing punctuation": 3,
-    "Possibly confused word": 3
-  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
