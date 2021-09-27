@@ -1,6 +1,21 @@
 # Installation on Fedora-based systems
 
+This installation does the most risky things first.
+
 - install system updates: using the "Software" app
+
+### Grub configuration
+
+- `grub-customizer`
+- re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
+
+### fractional scaling
+
+https://www.linuxuprising.com/2019/04/how-to-enable-hidpi-fractional-scaling.html
+
+### Stop airplane mode when opening the laptop
+
+https://askubuntu.com/questions/965595/why-does-airplane-mode-keep-toggling-on-my-hp-laptop-in-ubuntu-18-04/965596#965596
 
 ### Gnome configuration
 
@@ -14,11 +29,6 @@ in `gnome-tweaks`:
 - disable the shutdown/restart confirmation dialogs:
   - `gsettings set org.gnome.SessionManager logout-prompt false`
   - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
-
-### Grub configuration
-
-- `grub-customizer`
-- re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ### clipboard access
 
@@ -52,8 +62,6 @@ limit alt-tab to current desktop:
 ```
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 ```
-
-[Stop airplane mode when opening the laptop](https://askubuntu.com/questions/965595/why-does-airplane-mode-keep-toggling-on-my-hp-laptop-in-ubuntu-18-04/965596#965596)
 
 ### Vim
 
@@ -139,14 +147,6 @@ enable Wayland mode:
 - `sudo nvim /usr/share/applications/google-chrome.desktop`
 - at the `Exec` key, add
   `-enable-features=UseOzonePlatform -ozone-platform=wayland`
-
-### CPU scaling
-
-enable better framerate (battery cost):
-https://extensions.gnome.org/extension/1082/cpufreq
-
-More info:
-https://ask.fedoraproject.org/t/how-to-increasing-performance-by-changing-cpu-governor-and-reducing-swappiness/10006
 
 ### automatic dark mode at sunset
 
