@@ -155,10 +155,5 @@
   {
     "key": "ctrl+t",
     "command": "-workbench.action.showAllSymbols"
-  },
-  {
-    "key": "g l",
-    "command": "editor.action.openLink",
-    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   }
 ]

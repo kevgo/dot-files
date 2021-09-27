@@ -139,6 +139,10 @@
     {
       "before": [":"],
       "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["editor.action.openLink"]
     }
   ],
   "window.enableMenuBarMnemonics": false,
