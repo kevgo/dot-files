@@ -76,7 +76,7 @@
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
-  "markdownIDE.autocompleteTitleRegex": "\\(([A-Z][A-Z0-9a-z]+[A-Z0-9])\\)$",
+  "markdownIDE.autocompleteTitleRegex": "\\(([A-Z][A-Z0-9a-z]*[A-Z0-9])\\)$",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
