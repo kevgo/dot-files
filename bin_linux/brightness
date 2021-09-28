@@ -21,6 +21,8 @@ function darker() {
   sudo ddccontrol "$1" -r 0x10 -W -10 &> /dev/null &
 }
 
+# enable sudo in a clean way that doesn't mess up the output
+sudo echo foo > /dev/null
 echo -n "detecting monitor setup ... "
 monitor=$(detect)
 if [ -z "$monitor" ]; then
