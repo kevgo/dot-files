@@ -9,15 +9,26 @@ fi
 # To see all available monitor codes, run
 # sudo ddccontrol -p
 
+function detect() {
+  sudo ddccontrol -p 2> /dev/null | grep "Reading EDID and initializing DDC/CI at bus" | grep -o "dev:/dev/i2c-[0-9]"
+}
+
 function brighter() {
-  sudo ddccontrol dev:/dev/i2c-6 -r 0x10 -W 10 &> /dev/null &
+  sudo ddccontrol "$1" -r 0x10 -W 10 &> /dev/null &
 }
 
 function darker() {
-  sudo ddccontrol dev:/dev/i2c-6 -r 0x10 -W -10 &> /dev/null &
+  sudo ddccontrol "$1" -r 0x10 -W -10 &> /dev/null &
 }
 
-sudo echo foo > /dev/null
+echo -n "detecting monitor setup ... "
+monitor=$(detect)
+if [ -z "$monitor" ]; then
+  echo
+  echo "Could not identify an external monitor"
+  exit 1
+fi
+echo "$monitor"
 escape_char=$(printf "\u1b")
 while true; do
   read -rsn1 mode       # get 1 character
@@ -27,10 +38,10 @@ while true; do
   case $mode in
       'q') exit ;;
       '') exit ;;
-      '[A') brighter ;;  # up
-      '[B') darker   ;;  # down
-      '[D') brighter ;;  # left
-      '[C') darker   ;;  # right
+      '[A') brighter "$monitor"  ;;  # up
+      '[B') darker "$monitor"    ;;  # down
+      '[D') brighter "$monitor"  ;;  # left
+      '[C') darker "$monitor"    ;;  # right
       *) >&2 echo 'ERR bad input'; exit ;;
   esac
 done
