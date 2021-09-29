@@ -2,7 +2,13 @@
 
 This installation does the most risky things first.
 
-- install system updates: using the "Software" app
+Uninstall pointless packages:
+
+```
+sudo dnf remove gnome-shell-extension-applications-menu gnome-shell-extension-window-list
+```
+
+Install system updates: using the "Software" app
 
 ### Grub configuration
 
