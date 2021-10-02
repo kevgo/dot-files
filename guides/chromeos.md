@@ -8,7 +8,6 @@
 
 ### Settings
 
-- Manage other people > disable guest and restrict login
 - Linux: enable
 
 Chrome settings:
