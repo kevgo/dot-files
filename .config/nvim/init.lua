@@ -96,9 +96,11 @@ map('n', '<leader>d', ':FuzzyOpen "."<CR>', {silent = true, noremap = true})
 
 -- nvimtree
 map('n', '<leader>t', ':NvimTreeToggle<CR>', {silent = true, noremap = true})
-g.nvim_tree_follow = 1
-g.nvim_tree_auto_close = 1
 g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
+require'nvim-tree'.setup {
+  auto_close = true,
+  follow = true,
+}
 
 
 -- inserting empty lines using [enter] when in normal mode.
