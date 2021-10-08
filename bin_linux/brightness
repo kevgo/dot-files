@@ -6,6 +6,9 @@ if [ "$1" = "-h" ]; then
   exit
 fi
 
+# how much to change the brightness
+step_size=5
+
 # To see all available monitor codes, run
 # sudo ddccontrol -p
 
@@ -14,11 +17,15 @@ function detect() {
 }
 
 function brighter() {
-  sudo ddccontrol "$1" -r 0x10 -W 10 &> /dev/null &
+  sudo ddccontrol "$1" -r 0x10 -W $step_size &> /dev/null &
 }
 
 function darker() {
-  sudo ddccontrol "$1" -r 0x10 -W -10 &> /dev/null &
+  sudo ddccontrol "$1" -r 0x10 -W -$step_size &> /dev/null &
+}
+
+function set() {
+  sudo ddccontrol "$1" -r 0x10 -w "$2" &> /dev/null &
 }
 
 # enable sudo in a clean way that doesn't mess up the output
@@ -44,6 +51,8 @@ while true; do
       '[B') darker "$monitor"    ;;  # down
       '[D') brighter "$monitor"  ;;  # left
       '[C') darker "$monitor"    ;;  # right
+      '[H') set "$monitor" 100   ;;  # home
+      '[F') set "$monitor" 0     ;;  # end
       *) >&2 echo 'ERR bad input'; exit ;;
   esac
 done
