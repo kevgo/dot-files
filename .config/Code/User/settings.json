@@ -20,7 +20,9 @@
   "editor.highlightActiveIndentGuide": false,
   "editor.hover.sticky": false,
   "editor.largeFileOptimizations": false,
+  "editor.linkedEditing": false,
   "editor.minimap.enabled": false,
+  "editor.multiCursorMergeOverlapping": false,
   "editor.quickSuggestions": {
     "comments": true,
     "other": true,
