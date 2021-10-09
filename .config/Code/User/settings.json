@@ -17,7 +17,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": true,
-  "editor.highlightActiveIndentGuide": false,
+  "editor.guides.highlightActiveIndentation": false,
   "editor.hover.sticky": false,
   "editor.largeFileOptimizations": false,
   "editor.linkedEditing": false,
