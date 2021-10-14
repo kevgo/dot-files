@@ -31,7 +31,7 @@ See hardware-supported codecs:
 vainfo
 ```
 
-Download a video in the supported codec: 
+Download a video in the supported codec:
 
 ```
 youtube-dl -f 248+251 <video>
