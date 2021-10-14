@@ -23,12 +23,30 @@ https://www.linuxuprising.com/2019/04/how-to-enable-hidpi-fractional-scaling.htm
 
 ```
 sudo dnf install intel-media-driver intel-gpu-tools libva libva-utils
+```
 
-# this should not fail
+See hardware-supported codecs:
+
+```
 vainfo
 ```
 
-In Firefox:
+Download a video in the supported codec: 
+
+```
+youtube-dl -f 248+251 <video>
+```
+
+Check whether hardware support works:
+
+```
+sudo intel_gpu_top
+```
+
+Play the video in VLC, it should show some activity in the `Video` section.
+Play the video in Firefox, should be the same.
+
+If it doesn't work in Firefox, enable hardware acceleration:
 
 - go to `about:config`
 - set `media.ffmpeg.vaapi.enabled`
