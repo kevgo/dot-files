@@ -19,6 +19,24 @@ Install system updates: using the "Software" app
 
 https://www.linuxuprising.com/2019/04/how-to-enable-hidpi-fractional-scaling.html
 
+### GPU acceleration
+
+```
+sudo dnf install intel-media-driver intel-gpu-tools libva libva-utils
+
+# this should not fail
+vainfo
+```
+
+In Firefox:
+
+- go to `about:config`
+- set `media.ffmpeg.vaapi.enabled`
+- set `gfx.webrender.enabled`
+- set `widget.wayland-dmabuf-vaapi.enabled`
+- restart Firefox
+- go to `about:support
+
 ### Stop airplane mode when opening the laptop
 
 https://askubuntu.com/questions/965595/why-does-airplane-mode-keep-toggling-on-my-hp-laptop-in-ubuntu-18-04/965596#965596
