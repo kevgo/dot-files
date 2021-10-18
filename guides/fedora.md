@@ -201,3 +201,7 @@ https://extensions.gnome.org/extension/906/sound-output-device-chooser
 ### Gnome terminal
 
 - preferences > shortcuts > tabs
+
+### customize look and feel
+
+- enable [blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell)
