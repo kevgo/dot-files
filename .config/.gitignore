@@ -67,6 +67,9 @@ nextjs-nodejs/
 nvim/
 pulse/
 
+# Origins
+origins.json
+
 # RClone
 rclone/
 
