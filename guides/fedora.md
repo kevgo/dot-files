@@ -205,3 +205,7 @@ https://extensions.gnome.org/extension/906/sound-output-device-chooser
 ### customize look and feel
 
 - enable [blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell)
+
+### enable automatic updates
+
+https://fedoraproject.org/wiki/AutoUpdates
