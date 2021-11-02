@@ -2,3 +2,5 @@
 
 # Run `bat --list-themes` for available themes
 --theme="ansi"
+
+--map-syntax="*.jsonc:JSON"
