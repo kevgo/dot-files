@@ -209,3 +209,8 @@ https://extensions.gnome.org/extension/906/sound-output-device-chooser
 ### enable automatic updates
 
 https://fedoraproject.org/wiki/AutoUpdates
+
+### configure Firefox
+
+- https://wiki.archlinux.org/title/Firefox/Tweaks
+- disable pocket
