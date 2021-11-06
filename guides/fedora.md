@@ -10,6 +10,12 @@ sudo dnf remove gnome-shell-extension-applications-menu gnome-shell-extension-wi
 
 Install system updates: using the "Software" app
 
+### Automatically boot into Fedora instead of Windows
+
+- `/boot/efi/EFI/Boot/bootx64.efi` is the file that the computer boots from by default
+- copy `/boot/efi/EFI/fedora/shim.efi` to this file to make the computer boot Fedora
+- there should also be an identical file `/boot/efi/EFI/fedora/shimx64.efi`
+
 ### Grub configuration
 
 - `grub-customizer`
