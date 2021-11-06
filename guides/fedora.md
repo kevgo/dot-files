@@ -30,6 +30,14 @@ Completely disable Plymouth
 ### Grub configuration
 
 - `grub-customizer` sets default choices and delays but doesn't seem to work for customizing the layout
+- create a larger font: `grub2-mkfont --output=/boot/efi/EFI/fedora/fonts/DejaVuSansMono24.pf2 --size=24 /usr/share/fonts/dejavu/DejaVuSansMono.ttf`
+- make sure there is a new font file: `ls -la /boot/efi/EFI/fedora/fonts`
+- make grub use the new font: `sudo nvim /etc/default/grub`
+
+  ```
+  GRUB_TERMINAL_OUTPUT="gfxterm"
+  GRUB_FONT=/boot/efi/EFI/fedora/fonts/DejaVuSansMono24.pf2
+  ```
 - re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ### fractional scaling
