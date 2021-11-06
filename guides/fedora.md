@@ -29,7 +29,7 @@ Completely disable Plymouth
 
 ### Grub configuration
 
-- `grub-customizer`
+- `grub-customizer` sets default choices and delays but doesn't seem to work for customizing the layout
 - re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ### fractional scaling
