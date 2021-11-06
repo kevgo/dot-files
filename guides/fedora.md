@@ -38,6 +38,7 @@ Completely disable Plymouth
   GRUB_TERMINAL_OUTPUT="gfxterm"
   GRUB_FONT=/boot/efi/EFI/fedora/fonts/DejaVuSansMono24.pf2
   ```
+
 - re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ### fractional scaling
