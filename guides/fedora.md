@@ -10,11 +10,22 @@ sudo dnf remove gnome-shell-extension-applications-menu gnome-shell-extension-wi
 
 Install system updates: using the "Software" app
 
-### Automatically boot into Fedora instead of Windows
+### automatically boot into Fedora instead of Windows
 
 - `/boot/efi/EFI/Boot/bootx64.efi` is the file that the computer boots from by default
 - copy `/boot/efi/EFI/fedora/shim.efi` to this file to make the computer boot Fedora
 - there should also be an identical file `/boot/efi/EFI/fedora/shimx64.efi`
+
+### disable boot splash screen
+
+Safe route:
+
+- `plymouth-set-default-theme details`
+
+### Completely disable Plymouth
+
+- edit `/etc/default/grub` and remove `rhgb quiet` from `GRUB_CMDLINE_LINUX`
+- `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ### Grub configuration
 
@@ -72,8 +83,6 @@ in `gnome-tweaks`:
 - enable maximize button: Window Titlebars
 - disable "activities" hot corner: Top Bar > Activities Overview Hot Corner
 - Top Bar > Clock > Weekday
-
-- show SystemD output during startup: `plymouth-set-default-theme details --rebuild-initrd`
 - disable the shutdown/restart confirmation dialogs:
   - `gsettings set org.gnome.SessionManager logout-prompt false`
   - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
