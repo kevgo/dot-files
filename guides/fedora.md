@@ -22,7 +22,7 @@ Safe route:
 
 - `plymouth-set-default-theme details`
 
-### Completely disable Plymouth
+Completely disable Plymouth
 
 - edit `/etc/default/grub` and remove `rhgb quiet` from `GRUB_CMDLINE_LINUX`
 - `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
