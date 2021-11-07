@@ -47,6 +47,22 @@ https://www.linuxuprising.com/2019/04/how-to-enable-hidpi-fractional-scaling.htm
 
 ### GPU acceleration
 
+Add the rpm-fusion nonfree repos:
+
+```
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+Install the Intel drivers for video acceleration:
+
+```
+sudo dnf install libva-intel-driver ffmpeg
+```
+
+```
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+```
+
 ```
 sudo dnf install intel-media-driver intel-gpu-tools libva libva-utils
 ```
