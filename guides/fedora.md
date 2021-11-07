@@ -112,6 +112,10 @@ in `gnome-tweaks`:
   - `gsettings set org.gnome.SessionManager logout-prompt false`
   - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
 
+Prevent screen lock:
+
+- Settings > Privacy > Screen Lock
+
 ### clipboard access
 
 This provides `wl-copy` and `wl-paste`:
