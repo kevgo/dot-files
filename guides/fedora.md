@@ -129,6 +129,12 @@ sudo dnf install wl-clipboard
 - [GitHub setup](github.md)
 - [install dot-files](install-dotfiles.md)
 
+### monitor brightness
+
+```
+sudo dnf install ddccontrol
+```
+
 ### Configuration
 
 swap Caps lock and ESC:
