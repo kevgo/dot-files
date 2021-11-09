@@ -88,6 +88,7 @@
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
   "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": false,
   "rust-analyzer.inlayHints.enable": false,
   "rust-analyzer.inlayHints.chainingHints": false,
   "rust-analyzer.inlayHints.parameterHints": false,
