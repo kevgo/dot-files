@@ -5,7 +5,7 @@ This installation does the most risky things first.
 Uninstall pointless packages:
 
 ```
-sudo dnf remove gnome-shell-extension-applications-menu gnome-shell-extension-window-list
+sudo dnf remove gnome-shell-extension-applications-menu gnome-shell-extension-window-list gnome-shell-extension-background-logo
 ```
 
 Install system updates: using the "Software" app
