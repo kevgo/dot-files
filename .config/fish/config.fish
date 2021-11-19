@@ -66,6 +66,9 @@ function git_path
 end
 
 
+# environment
+set -x EDITOR nvim
+
 # Fish
 set -U fish_features qmark-noglob
 set fish_greeting
