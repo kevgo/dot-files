@@ -70,6 +70,12 @@
   "[json]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
+  "json.schemas": [
+    {
+      "fileMatch": ["/masa.jsonc"],
+      "url": "./masa.schema.json"
+    }
+  ],
   "[jsonc]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
@@ -166,5 +172,6 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Dark+",
+  "window.zoomLevel": -1
 }
