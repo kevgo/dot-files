@@ -22,21 +22,15 @@ Applications:
 
 ### how it works
 
-Creates these folders in your home directory:
-
-- `.dot-files`: this Git repo
-- `.dot-files-private`: separate Git repo for files containing private info
-
-Running [install](install) creates these symlinks in your home directory:
-
-- `.config` --> [.dot-files/.config](.config): app configuration is tracked by Git
-- `.gitconfig` --> `.dot-files-private/home_dir_files/.gitconfig`: global Git configuration tracked by private Git repo
-- `bin_linux` --> `.dot-files/bin_linux`: Linux-specific CLI tools
-- `bin_chromeos` --> `.dot-files/bin_chromeos`: ChromeOS-specific CLI tools
-- `bin_windows` --> `.dot-files/bin_windows`: Windows-specific CLI tools
-
 Automatic synchronization:
 
 - the first time a new Fish shell opens each day it pulls changes from GitHub
 - the Fish command prompt indicates uncommitted changes in the local `.dot-files`
   folder
+
+After cloning this repo and running [install](install) you have these folders and symlinks in your home directory:
+
+- `.dot-files/`: this Git repo
+- `.dot-files-private/`: separate Git repo for files containing private data
+- `.config/` --> [.dot-files/.config](.config): app configuration tracked by Git
+- `.gitconfig` --> `.dot-files-private/home_dir_files/.gitconfig`: global Git configuration tracked by private Git repo
