@@ -1,6 +1,6 @@
 # Kevgo's dot-files
 
-Cross-platform configuration for *nix systems.
+Cross-platform configuration for \*nix systems.
 
 ### installation
 
