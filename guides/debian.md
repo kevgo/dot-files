@@ -1,5 +1,9 @@
 # Installation of Debian-based systems
 
+### disable recommended installs
+
+https://superuser.com/questions/615565/can-i-make-apt-get-always-use-no-install-recommends
+
 ### update base system
 
 ```
