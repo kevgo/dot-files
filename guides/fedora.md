@@ -248,6 +248,10 @@ https://extensions.gnome.org/extension/2236/night-theme-switcher
 
 https://extensions.gnome.org/extension/906/sound-output-device-chooser
 
+### hide top bar
+ 
+- https://extensions.gnome.org/extension/545/hide-top-bar
+
 ### Gnome terminal
 
 - preferences > shortcuts > tabs
