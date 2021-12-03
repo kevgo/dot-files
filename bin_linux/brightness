@@ -1,43 +1,125 @@
 #!/usr/bin/env bash
 
-if [ "$1" = "-h" ]; then
-  echo "Changes brightness on the external monitor."
-  echo "Press up/down, then Q to exit."
-  exit
-fi
+# path of the configuration file
+SETTINGS_PATH="$HOME/.config/brightness"
 
-# how much to change the brightness
-step_size=5
+# how much to change the brightness up or down
+STEP_SIZE=5
 
-# To see all available monitor codes, run
-# sudo ddccontrol -p
+
+# parses the CLI args and provides the command to run
+function parse_args() {
+  case $1 in
+    '-r') echo "refresh"         ;; # refresh before running the app
+    '--refresh') echo "refresh"  ;;
+    'show-all') echo "show_all"  ;; # show all monitor codes and exit
+    'adjust') echo "adjust"      ;; # adjust the brightness
+    '') echo "adjust"            ;; # adjust in the default command
+    '-h') echo "usage"           ;; # print usage instructions before running the app
+    'help') echo "usage"         ;;
+    *) echo "cli-usage"          ;; # unknown command, print CLI usage and exit
+  esac
+}
+
+# displays program usage instructions
+function usage() {
+  echo "Changes the brightness setting on the external monitor."
+  echo "- UP/DOWN adjusts the brightness in increments of $STEP_SIZE%"
+  echo "- HOME/END sets the max/min brightness"
+  echo "- ENTER or Q to exit"
+}
+
+# displays CLI arguments
+function cli_usage() {
+  echo "Usage: $0 [options]"
+  echo
+  echo "Available options:"
+  echo "--help/-h: print usage instructions before running"
+  echo "--refresh/-r: refresh the cached monitor setup before adjusting the brightness"
+}
 
 function detect() {
   sudo ddccontrol -p 2> /dev/null | grep "Reading EDID and initializing DDC/CI at bus" | grep -o "dev:/dev/i2c-[0-9]"
 }
 
+# makes the external monitor one step brighter
 function brighter() {
-  sudo ddccontrol "$1" -r 0x10 -W $step_size &> /dev/null &
+  sudo ddccontrol "$1" -r 0x10 -W $STEP_SIZE &> /dev/null &
 }
 
+# makes the external monitor one step darker
 function darker() {
-  sudo ddccontrol "$1" -r 0x10 -W -$step_size &> /dev/null &
+  sudo ddccontrol "$1" -r 0x10 -W -$STEP_SIZE &> /dev/null &
 }
 
+# sets the external monitor to the given brightness level
 function set() {
-  sudo ddccontrol "$1" -r 0x10 -w "$2" &> /dev/null &
+  monitor=$1
+  level=$2
+  sudo ddccontrol "$monitor" -r 0x10 -w "$level" &> /dev/null &
+}
+
+# displays all available monitor codes
+function available_codes() {
+  sudo ddccontrol -p
+}
+
+# reads the persistent configuration file
+function load_settings() {
+  if [ -f "$SETTINGS_PATH" ]; then
+    cat "$SETTINGS_PATH"
+  fi
+}
+
+# saves the detected monitor configuration into the persistent settings file
+function save_settings() {
+  monitor=$1
+  echo "$monitor" >> "$SETTINGS_PATH"
 }
 
 # enable sudo in a clean way that doesn't mess up the output
-sudo echo foo > /dev/null
-echo -n "detecting monitor setup ... "
-monitor=$(detect)
-if [ -z "$monitor" ]; then
-  echo
-  echo "Could not identify an external monitor"
+function enable_sudo() {
+  sudo echo foo > /dev/null
+}
+
+
+### MAIN PROGRAM
+
+command=$(parse_args "$1")
+
+if [ "$command" = "cli_usage" ]; then
+  cli_usage
   exit 1
 fi
-echo "$monitor"
+
+if [ "$command" = "usage" ]; then
+  print_usage
+fi
+
+enable_sudo
+
+if [ "$command" = "show_all" ]; then
+  show_all
+  exit
+fi
+
+if [ "$command" = "refresh" ]; then
+  rm "$SETTINGS_PATH"
+fi
+
+monitor=$(load_settings)
+if [ -z "$monitor" ]; then
+  echo -n "detecting monitor setup ... "
+  monitor=$(detect)
+  echo "$monitor"
+  if [ -z "$monitor" ]; then
+    echo
+    echo "Could not identify an external monitor"
+    exit 1
+  fi
+  save_settings "$monitor"
+fi
+
 escape_char=$(printf "\u1b")
 while true; do
   read -rsn1 mode       # get 1 character
