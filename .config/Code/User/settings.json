@@ -41,6 +41,9 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
+  "errorLens.addAnnotationTextPrefixes": false,
+  "errorLens.hintColor": "rgba(20,140,140,1.0)",
+  "errorLens.warningTextColor": "rgba(140,140,140,1.0)",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
@@ -95,8 +98,8 @@
   "prettier.ignorePath": "",
   "python.formatting.provider": "black",
   "redhat.telemetry.enabled": false,
-  "rust-analyzer.inlayHints.enable": false,
-  "rust-analyzer.inlayHints.chainingHints": false,
+  "rust-analyzer.assist.importGranularity": "module",
+  "rust-analyzer.cache.warmup": false,
   "rust-analyzer.inlayHints.parameterHints": false,
   "rust-analyzer.inlayHints.typeHints": false,
   "rust-analyzer.lens.implementations": false,
@@ -107,6 +110,9 @@
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "[typescript]": {
+    "editor.defaultFormatter": "dprint.dprint"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -172,5 +178,6 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Light+",
+  "window.zoomLevel": -1
 }
