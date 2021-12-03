@@ -41,9 +41,8 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
-  "errorLens.addAnnotationTextPrefixes": false,
-  "errorLens.hintColor": "rgba(20,140,140,1.0)",
-  "errorLens.warningTextColor": "rgba(140,140,140,1.0)",
+  "errorLens.fontStyleItalic": true,
+  "errorLens.followCursor": "activeLine",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
@@ -68,7 +67,6 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "dprint.dprint",
-    "updateImportsOnFileMove.enabled": "always"
   },
   "[json]": {
     "editor.defaultFormatter": "dprint.dprint"
