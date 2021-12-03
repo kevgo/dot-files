@@ -42,7 +42,7 @@
   "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
   "errorLens.fontStyleItalic": true,
-  "errorLens.followCursor": "activeLine",
+  "errorLens.followCursor": "closestProblem",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
