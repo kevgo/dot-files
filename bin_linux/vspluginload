@@ -11,6 +11,7 @@ code --install-extension kevgo.vscode-markdown-ide
 code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension liviuschera.noctis
 code --install-extension matklad.rust-analyzer
+code --install-extension PhilHindle.errorlens
 code --install-extension redhat.vscode-yaml
 code --install-extension rvest.vs-code-prettier-eslint
 code --install-extension vscodevim.vim
