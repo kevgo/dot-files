@@ -159,8 +159,8 @@ while true; do
       read -rsn2 mode   # read 2 more chars
   fi
   case $mode in
-      'q') exit ;;
-      '') exit ;;
+      'q') break ;;
+      '') break ;;
       '[A') brighter "$monitor"  ;;  # up
       '[B') darker "$monitor"    ;;  # down
       '[D') brighter "$monitor"  ;;  # left
