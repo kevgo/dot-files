@@ -6,6 +6,9 @@ SETTINGS_PATH="$HOME/.config/brightness"
 # how much to change the brightness up or down
 STEP_SIZE=5
 
+# the control code for brightness in ddccontrol
+BRIGHTNESS_CONTROL="0x10"
+
 
 # parses the CLI args and provides the command to run
 function parse_args() {
@@ -38,25 +41,43 @@ function cli_usage() {
   echo "--refresh/-r: refresh the cached monitor setup before adjusting the brightness"
 }
 
-function detect() {
+function detect_monitor() {
   sudo ddccontrol -p 2> /dev/null | grep "Reading EDID and initializing DDC/CI at bus" | grep -o "dev:/dev/i2c-[0-9]"
+}
+
+function detect_brightness() {
+  monitor=$1
+  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL 2> /dev/null | grep "Control 0x10" | grep -oE "\+\/[0-9]+\/" | grep -Eo "[0-9]+"
 }
 
 # makes the external monitor one step brighter
 function brighter() {
-  sudo ddccontrol "$1" -r 0x10 -W $STEP_SIZE &> /dev/null &
+  monitor=$1
+  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -W $STEP_SIZE &> /dev/null &
+  brightness=$((brightness+STEP_SIZE))
+  if [ "$brightness" -gt "100" ]; then
+    brightness=100
+  fi
+  progressbar "$brightness"
 }
 
 # makes the external monitor one step darker
 function darker() {
-  sudo ddccontrol "$1" -r 0x10 -W -$STEP_SIZE &> /dev/null &
+  monitor=$1
+  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -W -$STEP_SIZE &> /dev/null &
+  brightness=$((brightness-STEP_SIZE))
+  if [ "$brightness" -lt "0" ]; then
+    brightness=0
+  fi
+  progressbar "$brightness"
 }
 
 # sets the external monitor to the given brightness level
 function set() {
   monitor=$1
-  level=$2
-  sudo ddccontrol "$monitor" -r 0x10 -w "$level" &> /dev/null &
+  brightness=$2
+  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -w "$brightness" &> /dev/null &
+  progressbar "$brightness"
 }
 
 # displays all available monitor codes
@@ -77,14 +98,19 @@ function save_settings() {
   echo "$monitor" >> "$SETTINGS_PATH"
 }
 
-# enables sudo right now
-# this is needed because the app waits for user input before adding sudo
-function enable_sudo() {
-  sudo echo foo > /dev/null
+function progressbar() {
+  level=$1
+  echo -n "$level "
+  for i in {0..100}; do
+    if [ "$i" -eq "$level" ]; then
+      echo -n "█"
+    else
+      echo -n "-"
+    fi
+  done
+  echo -n "  "
+  printf "\r"
 }
-
-
-### MAIN PROGRAM
 
 command=$(parse_args "$1")
 
@@ -97,21 +123,21 @@ if [ "$command" = "usage" ]; then
   print_usage
 fi
 
-enable_sudo
-
 if [ "$command" = "show_all" ]; then
   show_all
   exit
 fi
 
 if [ "$command" = "refresh" ]; then
-  rm "$SETTINGS_PATH"
+  if [ -f "$SETTINGS_PATH" ]; then
+    rm "$SETTINGS_PATH"
+  fi
 fi
 
 monitor=$(load_settings)
 if [ -z "$monitor" ]; then
   echo -n "detecting monitor setup ... "
-  monitor=$(detect)
+  monitor=$(detect_monitor)
   echo "$monitor"
   if [ -z "$monitor" ]; then
     echo
@@ -120,6 +146,11 @@ if [ -z "$monitor" ]; then
   fi
   save_settings "$monitor"
 fi
+
+tput civis
+
+brightness=$(detect_brightness "$monitor") 2> /dev/null
+progressbar "$brightness"
 
 escape_char=$(printf "\u1b")
 while true; do
@@ -139,3 +170,5 @@ while true; do
       *) >&2 echo 'ERR bad input'; exit ;;
   esac
 done
+
+tput cnorm
