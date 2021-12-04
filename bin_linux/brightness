@@ -41,10 +41,12 @@ function cli_usage() {
   echo "--refresh/-r: refresh the cached monitor setup before adjusting the brightness"
 }
 
+# provides the name of the external monitor in ddccontrol language
 function detect_monitor() {
   sudo ddccontrol -p 2> /dev/null | grep "Reading EDID and initializing DDC/CI at bus" | grep -o "dev:/dev/i2c-[0-9]"
 }
 
+# provides the current brightness setting of the external monitor
 function detect_brightness() {
   monitor=$1
   sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL 2> /dev/null | grep "Control 0x10" | grep -oE "\+\/[0-9]+\/" | grep -Eo "[0-9]+"
@@ -85,7 +87,7 @@ function available_codes() {
   sudo ddccontrol -p
 }
 
-# reads the persistent configuration file
+# reads the persistent settings file
 function load_settings() {
   if [ -f "$SETTINGS_PATH" ]; then
     cat "$SETTINGS_PATH"
@@ -98,12 +100,16 @@ function save_settings() {
   echo "$monitor" >> "$SETTINGS_PATH"
 }
 
+# draws the progressbar showing the given level
 function progressbar() {
   level=$1
-  echo -n "$level "
-  for i in {0..100}; do
+  printf "%-3s " "$level"
+  level=$((level/2))
+  for i in {0..50}; do
     if [ "$i" -eq "$level" ]; then
       echo -n "█"
+    elif [ "$((i%5))" -eq "0" ]; then
+      echo -n "$((i/5))"
     else
       echo -n "-"
     fi
