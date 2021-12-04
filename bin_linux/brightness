@@ -53,22 +53,22 @@ function detect_brightness() {
 # makes the external monitor one step brighter
 function brighter() {
   monitor=$1
-  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -W $STEP_SIZE &> /dev/null &
   brightness=$((brightness+STEP_SIZE))
   if [ "$brightness" -gt "100" ]; then
     brightness=100
   fi
+  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -w "$brightness" &> /dev/null &
   progressbar "$brightness"
 }
 
 # makes the external monitor one step darker
 function darker() {
   monitor=$1
-  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -W -$STEP_SIZE &> /dev/null &
   brightness=$((brightness-STEP_SIZE))
   if [ "$brightness" -lt "0" ]; then
     brightness=0
   fi
+  sudo ddccontrol "$monitor" -r $BRIGHTNESS_CONTROL -w "$brightness" &> /dev/null &
   progressbar "$brightness"
 }
 
