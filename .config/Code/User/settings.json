@@ -57,6 +57,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
   "go.formatTool": "goimports",
