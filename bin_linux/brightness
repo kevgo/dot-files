@@ -163,8 +163,8 @@ while true; do
       '') break ;;
       '[A') brighter "$monitor"  ;;  # up
       '[B') darker "$monitor"    ;;  # down
-      '[D') brighter "$monitor"  ;;  # left
-      '[C') darker "$monitor"    ;;  # right
+      '[D') darker "$monitor"  ;;  # left
+      '[C') brighter "$monitor"    ;;  # right
       '[H') set "$monitor" 100   ;;  # home
       '[F') set "$monitor" 0     ;;  # end
       *) >&2 echo 'ERR bad input'; exit ;;
