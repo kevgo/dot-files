@@ -2,6 +2,8 @@
 
 This installation does the most risky things first.
 
+[make "y" the default action in dnf](https://www.reddit.com/r/Fedora/comments/rpttto/make_y_the_default_action_in_dnf)
+
 Uninstall pointless packages:
 
 ```
