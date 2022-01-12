@@ -179,5 +179,6 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Light+",
+  "write-good.only-lint-on-save": true,
   "window.zoomLevel": -1
 }
