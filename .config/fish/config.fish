@@ -242,6 +242,9 @@ end
 if test -d ~/bin_fedora
   set -x PATH ~/bin_fedora $PATH 
 end
+if test -d ~/.local/bin
+  set -x PATH ~/.local/bin $PATH 
+end
 
 
 # Postgres
