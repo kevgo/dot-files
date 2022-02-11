@@ -69,6 +69,7 @@ end
 # environment
 set -x EDITOR nvim
 
+
 # Fish
 set -U fish_features qmark-noglob
 set fish_greeting
@@ -76,7 +77,6 @@ set fish_greeting
 function fish_title
   prompt_pwd
 end
-
 
 function bind_bang
   switch (commandline -t)
@@ -96,7 +96,6 @@ function bind_dollar
     commandline -i '$'
   end
 end
-
 
 function fish_user_key_bindings
   bind \cv backward-kill-word
@@ -131,7 +130,6 @@ end
 abbr -ag b git b
 abbr -ag br git branch
 abbr -ag co git checkout
-abbr -ag ga git add .
 abbr -ag gp git push
 abbr -ag gpf git push --force
 abbr -ag gpr git new-pull-request
@@ -140,6 +138,33 @@ abbr -ag gsa git sync --all
 abbr -ag gtc git town continue
 abbr -ag st git status
 
+function ga
+  git add -A
+end
+
+function gac
+  ga
+  if [ ! -z "$argv" ]
+    git commit -m "$argv"
+  else
+    set -l files (git status --porcelain | cut -c4- | awk '{print $NF}' | xargs -L1 basename | sed 's/\\.md$//')
+    #                                      |          |                   |                    remove ".md" extensions
+    #                                      |          |                   remove parent directory names
+    #                                      |          use only the last filename (when renaming files)
+    #                                      remove Git status indicators
+    git commit -m "$files"
+  end
+end
+
+function gacp
+  gac $argv
+  git push
+end
+
+function gacpr
+  gac $argv
+  git new-pull-request
+end
 
 function gd
   git diff 
@@ -157,31 +182,6 @@ function gdmw
   git diff main --color-words 
 end
 
-function gac
-  git add -A
-  if [ "$argv" = "" ]
-    set -l files (git status --porcelain | cut -c4- | awk '{print $NF}' | xargs -L1 basename | sed 's/\\.md$//')
-    #                                      |          |                   |                    remove ".md" extensions
-    #                                      |          |                   remove parent directory names
-    #                                      |          use only the last filename (when renaming files)
-    #                                      remove Git status indicators
-    git commit -m "$files"
-  else
-    git commit -m "$argv"
-  end
-end
-
-function gacp
-  gac $argv
-  git push
-end
-
-
-function gacpr
-  gac $argv
-  git new-pull-request
-end
-
 
 # Go
 set -x PATH $PATH ~/go/bin
@@ -195,9 +195,11 @@ if test -d /home/linuxbrew/.linuxbrew/bin
   eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
 
+
 # Java
 # set -g fish_user_paths "/home/linuxbrew/.linuxbrew/opt/openjdk/bin" $fish_user_paths
 # set -x JAVA_HOME (dirname (dirname (realpath (which javac))))
+
 
 # ls
 function l
