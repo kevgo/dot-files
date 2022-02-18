@@ -45,6 +45,11 @@ Completely disable Plymouth
 
 ### fractional scaling
 
+It's enough to increase the font size, all apps respect this setting and everything still looks sharp:
+
+- open `gnome-tweaks`
+- Fonts / Scaling Factor: 1.25
+
 https://www.linuxuprising.com/2019/04/how-to-enable-hidpi-fractional-scaling.html
 
 ### GPU acceleration
