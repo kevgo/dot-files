@@ -277,3 +277,7 @@ https://fedoraproject.org/wiki/AutoUpdates
 - https://wiki.archlinux.org/title/Firefox/Tweaks
 - disable pocket
 - move disk cache to RAM
+
+### improve tiling
+
+https://extensions.gnome.org/extension/3733/tiling-assistant
