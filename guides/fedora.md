@@ -105,6 +105,10 @@ If it doesn't work in Firefox, enable hardware acceleration:
 - restart Firefox
 - go to `about:support
 
+### enable triple buffering
+
+https://copr.fedorainfracloud.org/coprs/shrisha/gnome-shell-mutter-tripplebuffered-41/
+
 ### Stop airplane mode when opening the laptop
 
 https://askubuntu.com/questions/965595/why-does-airplane-mode-keep-toggling-on-my-hp-laptop-in-ubuntu-18-04/965596#965596
