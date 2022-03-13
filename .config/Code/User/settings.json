@@ -1,5 +1,8 @@
 {
   "breadcrumbs.enabled": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "cucumberautocomplete.skipDocStringsFormat": true,
   "debug.javascript.suggestPrettyPrinting": false,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -89,6 +92,7 @@
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
+  "markdown.math.enabled": false,
   "markdownIDE.autocompleteTitleRegex": "\\(([A-Z][A-Z0-9a-z]*[A-Z0-9])\\)$",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
@@ -105,7 +109,8 @@
   "rust-analyzer.lens.implementations": false,
   "[rust]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "matklad.rust-analyzer"
   },
   "scm.diffDecorations": "none",
   "search.smartCase": true,
@@ -183,5 +188,5 @@
   "[feature]": {
     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
   },
-  "window.zoomLevel": 2
+  "window.zoomLevel": 1
 }
