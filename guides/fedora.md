@@ -281,6 +281,7 @@ https://fedoraproject.org/wiki/AutoUpdates
 - https://wiki.archlinux.org/title/Firefox/Tweaks
 - disable pocket
 - move disk cache to RAM
+- https://github.com/iamadamdev/bypass-paywalls-chrome
 
 ### improve tiling
 
