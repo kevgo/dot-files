@@ -47,7 +47,7 @@ function gd {
 }
 
 function gdm {
-  git diff master
+  git diff main
 }
 
 function gp {
