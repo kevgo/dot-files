@@ -207,6 +207,12 @@ function l
 end
 
 
+# Make
+abbr -ag mc make cuke
+abbr -ag mt make test
+abbr -ag mu make unit
+
+
 # Man pages
 set -x LESS_TERMCAP_mb (printf "\e[01;31m")
 set -x LESS_TERMCAP_md (printf "\e[01;31m")
