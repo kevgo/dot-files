@@ -204,5 +204,10 @@
     "key": "ctrl+.",
     "command": "-editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "editor.action.showHover",
+    "key": "'",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
   }
 ]
