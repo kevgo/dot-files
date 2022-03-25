@@ -103,7 +103,7 @@ function save_settings() {
 # draws the progressbar showing the given level
 function progressbar() {
   level=$1
-  printf "%-3s " "$level"
+  printf "%3s%% " "$level"
   level=$((level/2))
   for i in {0..50}; do
     if [ "$i" -eq "$level" ]; then

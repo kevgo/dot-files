@@ -209,6 +209,7 @@ end
 
 # Make
 abbr -ag mc make cuke
+abbr -ag mct make cukethis
 abbr -ag mt make test
 abbr -ag mu make unit
 
