@@ -170,7 +170,7 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": ["g", "d"],
       "commands": ["editor.action.openLink"]
     }
   ],
