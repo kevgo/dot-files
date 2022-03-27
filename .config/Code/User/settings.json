@@ -51,6 +51,9 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "extensions.ignoreRecommendations": true,
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -188,8 +191,4 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Light+",
   "write-good.only-lint-on-save": true,
-  "[feature]": {
-    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
-  },
-  "window.zoomLevel": 1
 }
