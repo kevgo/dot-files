@@ -169,10 +169,6 @@
       "before": [":"],
       "commands": ["workbench.action.showCommands"]
     },
-    {
-      "before": ["g", "d"],
-      "commands": ["editor.action.openLink"]
-    }
   ],
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}",

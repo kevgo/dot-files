@@ -209,5 +209,10 @@
     "command": "editor.action.showHover",
     "key": "'",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+  },
+  {
+    "command": "editor.action.openLink",
+    "key": "g d",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && editorLangId == markdown",
   }
 ]
