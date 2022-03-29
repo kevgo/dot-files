@@ -168,7 +168,7 @@
     {
       "before": [":"],
       "commands": ["workbench.action.showCommands"]
-    },
+    }
   ],
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}",
@@ -186,5 +186,5 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Light+",
-  "write-good.only-lint-on-save": true,
+  "write-good.only-lint-on-save": true
 }
