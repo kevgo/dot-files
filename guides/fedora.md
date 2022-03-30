@@ -286,3 +286,7 @@ https://fedoraproject.org/wiki/AutoUpdates
 ### improve tiling
 
 https://extensions.gnome.org/extension/3733/tiling-assistant
+
+### difftastic
+
+https://github.com/Wilfred/difftastic
