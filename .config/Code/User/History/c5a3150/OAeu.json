@@ -170,8 +170,6 @@
       "commands": ["workbench.action.showCommands"]
     }
   ],
-  "window.autoDetectHighContrast": false,
-  "window.customMenuBarAltFocus": false,
   "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
@@ -188,10 +186,7 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Light+",
-  "workbench.layoutControl.enabled": false,
-  "workbench.localHistory.enabled": false,
-  "workbench.enableExperiments": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
   "write-good.only-lint-on-save": true,
-  "window.zoomLevel": 3
+  "window.zoomLevel": 3,
+  "workbench.localHistory.enabled": false
 }
