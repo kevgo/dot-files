@@ -143,7 +143,6 @@
       "commands": ["workbench.action.files.save"]
     }
   ],
-  "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": ["i", "<space>", "<esc>"],
@@ -162,7 +161,7 @@
       "before": ["l"]
     },
     {
-      "before": ["<leader>", "/"],
+      "before": ["?"],
       "commands": [":nohl"]
     },
     {

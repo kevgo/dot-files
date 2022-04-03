@@ -86,6 +86,7 @@ Simplenote/
 # VSCode
 Code/*
 !Code/User/
+Code/User/History
 Code/User/sync
 Code/User/globalStorage/
 Code/User/workspaceStorage/
