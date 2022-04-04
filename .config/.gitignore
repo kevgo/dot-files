@@ -12,6 +12,9 @@ dconf/
 dlv/
 weston.ini
 
+# Gimp
+GIMP/
+
 # Fedora
 brasero
 dleyna-server-service*
