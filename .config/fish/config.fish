@@ -265,6 +265,7 @@ abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 if test -d ~/.cargo
   set -x PATH ~/.cargo/bin $PATH 
 end
+abbr -ag cc cargo check
 
 
 # Tikibase
