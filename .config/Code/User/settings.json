@@ -192,5 +192,5 @@
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "write-good.only-lint-on-save": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 1
 }
