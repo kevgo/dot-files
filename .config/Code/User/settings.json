@@ -47,6 +47,7 @@
   "editor.tabSize": 2,
   "errorLens.fontStyleItalic": true,
   "errorLens.followCursor": "closestProblem",
+  "errorLens.gutterIconsEnabled": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
