@@ -1,4 +1,4 @@
-# Kevgo's dot-files
+# @kevgo's dot-files
 
 Cross-platform configuration for \*nix systems.
 
