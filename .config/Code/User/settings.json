@@ -100,7 +100,6 @@
   "markdown.extension.toc.levels": "2..6",
   "markdown.math.enabled": false,
   "markdownIDE.autocomplete.titleRegex": "\\(([A-Z][A-Z0-9a-z]*[A-Z0-9])\\)$",
-  "markdownIDE.tikibase.enabled": true,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
