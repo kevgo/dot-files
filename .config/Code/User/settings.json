@@ -55,6 +55,7 @@
   "[feature]": {
     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
   },
+  "files.enableTrash": false,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -129,6 +130,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.camelCaseMotion.enable": true,
   "vim.changeWordIncludesWhitespace": true,
+  "vim.foldfix": true,
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-b>": false,
@@ -191,6 +193,5 @@
   "workbench.localHistory.enabled": false,
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
-  "write-good.only-lint-on-save": true,
-  "window.zoomLevel": 1
+  "write-good.only-lint-on-save": true
 }
