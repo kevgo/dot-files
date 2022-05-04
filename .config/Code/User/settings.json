@@ -122,10 +122,7 @@
   "scm.diffDecorations": "none",
   "search.smartCase": true,
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.ignoreProcessNames": [
-    "bash",
-    "fish"
-  ],
+  "terminal.integrated.ignoreProcessNames": ["bash", "fish"],
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.showWelcome": false,
   "terminal.integrated.tabs.enabled": false,
