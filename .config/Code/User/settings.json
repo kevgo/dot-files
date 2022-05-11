@@ -51,6 +51,12 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*": "${basename}.*.${extname}",
+    "package.json": "package-lock.json, yarn.lock"
+  },
   "extensions.ignoreRecommendations": true,
   "[feature]": {
     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
