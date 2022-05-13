@@ -272,6 +272,7 @@ abbr -ag cc cargo check
 
 # Tikibase
 abbr -ag tb tikibase
+abbr -ag tp tikibase p
 
 
 # Vim
