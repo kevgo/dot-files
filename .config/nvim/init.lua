@@ -99,7 +99,6 @@ map('n', '<leader>t', ':NvimTreeToggle<CR>', {silent = true, noremap = true})
 g.nvim_tree_show_icons = { git = 0, folders = 0, files = 0, folder_arrows = 0 }
 require'nvim-tree'.setup {
   auto_close = true,
-  follow = true,
 }
 
 
