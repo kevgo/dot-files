@@ -50,12 +50,6 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.expand": false,
-  "explorer.fileNesting.patterns": {
-    "*": "${basename}.*.${extname}",
-    "package.json": "package-lock.json, yarn.lock"
-  },
   "extensions.ignoreRecommendations": true,
   "[feature]": {
     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
@@ -87,12 +81,6 @@
   "[json]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "json.schemas": [
-    {
-      "fileMatch": ["/masa.jsonc"],
-      "url": "./masa.schema.json"
-    }
-  ],
   "[jsonc]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
@@ -105,7 +93,6 @@
   },
   "markdown.extension.toc.levels": "2..6",
   "markdown.math.enabled": false,
-  "markdownIDE.autocomplete.titleRegex": "\\(([A-Z][A-Z0-9a-z]*[A-Z0-9])\\)$",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
