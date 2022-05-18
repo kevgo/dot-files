@@ -80,6 +80,9 @@ pulse/
 # Origins
 origins.json
 
+# Ory
+gatsby/
+
 # RClone
 rclone/
 
