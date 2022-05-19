@@ -41,6 +41,6 @@ echo "symlinking ~/bin_linux folder"
 ln -s "$HOME/.dot-files/bin_linux" "$HOME/bin_linux"
 
 # import the GPG signing key
-gpg --import ~/.dot-files-private/private.pgp
+gpg --import ~/.dot-files-private/private.key
 
 echo
