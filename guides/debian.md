@@ -162,7 +162,7 @@ make build
 
 ### VSCode
 
-- [VSCode setup](vscode.md)
+[VSCode setup](vscode.md)
 
 ### Docker
 
