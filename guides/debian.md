@@ -89,24 +89,6 @@ rustup default nightly
 
 ### Git
 
-The built-in Git is really old and doesn't work when deploying Prettifier.
-Remove the built-in Git:
-
-```
-sudo apt remove git
-sudo apt autoremove
-```
-
-[Compile from source](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-Add `subtree` command:
-
-```
-cd git/contrib/subtree
-make
-sudo make prefix=/usr install
-```
-
 Git-LFS:
 
 ```
