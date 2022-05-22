@@ -7,5 +7,5 @@ sudo apt install -y /mnt/chromeos/MyFiles/Downloads/code_*.deb
 ```
 
 ```
-~/bin/vspluginload
+~/bin_linux/vspluginload
 ```
