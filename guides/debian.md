@@ -117,7 +117,7 @@ Install dprint:
 cargo install dprint
 ```
 
-Download and install the [Debian installer](https://github.com/neovim/neovim/releases/latest).
+The built-in Neovim is severely outdated, download and install the [Debian installer](https://github.com/neovim/neovim/releases/latest).
 
 Install the package manager:
 
@@ -127,24 +127,6 @@ git clone --depth=1 https://github.com/savq/paq-nvim.git \
 ```
 
 Start nvim and run `:PaqInstall`
-
-Alternatively, use the built-in Neovim (which is severely outdated):
-
-```
-sudo apt install -y neovim
-```
-
-Or build from source:
-
-install build prerequisites:
-https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites
-
-```
-git clone git@github.com:neovim/neovim.git
-git checkout stable
-make CMAKE_BUILD_TYPE=Release
-sudo make install
-```
 
 [Vim installation](vim_installation.md)
 
