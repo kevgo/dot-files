@@ -117,22 +117,7 @@ Install dprint:
 cargo install dprint
 ```
 
-Download the [latest NeoVim release](https://github.com/neovim/neovim/releases/latest) and install manually:
-
-```
-cd /mnt/chromeos/MyFiles/Downloads
-tar -xvf nvim-linux64.tar.gz
-cd nvim-linux64
-find . -type d -exec sudo mkdir -p '/usr/local/{}' \;
-
-find . -type f -exec sudo mv '{}' '/usr/local/{}' \;
-```
-
-optionally to verify:
-
-```
-find . -type d -empty -delete
-```
+Download and install the [Debian installer](https://github.com/neovim/neovim/releases/latest).
 
 Install the package manager:
 
