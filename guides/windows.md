@@ -160,3 +160,4 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 1. go to `Turn Windows features on or off` and disable all useless options
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
+1. search for `turn windows features on or off` and disable most options there
