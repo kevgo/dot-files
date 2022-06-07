@@ -24,6 +24,7 @@
   "editor.guides.highlightActiveBracketPair": false,
   "editor.guides.highlightActiveIndentation": false,
   "editor.hover.sticky": false,
+  "editor.inlineSuggest.enabled": true,
   "editor.largeFileOptimizations": false,
   "editor.linkedEditing": false,
   "editor.minimap.enabled": false,
@@ -54,6 +55,9 @@
   "[feature]": {
     "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
   },
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
   "files.enableTrash": false,
   "files.exclude": {
     "**/.classpath": true,
@@ -68,6 +72,12 @@
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
   "go.formatTool": "goimports",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
@@ -88,7 +98,7 @@
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "editor.defaultFormatter": "dprint.dprint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
@@ -100,16 +110,16 @@
   "prettier.ignorePath": "",
   "python.formatting.provider": "black",
   "redhat.telemetry.enabled": false,
+  "rust-analyzer.cachePriming.enable": false,
   "rust-analyzer.imports.granularity.group": "module",
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.lens.implementations": false,
-  "rust-analyzer.primeCaches.enable": false,
   "[rust]": {
     "editor.detectIndentation": true,
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "matklad.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "scm.diffDecorations": "none",
   "search.smartCase": true,
