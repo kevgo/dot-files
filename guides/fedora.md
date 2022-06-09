@@ -222,6 +222,12 @@ sudo dnf install ripgrep
 sudo dnf install bat
 ```
 
+### Sd
+
+```
+sudo dnf install sd
+```
+
 ### Firefox
 
 change scroll distance:
