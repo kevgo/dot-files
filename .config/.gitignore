@@ -59,6 +59,9 @@ libreoffice/
 Microsoft
 teams
 
+# Netlify
+netlify/
+
 # Ubuntu Unity
 compiz-1/
 config-kupfer*
@@ -76,9 +79,6 @@ MusicBrainz/
 nextjs-nodejs/
 nvim/
 pulse/
-
-# Origins
-origins.json
 
 # Ory
 gatsby/
