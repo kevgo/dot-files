@@ -13,6 +13,12 @@ function ....
 end
 
 
+# atalanta
+if test -f /home/kevlar/.cargo/bin/a
+  /home/kevlar/.cargo/bin/a --print-fish-completions | source
+end
+
+
 # cd
 function cd
 
