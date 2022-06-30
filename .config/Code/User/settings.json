@@ -202,5 +202,6 @@
   "workbench.localHistory.enabled": false,
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
-  "write-good.only-lint-on-save": true
+  "write-good.only-lint-on-save": true,
+  "window.zoomLevel": 2
 }
