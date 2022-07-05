@@ -16,6 +16,7 @@ weston.ini
 GIMP/
 
 # Fedora
+.gsd-keyboard.settings-ported 
 brasero
 dleyna-server-service*
 gnome-control-center
