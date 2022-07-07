@@ -23,12 +23,10 @@ reinstall existing Windows:
     - the online account syncs many of the settings but enforces username "kevin"
     - the local account can be named "kevlar"
 1.  prevent slowness and CPU heat before we start major filesystem activities
-
     - in Explorer: right-click C: drive > properties > disable content indexing
     - https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently`
     - disable search indexing: https://windowsreport.com/indexing-windows-8
     - [disable real-time scanning permanently](https://mspoweruser.com/how-to-temporarily-or-permanently-disable-and-re-enable-windows-defender-on-windows-10)
-
 1.  install Windows updates
 1.  install [mac-precision-touchpad](https://github.com/imbushuo/mac-precision-touchpad) to make the Apple touchpad work
 
@@ -104,15 +102,6 @@ choco install make
 - [installer](https://github.com/Originate/git-town)
 - install aliases: `git town alias true`
 
-### diff-so-fancy
-
-Note: this slows down Windows 10, might want to skip
-
-```
-npm i -g yarn diff-so-fancy
-git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-```
-
 ### VSCode
 
 - [installer](https://code.visualstudio.com)
@@ -161,3 +150,7 @@ git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
 1. search for `turn windows features on or off` and disable most options there
+
+### disable fast startup
+
+https://www.computerhope.com/issues/ch001762.htm
