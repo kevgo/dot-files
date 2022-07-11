@@ -19,6 +19,13 @@ if test -f /home/kevlar/.cargo/bin/a
 end
 
 
+# Bun
+if test -d ~/.bun
+  set -Ux BUN_INSTALL "/home/kevlar/.bun"
+  set -x PATH $PATH ~/.bun/bin
+end
+
+
 # cd
 function cd
 
