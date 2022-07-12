@@ -72,6 +72,7 @@
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
+  "git.mergeEditor": true,
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -102,8 +103,7 @@
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
-  "markdown.experimental.validate.fileLinks.enabled": "error",
-  "markdown.experimental.validate.headerLinks.enabled": "error",
+  "markdown.experimental.validate.enabled": true,
   "markdown.math.enabled": false,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
