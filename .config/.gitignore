@@ -30,6 +30,7 @@ LosslessCut
 menus
 mimeapps.list
 monitors.xml*
+nautilus/
 neofetch
 pipewire
 rust-analyzer
@@ -52,6 +53,9 @@ thefuck
 
 # Inkscape
 inkscape/
+
+# Lapce
+lapce/
 
 # Libreoffice
 libreoffice/
