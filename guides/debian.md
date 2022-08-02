@@ -166,10 +166,9 @@ make build
 
 ### Docker
 
-- latest: https://docs.docker.com/desktop/install/debian
-- this one works:
-  https://dvillalobos.github.io/2020/How-to-install-and-run-Docker-on-a-Chromebook
-- alternative: https://docs.docker.com/engine/install/debian/
+- official (works): https://docs.docker.com/engine/install/debian/
+
+Docker Desktop doesn't work on ChromeOS and requires a ton of extra dependencies like a Gnome environment: https://docs.docker.com/desktop/install/debian
 
 ### RipGrep
 
