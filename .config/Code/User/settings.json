@@ -206,5 +206,4 @@
   "window.zoomLevel": 2,
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
 }
