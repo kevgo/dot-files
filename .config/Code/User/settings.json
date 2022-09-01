@@ -69,6 +69,10 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "[fish]": {
+    "editor.defaultFormatter": "bmalehorn.vscode-fish",
+    "editor.detectIndentation": true
+  },
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
@@ -120,7 +124,7 @@
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.lens.implementations": false,
   "[rust]": {
-    "editor.detectIndentation": true,
+    "editor.detectIndentation": false,
     "editor.tabSize": 4,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
@@ -207,5 +211,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
 }

@@ -239,6 +239,11 @@ set -x LESS_TERMCAP_ue (printf "\e[0m")
 set -x LESS_TERMCAP_us (printf "\e[01;32m")
 
 
+# Mrt
+if test -f ~/.cargo/bin/mrt
+  ~/.cargo/bin/mrt activate | source
+end
+
 # Node.JS
 set -x PATH ./node_modules/.bin $PATH
 if test -d /usr/local/lib/nodejs/bin
