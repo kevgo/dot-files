@@ -64,6 +64,9 @@ libreoffice/
 Microsoft
 teams
 
+# mrt
+mrt.json
+
 # Netlify
 netlify/
 
