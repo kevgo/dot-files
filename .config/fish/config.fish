@@ -281,6 +281,13 @@ abbr -ag pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.
 abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
+# Ruby
+if test -d ~/.rbenv
+  set -x PATH ~/.rbenv/bin $PATH
+  rbenv init - fish | source
+end
+
+
 # Rust
 if test -d ~/.cargo
   set -x PATH ~/.cargo/bin $PATH 
