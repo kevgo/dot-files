@@ -1,13 +1,23 @@
 #!/usr/bin/env bash
 code --install-extension alexkrechik.cucumberautocomplete
+code --install-extension bierner.markdown-preview-github-styles
 code --install-extension bungcip.better-toml
+code --install-extension dawhite.mustache
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dprint.dprint
+code --install-extension esbenp.prettier-vscode
+code --install-extension foxundermoon.shell-format
 code --install-extension golang.go
+code --install-extension houkanshan.vscode-markdown-footnote
+code --install-extension kevgo.tertestrial-vscode
 code --install-extension kevgo.vscode-markdown-ide
+code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension liviuschera.noctis
 code --install-extension redhat.vscode-yaml
-code --install-extension rvest.vs-code-prettier-eslint
+code --install-extension rust-lang.rust-analyzer
+code --install-extension timonwong.shellcheck
+code --install-extension travisthetechie.write-good-linter
 code --install-extension usernamehw.errorlens
+code --install-extension vadimcn.vscode-lldb
 code --install-extension vscodevim.vim
 code --install-extension yzhang.markdown-all-in-one
