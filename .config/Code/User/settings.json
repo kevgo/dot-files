@@ -142,6 +142,7 @@
   "solargraph.definitions": true,
   "solargraph.rename": true,
   "solargraph.references": true,
+  "solargraph.symbols": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.ignoreProcessNames": ["bash", "fish"],
   "terminal.integrated.persistentSessionReviveProcess": "never",
