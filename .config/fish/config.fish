@@ -1,4 +1,4 @@
-tunction ..
+function ..
   cd ..
 end
 
