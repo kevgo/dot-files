@@ -1,4 +1,4 @@
-function ..
+tunction ..
   cd ..
 end
 
@@ -242,6 +242,9 @@ set -x LESS_TERMCAP_us (printf "\e[01;32m")
 # Mrt
 if test -f ~/.cargo/bin/mrt
   ~/.cargo/bin/mrt activate | source
+  abbr -ag mi m ignore
+  abbr -ag mn m next
+  abbr -ag mia m ignore-all
 end
 
 # Node.JS
