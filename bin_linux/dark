@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
+# change terminal colors
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
+# change VSCode colors
 content="$(jq '. + {"workbench.colorTheme": "Default Dark+"}' ~/.config/Code/User/settings.json)" 
 echo "${content}" | prettier --stdin-filepath=foo.json > ~/.config/Code/User/settings.json

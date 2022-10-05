@@ -103,6 +103,7 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "keyboard.dispatch": "keyCode",
+  "lldb.suppressUpdateNotifications": true,
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
@@ -134,6 +135,9 @@
   },
   "scm.diffDecorations": "none",
   "search.smartCase": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "solargraph.useBundler": true,
   "solargraph.autoformat": true,
   "solargraph.completion": true,
