@@ -3,7 +3,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cucumberautocomplete.skipDocStringsFormat": true,
-  "debug.javascript.suggestPrettyPrinting": false,
   "debug.onTaskErrors": "abort",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
@@ -78,12 +77,6 @@
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
   "git.mergeEditor": true,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": true
-  },
   "go.formatTool": "goimports",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
@@ -110,8 +103,8 @@
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
-  "markdown.experimental.updateLinksOnFileMove.enabled": true,
-  "markdown.experimental.validate.enabled": true,
+  "markdown.experimental.updateLinksOnFileMove.enabled": "always",
+  "markdown.validate.enabled": true,
   "markdown.math.enabled": false,
   "mergeEditor.diffAlgorithm": "experimental",
   "prettier.proseWrap": "always",
@@ -126,7 +119,6 @@
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.typeHints.enable": false,
-  "rust-analyzer.lens.implementations": false,
   "[rust]": {
     "editor.detectIndentation": false,
     "editor.tabSize": 4,
@@ -149,7 +141,6 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.ignoreProcessNames": ["bash", "fish"],
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.shellIntegration.showWelcome": false,
   "terminal.integrated.tabs.enabled": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -215,7 +206,7 @@
   "workbench.editor.decorations.badges": false,
   "workbench.editor.revealIfOpen": true,
   "workbench.list.smoothScrolling": true,
-  "workbench.list.keyboardNavigation": "simple",
+  "workbench.list.defaultFindMode": "filter",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Light+",
