@@ -121,6 +121,7 @@
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.lens.implementations.enable": false,
   "[rust]": {
     "editor.detectIndentation": false,
     "editor.tabSize": 4,
@@ -211,7 +212,6 @@
   "workbench.list.defaultFindMode": "filter",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Light+",
   "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
   "workbench.enableExperiments": false,
@@ -220,5 +220,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 2
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Default Light+"
 }
