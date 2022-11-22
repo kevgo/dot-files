@@ -36,7 +36,6 @@
 
   ```
   brew install rbenv
-  rbenv install 2.4.1
   ```
 
 - configure macOS
