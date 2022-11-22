@@ -22,7 +22,7 @@
 - install the `.config` folder
 
   ```
-  git clone git@github.com:kevgo/dot-files.git
+  git clone git@github.com:kevgo/dot-files.git ~/.dot-files
   ~/.config/install
   ```
 
