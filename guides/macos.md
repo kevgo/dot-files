@@ -19,6 +19,13 @@
   brew install git ag fish shellcheck diff-so-fancy
   ```
 
+- install the `.config` folder
+
+  ```
+  git clone git@github.com:kevgo/dot-files.git
+  ~/.config/install
+  ```
+
 - install Node
 
   ```
@@ -40,13 +47,6 @@
 
   # enable additional HiDPI modes for the Retina Macbook when connected to the TV
   sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
-  ```
-
-- install the `.config` folder
-
-  ```
-  git clone git@github.com:kevgo/dot-files.git ~/.config
-  ~/.config/install/install.sh
   ```
 
 - install GO
