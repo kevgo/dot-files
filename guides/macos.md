@@ -49,6 +49,8 @@
   sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
   ```
 
+- install [Rust](https://rustup.rs)
+
 - install GO
 
   ```
