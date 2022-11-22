@@ -304,12 +304,7 @@ abbr -ag tp tikibase p
 
 
 # Vim
-set sys (uname)
-if [ "$sys" = "Linux" ]
-  alias v nvim
-else
-  alias v mvim
-end
+alias v nvim
 
 
 # Dotfile update checker
