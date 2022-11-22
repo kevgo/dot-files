@@ -79,7 +79,7 @@
   git clone --depth=1 https://github.com/savq/paq-nvim.git "$HOME/.local/share/nvim/site/pack/paqs/start/paq-nvim"
   ```
 
-- [install VSCode](guides/vscode.md)
+- [install VSCode](vscode.md)
 
 - install Emacs key bindings for shell
 
