@@ -4,7 +4,9 @@
 
 - configure system preferences
 
-  - keyboard shortcuts to jump to desktops
+  - keyboard 
+    - Modifier Keys: change `Caps Lock` to `Esc`
+    - shortcuts to jump to desktops
 
 - install 1Password
 
@@ -50,20 +52,16 @@
 - install GO
 
   ```
-  brew install go gotags
-  mkdir -p ~/d/go/bin
-  mkdir -p ~/d/go-external/bin
+  brew install go 
   ```
 
 - clone Git Town
 
   ```bash
-  mkdir -p ~/d/go/src/github.com/Originate
-  cd ~/d/go/src/github.com/Originate
-  git clone git@github.com:Originate/git-town.git
+  git clone git@github.com:git-town/git-town.git
   cd git-town
   fish
-  bin/build
+  make build
   ```
 
   Set up the local API token to ship Git Town via the Github API
@@ -74,31 +72,11 @@
   - set `/usr/local/bin/fish` as startup shell
   - Profiles > Shell > Ask before closing: add `-fish`
 
-- set up daily updates
+- install NeoVim
 
   ```
-  cd ~/.config
-  git sync
-  ```
-
-- install Vim
-
-  - install [MacVim](https://github.com/macvim-dev/macvim/releases) version 138
-
-  ```
-  # cmake and node are needed for YouCompleteMe
-  brew install cmake node fzf
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  vim +PlugInstall
-  compile_youcompleteme
-  vim +GoInstallBinaries
-  ```
-
-- install [vint](https://github.com/Kuniwak/vint)
-
-  ```
-  brew install python3
-  pip3 install vim-vint
+  brew install neovim
+  git clone --depth=1 https://github.com/savq/paq-nvim.git "$HOME/.local/share/nvim/site/pack/paqs/start/paq-nvim"
   ```
 
 - [install VSCode](guides/vscode.md)
@@ -111,14 +89,9 @@
 
 - install AppStore apps
 
-  - Clear
-    - configure
   - BetterSnapTool
     - configure
-  - OmniFocus
   - Skitch
-  - Slack
-  - AdBlock Plus
 
 - install visual apps
 
@@ -131,16 +104,8 @@
     - enter sync passphrase
     - sign into Zoom extension
     - hide the extension icons from the URL bar
-  - [Firefox](https://www.mozilla.org/en-US/firefox)
-  - [GitHub Desktop](https://central.github.com/mac/latest)
-    - install command-line tools
-  - [GitX](https://rowanj.github.io/gitx)
-    - enable terminal usage
-  - [OmniOutliner 4 Pro and OmniGraffle 5 Standard](https://www.omnigroup.com/download)
-  - [Skype](https://www.skype.com/en/download-skype/skype-for-computer)
-  - 1Password Chrome and Safari extensions
 
-- configure OS X
+- configure macOS
 
   - Finder Preferences
     - General: show home directory when opening new Finder windows (faster new Finder windows)
@@ -156,8 +121,6 @@
         - Launchpad & Dock: disable shortcut for turning dock hiding on/off
         - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to disable minimizing windows)
 
-- install Gmail accounts and configure
-
 ## Archive
 
 - install Postgres
@@ -168,6 +131,3 @@
   createdb
   psql
   ```
-
-- CCMenu
-  - Git Town: https://circleci.com/gh/Originate/git-town.cc.xml?ccmenu=cc.xml
