@@ -71,7 +71,6 @@
 - configure Terminal
 
   - set `/opt/homebrew/bin/fish` as startup shell
-  - Profiles > Shell > Ask before closing: add `-fish`
 
 - install NeoVim
 
