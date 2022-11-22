@@ -87,6 +87,8 @@
   git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
   ```
 
+- install [scroll reverser](https://pilotmoon.com/scrollreverser) (reverses mouse scroll direction)
+
 - install AppStore apps
 
   - BetterSnapTool
