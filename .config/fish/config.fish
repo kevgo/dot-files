@@ -14,15 +14,9 @@ end
 
 
 # atalanta
-if test -f /home/kevlar/.cargo/bin/a
-  /home/kevlar/.cargo/bin/a --print-fish-completions | source
-end
+if test -f "$HOME/.cargo/bin/a"
 
-
-# Bun
-if test -d ~/.bun
-  set -Ux BUN_INSTALL "/home/kevlar/.bun"
-  set -x PATH $PATH ~/.bun/bin
+  "$HOME/.cargo/bin/a" --print-fish-completions | source
 end
 
 
@@ -313,7 +307,7 @@ check_local_dotfile_updates
 
 # bat
 # Note: this must come after Rust since it uses the PATH set in that section
-if test -f /home/kevlar/.cargo/bin/bat
+if test -f "$HOME/.cargo/bin/bat"
   alias cat bat
 end
 if test -f /usr/bin/bat
