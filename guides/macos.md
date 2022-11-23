@@ -89,23 +89,7 @@
 
 - install [scroll reverser](https://pilotmoon.com/scrollreverser) (reverses mouse scroll direction)
 
-- install AppStore apps
-
-  - BetterSnapTool
-    - configure
-  - Skitch
-
-- install visual apps
-
-  - [Karabiner](https://pqrs.org/osx/karabiner/)
-    - set keyboard repeat rate and initial delay
-    - change option-right to forward-delete
-    - (these settings should be automatic now)
-  - [Chrome](https://www.google.com/chrome)
-    - sign into Chrome
-    - enter sync passphrase
-    - sign into Zoom extension
-    - hide the extension icons from the URL bar
+- install [Rectangle](https://rectangleapp.com) (window positioning)
 
 - configure macOS
 
@@ -133,3 +117,22 @@
   createdb
   psql
   ```
+
+- install AppStore apps
+
+  - BetterSnapTool
+    - configure
+  - Skitch
+
+- install visual apps
+
+  - [Karabiner](https://pqrs.org/osx/karabiner/)
+    - set keyboard repeat rate and initial delay
+    - change option-right to forward-delete
+    - (these settings should be automatic now)
+  - [Chrome](https://www.google.com/chrome)
+    - sign into Chrome
+    - enter sync passphrase
+    - sign into Zoom extension
+    - hide the extension icons from the URL bar
+
