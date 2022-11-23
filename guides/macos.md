@@ -12,6 +12,8 @@
 
   - copy SSH files to `~/.ssh` and chmod to 600
 
+- install [Alacritty](https://alacritty.org)
+
 - install [Homebrew](https://brew.sh)
 
   ```
