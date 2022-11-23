@@ -56,7 +56,7 @@
   brew install go 
   ```
 
-- clone Git Town
+- install Git Town
 
   ```bash
   git clone git@github.com:git-town/git-town.git
@@ -85,6 +85,18 @@
 
   ```
   git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
+  ```
+
+- install bat
+
+  ```
+  brew install bat
+  ```
+
+- install RipGrep
+
+  ```
+  brew install ripgrep
   ```
 
 - install [scroll reverser](https://pilotmoon.com/scrollreverser) (reverses mouse scroll direction)
