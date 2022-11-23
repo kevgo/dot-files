@@ -15,7 +15,6 @@ end
 
 # atalanta
 if test -f "$HOME/.cargo/bin/a"
-
   "$HOME/.cargo/bin/a" --print-fish-completions | source
 end
 
@@ -214,6 +213,14 @@ function l
 end
 
 
+# macOS
+if test -d "$HOME/d"
+  function d
+    cd "$HOME/d"
+  end
+end
+
+
 # Make
 abbr -ag mc make cuke
 abbr -ag mct make cukethis
@@ -315,8 +322,15 @@ if test -f /usr/bin/bat
 end
 
 
-set DAILY_UPDATE_FILE $HOME/.daily_dotfile_checker
-if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != (date +'%m/%d/%Y') ]
-  eval $HOME/bin_linux/pull_remote_dotfile_updates
-  date +'%m/%d/%Y' > $DAILY_UPDATE_FILE
+set TODAY (date +'%m/%d/%Y')
+set DAILY_UPDATE_FILE "$HOME/.daily_dotfile_checker"
+if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != "$TODAY" ]
+  eval "$HOME/bin_linux/pull_remote_dotfile_updates"
+  echo "$TODAY" > $DAILY_UPDATE_FILE
 end
+
+
+if test (uname) = "Darwin"
+  cd ~/d
+end
+
