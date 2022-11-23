@@ -1,152 +1,212 @@
 # macOS Installation
 
-- install macOS updates
+### Spotlight
 
-- configure system preferences
+- disable Spotlight search in entire home directory
 
-  - keyboard 
-    - Modifier Keys: change `Caps Lock` to `Esc`
-    - shortcuts to jump to desktops
+### 1Password
 
-- install 1Password
+- copy SSH files to `~/.ssh` and chmod to 600
 
-  - copy SSH files to `~/.ssh` and chmod to 600
+### Alacritty
 
-- install [Alacritty](https://alacritty.org)
+https://alacritty.org
 
-- install [Homebrew](https://brew.sh)
+### Git
 
-  ```
-  brew doctor
-  brew install git ag fish shellcheck diff-so-fancy
-  ```
+(Git is already installed now)
 
-- install the `.config` folder
+### Emacs bindings for shell
 
-  ```
-  git clone git@github.com:kevgo/dot-files.git ~/.dot-files
-  ~/.config/install
-  ```
+```
+git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
+```
 
-- install Node
+### Homebrew
 
-  ```
-  brew install node yarn
-  ```
+https://brew.sh
 
-- install Ruby
+```
+brew doctor
+```
 
-  ```
-  brew install rbenv
-  ```
+### Git LFS
 
-- configure macOS
+```
+brew install git-lfs
+```
 
-  ```
-  # show dock faster
-  defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
+```
+git-lfs install
+```
 
-  # enable additional HiDPI modes for the Retina Macbook when connected to the TV
-  sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
-  ```
+### dot-files
 
-- install [Rust](https://rustup.rs)
+```
+git clone git@github.com:kevgo/dot-files.git ~/.dot-files
+```
 
-- install GO
+```
+~/.config/install
+```
 
-  ```
-  brew install go 
-  ```
+### Fish shell
 
-- install Git Town
+```
+brew install fish
+```
 
-  ```bash
-  git clone git@github.com:git-town/git-town.git
-  cd git-town
-  fish
-  make build
-  ```
+```
+/opt/homebrew/bin/fish
+```
 
-  Set up the local API token to ship Git Town via the Github API
-  from 1password.
+Configure Terminal: set `/opt/homebrew/bin/fish` as startup shell.
 
-- configure Terminal
+### Rust
 
-  - set `/opt/homebrew/bin/fish` as startup shell
+https://rustup.rs
 
-- install NeoVim
+### Go
 
-  ```
-  brew install neovim
-  git clone --depth=1 https://github.com/savq/paq-nvim.git "$HOME/.local/share/nvim/site/pack/paqs/start/paq-nvim"
-  ```
+```
+brew install go 
+```
 
-- [install VSCode](vscode.md)
+### Node
 
-- install Emacs key bindings for shell
+```
+brew install node yarn
+```
 
-  ```
-  git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
-  ```
+### Ruby
 
-- install bat
+```
+brew install rbenv
+```
 
-  ```
-  brew install bat
-  ```
+### NeoVim
 
-- install RipGrep
+```
+brew install neovim
+```
 
-  ```
-  brew install ripgrep
-  ```
+```
+git clone --depth=1 https://github.com/savq/paq-nvim.git "$HOME/.local/share/nvim/site/pack/paqs/start/paq-nvim"
+```
 
-- install [scroll reverser](https://pilotmoon.com/scrollreverser) (reverses mouse scroll direction)
+### VSCode
 
-- install [Rectangle](https://rectangleapp.com) (window positioning)
+[installer](vscode.md)
 
-- configure macOS
+### developer directory
 
-  - Finder Preferences
-    - General: show home directory when opening new Finder windows (faster new Finder windows)
-    - Sidebar: New Finder windows show (user directory)
-    - Advanced: Don't show warnings before emptying the trash
-  - System Preferences
-    - Keyboard:
-      - Text:
-        - disable `Capitalize words automatically`
-        - disable `Add period with double-space`
-        - disable `Use smart quotes and dashes
-      - Shortcuts:
-        - Launchpad & Dock: disable shortcut for turning dock hiding on/off
-        - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to disable minimizing windows)
+```
+mkdir d
+cd d
+```
 
-## Archive
+### Git Town
 
-- install Postgres
+```
+git clone git@github.com:git-town/git-town.git
+```
 
-  ```
-  brew install postgres
-  postgres -D /usr/local/var/postgres
-  createdb
-  psql
-  ```
+```
+cd git-town
+```
 
-- install AppStore apps
+```
+make build
+```
 
-  - BetterSnapTool
-    - configure
-  - Skitch
+Set up the local API token to ship via the Github API from 1password.
 
-- install visual apps
 
-  - [Karabiner](https://pqrs.org/osx/karabiner/)
-    - set keyboard repeat rate and initial delay
-    - change option-right to forward-delete
-    - (these settings should be automatic now)
-  - [Chrome](https://www.google.com/chrome)
-    - sign into Chrome
-    - enter sync passphrase
-    - sign into Zoom extension
-    - hide the extension icons from the URL bar
+### bat
 
+```
+brew install bat
+```
+
+### RipGrep
+
+```
+brew install ripgrep
+```
+
+### Scroll Reverser
+
+reverses mouse scroll direction
+
+https://pilotmoon.com/scrollreverser
+
+
+### Rectangle
+
+organizing windows
+
+https://rectangleapp.com
+
+
+### show macOS dock faster
+
+```
+defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
+```
+
+### enable additional HiDPI modes when connected to the TV
+
+```
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+```
+
+### Keyboard settings
+
+System Preferences / Keyboard:
+- set speed
+- Modifier Keys: change `Caps Lock` to `Esc`
+- Text:
+  - disable `Capitalize words automatically`
+  - disable `Add period with double-space`
+  - disable `Use smart quotes and dashes
+- Shortcuts:
+  - change shortcuts to jump to desktops 
+  - Launchpad & Dock: disable shortcut for turning dock hiding on/off
+  - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to disable minimizing windows)
+
+### Finder
+
+Preferences:
+
+- General: show home directory when opening new Finder windows (faster new Finder windows)
+- Sidebar: New Finder windows show (user directory)
+- Advanced: Don't show warnings before emptying the trash
+
+## Postgres
+
+```
+brew install postgres
+postgres -D /usr/local/var/postgres
+createdb
+psql
+```
+
+### Appstore
+
+- Skitch
+
+
+
+### Karabiner
+
+https://pqrs.org/osx/karabiner
+
+- set keyboard repeat rate and initial delay
+- change option-right to forward-delete
+- (these settings should be automatic now)
+
+### Archive
+
+In Appstore:
+
+- BetterSnapTool
