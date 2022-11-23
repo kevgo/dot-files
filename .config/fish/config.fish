@@ -204,8 +204,8 @@ end
 
 
 # homebrew
-if test -d /home/linuxbrew/.linuxbrew/bin
-  eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+if test -d /opt/homebrew/bin
+  eval (/opt/homebrew/bin/brew shellenv)
 end
 
 
