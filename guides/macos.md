@@ -1,12 +1,17 @@
 # macOS Installation
 
+### 1Password
+
+- set up
+- copy SSH files to `~/.ssh` and chmod to 600
+
+### DisplayBuddy
+
+Installer is on Google Drive, license key is in 1password
+
 ### Spotlight
 
 - disable Spotlight search in entire home directory
-
-### 1Password
-
-- copy SSH files to `~/.ssh` and chmod to 600
 
 ### Alacritty
 
@@ -132,6 +137,32 @@ brew install bat
 
 ```
 brew install ripgrep
+```
+
+### Tikibase
+
+```
+git clone git@github.com:kevgo/tikibase.git
+```
+
+```
+cd tikibase
+```
+
+```
+make install
+```
+
+### dprint
+
+```
+brew install dprint
+```
+
+### Notes
+
+```
+git clone git@github.com:kevgo/notes.git
 ```
 
 ### Scroll Reverser
