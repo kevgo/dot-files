@@ -208,6 +208,6 @@
   {
     "command": "editor.action.showHover",
     "key": "'",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
-  },
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  }
 ]

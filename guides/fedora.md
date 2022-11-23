@@ -14,8 +14,10 @@ Install system updates: using the "Software" app
 
 ### automatically boot into Fedora instead of Windows
 
-- `/boot/efi/EFI/Boot/bootx64.efi` is the file that the computer boots from by default
-- copy `/boot/efi/EFI/fedora/shim.efi` to this file to make the computer boot Fedora
+- `/boot/efi/EFI/Boot/bootx64.efi` is the file that the computer boots from by
+  default
+- copy `/boot/efi/EFI/fedora/shim.efi` to this file to make the computer boot
+  Fedora
 - there should also be an identical file `/boot/efi/EFI/fedora/shimx64.efi`
 
 ### disable boot splash screen
@@ -31,8 +33,10 @@ Completely disable Plymouth
 
 ### Grub configuration
 
-- `grub-customizer` sets default choices and delays but doesn't seem to work for customizing the layout
-- create a larger font: `grub2-mkfont --output=/boot/efi/EFI/fedora/fonts/DejaVuSansMono48.pf2 --size=48 /usr/share/fonts/dejavu/DejaVuSansMono.ttf`
+- `grub-customizer` sets default choices and delays but doesn't seem to work for
+  customizing the layout
+- create a larger font:
+  `grub2-mkfont --output=/boot/efi/EFI/fedora/fonts/DejaVuSansMono48.pf2 --size=48 /usr/share/fonts/dejavu/DejaVuSansMono.ttf`
 - make sure there is a new font file: `ls -la /boot/efi/EFI/fedora/fonts`
 - make grub use the new font: `sudo nvim /etc/default/grub`
 
@@ -41,11 +45,13 @@ Completely disable Plymouth
   GRUB_FONT=/boot/efi/EFI/fedora/fonts/DejaVuSansMono48.pf2
   ```
 
-- re-create Grub file after making config changes: `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
+- re-create Grub file after making config changes:
+  `sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ### fractional scaling
 
-It's enough to increase the font size, all apps respect this setting and everything still looks sharp:
+It's enough to increase the font size, all apps respect this setting and
+everything still looks sharp:
 
 - open `gnome-tweaks`
 - Fonts / Scaling Factor: 1.25
@@ -60,8 +66,9 @@ Add the rpm-fusion nonfree repos:
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-Install the Intel drivers for video acceleration:
-Note: next time, try to install the `intel-media-driver` instead of the `libva-intel-driver` because it supports AV1 which is used extensively on Youtube.
+Install the Intel drivers for video acceleration: Note: next time, try to
+install the `intel-media-driver` instead of the `libva-intel-driver` because it
+supports AV1 which is used extensively on Youtube.
 
 ```
 sudo dnf install libva-intel-driver ffmpeg
@@ -93,8 +100,8 @@ Check whether hardware support works:
 sudo intel_gpu_top
 ```
 
-Play the video in VLC, it should show some activity in the `Video` section.
-Play the video in Firefox, should be the same.
+Play the video in VLC, it should show some activity in the `Video` section. Play
+the video in Firefox, should be the same.
 
 If it doesn't work in Firefox, enable hardware acceleration:
 
@@ -122,7 +129,8 @@ in `gnome-tweaks`:
 - Top Bar > Clock > Weekday
 - disable the shutdown/restart confirmation dialogs:
   - `gsettings set org.gnome.SessionManager logout-prompt false`
-  - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
+  - if that doesn't work: `dconf-editor` > org > gnome > gnome-session > uncheck
+    "logout-prompt"
 
 Prevent screen lock:
 
@@ -276,7 +284,8 @@ https://extensions.gnome.org/extension/906/sound-output-device-chooser
 
 ### customize look and feel
 
-- enable [blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell)
+- enable
+  [blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell)
 
 ### enable automatic updates
 

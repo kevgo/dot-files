@@ -117,7 +117,8 @@ Install dprint:
 cargo install dprint
 ```
 
-The built-in Neovim is severely outdated, download and install the [Debian installer](https://github.com/neovim/neovim/releases/latest).
+The built-in Neovim is severely outdated, download and install the
+[Debian installer](https://github.com/neovim/neovim/releases/latest).
 
 Install the package manager:
 
@@ -168,7 +169,8 @@ make build
 
 - official (works): https://docs.docker.com/engine/install/debian/
 
-Docker Desktop doesn't work on ChromeOS and requires a ton of extra dependencies like a Gnome environment: https://docs.docker.com/desktop/install/debian
+Docker Desktop doesn't work on ChromeOS and requires a ton of extra dependencies
+like a Gnome environment: https://docs.docker.com/desktop/install/debian
 
 ### RipGrep
 

@@ -21,10 +21,23 @@ https://alacritty.org
 
 (Git is already installed now)
 
-### Emacs bindings for shell
+### improve key bindings
 
 ```
 git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
+```
+
+following
+https://superuser.com/questions/657724/how-to-remap-ctrlarrow-keys-to-move-word-to-word-for-mac,
+add this to `~/Library/KeyBindings/DefaultKeyBinding.dict`:
+
+```dict
+{
+  "^\UF702" = moveWordLeft:;
+  "^\UF703" = moveWordRight:;
+  "^$\UF702" = moveWordLeftAndModifySelection:;
+  "^$\UF703" = moveWordRightAndModifySelection:;
+}
 ```
 
 ### Homebrew
@@ -74,7 +87,7 @@ https://rustup.rs
 ### Go
 
 ```
-brew install go 
+brew install go
 ```
 
 ### Node
@@ -126,7 +139,6 @@ make build
 
 Set up the local API token to ship via the Github API from 1password.
 
-
 ### bat
 
 ```
@@ -171,13 +183,11 @@ reverses mouse scroll direction
 
 https://pilotmoon.com/scrollreverser
 
-
 ### Rectangle
 
 organizing windows
 
 https://rectangleapp.com
-
 
 ### show macOS dock faster
 
@@ -194,6 +204,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 ### Keyboard settings
 
 System Preferences / Keyboard:
+
 - set speed
 - Modifier Keys: change `Caps Lock` to `Esc`
 - Text:
@@ -201,15 +212,17 @@ System Preferences / Keyboard:
   - disable `Add period with double-space`
   - disable `Use smart quotes and dashes
 - Shortcuts:
-  - change shortcuts to jump to desktops 
+  - change shortcuts to jump to desktops
   - Launchpad & Dock: disable shortcut for turning dock hiding on/off
-  - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to disable minimizing windows)
+  - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to
+    disable minimizing windows)
 
 ### Finder
 
 Preferences:
 
-- General: show home directory when opening new Finder windows (faster new Finder windows)
+- General: show home directory when opening new Finder windows (faster new
+  Finder windows)
 - Sidebar: New Finder windows show (user directory)
 - Advanced: Don't show warnings before emptying the trash
 
@@ -225,8 +238,6 @@ psql
 ### Appstore
 
 - Skitch
-
-
 
 ### Karabiner
 
