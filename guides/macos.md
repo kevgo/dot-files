@@ -201,6 +201,12 @@ defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 ```
 
+### enable repeating keys in the terminal
+
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
 ### Keyboard settings
 
 System Preferences / Keyboard:
