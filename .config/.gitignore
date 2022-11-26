@@ -64,6 +64,9 @@ libreoffice/
 Microsoft
 teams
 
+# midnight commander
+mc/
+
 # mrt
 mrt.json
 
