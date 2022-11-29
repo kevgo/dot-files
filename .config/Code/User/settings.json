@@ -78,6 +78,9 @@
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "go.formatTool": "goimports",
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
@@ -100,7 +103,7 @@
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "dprint.dprint",
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
@@ -221,5 +224,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorTheme": "Default Light+",
-  "window.zoomLevel": -1
+  "window.zoomLevel": 1
 }

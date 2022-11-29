@@ -189,6 +189,14 @@ function gdmw
 end
 
 
+# GitLab
+if test -d ~/d/gl
+  function gl
+    cd ~/d/gl
+  end
+end
+
+
 # Go
 set -x PATH $PATH ~/go/bin
 if test -d /usr/local/go/bin
@@ -285,6 +293,11 @@ abbr -ag pg pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.
 abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
+# Rancher Desktop
+if test -d ~/.rd/bin
+  set -x PATH $PATH ~/.rd/bin
+end
+
 # Ruby
 if test -d ~/.rbenv
   set -x PATH ~/.rbenv/bin $PATH
@@ -333,4 +346,3 @@ end
 if test (uname) = "Darwin"
   cd ~/d
 end
-
