@@ -5,9 +5,9 @@
 - set up
 - copy SSH files to `~/.ssh` and chmod to 600
 
-### DisplayBuddy
+### MonitorControl
 
-Installer is on Google Drive, license key is in 1password
+https://github.com/MonitorControl/MonitorControl
 
 ### Spotlight
 
@@ -258,3 +258,7 @@ https://pqrs.org/osx/karabiner
 In Appstore:
 
 - BetterSnapTool
+
+### DisplayBuddy
+
+Installer is on Google Drive, license key is in 1password
