@@ -15,6 +15,9 @@ weston.ini
 # Gimp
 GIMP/
 
+# GitLab
+glab-cli/
+
 # Fedora
 .gsd-keyboard.settings-ported 
 brasero
