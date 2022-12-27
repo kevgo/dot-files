@@ -70,6 +70,7 @@ Install the Intel drivers for video acceleration: Note: next time, try to
 install the [intel-media-driver](https://github.com/intel/media-driver)
 instead of the older [libva-intel-driver](https://github.com/intel/intel-vaapi-driver) 
 because it supports AV1 which is used extensively on Youtube.
+Additional info: https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/
 
 ```
 sudo dnf install libva-intel-driver ffmpeg
