@@ -67,8 +67,9 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 ```
 
 Install the Intel drivers for video acceleration: Note: next time, try to
-install the `intel-media-driver` instead of the `libva-intel-driver` because it
-supports AV1 which is used extensively on Youtube.
+install the [intel-media-driver](https://github.com/intel/media-driver)
+instead of the older [libva-intel-driver](https://github.com/intel/intel-vaapi-driver) 
+because it supports AV1 which is used extensively on Youtube.
 
 ```
 sudo dnf install libva-intel-driver ffmpeg
