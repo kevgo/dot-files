@@ -180,6 +180,14 @@ function gdw
   git diff --color-words 
 end
 
+function gdp
+  git diff-parent
+end
+
+function gdpw
+  git diff-parent -w
+end
+
 function gdm 
   git diff main 
 end
