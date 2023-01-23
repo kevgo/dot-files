@@ -192,8 +192,16 @@ function gdm
   git diff main 
 end
 
+function gdms
+  git diff master
+end
+
+function gdmsw
+  git diff master --color-words
+end
+
 function gdmw 
-  git diff main --color-words 
+  git diff main --color-words
 end
 
 
