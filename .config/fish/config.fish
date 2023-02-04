@@ -20,7 +20,7 @@ end
 
 
 # cd
-function cd
+function cd --wraps 'cd'
 
   # perform the cd.
   set old_git_path (git_path)
