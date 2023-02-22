@@ -24,6 +24,7 @@ brasero
 dleyna-server-service*
 gnome-control-center
 gnome-initial-setup-done
+GNOME-xdg-terminals.list
 google-chrome
 gthumb
 gtk-2.0
@@ -42,6 +43,7 @@ totem
 Unknown\ Organization
 user-dirs.*
 vlc/
+xdg-terminals.list
 yarn
 yelp
 zoomus.conf

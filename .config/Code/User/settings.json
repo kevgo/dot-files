@@ -78,6 +78,7 @@
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
+  "git.openRepositoryInParentFolders": "never",
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
@@ -228,6 +229,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 2,
-  "workbench.colorTheme": "Default Dark+"
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Default Light+"
 }
