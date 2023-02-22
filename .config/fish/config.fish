@@ -249,6 +249,7 @@ end
 abbr -ag mc make cuke
 abbr -ag mct make cukethis
 abbr -ag mt make test
+abbr -ag mtg make test-go
 abbr -ag mu make unit
 abbr -ag ml make lint
 abbr -ag mp make p
