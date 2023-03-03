@@ -15,8 +15,8 @@ weston.ini
 # Gimp
 GIMP/
 
-# GitLab
-glab-cli/
+# Git Town
+git-town/
 
 # Fedora
 .gsd-keyboard.settings-ported 
