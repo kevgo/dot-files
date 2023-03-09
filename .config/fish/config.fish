@@ -142,6 +142,7 @@ abbr -ag gpr git new-pull-request
 abbr -ag gs git sync
 abbr -ag gsa git sync --all
 abbr -ag gtc git town continue
+abbr -ag gts git town switch
 abbr -ag st git status
 
 function ga
