@@ -115,6 +115,7 @@ Code/*
 Code/User/History
 Code/User/sync
 Code/User/globalStorage/
+Code/User/**/globalStorage/
 Code/User/workspaceStorage/
 !Code/User/snippets/*
 !Code/User/keybindings.json
