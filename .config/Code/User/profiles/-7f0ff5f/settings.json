@@ -79,11 +79,18 @@
   "git.ignoreMissingGitWarning": false,
   "git.openRepositoryInParentFolders": "never",
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
-  "go.formatTool": "goimports",
+  // "go.formatTool": "gofumpt",
+  "go.lintOnSave": "off",
+  "go.lintTool": "golangci-lint",
+  "go.testOnSave": false,
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
+  "go.vetOnSave": "off",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -190,6 +197,5 @@
   "[properties]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "window.zoomLevel": 1,
-  "workbench.colorTheme": "Default Light Modern"
+  "window.zoomLevel": 1
 }

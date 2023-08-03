@@ -80,9 +80,16 @@
   "git.ignoreMissingGitWarning": false,
   "git.openRepositoryInParentFolders": "never",
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
-  "go.formatTool": "goimports",
+  // "go.formatTool": "gofumpt",
+  "go.lintOnSave": "off",
+  "go.lintTool": "golint",
+  "go.vetOnSave": "off",
+  "go.testOnSave": false,
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "[html]": {
@@ -229,6 +236,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
-  "workbench.colorTheme": "Default Light+"
+  "window.zoomLevel": 1
 }
