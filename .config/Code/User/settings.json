@@ -1,10 +1,11 @@
 {
-  "breadcrumbs.enabled": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cucumberautocomplete.skipDocStringsFormat": true,
   "debug.onTaskErrors": "abort",
+  "diffEditor.experimental.showEmptyDecorations": true,
+  "diffEditor.experimental.showMoves": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "editor.accessibilitySupport": "off",
@@ -104,21 +105,21 @@
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "dprint.dprint"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "keyboard.dispatch": "keyCode",
   "lldb.suppressUpdateNotifications": true,
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "editor.defaultFormatter": "dprint.dprint",
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
-  "markdown.experimental.updateLinksOnFileMove.enabled": "always",
+  "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.validate.enabled": true,
   "markdown.validate.referenceLinks.enabled": "ignore",
   "markdown.math.enabled": false,
@@ -146,16 +147,6 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "solargraph.useBundler": true,
-  "solargraph.autoformat": true,
-  "solargraph.bundlerPath": "/Users/kevlar/.rbenv/shims/bundle",
-  "solargraph.completion": true,
-  "solargraph.hover": true,
-  "solargraph.diagnostics": true,
-  "solargraph.definitions": true,
-  "solargraph.rename": true,
-  "solargraph.references": true,
-  "solargraph.symbols": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.ignoreProcessNames": ["bash", "fish"],
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -236,5 +227,18 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+<<<<<<< Updated upstream
   "window.zoomLevel": 1
+=======
+  "window.zoomLevel": 1,
+  "go.editorContextMenuCommands": {
+    "fillStruct": true,
+    "generateTestForFile": true
+  },
+  "go.inlayHints.functionTypeParameters": true,
+  "go.lintOnSave": "off",
+  "go.lintTool": "golangci-lint",
+  "go.testExplorer.showDynamicSubtestsInEditor": true,
+  "workbench.colorTheme": "Default Light Modern"
+>>>>>>> Stashed changes
 }
