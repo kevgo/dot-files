@@ -227,18 +227,12 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-<<<<<<< Updated upstream
-  "window.zoomLevel": 1
-=======
   "window.zoomLevel": 1,
   "go.editorContextMenuCommands": {
     "fillStruct": true,
     "generateTestForFile": true
   },
   "go.inlayHints.functionTypeParameters": true,
-  "go.lintOnSave": "off",
-  "go.lintTool": "golangci-lint",
   "go.testExplorer.showDynamicSubtestsInEditor": true,
   "workbench.colorTheme": "Default Light Modern"
->>>>>>> Stashed changes
 }
