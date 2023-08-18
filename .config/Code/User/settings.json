@@ -86,13 +86,19 @@
       "source.organizeImports": true
     }
   },
-  // "go.formatTool": "gofumpt",
+  "go.editorContextMenuCommands": {
+    "fillStruct": true,
+    "generateTestForFile": true
+  },
+  "go.inlayHints.functionTypeParameters": true,
   "go.lintOnSave": "off",
   "go.lintTool": "golint",
-  "go.vetOnSave": "off",
   "go.testOnSave": false,
+  "go.testExplorer.showDynamicSubtestsInEditor": true,
+  "go.testExplorer.showOutput": true,
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
+  "go.vetOnSave": "off",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -130,7 +136,6 @@
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
   "python.formatting.provider": "black",
-  "redhat.telemetry.enabled": false,
   "rust-analyzer.cachePriming.enable": false,
   "rust-analyzer.imports.granularity.group": "module",
   "rust-analyzer.inlayHints.chainingHints.enable": false,
@@ -148,9 +153,21 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.ignoreProcessNames": ["bash", "fish"],
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.ignoreProcessNames": [
+    "bash",
+    "fish"
+  ],
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.profiles.osx": {
+    "fish": {
+      "path": "fish",
+      "args": [
+        "-l"
+      ]
+    },
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -170,41 +187,73 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
-      "before": ["<Esc>"],
-      "after": ["<Esc>"],
-      "commands": ["workbench.action.files.save"]
+      "before": [
+        "<Esc>"
+      ],
+      "after": [
+        "<Esc>"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "after": ["i", "<space>", "<esc>"],
-      "before": ["<space>"]
+      "after": [
+        "i",
+        "<space>",
+        "<esc>"
+      ],
+      "before": [
+        "<space>"
+      ]
     },
     {
-      "after": ["o", "<esc>", "k"],
-      "before": ["<enter>"]
+      "after": [
+        "o",
+        "<esc>",
+        "k"
+      ],
+      "before": [
+        "<enter>"
+      ]
     },
     {
-      "after": ["l"],
-      "before": ["s"]
+      "after": [
+        "l"
+      ],
+      "before": [
+        "s"
+      ]
     },
     {
-      "after": ["s"],
-      "before": ["l"]
+      "after": [
+        "s"
+      ],
+      "before": [
+        "l"
+      ]
     },
     {
-      "before": ["?"],
-      "commands": [":nohl"]
+      "before": [
+        "?"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"]
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
     }
   ],
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
-  "window.customMenuBarAltFocus": false,
-  "window.enableMenuBarMnemonics": false,
   "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
   "workbench.activityBar.visible": false,
@@ -228,11 +277,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.zoomLevel": 1,
-  "go.editorContextMenuCommands": {
-    "fillStruct": true,
-    "generateTestForFile": true
-  },
-  "go.inlayHints.functionTypeParameters": true,
-  "go.testExplorer.showDynamicSubtestsInEditor": true,
   "workbench.colorTheme": "Default Light Modern"
 }
