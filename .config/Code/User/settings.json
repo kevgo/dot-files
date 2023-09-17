@@ -72,10 +72,6 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish",
-    "editor.detectIndentation": true
-  },
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
@@ -110,6 +106,7 @@
   },
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.sortOnSave.enable": true,
   "[json]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
@@ -129,7 +126,7 @@
   "markdown.validate.enabled": true,
   "markdown.validate.referenceLinks.enabled": "ignore",
   "markdown.math.enabled": false,
-  "mergeEditor.diffAlgorithm": "experimental",
+  "mergeEditor.diffAlgorithm": "advanced",
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.arrowParens": "avoid",
