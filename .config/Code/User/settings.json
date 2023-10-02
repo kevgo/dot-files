@@ -118,7 +118,7 @@
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.defaultFormatter": "dprint.dprint",
     "editor.autoClosingBrackets": "never"
   },
   "markdown.extension.toc.levels": "2..6",
@@ -266,7 +266,6 @@
   "workbench.list.defaultFindMode": "filter",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.startupEditor": "none",
-  "workbench.layoutControl.enabled": false,
   "workbench.localHistory.enabled": false,
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -274,5 +273,7 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
   "window.zoomLevel": 1
 }
