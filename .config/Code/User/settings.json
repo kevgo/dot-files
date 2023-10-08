@@ -273,7 +273,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
-  "window.zoomLevel": 1
+  "workbench.layoutControl.enabled": false
 }
