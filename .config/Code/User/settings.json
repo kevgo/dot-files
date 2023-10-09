@@ -133,6 +133,7 @@
   "prettier.useEditorConfig": false,
   "prettier.ignorePath": "",
   "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": true,
   "rust-analyzer.cachePriming.enable": false,
   "rust-analyzer.imports.granularity.group": "module",
   "rust-analyzer.inlayHints.chainingHints.enable": false,
@@ -149,6 +150,8 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorStyleInactive": "none",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.enablePersistentSessions": false,
@@ -262,6 +265,7 @@
   },
   "workbench.editor.decorations.badges": false,
   "workbench.editor.revealIfOpen": true,
+  "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.list.defaultFindMode": "filter",
   "workbench.quickOpen.closeOnFocusLost": false,
@@ -273,5 +277,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.layoutControl.enabled": false
+  "window.zoomLevel": 2
 }
