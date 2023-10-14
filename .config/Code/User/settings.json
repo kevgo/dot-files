@@ -277,5 +277,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 2
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Default Light Modern"
 }
