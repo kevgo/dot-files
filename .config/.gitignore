@@ -18,6 +18,9 @@ GIMP/
 # Git Town
 git-town/
 
+# Go
+go/
+
 # Fedora
 .gsd-keyboard.settings-ported 
 brasero
