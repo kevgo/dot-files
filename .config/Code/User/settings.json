@@ -11,6 +11,7 @@
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 45,
@@ -29,6 +30,7 @@
   "editor.linkedEditing": false,
   "editor.minimap.enabled": false,
   "editor.multiCursorMergeOverlapping": false,
+  "editor.multiDocumentOccurrencesHighlight": true,
   "editor.quickSuggestions": {
     "comments": true,
     "other": true,
@@ -258,7 +260,7 @@
   "window.commandCenter": false,
   "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "[Default Light+]": {
       "editor.lineHighlightBackground": "#f4f4ff"
@@ -278,6 +280,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
   "workbench.colorTheme": "Default Light Modern",
+  "window.zoomLevel": 2
 }
