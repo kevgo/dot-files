@@ -138,7 +138,7 @@ abbr -ag br git branch
 abbr -ag co git checkout
 abbr -ag gp git push
 abbr -ag gpf git push --force
-abbr -ag gpr git new-pull-request
+abbr -ag gpr git propose
 abbr -ag gs git sync
 abbr -ag gsa git sync --all
 abbr -ag gtc git town continue
