@@ -6,13 +6,14 @@ Cross-platform configuration for \*nix systems.
 
 Platforms:
 
-- ChromeOS [installation](guides/chromeos.md),
-  [cheatsheet](guides/chromeos-cheatsheet.md)
 - Fedora [installation](guides/fedora.md)
+- Asahi [installation](guides/asahi.md)
 - Debian [installation](guides/debian.md)
 - Android [installation](guides/android.md)
 - Windows [installation](guides/windows.md)
 - macOS [installation](guides/macos.md)
+- ChromeOS [installation](guides/chromeos.md),
+  [cheatsheet](guides/chromeos-cheatsheet.md)
 
 Applications:
 
