@@ -47,7 +47,7 @@
   "editor.suggest.showStatusBar": true,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.occurrencesHighlight": true,
+  "editor.occurrencesHighlight": "singleFile",
   "editor.tabSize": 2,
   "errorLens.fontStyleItalic": true,
   "errorLens.followCursor": "closestProblem",
@@ -81,7 +81,7 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "go.editorContextMenuCommands": {
@@ -118,7 +118,7 @@
   "keyboard.dispatch": "keyCode",
   "lldb.suppressUpdateNotifications": true,
   "[markdown]": {
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.selectionHighlight": false,
     "editor.defaultFormatter": "dprint.dprint",
     "editor.autoClosingBrackets": "never"
@@ -170,6 +170,9 @@
         "-l"
       ]
     }
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -281,8 +284,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.zoomLevel": 1,
-  "[toml]": {
-    "editor.defaultFormatter": "dprint.dprint"
-  },
   "workbench.colorTheme": "Default Light Modern"
 }
