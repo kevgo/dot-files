@@ -8,3 +8,4 @@
   ```
   localectl set-keymap dvorak
   ```
+- make Fn keys be Fn keys: https://discussion.fedoraproject.org/t/customize-f-keys-to-work-without-having-to-press-fn-f-keys/87408
