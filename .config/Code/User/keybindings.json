@@ -69,6 +69,10 @@
     "key": "ctrl+w"
   },
   {
+    "command": "workbench.action.closeActiveEditor",
+    "key": "meta+w"
+  },
+  {
     "command": "workbench.action.files.saveAll",
     "key": "ctrl+shift+s"
   },
