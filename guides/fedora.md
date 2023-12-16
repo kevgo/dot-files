@@ -260,6 +260,10 @@ https://docs.fedoraproject.org/en-US/quick-docs/installing-java
 
 https://developer.fedoraproject.org/tools/docker/docker-installation.html
 
+### Keyboard repeat rate
+
+- Settings > Accessibility > Typing
+
 ### Chrome
 
 enable Wayland mode:
