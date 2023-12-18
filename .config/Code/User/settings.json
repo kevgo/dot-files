@@ -148,7 +148,11 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "scm.countBadge": "off",
   "scm.diffDecorations": "none",
+  "scm.showInputActionButton": false,
+  "scm.showIncomingChanges": "never",
+  "scm.showOutgoingChanges": "never",
   "search.smartCase": true,
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
