@@ -74,6 +74,18 @@ function gtc {
   git town continue
 }
 
+function gts {
+  git town switch
+}
+
+function mc {
+  make cuke
+}
+
+function mct {
+  make cukethis
+}
+
 function st {
   git status "$@"
 }
