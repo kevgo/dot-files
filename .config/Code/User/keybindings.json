@@ -250,19 +250,11 @@
   },
   {
     "key": "ctrl+2",
-    "command": "workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "ctrl+2",
     "command": "-workbench.action.openEditorAtIndex2"
   },
   {
     "key": "cmd+2",
     "command": "-workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "ctrl+3",
-    "command": "workbench.action.focusThirdEditorGroup"
   },
   {
     "key": "ctrl+3",
