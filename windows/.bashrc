@@ -59,7 +59,7 @@ function gpf {
 }
 
 function gpr {
-  git new-pull-request
+  git propose
 }
 
 function gs {
