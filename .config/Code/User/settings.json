@@ -169,7 +169,7 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.profiles.osx": {
     "fish": {
-      "path": "fish",
+      "path": "/opt/homebrew/bin/fish",
       "args": [
         "-l"
       ]
