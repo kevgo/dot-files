@@ -302,4 +302,24 @@
     "command": "workbench.action.terminal.clear",
     "when": "isLinux"
   },
+  {
+    "key": "ctrl+h",
+    "command": "git.openChange",
+    "when": "!isInDiffEditor"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "git.openFile",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-extension.vim_ctrl+h",
+    "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+  },
 ]
