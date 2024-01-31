@@ -124,3 +124,6 @@ Code/User/workspaceStorage/
 !Code/User/keybindings.json
 !Code/User/settings.json
 
+# Zed
+
+zed/
