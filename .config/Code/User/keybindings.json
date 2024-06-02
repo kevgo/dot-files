@@ -324,5 +324,9 @@
     "key": "alt+r",
     "command": "tertestrial-vscode.autoRepeat",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
   }
 ]
