@@ -210,14 +210,6 @@ function gdmw
 end
 
 
-# GitLab
-if test -d ~/d/gl
-  function gl
-    cd ~/d/gl
-  end
-end
-
-
 # Go
 set -x PATH $PATH ~/go/bin
 if test -d /usr/local/go/bin
@@ -316,25 +308,13 @@ abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
 # Python
-if test -f /opt/homebrew/anaconda3/bin/conda
-    eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-end
+# if test -f /opt/homebrew/anaconda3/bin/conda
+#     eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# end
 # if test -d /opt/homebrew/anaconda3/bin
 #   set -x PATH /opt/homebrew/anaconda3/bin $PATH
 #   conda init fish
 # end
-
-# Rancher Desktop
-if test -d ~/.rd/bin
-  set -x PATH $PATH ~/.rd/bin
-end
-
-
-# Ruby
-if test -d ~/.rbenv
-  set -x PATH ~/.rbenv/bin $PATH
-  rbenv init - fish | source
-end
 
 
 # Rust
