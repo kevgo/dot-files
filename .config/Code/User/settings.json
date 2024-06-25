@@ -88,7 +88,6 @@
     "fillStruct": true,
     "generateTestForFile": true
   },
-  "go.inlayHints.functionTypeParameters": true,
   "go.lintOnSave": "off",
   "go.lintTool": "golint",
   "go.testOnSave": false,
