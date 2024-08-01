@@ -149,6 +149,11 @@ function ga
   git add -A
 end
 
+function gaac
+  git add -A
+  git commit --amend --no-edit
+end
+
 function gac
   ga
   if [ ! -z "$argv" ]
