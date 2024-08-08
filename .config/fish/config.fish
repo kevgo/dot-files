@@ -178,6 +178,20 @@ function gacpr
   git new-pull-request
 end
 
+function gacs
+  ga
+  if [ ! -z "$argv" ]
+    git commit -m "$argv [skip ci]"
+  else
+    set -l files (git status --porcelain | cut -c4- | awk '{print $NF}' | xargs -L1 basename | sed 's/\\.md$//')
+    #                                      |          |                   |                    remove ".md" extensions
+    #                                      |          |                   remove parent directory names
+    #                                      |          use only the last filename (when renaming files)
+    #                                      remove Git status indicators
+    git commit -m "$files [skip ci]"
+  end
+end
+
 function gd
   git diff 
 end
