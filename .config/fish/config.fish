@@ -192,6 +192,11 @@ function gacs
   end
 end
 
+function gacsp
+  gacs $argv
+  git push
+end
+
 function gd
   git diff 
 end
