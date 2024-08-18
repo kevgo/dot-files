@@ -65,7 +65,7 @@ git clone git@github.com:kevgo/dot-files.git ~/.dot-files
 ```
 
 ```
-~/.config/install
+~/.dot-files/install
 ```
 
 ### Fish shell
