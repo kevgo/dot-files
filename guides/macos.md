@@ -30,14 +30,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
       disable minimizing windows)
     - go through all other categories and disable as needed
 
-### set Dvorak layout for login screen
-
-After setting Dvorak as the only keyboard layout:
-
-```
-sudo cp ~/Library/Preferences/com.apple.HIToolbox.plist /Library/Preferences/
-```
-
 ### MonitorControl
 
 https://github.com/MonitorControl/MonitorControl
@@ -219,6 +211,13 @@ Preferences:
   Finder windows)
 - Sidebar: New Finder windows show (user directory)
 - Advanced: Don't show warnings before emptying the trash
+
+### set Dvorak layout for login screen
+
+At the login screen:
+
+- click on the keyboard layout selector in the menu bar
+- remove the "US" option by choosing "remove current entry"
 
 ### Fluor
 
