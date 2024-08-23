@@ -1,44 +1,25 @@
 # macOS Installation
 
-### 1Password
+### System Preferences
 
-- set up
-- copy SSH files to `~/.ssh` and chmod to 600
+- Spotlight
+  - disable Spotlight search in entire home directory
+- Keyboard
+  - set speed
+  - Modifier Keys: change `Caps Lock` to `Esc`
+  - Text:
+    - disable `Capitalize words automatically`
+    - disable `Add period with double-space`
+    - disable `Use smart quotes and dashes
+  - Shortcuts:
+    - change shortcuts to jump to desktops
+    - Launchpad & Dock: disable shortcut for turning dock hiding on/off
+    - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to
+      disable minimizing windows)
 
 ### MonitorControl
 
 https://github.com/MonitorControl/MonitorControl
-
-### Spotlight
-
-- disable Spotlight search in entire home directory
-
-### Alacritty
-
-https://alacritty.org
-
-### Git
-
-(Git is already installed now)
-
-### improve key bindings
-
-```
-git clone https://github.com/alexdavid/keybindings.git ~/Library/KeyBindings
-```
-
-following
-https://superuser.com/questions/657724/how-to-remap-ctrlarrow-keys-to-move-word-to-word-for-mac,
-add this to `~/Library/KeyBindings/DefaultKeyBinding.dict`:
-
-```dict
-{
-  "^\UF702" = moveWordLeft:;
-  "^\UF703" = moveWordRight:;
-  "^$\UF702" = moveWordLeftAndModifySelection:;
-  "^$\UF703" = moveWordRightAndModifySelection:;
-}
-```
 
 ### Homebrew
 
@@ -48,10 +29,10 @@ https://brew.sh
 brew doctor
 ```
 
-### Git LFS
+### Git
 
 ```
-brew install git-lfs
+brew install git git-lfs
 ```
 
 ```
@@ -78,7 +59,17 @@ brew install fish
 /opt/homebrew/bin/fish
 ```
 
-Configure Terminal: set `/opt/homebrew/bin/fish` as startup shell.
+### Terminal
+
+Settings:
+
+- General
+  - shell opens with: `/opt/homebrew/bin/fish`
+- Profiles
+  - Shell
+    - Ask before closing: never
+  - Advanced
+    - Audible bell: off
 
 ### Rust
 
@@ -90,16 +81,12 @@ https://rustup.rs
 brew install go
 ```
 
+or https://go.dev/dl
+
 ### Node
 
 ```
 brew install node yarn
-```
-
-### Ruby
-
-```
-brew install rbenv
 ```
 
 ### NeoVim
@@ -177,11 +164,21 @@ brew install dprint
 git clone git@github.com:kevgo/notes.git
 ```
 
-### Scroll Reverser
+### TextEdit
 
-reverses mouse scroll direction
+Settings:
 
-https://pilotmoon.com/scrollreverser
+- New Document
+  - "Plain text"
+  - Width: 96 chars
+  - Height: 30 lines
+  - Plain text font: 18 pt
+
+Make TextEdit show an empty file when opening:
+
+```zsh
+defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+```
 
 ### Rectangle
 
@@ -195,33 +192,15 @@ https://rectangleapp.com
 defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
 ```
 
-### enable additional HiDPI modes when connected to the TV
+### DisplayBuddy
 
-```
-sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
-```
+Installer is on Google Drive, license key is in 1password
 
 ### enable repeating keys in the terminal
 
 ```
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
-
-### Keyboard settings
-
-System Preferences / Keyboard:
-
-- set speed
-- Modifier Keys: change `Caps Lock` to `Esc`
-- Text:
-  - disable `Capitalize words automatically`
-  - disable `Add period with double-space`
-  - disable `Use smart quotes and dashes
-- Shortcuts:
-  - change shortcuts to jump to desktops
-  - Launchpad & Dock: disable shortcut for turning dock hiding on/off
-  - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to
-    disable minimizing windows)
 
 ### Finder
 
@@ -232,7 +211,26 @@ Preferences:
 - Sidebar: New Finder windows show (user directory)
 - Advanced: Don't show warnings before emptying the trash
 
-## Postgres
+### Scroll Reverser
+
+reverses mouse scroll direction
+
+https://pilotmoon.com/scrollreverser
+
+## Archive
+
+### Karabiner
+
+Karabiner interferes with Fluor and isn't really needed, so better to not
+install it at all.
+
+https://pqrs.org/osx/karabiner
+
+- set keyboard repeat rate and initial delay
+- change option-right to forward-delete
+- (these settings should be automatic now)
+
+### Postgres
 
 ```
 brew install postgres
@@ -241,24 +239,18 @@ createdb
 psql
 ```
 
-### Appstore
-
-- Skitch
-
-### Karabiner
-
-https://pqrs.org/osx/karabiner
-
-- set keyboard repeat rate and initial delay
-- change option-right to forward-delete
-- (these settings should be automatic now)
-
-### Archive
-
 In Appstore:
 
 - BetterSnapTool
 
-### DisplayBuddy
+### enable additional HiDPI modes when connected to the TV
 
-Installer is on Google Drive, license key is in 1password
+```
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+```
+
+### Ruby
+
+```
+brew install rbenv
+```
