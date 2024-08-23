@@ -1,21 +1,42 @@
 # macOS Installation
 
+### show macOS dock faster
+
+```
+defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
+```
+
+### enable repeating keys in the terminal
+
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
 ### System Preferences
 
 - Spotlight
   - disable Spotlight search in entire home directory
 - Keyboard
-  - set speed
-  - Modifier Keys: change `Caps Lock` to `Esc`
-  - Text:
+  - text input / input sources
+    - set layout to Dvorak only
     - disable `Capitalize words automatically`
     - disable `Add period with double-space`
     - disable `Use smart quotes and dashes
+  - set speed
   - Shortcuts:
-    - change shortcuts to jump to desktops
+    - Modifier Keys: change `Caps Lock` to `Esc`
     - Launchpad & Dock: disable shortcut for turning dock hiding on/off
     - App Shortcuts: enable `Show Help menu` and assign `[cmd]-M` to it (to
       disable minimizing windows)
+    - go through all other categories and disable as needed
+
+### set Dvorak layout for login screen
+
+After setting Dvorak as the only keyboard layout:
+
+```
+sudo cp ~/Library/Preferences/com.apple.HIToolbox.plist /Library/Preferences/
+```
 
 ### MonitorControl
 
@@ -186,21 +207,9 @@ organizing windows
 
 https://rectangleapp.com
 
-### show macOS dock faster
-
-```
-defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
-```
-
 ### DisplayBuddy
 
 Installer is on Google Drive, license key is in 1password
-
-### enable repeating keys in the terminal
-
-```
-defaults write -g ApplePressAndHoldEnabled -bool false
-```
 
 ### Finder
 
@@ -210,6 +219,10 @@ Preferences:
   Finder windows)
 - Sidebar: New Finder windows show (user directory)
 - Advanced: Don't show warnings before emptying the trash
+
+### Fluor
+
+https://github.com/Pyroh/Fluor/releases
 
 ### Scroll Reverser
 
