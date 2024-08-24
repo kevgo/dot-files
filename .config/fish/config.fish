@@ -139,7 +139,7 @@ function fish_prompt --description 'Write out the prompt'
   else
     set __yellow_pending_gittown_command ''
   end
-  printf '%s%s%s%s > ' $__green_path $__blue_git_branch $__red_last_status $__yellow_pending_gittown_command
+  printf '%s%s%s%s > ' $__green_path $__blue_git_branch $__yellow_pending_gittown_command $__red_last_status 
 end
 
 
