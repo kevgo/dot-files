@@ -122,13 +122,24 @@ function fish_prompt --description 'Write out the prompt'
     echo (set_color BBBBBB)'(config changes)'
   end
   set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
-  set __blue_git_branch "["(set_color blue)(git branch 2> /dev/null | grep \* | sed 's/* //')(set_color normal)"]"
-  if [ $last_status -ne 0 ]
-    set __red_last_status " "(set_color -b red)(set_color white)(echo " $last_status ")(set_color normal)
+  set __git_branch (git rev-parse --abbrev-ref HEAD 2> /dev/null)
+  if [ -n "$__git_branch" ]
+    set __blue_git_branch " ["(set_color blue)$__git_branch(set_color normal)"]"
   else
-    set __red_last_status ""
+    set __blue_git_branch ""
   end
-  echo $__green_prompt $__blue_git_branch$__red_last_status '> '
+  if [ $last_status -ne 0 ]
+    set __red_last_status ' '(set_color -b red)(set_color white)(echo " $last_status ")(set_color normal)
+  else
+    set __red_last_status ''
+  end
+  set __pending_gittown_command (git-town status --pending)
+  if [ -n "$__pending_gittown_command" ]
+    set __yellow_pending_gittown_command ' '(set_color -b yellow)(set_color black)(echo " $__pending_gittown_command ")(set_color normal)
+  else
+    set __yellow_pending_gittown_command ''
+  end
+  printf '%s%s%s%s > ' $__green_prompt $__blue_git_branch $__red_last_status $__yellow_pending_gittown_command
 end
 
 
