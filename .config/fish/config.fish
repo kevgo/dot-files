@@ -121,7 +121,7 @@ function fish_prompt --description 'Write out the prompt'
   if [ "$config_changes" != "0" ]
     echo (set_color BBBBBB)'(config changes)'
   end
-  set __green_prompt (set_color green)(prompt_pwd)(set_color normal)
+  set __green_path (set_color green)(prompt_pwd)(set_color normal)
   set __git_branch (git rev-parse --abbrev-ref HEAD 2> /dev/null)
   if [ -n "$__git_branch" ]
     set __blue_git_branch " ["(set_color blue)$__git_branch(set_color normal)"]"
@@ -139,7 +139,7 @@ function fish_prompt --description 'Write out the prompt'
   else
     set __yellow_pending_gittown_command ''
   end
-  printf '%s%s%s%s > ' $__green_prompt $__blue_git_branch $__red_last_status $__yellow_pending_gittown_command
+  printf '%s%s%s%s > ' $__green_path $__blue_git_branch $__red_last_status $__yellow_pending_gittown_command
 end
 
 
