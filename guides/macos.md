@@ -12,6 +12,10 @@ defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
+### Al dente
+
+https://apphousekitchen.com
+
 ### System Preferences
 
 - Spotlight
