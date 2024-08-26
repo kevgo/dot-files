@@ -45,7 +45,7 @@ brew doctor
 ### Git
 
 ```
-brew install git git-lfs
+brew install git git-lfs gpg
 ```
 
 ```
