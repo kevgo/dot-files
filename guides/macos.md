@@ -96,6 +96,22 @@ brew install go
 
 or https://go.dev/dl
 
+### Git Town
+
+```
+git clone git@github.com:git-town/git-town.git
+```
+
+```
+cd git-town
+```
+
+```
+make build
+```
+
+Set up the local API token to ship via the Github API from 1password.
+
 ### Node
 
 ```
@@ -122,22 +138,6 @@ git clone --depth=1 https://github.com/savq/paq-nvim.git "$HOME/.local/share/nvi
 mkdir d
 cd d
 ```
-
-### Git Town
-
-```
-git clone git@github.com:git-town/git-town.git
-```
-
-```
-cd git-town
-```
-
-```
-make build
-```
-
-Set up the local API token to ship via the Github API from 1password.
 
 ### bat
 
@@ -212,25 +212,6 @@ Preferences:
 - Sidebar: New Finder windows show (user directory)
 - Advanced: Don't show warnings before emptying the trash
 
-### set Dvorak layout for login screen
-
-At the login screen:
-
-- click on the keyboard layout selector in the menu bar
-- remove the "US" option by choosing "remove current entry"
-
-### Fluor
-
-https://github.com/Pyroh/Fluor/releases
-
-### Scroll Reverser
-
-reverses mouse scroll direction
-
-https://pilotmoon.com/scrollreverser
-
-## Archive
-
 ### Karabiner
 
 Karabiner interferes with Fluor and isn't really needed, so better to not
@@ -241,6 +222,27 @@ https://pqrs.org/osx/karabiner
 - set keyboard repeat rate and initial delay
 - change option-right to forward-delete
 - (these settings should be automatic now)
+
+### set Dvorak layout for login screen
+
+At the login screen:
+
+- click on the keyboard layout selector in the menu bar
+- remove the "US" option by choosing "remove current entry"
+
+### Scroll Reverser
+
+reverses mouse scroll direction
+
+https://pilotmoon.com/scrollreverser
+
+## Archive
+
+### Fluor
+
+Flour is really nice but unfortunately not compatible with Karabiner Elements: https://github.com/Pyroh/Fluor/issues/90
+
+https://github.com/Pyroh/Fluor/releases
 
 ### Postgres
 
