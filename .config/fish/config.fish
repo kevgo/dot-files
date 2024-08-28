@@ -111,35 +111,35 @@ function fish_user_key_bindings
   bind '$' bind_dollar
 end
 
-function fish_prompt --description 'Write out the prompt'
-  set -l last_status $status
+function fish_prompt 
+  set -f last_status $status
   echo
-  set old_pwd (pwd)
+  set -f old_pwd (pwd)
   builtin cd $HOME/.dot-files
-  set config_changes (git status --porcelain | wc -l | tr -d ' ')
+  set -f config_changes (git status --porcelain | wc -l | tr -d ' ')
   builtin cd $old_pwd
   if [ "$config_changes" != "0" ]
     echo (set_color BBBBBB)'(config changes)'
   end
-  set __green_path (set_color green)(prompt_pwd)(set_color normal)
-  set __git_branch (git rev-parse --abbrev-ref HEAD 2> /dev/null)
-  if [ -n "$__git_branch" ]
-    set __blue_git_branch " ["(set_color blue)$__git_branch(set_color normal)"]"
+  set -f green_path (set_color green)(prompt_pwd)(set_color normal)
+  set -f git_branch (git rev-parse --abbrev-ref HEAD 2> /dev/null)
+  if [ -n "$git_branch" ]
+    set -f blue_git_branch " ["(set_color blue)$git_branch(set_color normal)"]"
   else
-    set __blue_git_branch ""
+    set -f blue_git_branch ""
   end
   if [ $last_status -ne 0 ]
-    set __red_last_status ' '(set_color -b red)(set_color white)(echo " $last_status ")(set_color normal)
+    set -f red_last_status ' '(set_color -b red)(set_color white)(echo " $last_status ")(set_color normal)
   else
-    set __red_last_status ''
+    set -f red_last_status ''
   end
-  set __pending_gittown_command (git-town status --pending)
-  if [ -n "$__pending_gittown_command" ]
-    set __yellow_pending_gittown_command ' '(set_color -b yellow)(set_color black)(echo " $__pending_gittown_command ")(set_color normal)
+  set -f pending_gittown_command (git-town status --pending)
+  if [ -n "$pending_gittown_command" ]
+    set -f yellow_pending_gittown_command ' '(set_color -b yellow)(set_color black)(echo " $pending_gittown_command ")(set_color normal)
   else
-    set __yellow_pending_gittown_command ''
+    set -f yellow_pending_gittown_command ''
   end
-  printf '%s%s%s%s > ' $__green_path $__blue_git_branch $__yellow_pending_gittown_command $__red_last_status
+  printf '%s%s%s%s > ' $green_path $blue_git_branch $yellow_pending_gittown_command $red_last_status
 end
 
 
