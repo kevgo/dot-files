@@ -64,3 +64,13 @@ sudo dnf install gnome-tweaks
 ```
 
 - Keyboard > Additional Layout Options > Caps Lock behavior > Make Caps Lock an additional Esc
+
+### Node
+
+```
+sudo dnf install nodejs yarnpkg
+```
+
+```
+yarn config set save-prefix ''
+```
