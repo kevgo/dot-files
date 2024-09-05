@@ -43,12 +43,6 @@ Add `defaultyes=True`
 - [install dot files](https://github.com/kevgo/dot-files/blob/main/guides/install-dotfiles.md)
 - now you can finish the [Vim installation](vim_installation.md)
 
-### Fish shell
-
-```
-sudo dnf install fish -y
-```
-
 #### Make Fn keys be Fn keys
 
 ```
@@ -74,3 +68,37 @@ sudo dnf install nodejs yarnpkg
 ```
 yarn config set save-prefix ''
 ```
+
+### Rust
+
+https://rustup.rs
+
+### Go
+
+```
+sudo dnf install golang -y
+```
+
+### Git Town
+
+```
+git clone git@github.com:git-town/git-town.git
+```
+
+```
+cd git-town
+```
+
+```
+make build
+```
+
+### Fish shell
+
+```
+sudo dnf install fish -y
+```
+
+### VS Code
+
+https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
