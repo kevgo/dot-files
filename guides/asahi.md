@@ -16,7 +16,10 @@ echo 'SUBSYSTEM=="power_supply", KERNEL=="macsmc-battery", ATTR{charge_control_e
 
 The changes take effect after the next reboot.
 
-#### Software app: install all updates.
+#### Software app
+
+- install Console
+- install all updates
 
 #### Install NeoVim:
 
@@ -39,6 +42,12 @@ Add `defaultyes=True`
 - [GitHub SSH setup](https://github.com/kevgo/dot-files/blob/main/guides/github.md)
 - [install dot files](https://github.com/kevgo/dot-files/blob/main/guides/install-dotfiles.md)
 - now you can finish the [Vim installation](vim_installation.md)
+
+### Fish shell
+
+```
+sudo dnf install fish -y
+```
 
 #### Make Fn keys be Fn keys
 
