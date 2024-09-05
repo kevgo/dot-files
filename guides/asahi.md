@@ -37,29 +37,7 @@ Add `defaultyes=True`
 ### Make Fn keys be Fn keys
 
 ```
-sudo nvim /etc/modprobe.d/hid_apple.conf
-```
-
-Add this line and close the file:
-
-```
-options hid_apple fnmode=2
-```
-
-```
-sudo nvim /etc/dracut.conf.d/hid_apple.conf
-```
-
-Add this line and close the file:
-
-```
-install_items+=/etc/modprobe.d/hid_apple.conf
-```
-
-Now run:
-
-```
-sudo dracut --force
+sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 ```
 
 [source](https://discussion.fedoraproject.org/t/customize-f-keys-to-work-without-having-to-press-fn-f-keys/87408)
