@@ -102,3 +102,15 @@ yarn config set save-prefix ''
 ### VS Code
 
 https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
+
+### ripgrep
+
+```
+sudo dnf install ripgrep -y
+```
+
+### bat
+
+```
+sudo dnf install bat -y
+```
