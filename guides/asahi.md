@@ -59,20 +59,6 @@ sudo dnf install gnome-tweaks
 
 - Keyboard > Additional Layout Options > Caps Lock behavior > Make Caps Lock an additional Esc
 
-### Node
-
-```
-sudo dnf install nodejs yarnpkg
-```
-
-```
-yarn config set save-prefix ''
-```
-
-### Rust
-
-https://rustup.rs
-
 ### Go
 
 ```
@@ -97,6 +83,20 @@ make build
 
 ```
 sudo dnf install fish -y
+```
+
+### Rust
+
+https://rustup.rs
+
+### Node
+
+```
+sudo dnf install nodejs yarnpkg
+```
+
+```
+yarn config set save-prefix ''
 ```
 
 ### VS Code
