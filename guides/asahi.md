@@ -24,8 +24,6 @@ The changes take effect after the next reboot.
 sudo dnf install neovim -y
 ```
 
-[Vim installation](vim_installation.md)
-
 #### Make "y" the default action in dnf: 
 
 ```
@@ -35,6 +33,12 @@ sudo nvim /etc/dnf/dnf.conf
 Add `defaultyes=True` 
 
 [source](https://www.reddit.com/r/Fedora/comments/rpttto/make_y_the_default_action_in_dnf)
+
+### dot-files
+
+- [GitHub SSH setup](https://github.com/kevgo/dot-files/blob/main/guides/github.md)
+- [install dot files](https://github.com/kevgo/dot-files/blob/main/guides/install-dotfiles.md)
+- now you can finish the [Vim installation](vim_installation.md)
 
 #### Make Fn keys be Fn keys
 
