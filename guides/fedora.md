@@ -2,13 +2,21 @@
 
 This installation does the most risky things first.
 
-[make "y" the default action in dnf](https://www.reddit.com/r/Fedora/comments/rpttto/make_y_the_default_action_in_dnf)
-
-Uninstall pointless packages:
+Install NeoVim:
 
 ```
-sudo dnf remove gnome-shell-extension-applications-menu gnome-shell-extension-window-list gnome-shell-extension-background-logo
+sudo dnf install neovim -y
 ```
+
+Make "y" the default action in dnf: 
+
+```
+sudo nvim /etc/dnf/dnf.conf
+```
+
+Add `defaultyes=True` 
+
+[source](https://www.reddit.com/r/Fedora/comments/rpttto/make_y_the_default_action_in_dnf)
 
 Install system updates: using the "Software" app
 
