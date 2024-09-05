@@ -24,6 +24,8 @@ The changes take effect after the next reboot.
 sudo dnf install neovim -y
 ```
 
+[Vim installation](vim_installation.md)
+
 #### Make "y" the default action in dnf: 
 
 ```
