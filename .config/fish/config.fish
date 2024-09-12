@@ -145,7 +145,7 @@ end
 
 # Git
 abbr -ag b git b
-abbr -ag br git branch
+abbr -ag br git town branch
 abbr -ag co git checkout
 abbr -ag gp git push
 abbr -ag gpf git push --force
@@ -391,5 +391,7 @@ end
 
 
 if test (uname) = "Darwin"
-  cd ~/d
+  if test "$TERM_PROGRAM" != "vscode"; then
+    cd ~/d
+  end
 end
