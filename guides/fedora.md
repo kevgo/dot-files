@@ -144,6 +144,11 @@ Prevent screen lock:
 
 - Settings > Privacy > Screen Lock
 
+Change mouse cursor size:
+- run `dconf-editor`
+- navigate to `org/gnome/desktop/interface/cursor-size`
+- change the setting from `default` to `16`
+
 ### clipboard access
 
 This provides `wl-copy` and `wl-paste`:
