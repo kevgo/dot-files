@@ -961,6 +961,10 @@
                             "to": [{ "key_code": "right_command" }]
                         }
                     ]
+                },
+                {
+                    "identifiers": { "is_keyboard": true },
+                    "manipulate_caps_lock_led": false
                 }
             ],
             "fn_function_keys": [
@@ -973,10 +977,18 @@
             "selected": true,
             "simple_modifications": [
                 {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
+                },
+                {
                     "from": { "key_code": "right_option" },
                     "to": [{ "key_code": "delete_forward" }]
                 }
-            ]
+            ],
+            "virtual_hid_keyboard": {
+                "indicate_sticky_modifier_keys_state": false,
+                "keyboard_type_v2": "ansi"
+            }
         }
     ]
 }
