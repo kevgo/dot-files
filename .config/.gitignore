@@ -20,6 +20,7 @@ git-town/
 
 # Go
 go/
+gopls/prompt/telemetry
 
 # Fedora
 .gsd-keyboard.settings-ported 
