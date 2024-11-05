@@ -92,7 +92,7 @@ https://rustup.rs
 ### Node
 
 ```
-sudo dnf install nodejs yarnpkg
+sudo dnf install nodejs yarnpkg -y
 ```
 
 ```
