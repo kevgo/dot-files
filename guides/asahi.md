@@ -59,6 +59,10 @@ sudo dnf install gnome-tweaks -y
 
 - Keyboard > Additional Layout Options > Caps Lock behavior > Make Caps Lock an additional Esc
 
+#### disable the shutdown/restart confirmation dialogs
+
+`dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
+
 ### Go
 
 ```
