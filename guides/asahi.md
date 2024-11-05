@@ -54,7 +54,7 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 #### gnome tweaks
 
 ```
-sudo dnf install gnome-tweaks
+sudo dnf install gnome-tweaks -y
 ```
 
 - Keyboard > Additional Layout Options > Caps Lock behavior > Make Caps Lock an additional Esc
