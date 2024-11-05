@@ -76,7 +76,7 @@ cd git-town
 ```
 
 ```
-make build
+make install
 ```
 
 ### Fish shell
