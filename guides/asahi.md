@@ -63,6 +63,12 @@ sudo dnf install gnome-tweaks -y
 
 `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
 
+#### change mouse cursor size
+
+- run `dconf-editor`
+- navigate to `org/gnome/desktop/interface/cursor-size`
+- change the setting from default to `16`
+
 ### Go
 
 ```
