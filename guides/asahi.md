@@ -63,6 +63,10 @@ sudo dnf install gnome-tweaks -y
 
 `dconf-editor` > org > gnome > gnome-session > uncheck "logout-prompt"
 
+#### display the day of week in the top bar
+
+`dconf-editor` > search for "weekday" > enable
+
 #### change mouse cursor size
 
 - run `dconf-editor`
