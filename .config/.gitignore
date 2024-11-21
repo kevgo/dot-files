@@ -18,6 +18,9 @@ GIMP/
 # Git Town
 git-town/
 
+# Gnome
+org.gnome.Ptyxis/
+
 # Go
 go/
 gopls/prompt/telemetry
