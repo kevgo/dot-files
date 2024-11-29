@@ -73,6 +73,12 @@ sudo dnf install gnome-tweaks -y
 - navigate to `org/gnome/desktop/interface/cursor-size`
 - change the setting from default to `16`
 
+#### enable the screen space around the notch
+
+```
+grubby --args=apple_dcp.show_notch=1 --update-kernel=ALL
+```
+
 ### Go
 
 ```
