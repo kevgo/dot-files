@@ -289,5 +289,6 @@
   },
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Default Light Modern",
-  "diffEditor.experimental.useTrueInlineView": true
+  "diffEditor.experimental.useTrueInlineView": true,
+  "github.copilot.editor.enableAutoCompletions": false
 }
