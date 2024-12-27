@@ -51,6 +51,12 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 
 [source](https://discussion.fedoraproject.org/t/customize-f-keys-to-work-without-having-to-press-fn-f-keys/87408)
 
+#### enable the screen space around the notch
+
+```
+sudo grubby --update-kernel=ALL --args=apple_dcp.show_notch=1
+```
+
 #### gnome tweaks
 
 ```
@@ -72,12 +78,6 @@ sudo dnf install gnome-tweaks -y
 - run `dconf-editor`
 - navigate to `org/gnome/desktop/interface/cursor-size`
 - change the setting from default to `16`
-
-#### enable the screen space around the notch
-
-```
-grubby --args=apple_dcp.show_notch=1 --update-kernel=ALL
-```
 
 ### Go
 
