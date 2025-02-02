@@ -240,6 +240,14 @@ At the login screen:
 - click on the keyboard layout selector in the menu bar
 - remove the "US" option by choosing "remove current entry"
 
+### disable start when opening lid or connecting to power
+
+```
+sudo nvram BootPreference=%00
+```
+
+[more info](https://www.xda-developers.com/apple-is-fixing-major-issue-with-macbooks)
+
 ### Scroll Reverser
 
 reverses mouse scroll direction
