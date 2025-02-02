@@ -6,8 +6,8 @@ Cross-platform configuration for \*nix systems.
 
 Platforms:
 
-- Fedora [installation](guides/fedora.md)
 - Asahi [installation](guides/asahi.md)
+- Fedora [installation](guides/fedora.md)
 - Debian [installation](guides/debian.md)
 - Android [installation](guides/android.md)
 - Windows [installation](guides/windows.md)
