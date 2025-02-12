@@ -116,6 +116,9 @@ rclone/
 # SimpleNote
 Simplenote/
 
+# TurboRepo
+turborepo/
+
 # VSCode
 Code/*
 !Code/User/

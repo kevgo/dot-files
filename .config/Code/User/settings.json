@@ -292,4 +292,5 @@
   "diffEditor.experimental.useTrueInlineView": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.find.replaceHistory": "never"
+  "workbench.preferredLightColorTheme": "Default Dark Modern"
 }
