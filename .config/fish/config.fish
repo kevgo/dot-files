@@ -15,7 +15,7 @@ end
 
 # atalanta
 if test -f "$HOME/.cargo/bin/a"
-  "$HOME/.cargo/bin/a" --print-fish-completions | source
+  "$HOME/.cargo/bin/a" --setup-fish-completions | source
 end
 
 
