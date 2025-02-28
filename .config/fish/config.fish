@@ -279,13 +279,17 @@ end
 
 
 # Make
+abbr -ag ac a cuke
+abbr -ag act a cukethis
+abbr -ag at a test
+abbr -ag au a unit
+abbr -ag al a lint
 abbr -ag mc make cuke
 abbr -ag mct make cukethis
 abbr -ag mt make test
 abbr -ag mtg make test-go
 abbr -ag mu make unit
 abbr -ag ml make lint
-abbr -ag mp make p
 
 
 # Man pages
