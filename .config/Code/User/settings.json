@@ -1,7 +1,4 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "cucumberautocomplete.skipDocStringsFormat": true,
   "debug.onTaskErrors": "abort",
   "diffEditor.experimental.showEmptyDecorations": true,
