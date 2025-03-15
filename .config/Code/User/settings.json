@@ -95,22 +95,22 @@
   "go.useLanguageServer": true,
   "go.vetOnSave": "off",
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[ignore]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.sortOnSave.enable": true,
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "keyboard.dispatch": "keyCode",
   "lldb.suppressUpdateNotifications": true,
@@ -176,7 +176,7 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "dprint.dprint"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "dprint.dprint"
