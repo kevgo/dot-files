@@ -356,6 +356,10 @@ abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 #   conda init fish
 # end
 
+# Ruby
+if test -f /opt/homebrew/bin/rbenv
+  status --is-interactive; and rbenv init - --no-rehash fish | source
+end
 
 # Rust
 if test -d ~/.cargo

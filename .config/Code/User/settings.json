@@ -285,7 +285,7 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Default Light Modern",
+  "workbench.colorTheme": "Spinel",
   "diffEditor.experimental.useTrueInlineView": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.find.replaceHistory": "never"
