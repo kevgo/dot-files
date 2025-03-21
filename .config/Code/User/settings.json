@@ -288,5 +288,6 @@
   "workbench.colorTheme": "Spinel",
   "diffEditor.experimental.useTrueInlineView": true,
   "github.copilot.editor.enableAutoCompletions": false,
-  "editor.find.replaceHistory": "never"
+  "editor.find.replaceHistory": "never",
+  "git.enableSmartCommit": true
 }
