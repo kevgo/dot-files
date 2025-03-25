@@ -357,7 +357,8 @@ abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 # end
 
 # Ruby
-if test -f /opt/homebrew/bin/rbenv
+#                ---- macOS ------------             ---- Fedora ------------------
+if begin test -f /opt/homebrew/bin/rbenv; or test -f /usr/lib64/rbenv/libexec/rbenv; end
   status --is-interactive; and rbenv init - --no-rehash fish | source
 end
 
