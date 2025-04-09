@@ -57,6 +57,10 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 sudo grubby --update-kernel=ALL --args=apple_dcp.show_notch=1
 ```
 
+Move the clock to the right:
+
+https://extensions.gnome.org/extension/2/move-clock
+
 #### gnome tweaks
 
 ```
