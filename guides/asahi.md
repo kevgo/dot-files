@@ -51,6 +51,27 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 
 [source](https://discussion.fedoraproject.org/t/customize-f-keys-to-work-without-having-to-press-fn-f-keys/87408)
 
+#### remap the right option key to forward-delete
+
+- install `keyd`: `sudo dnf install keyd`
+  - if that fails: `dnf copr enable fmonteghetti/keyd`
+- `sudo mkdir `/etc/keyd`
+- `sudo nvim /etc/keyd/default.conf` and enter this content:
+
+  ```
+  [ids]
+  *
+
+  [main]
+  rightalt = delete
+  ```
+- enable the service
+
+  ```
+  sudo systemctl enable keyd
+  sudo systemctl start keyd
+  ```
+
 #### enable the screen space around the notch
 
 ```
