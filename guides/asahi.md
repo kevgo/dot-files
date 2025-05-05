@@ -57,10 +57,23 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 
 #### remap the right option key to forward-delete
 
-- install `keyd`: `sudo dnf install keyd`
-  - if that fails: `dnf copr enable fmonteghetti/keyd`
-- `sudo mkdir `/etc/keyd`
-- `sudo nvim /etc/keyd/default.conf` and enter this content:
+- install `keyd`:
+
+  ```
+  sudo dnf install keyd
+  ```
+  if that fails:
+
+  ```
+  dnf copr enable fmonteghetti/keyd
+  ```
+- ```
+  sudo mkdir `/etc/keyd
+  ```
+- ```
+  sudo nvim /etc/keyd/default.conf
+  ```
+  and enter this content:
 
   ```
   [ids]
