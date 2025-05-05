@@ -57,37 +57,37 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
 
 #### remap the right option key to forward-delete
 
-- install `keyd`:
+1. install `keyd`:
 
-  ```
-  sudo dnf install keyd
-  ```
-  if that fails:
+   ```
+   sudo dnf install keyd
+   ```
+   if that fails:
 
-  ```
-  dnf copr enable fmonteghetti/keyd
-  ```
-- ```
-  sudo mkdir `/etc/keyd
-  ```
-- ```
-  sudo nvim /etc/keyd/default.conf
-  ```
-  and enter this content:
+   ```
+   dnf copr enable fmonteghetti/keyd
+   ```
+2. ```
+   sudo mkdir `/etc/keyd
+   ```
+3. ```
+   sudo nvim /etc/keyd/default.conf
+   ```
+   and enter this content:
 
-  ```
-  [ids]
-  *
+   ```
+   [ids]
+   *
 
-  [main]
-  rightalt = delete
-  ```
-- enable the service
+   [main]
+   rightalt = delete
+   ```
+4. enable the service
 
-  ```
-  sudo systemctl enable keyd
-  sudo systemctl start keyd
-  ```
+   ```
+   sudo systemctl enable keyd
+   sudo systemctl start keyd
+   ```
 
 #### enable the screen space around the notch
 
