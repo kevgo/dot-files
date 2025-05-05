@@ -148,6 +148,10 @@ make install
 sudo dnf install fish -y
 ```
 
+```
+chsh -s $(which fish)
+```
+
 ### Rust
 
 https://rustup.rs
