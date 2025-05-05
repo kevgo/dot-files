@@ -155,11 +155,7 @@ https://rustup.rs
 ### Node
 
 ```
-sudo dnf install nodejs yarnpkg -y
-```
-
-```
-yarn config set save-prefix ''
+sudo dnf install nodejs -y
 ```
 
 ### VS Code
