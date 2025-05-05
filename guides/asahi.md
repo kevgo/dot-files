@@ -33,7 +33,11 @@ sudo dnf install neovim -y
 sudo nvim /etc/dnf/dnf.conf
 ```
 
-Add `defaultyes=True` 
+Add:
+
+```
+defaultyes=True
+``` 
 
 [source](https://www.reddit.com/r/Fedora/comments/rpttto/make_y_the_default_action_in_dnf)
 
