@@ -68,7 +68,7 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
    dnf copr enable fmonteghetti/keyd
    ```
 2. ```
-   sudo mkdir `/etc/keyd
+   sudo mkdir /etc/keyd
    ```
 3. ```
    sudo nvim /etc/keyd/default.conf
