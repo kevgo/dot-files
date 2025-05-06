@@ -84,7 +84,8 @@
   },
   "go.editorContextMenuCommands": {
     "fillStruct": true,
-    "generateTestForFile": true
+    "generateTestForFile": true,
+    "playground": false
   },
   "go.lintOnSave": "off",
   "go.lintTool": "golint",
@@ -285,9 +286,14 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Spinel",
   "diffEditor.experimental.useTrueInlineView": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.find.replaceHistory": "never",
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "cucumber.features": [
+    "features/**/*.feature",
+  ],
+  "cucumber.glue": [
+    "internal/test/cucumber/steps.go"
+  ]
 }
