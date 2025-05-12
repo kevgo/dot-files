@@ -105,6 +105,7 @@ https://extensions.gnome.org/extension/2/move-clock
 sudo dnf install gnome-tweaks -y
 ```
 
+- Fonts > Antialiasing > Subpixel (if using external monitor)
 - Keyboard > Additional Layout Options > Caps Lock behavior > Make Caps Lock an additional Esc
 - Keyboard > Overview Shortcut: Right super
 
