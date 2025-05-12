@@ -152,6 +152,7 @@ abbr -ag gpf git push --force
 abbr -ag gpr git propose
 abbr -ag gs git sync
 abbr -ag gsa git sync --all
+abbr -ag gss git sync --stack
 abbr -ag gtc git town continue
 abbr -ag gts git town switch
 abbr -ag gtsa git town switch -a
