@@ -1,5 +1,14 @@
 {
   "cucumberautocomplete.skipDocStringsFormat": true,
+  "cucumber.features": [
+    "features/**/*.feature"
+  ],
+  "cucumber.glue": [
+    "internal/test/cucumber/steps.go"
+  ],
+  "[cucumber]": {
+    "editor.defaultFormatter": "CucumberOpen.cucumber-official"
+  },
   "debug.onTaskErrors": "abort",
   "diffEditor.experimental.showEmptyDecorations": true,
   "diffEditor.experimental.showMoves": true,
@@ -289,14 +298,5 @@
   "diffEditor.experimental.useTrueInlineView": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.find.replaceHistory": "never",
-  "git.enableSmartCommit": true,
-  "cucumber.features": [
-    "features/**/*.feature",
-  ],
-  "cucumber.glue": [
-    "internal/test/cucumber/steps.go"
-  ],
-  "[cucumber]": {
-    "editor.defaultFormatter": "CucumberOpen.cucumber-official"
-  }
+  "git.enableSmartCommit": true
 }
