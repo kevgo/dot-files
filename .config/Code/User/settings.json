@@ -94,7 +94,9 @@
   "go.editorContextMenuCommands": {
     "fillStruct": true,
     "generateTestForFile": true,
-    "playground": false
+    "playground": false,
+    "testFile": true,
+    "generateTestForPackage": true
   },
   "go.lintOnSave": "off",
   "go.lintTool": "golint",
@@ -298,5 +300,6 @@
   "diffEditor.experimental.useTrueInlineView": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "editor.find.replaceHistory": "never",
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "go.showWelcome": false
 }
