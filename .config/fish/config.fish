@@ -247,6 +247,9 @@ function gdmw
   git diff main --color-words
 end
 
+function gt
+  git-town $argv
+end
 
 # Go
 set -x PATH $PATH ~/go/bin
