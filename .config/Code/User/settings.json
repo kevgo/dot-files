@@ -12,6 +12,7 @@
   "debug.onTaskErrors": "abort",
   "diffEditor.experimental.showEmptyDecorations": true,
   "diffEditor.experimental.showMoves": true,
+  "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "editor.accessibilitySupport": "off",
@@ -23,6 +24,7 @@
   "editor.cursorSurroundingLines": 100,
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
+  "editor.find.replaceHistory": "never",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
@@ -81,10 +83,12 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.enableSmartCommit": true,
   "git.enableStatusBarSync": false,
   "git.ignoreLimitWarning": true,
   "git.ignoreMissingGitWarning": false,
   "git.openRepositoryInParentFolders": "never",
+  "github.copilot.editor.enableAutoCompletions": false,
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.codeActionsOnSave": {
@@ -98,8 +102,9 @@
     "testFile": true,
     "generateTestForPackage": true
   },
-  "go.lintOnSave": "off",
-  "go.lintTool": "golint",
+  "go.formatTool": "gofumpt",
+  "go.lintOnSave": "workspace",
+  "go.showWelcome": false,
   "go.testOnSave": false,
   "go.testExplorer.showDynamicSubtestsInEditor": true,
   "go.testExplorer.showOutput": true,
@@ -296,10 +301,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "window.zoomLevel": 1,
-  "diffEditor.experimental.useTrueInlineView": true,
-  "github.copilot.editor.enableAutoCompletions": false,
-  "editor.find.replaceHistory": "never",
-  "git.enableSmartCommit": true,
-  "go.showWelcome": false
+  "window.zoomLevel": 1
 }
