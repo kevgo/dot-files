@@ -80,7 +80,7 @@ sudo grubby --update-kernel=ALL --args="hid_apple.fnmode=2"
    *
 
    [main]
-   leftmeta = leftalt
+   leftmeta = noop
    rightalt = delete
 
    # Maps capslock to escape when pressed and control when held.
