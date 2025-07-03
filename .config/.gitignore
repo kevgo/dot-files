@@ -18,6 +18,9 @@ GIMP/
 # Git Town
 git-town/
 
+# GitLab
+glab-cli/
+
 # Gnome
 org.gnome.Ptyxis/
 
