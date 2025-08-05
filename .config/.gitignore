@@ -12,6 +12,9 @@ dconf/
 dlv/
 weston.ini
 
+# Claude Code
+git/ignore
+
 # Gimp
 GIMP/
 
