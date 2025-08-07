@@ -186,6 +186,7 @@
       ]
     }
   },
+  "terminal.integrated.scrollback": 10000,
   "[toml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
