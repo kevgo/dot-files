@@ -2,6 +2,8 @@
 
 ### macOS configuration
 
+Make the terminal a developer tool to accelerate compilation: https://nexte.st/docs/installation/macos/#gatekeeper
+
 ```
 # show macOS dock faster
 defaults write com.apple.dock autohide-time-modifier -float 0.2 ; killall Dock
