@@ -299,5 +299,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "workbench.editor.empty.hint": "hidden"
 }
