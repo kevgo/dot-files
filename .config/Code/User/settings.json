@@ -177,6 +177,7 @@
     "bash",
     "fish"
   ],
+  "terminal.integrated.middleClickBehavior": "paste",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.profiles.osx": {
     "fish": {
@@ -187,6 +188,8 @@
     }
   },
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.stickyScroll.enabled": false,
   "[toml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
