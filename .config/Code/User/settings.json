@@ -182,6 +182,7 @@
   },
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.showLinkHover": false,
   "terminal.integrated.stickyScroll.enabled": false,
   "[toml]": {
     "editor.defaultFormatter": "dprint.dprint"
