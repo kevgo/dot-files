@@ -297,5 +297,8 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "window.zoomLevel": 1,
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "chat.sendElementsToChat.attachCSS": false,
+  "chat.sendElementsToChat.attachImages": false,
+  "chat.sendElementsToChat.enabled": false
 }
