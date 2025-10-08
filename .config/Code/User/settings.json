@@ -286,11 +286,13 @@
     }
   },
   "workbench.editor.decorations.badges": false,
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.revealIfOpen": true,
   "workbench.layoutControl.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.list.defaultFindMode": "filter",
   "workbench.quickOpen.closeOnFocusLost": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "workbench.localHistory.enabled": false,
   "workbench.enableExperiments": false,
@@ -299,6 +301,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
-  "window.zoomLevel": 1,
-  "workbench.editor.empty.hint": "hidden"
+  "window.zoomLevel": 1
 }
