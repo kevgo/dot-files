@@ -16,13 +16,29 @@ Install tlp:
 sudo dnf install tlp
 ```
 
+Edit the tlp config file:
+
+```
+sudo nvim /etc/tlp.conf
+```
+
+Uncomment these lines:
+
+```
+START_CHARGE_THRESH_BAT0=75
+STOP_CHARGE_THRESH_BAT0=80
+
+START_CHARGE_THRESH_BAT1=75
+STOP_CHARGE_THRESH_BAT1=80
+```
+
 Activate tlp:
 
 ```
 sudo tlp start
 ```
 
-The below command no longer works as of Sep 2025 due to changes to the Apple firmware. See https://github.com/AsahiLinux/linux/issues/410.
+NOTE: The below command no longer works as of Sep 2025 due to changes to the Apple firmware. See https://github.com/AsahiLinux/linux/issues/410.
 
 ```
 echo 'SUBSYSTEM=="power_supply", KERNEL=="macsmc-battery", ATTR{charge_control_end_threshold}="80"' | sudo tee /etc/udev/rules.d/10-battery.rules
