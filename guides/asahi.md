@@ -10,6 +10,20 @@ localectl set-keymap dvorak
 
 #### Only charge the battery to 80% ([source](https://social.treehouse.systems/@AsahiLinux/110560192550506827):
 
+Install tlp:
+
+```
+sudo dnf install tlp
+```
+
+Activate tlp:
+
+```
+sudo tlp start
+```
+
+The below command no longer works as of Sep 2025 due to changes to the Apple firmware. See https://github.com/AsahiLinux/linux/issues/410.
+
 ```
 echo 'SUBSYSTEM=="power_supply", KERNEL=="macsmc-battery", ATTR{charge_control_end_threshold}="80"' | sudo tee /etc/udev/rules.d/10-battery.rules
 ```
