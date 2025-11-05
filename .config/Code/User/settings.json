@@ -2,6 +2,7 @@
   "chat.sendElementsToChat.attachCSS": false,
   "chat.sendElementsToChat.attachImages": false,
   "chat.sendElementsToChat.enabled": false,
+  "claudeCode.allowDangerouslySkipPermissions": true,
   "[cucumber]": {
     "editor.defaultFormatter": "CucumberOpen.cucumber-official"
   },
