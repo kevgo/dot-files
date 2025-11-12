@@ -10,11 +10,7 @@ localectl set-keymap dvorak
 
 #### Only charge the battery to 80% ([source](https://social.treehouse.systems/@AsahiLinux/110560192550506827):
 
-Install tlp:
-
-```
-sudo dnf install tlp
-```
+Install tlp: https://linrunner.de/tlp/installation/fedora.html
 
 Edit the tlp config file:
 
@@ -32,7 +28,7 @@ START_CHARGE_THRESH_BAT1=75
 STOP_CHARGE_THRESH_BAT1=80
 ```
 
-Activate tlp:
+Ideally restart to see if tlp starts up on boot. Alternatively, activate tlp now:
 
 ```
 sudo tlp start
