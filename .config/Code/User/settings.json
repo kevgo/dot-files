@@ -188,6 +188,7 @@
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "terminal.integrated.showLinkHover": false,
   "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.tabs.enabled": false,
   "[toml]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
