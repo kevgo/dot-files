@@ -34,6 +34,7 @@
   "editor.largeFileOptimizations": false,
   "editor.linkedEditing": false,
   "editor.minimap.enabled": false,
+  "editor.multiCursorLimit": 1,
   "editor.multiCursorMergeOverlapping": false,
   "editor.multiDocumentOccurrencesHighlight": true,
   "editor.occurrencesHighlightDelay": 0,
