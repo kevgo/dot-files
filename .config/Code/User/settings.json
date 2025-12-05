@@ -3,6 +3,7 @@
   "chat.sendElementsToChat.attachImages": false,
   "chat.sendElementsToChat.enabled": false,
   "claudeCode.allowDangerouslySkipPermissions": true,
+  "claudeCode.preferredLocation": "panel",
   "[cucumber]": {
     "editor.defaultFormatter": "CucumberOpen.cucumber-official"
   },
