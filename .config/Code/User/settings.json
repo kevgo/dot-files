@@ -98,7 +98,6 @@
     "testFile": true,
     "generateTestForPackage": true
   },
-  "go.formatTool": "gofumpt",
   "go.lintOnSave": "workspace",
   "go.showWelcome": false,
   "go.testOnSave": false,
@@ -107,6 +106,9 @@
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "go.vetOnSave": "off",
+  "gopls": {
+    "formatting.gofumpt": true
+  },
   "[html]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
