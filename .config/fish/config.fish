@@ -154,6 +154,7 @@ abbr -ag gs git sync
 abbr -ag gsa git sync --all
 abbr -ag gsp git sync --prune
 abbr -ag gss git sync --stack
+abbr -ag gt git town
 abbr -ag gtc git town continue
 abbr -ag gts git town switch
 abbr -ag gtsa git town switch -a
