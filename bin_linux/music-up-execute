@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-rclone sync --progress --fast-list Music drive:Music
+source "$(dirname "$0")/.music-lib"
+
+rclone sync --progress --fast-list "$folder" drive:Music

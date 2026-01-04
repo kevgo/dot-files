@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ -d "Music" ]; then
+    folder="Music"
+elif [ -d "MUSIC" ]; then
+    folder="MUSIC"
+else
+    echo "Error: Neither 'Music' nor 'MUSIC' folder found in current directory" >&2
+    exit 1
+fi
