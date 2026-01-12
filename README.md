@@ -21,6 +21,7 @@ Applications:
   [cheatsheet](guides/vscode_cheatsheet.md)
 - RClone [installation](guides/rclone.md)
 - Vim [cheatsheet](guides/vim_cheatsheet.md)
+- Firefox [configuration](guides/firefox.md)
 
 ### how it works
 
