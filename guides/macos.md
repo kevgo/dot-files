@@ -190,7 +190,7 @@ git clone --depth=1 https://github.com/savq/paq-nvim.git "$HOME/.local/share/nvi
 Symlink the config directory to the location on macOS:
 
 ```
-ln -s ~/.config/Code/User/ "~/Library/Application Support/Code/User"
+ln -s ~/.config/Code/User/ ~/Library/Application\ Support/Code/User
 ```
 
 ### developer directory
