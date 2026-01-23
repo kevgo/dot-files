@@ -108,6 +108,9 @@ mnemonics*
 nemo/
 unity*
 
+# uv
+uv/
+
 # MP3 tag editor
 insight-nodejs/
 MusicBrainz/

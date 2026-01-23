@@ -373,6 +373,7 @@ if test -f ~/.rbenv/libexec/rbenv
   status --is-interactive; and rbenv init - --no-rehash fish | source
 end
 
+
 # Rust
 if test -d ~/.cargo
   set -x PATH ~/.cargo/bin $PATH 
@@ -388,6 +389,17 @@ abbr -ag tp tikibase p
 # Vim
 alias v nvim
 
+# Walmart
+
+function code-puppy
+  $HOME/.code-puppy-venv/bin/code-puppy $argv
+end
+
+if test -d /Users/k0g0kip/.local/bin
+  set -x PATH /Users/k0g0kip/.local/bin $PATH
+end
+
+set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
 
 # Dotfile update checker
 check_local_dotfile_updates
