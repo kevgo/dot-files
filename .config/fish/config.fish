@@ -405,14 +405,16 @@ end
 
 set TODAY (date +'%m/%d/%Y')
 set DAILY_UPDATE_FILE "$HOME/.daily_dotfile_checker"
-if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != "$TODAY" ]
-  eval "$HOME/bin_linux/pull_remote_dotfile_updates"
-  echo "$TODAY" > $DAILY_UPDATE_FILE
+set NO_UPDATE_FILE "$HOME/.no_dotfile_updates"
+if not test -f $NO_UPDATE_FILE
+  if [ ! -f $DAILY_UPDATE_FILE ]; or [ (cat $DAILY_UPDATE_FILE) != "$TODAY" ]
+    eval "$HOME/bin_linux/pull_remote_dotfile_updates"
+    echo "$TODAY" > $DAILY_UPDATE_FILE
+  end
 end
 
-
 if test (uname) = "Darwin"
-  if test "$TERM_PROGRAM" != "vscode"; then
+  if test "$TERM_PROGRAM" != "vscode"
     cd ~/d
   end
 end
