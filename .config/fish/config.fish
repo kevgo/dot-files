@@ -355,6 +355,10 @@ abbr -ag pg_stop pg_ctl -D /usr/local/var/postgres stop
 
 
 # Python
+
+set -x VIRTUAL_ENV_DISABLE_PROMPT 1
+
+
 # if test -f /opt/homebrew/anaconda3/bin/conda
 #     eval /opt/homebrew/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # end
