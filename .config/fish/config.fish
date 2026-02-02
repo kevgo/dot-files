@@ -352,11 +352,11 @@ end
 # Postgres
 if test -d /opt/homebrew/opt/postgresql@18/bin 
   set -x PATH /opt/homebrew/opt/postgresql@18/bin $PATH
-  set -x LDFLAGS="-L/opt/homebrew/opt/postgresql@18/lib"
-  set -x CPPFLAGS="-I/opt/homebrew/opt/postgresql@18/include"
+  set -x LDFLAGS "-L/opt/homebrew/opt/postgresql@18/lib"
+  set -x CPPFLAGS "-I/opt/homebrew/opt/postgresql@18/include"
 
   function pg
-    LC_ALL="en_US.UTF-8" /opt/homebrew/opt/postgresql@18/bin/postgres -D /opt/homebrew/var/postgresql@18
+    env LC_ALL="en_US.UTF-8" /opt/homebrew/opt/postgresql@18/bin/postgres -D /opt/homebrew/var/postgresql@18
   end
 end
 
