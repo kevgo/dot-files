@@ -266,6 +266,11 @@ end
 
 
 # Java
+if test -d /opt/homebrew/opt/openjdk/bin
+  set -x PATH /opt/homebrew/opt/openjdk/bin $PATH
+  set -x CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
+end
+
 # set -g fish_user_paths "/home/linuxbrew/.linuxbrew/opt/openjdk/bin" $fish_user_paths
 # set -x JAVA_HOME (dirname (dirname (realpath (which javac))))
 
