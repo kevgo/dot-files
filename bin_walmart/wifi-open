@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo -n "Switching to open internet ... "
+networksetup -setairportnetwork en0 Walmartwifi
+echo done

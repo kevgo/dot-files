@@ -410,15 +410,21 @@ alias v nvim
 
 # Walmart
 
-function code-puppy
-  $HOME/.code-puppy-venv/bin/code-puppy $argv
-end
+if test -d /users/k0g0kip
 
-if test -d /Users/k0g0kip/.local/bin
-  set -x PATH /Users/k0g0kip/.local/bin $PATH
-end
+  function code-puppy
+    $HOME/.code-puppy-venv/bin/code-puppy $argv
+  end
 
-set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
+  if test -d /Users/k0g0kip/.local/bin
+    set -x PATH /Users/k0g0kip/.local/bin $PATH
+  end
+
+  set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
+
+  set -x PATH $PATH ~/.dot-files/bin_walmart
+
+end
 
 # Dotfile update checker
 check_local_dotfile_updates

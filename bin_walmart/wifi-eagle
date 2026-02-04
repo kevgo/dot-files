@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo -n "Switching to Eagle ... "
+networksetup -setairportnetwork en0 Eagle
+echo done
