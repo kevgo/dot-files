@@ -133,6 +133,7 @@ turborepo/
 # VSCode
 Code/*
 !Code/User/
+Code/User/chatLanguageModels.json
 Code/User/History
 Code/User/sync
 Code/User/globalStorage/

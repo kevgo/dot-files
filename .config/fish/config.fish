@@ -111,7 +111,7 @@ function fish_user_key_bindings
   bind '$' bind_dollar
 end
 
-function fish_prompt 
+function fish_prompt
   set -f last_status $status
   echo
   set -f old_pwd (pwd)
@@ -213,7 +213,7 @@ function gacsp
 end
 
 function gd
-  git diff 
+  git diff
 end
 
 function gdc
@@ -221,7 +221,7 @@ function gdc
 end
 
 function gdw
-  git diff --color-words 
+  git diff --color-words
 end
 
 function gdp
@@ -232,8 +232,8 @@ function gdpw
   git diff-parent -w
 end
 
-function gdm 
-  git diff main 
+function gdm
+  git diff main
 end
 
 function gdms
@@ -244,7 +244,7 @@ function gdmsw
   git diff master --color-words
 end
 
-function gdmw 
+function gdmw
   git diff main --color-words
 end
 
@@ -333,29 +333,29 @@ end
 
 
 # Path
-set -x PATH ~/bin $PATH /usr/local/bin 
+set -x PATH ~/bin $PATH /usr/local/bin
 if test -d /usr/local/sbin
   set -x PATH $PATH /usr/local/sbin
 end
 if test -d ~/bin_local
-  set -x PATH ~/bin_local $PATH 
+  set -x PATH ~/bin_local $PATH
 end
 if test -d ~/bin_chromeos
-  set -x PATH ~/bin_chromeos $PATH 
+  set -x PATH ~/bin_chromeos $PATH
 end
 if test -d ~/bin_linux
-  set -x PATH ~/bin_linux $PATH 
+  set -x PATH ~/bin_linux $PATH
 end
 if test -d ~/bin_fedora
-  set -x PATH ~/bin_fedora $PATH 
+  set -x PATH ~/bin_fedora $PATH
 end
 if test -d ~/.local/bin
-  set -x PATH ~/.local/bin $PATH 
+  set -x PATH ~/.local/bin $PATH
 end
 
 
 # Postgres
-if test -d /opt/homebrew/opt/postgresql@18/bin 
+if test -d /opt/homebrew/opt/postgresql@18/bin
   set -x PATH /opt/homebrew/opt/postgresql@18/bin $PATH
   set -x LDFLAGS "-L/opt/homebrew/opt/postgresql@18/lib"
   set -x CPPFLAGS "-I/opt/homebrew/opt/postgresql@18/include"
@@ -395,7 +395,7 @@ end
 
 # Rust
 if test -d ~/.cargo
-  set -x PATH ~/.cargo/bin $PATH 
+  set -x PATH ~/.cargo/bin $PATH
 end
 abbr -ag cc cargo check
 
@@ -423,6 +423,18 @@ if test -d /users/k0g0kip
   set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
 
   set -x PATH $PATH ~/.dot-files/bin_walmart
+
+  set -x NVM_HOME "$HOME/nvm"
+  set NVM_SH "$NVM_HOME/bin/nvm.fish"
+  if test -s "$NVM_SH"
+      set -x NVM_LINK "$HOME/nvm/nodejs/bin"
+      set -x NVM_NODEJS_ORG_MIRROR "https://repository.walmart.com/content/repositories/nodejs/"
+      source "$NVM_SH"
+  else
+      set -e NVM_HOME
+      set NVM_ERROR "$NVM_SH is not valid"
+  end
+  set -e NVM_SH
 
 end
 
