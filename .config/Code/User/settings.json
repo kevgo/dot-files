@@ -308,5 +308,6 @@
     "editor.defaultFormatter": "dprint.dprint"
   },
   "window.zoomLevel": 1,
-  "diffEditor.codeLens": true
+  "diffEditor.codeLens": true,
+  "github.copilot.nextEditSuggestions.enabled": true
 }
