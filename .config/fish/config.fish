@@ -371,7 +371,7 @@ end
 
 # Python
 
-set -x VIRTUAL_ENV_DISABLE_PROMPT 1
+# set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 
 # if test -f /opt/homebrew/anaconda3/bin/conda
