@@ -420,6 +420,10 @@ if test -d /users/k0g0kip
     set -x PATH /Users/k0g0kip/.local/bin $PATH
   end
 
+  if test -d /Users/k0g0kip/bin_walmart
+    set -x PATH $PATH /Users/k0g0kip/bin_walmart
+  end
+
   set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
 
   set -x PATH $PATH ~/.dot-files/bin_walmart

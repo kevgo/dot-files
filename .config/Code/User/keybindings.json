@@ -55,11 +55,6 @@
     "when": "hasSearchResult"
   },
   {
-    "command": "selectNextSuggestion",
-    "key": "tab",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "command": "selectPrevSuggestion",
     "key": "shift+tab",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -336,5 +331,20 @@
   {
     "key": "ctrl+shift+m",
     "command": "-editor.action.toggleTabFocusMode"
-  }
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.jump",
+    "when": "inlineEditIsVisible && tabShouldJumpToInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-insertNextSuggestion",
+    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
 ]
