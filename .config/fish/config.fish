@@ -292,6 +292,7 @@ end
 # Make
 abbr -ag ac a cuke
 abbr -ag act a cukethis
+abbr -ag af a fix
 abbr -ag ap a ps
 abbr -ag at a test
 abbr -ag au a unit
