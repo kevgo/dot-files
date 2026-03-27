@@ -1,0 +1,5 @@
+#:schema ./docs/git-town.schema.json
+
+[branches]
+main = "main"
+
