@@ -1,11 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
-    "command": "-acceptSelectedSuggestion",
-    "key": "tab",
-    "when": "suggestWidgetVisible && textInputFocus"
-  },
-  {
     "command": "-extension.vim_ctrl+b",
     "key": "ctrl+b",
     "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
@@ -53,11 +48,6 @@
     "command": "search.action.focusPreviousSearchResult",
     "key": "ctrl+oem_4",
     "when": "hasSearchResult"
-  },
-  {
-    "command": "selectPrevSuggestion",
-    "key": "shift+tab",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
     "command": "workbench.action.closeActiveEditor",
@@ -333,18 +323,12 @@
     "command": "-editor.action.toggleTabFocusMode"
   },
   {
-    "key": "tab",
-    "command": "-editor.action.inlineSuggest.jump",
-    "when": "inlineEditIsVisible && tabShouldJumpToInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
-  },
-  {
-    "key": "tab",
-    "command": "-insertNextSuggestion",
-    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
-  },
-  {
     "key": "ctrl+enter",
     "command": "acceptSelectedSuggestion",
     "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
   },
+  {
+    "key": "tab",
+    "command": "-extension.vim_tab"
+  }
 ]

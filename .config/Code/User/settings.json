@@ -2,7 +2,6 @@
   "chat.sendElementsToChat.attachCSS": false,
   "chat.sendElementsToChat.attachImages": false,
   "chat.sendElementsToChat.enabled": false,
-  "chat.viewSessions.orientation": "stacked",
   "[cucumber]": {
     "editor.defaultFormatter": "CucumberOpen.cucumber-official"
   },
@@ -252,7 +251,8 @@
     "<C-a>": false,
     "<C-b>": false,
     "<C-c>": false,
-    "<C-t>": false
+    "<C-t>": false,
+    "<tab>": false
   },
   "vim.hlsearch": true,
   "vim.insertModeKeyBindingsNonRecursive": [
@@ -349,5 +349,8 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "chat.viewSessions.orientation": "stacked",
+  "git.blame.editorDecoration.enabled": false,
+  "rumdl.fixOnSave": true
 }
