@@ -73,7 +73,7 @@ end
 
 
 # environment
-set -x EDITOR nvim
+set -x EDITOR vim
 
 
 # Fish
