@@ -73,7 +73,7 @@ end
 
 
 # environment
-set -x EDITOR vim
+set -x EDITOR nvim
 
 
 # Fish
@@ -442,6 +442,7 @@ if test -d /users/k0g0kip
   end
   set -e NVM_SH
 
+  set -gx EDITOR vim
 end
 
 # Dotfile update checker

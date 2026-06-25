@@ -958,10 +958,6 @@
                         {
                             "from": { "key_code": "caps_lock" },
                             "to": [{ "key_code": "escape" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_command" }]
                         }
                     ]
                 },

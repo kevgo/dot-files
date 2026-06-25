@@ -350,7 +350,9 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "window.zoomLevel": 1,
-  "chat.viewSessions.orientation": "stacked",
   "git.blame.editorDecoration.enabled": false,
-  "rumdl.fixOnSave": true
+  "rumdl.fixOnSave": true,
+  "chat.tools.terminal.autoApprove": {
+    "make": true
+  }
 }
