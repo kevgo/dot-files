@@ -443,6 +443,10 @@ if test -d /users/k0g0kip
   set -e NVM_SH
 
   set -gx EDITOR vim
+
+  set -x PIP_INDEX_URL https://pypi.ci.artifacts.walmart.com/artifactory/api/pypi/external-pypi/simple
+  set -x PIP_TRUSTED_HOST pypi.ci.artifacts.walmart.com
+  set -x UV_DEFAULT_INDEX https://pypi.ci.artifacts.walmart.com/artifactory/api/pypi/external-pypi/simple
 end
 
 # Dotfile update checker
