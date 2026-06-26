@@ -214,15 +214,15 @@ function gacsp
 end
 
 function gd
-  git diff
+  git diff HEAD
 end
 
 function gdc
-  git diff --word-diff-regex=.
+  git diff HEAD --word-diff-regex=.
 end
 
 function gdw
-  git diff --color-words
+  git diff HEAD --color-words
 end
 
 function gdp
