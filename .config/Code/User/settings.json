@@ -1,6 +1,5 @@
 {
   "chat.sendElementsToChat.attachCSS": false,
-  "chat.sendElementsToChat.attachImages": false,
   "chat.sendElementsToChat.enabled": false,
   "[cucumber]": {
     "editor.defaultFormatter": "CucumberOpen.cucumber-official"
@@ -354,5 +353,6 @@
   "rumdl.fixOnSave": true,
   "chat.tools.terminal.autoApprove": {
     "make": true
-  }
+  },
+  "workbench.browser.sendElementsToChat.attachImages": false
 }
