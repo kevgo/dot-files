@@ -474,7 +474,17 @@ if not test -f $NO_UPDATE_FILE
 end
 
 if test (uname) = "Darwin"
-  if test "$TERM_PROGRAM" != "vscode"
+  set inside_vscode false
+  if test "$TERM_PROGRAM" = "vscode"
+    set inside_vscode true
+  end
+  
+  set inside_intellij false
+  if test "$TERMINAL_EMULATOR" = "JetBrains-JediTerm"
+    set inside_intellij true
+  end
+  
+  if test "$inside_vscode" = "false" -a "$inside_intellij" = "false"
     cd ~/d
   end
 end
