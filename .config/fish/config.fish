@@ -429,6 +429,7 @@ if test -d /users/k0g0kip
   set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
 
   set -x PATH $PATH ~/.dot-files/bin_walmart
+  set -x PATH $PATH /Applications/IntelliJ\ IDEA.app/Contents/MacOS
 
   set -x NVM_HOME "$HOME/nvm"
   set NVM_SH "$NVM_HOME/bin/nvm.fish"
