@@ -21,11 +21,22 @@ nnoremap l s
 vnoremap s l
 vnoremap l s
 
-" enter empty line using ENTER in normal mode
+" insert empty line using ENTER in normal mode
 nnoremap <CR> o<Esc>k
 nnoremap <S-CR> O<Esc>
 
+" insert space in normal mode using SPACE
 nnoremap <Space> i<Space><Esc>
+
+" key mappings
+sethandler <C-W> a:ide
+sethandler <D-W> a:ide
+sethandler <C-V> a:ide
+sethandler <D-V> a:ide
+map <D-v> <Action>(Paste)
+imap <D-v> <Action>(Paste)
+vmap <D-v> <Action>(Paste)
+
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
