@@ -414,6 +414,8 @@ alias v nvim
 
 if test -d /users/k0g0kip
 
+  # CODE PUPPY
+
   function code-puppy
     $HOME/.code-puppy-venv/bin/code-puppy $argv
   end
@@ -426,15 +428,23 @@ if test -d /users/k0g0kip
     set -x PATH $PATH /Users/k0g0kip/bin_walmart
   end
 
+  # JAVA
+
   if test -d /Users/k0g0kip/bin_walmart/apache-maven-3.9.10
     set -x PATH $PATH /Users/k0g0kip/bin_walmart/apache-maven-3.9.10/bin
   end
 
-  set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
+  if test -d /Library/Java/JavaVirtualMachines/zulu-21.jdk
+    set -x PATH $PATH /Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
+  end
 
   if test -d /Applications/IntelliJ\ IDEA.app
     set -x PATH $PATH /Applications/IntelliJ\ IDEA.app/Contents/MacOS
   end
+
+  # NODE.JS
+
+  set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
 
   set -x NVM_HOME "$HOME/nvm"
   set NVM_SH "$NVM_HOME/bin/nvm.fish"
@@ -448,7 +458,14 @@ if test -d /users/k0g0kip
   end
   set -e NVM_SH
 
-  set -gx EDITOR vim
+  # VSCODE
+
+  if test "$TERM_PROGRAM" = "vscode"
+    # the VSCode terminal emulator does not render neovim correctly
+    set -gx EDITOR vim
+  end
+
+  # PYTHON
 
   set -x PIP_INDEX_URL https://pypi.ci.artifacts.walmart.com/artifactory/api/pypi/external-pypi/simple
   set -x PIP_TRUSTED_HOST pypi.ci.artifacts.walmart.com
