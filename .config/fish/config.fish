@@ -426,6 +426,10 @@ if test -d /users/k0g0kip
     set -x PATH $PATH /Users/k0g0kip/bin_walmart
   end
 
+  if test -d /Users/k0g0kip/bin_walmart/apache-maven-3.9.10
+    set -x PATH $PATH /Users/k0g0kip/bin_walmart/apache-maven-3.9.10/bin
+  end
+
   set -x BUN_INSTALL_CACHE_DIR /Users/k0g0kip/.local/share/bun/cache
 
   set -x PATH $PATH ~/.dot-files/bin_walmart
