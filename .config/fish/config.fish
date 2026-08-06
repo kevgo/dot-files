@@ -436,6 +436,7 @@ if test -d /users/k0g0kip
 
   if test -d /Library/Java/JavaVirtualMachines/zulu-21.jdk
     set -x PATH $PATH /Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
+    set -x JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
   end
 
   if test -d /Applications/IntelliJ\ IDEA.app
