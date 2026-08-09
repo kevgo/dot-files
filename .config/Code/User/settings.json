@@ -253,6 +253,8 @@
     "<C-t>": false,
     "<tab>": false
   },
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.duration": 500,
   "vim.hlsearch": true,
   "vim.insertModeKeyBindingsNonRecursive": [
     {
