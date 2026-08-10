@@ -47,6 +47,7 @@ map Q gq
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
 
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
