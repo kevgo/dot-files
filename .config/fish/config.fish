@@ -295,6 +295,7 @@ abbr -ag ac a cuke
 abbr -ag act a cukethis
 abbr -ag af a fix
 abbr -ag ap a ps
+abbr -ag apa a psa
 abbr -ag at a test
 abbr -ag au a unit
 abbr -ag al a lint
