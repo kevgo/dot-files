@@ -117,7 +117,7 @@ choco install make
 
 - change keyboard delay and repeat rate: Control Panel > keyboard
 - Map Caps Lock to Esc via
-  [SharpKeys](https://github.com/randyrants/sharpkeys/releases)
+  [SharpKeys](https://github.com/randyrants/sharpkeys/releases): `choco install sharpkeys`
 - disable hotkey to change keyboard language: modern Settings app > Region and
   Language > Advanced keyboard settings > Language bar options > Advanced Key
   Settings tab
