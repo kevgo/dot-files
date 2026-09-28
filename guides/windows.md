@@ -26,7 +26,7 @@ reinstall existing Windows:
    - the local account can be named "kevlar"
 1. prevent slowness and CPU heat before we start major filesystem activities
    - in Explorer: right-click C: drive > properties > disable content indexing
-   - https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently`
+   - https://www.ghacks.net/2015/10/25/how-to-disable-windows-defender-in-windows-10-permanently
    - disable search indexing: https://windowsreport.com/indexing-windows-8
    - [disable real-time scanning permanently](https://mspoweruser.com/how-to-temporarily-or-permanently-disable-and-re-enable-windows-defender-on-windows-10)
 1. install Windows updates
