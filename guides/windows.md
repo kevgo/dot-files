@@ -153,9 +153,7 @@ choco install make
 
 ### remove bloatware
 
-1. try https://github.com/builtbybel/bloatbox
-1. run [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
-1. in `cmd`: `bin\remove-win-apps.cmd`
+1. https://github.com/Raphire/Win11Debloat
 1. remove "Edit with Paint3d" file context menu entry:
    - open `regedit`
    - go to
@@ -164,7 +162,6 @@ choco install make
 1. go to `Turn Windows features on or off` and disable all useless options
 1. disable web results in Windows search
 1. search for `mobile hotspot` and disable
-1. search for `turn windows features on or off` and disable most options there
 
 ### disable fast startup
 
