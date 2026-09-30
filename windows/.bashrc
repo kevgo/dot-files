@@ -70,6 +70,10 @@ function gsa {
   git sync --all
 }
 
+function gss {
+  git sync --stack
+}
+
 function gtc {
   git town continue
 }
