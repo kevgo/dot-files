@@ -20,7 +20,7 @@ function la {
 
 
 function br {
-  git branch "$@"
+  git town branch "$@"
 }
 
 function co {
@@ -50,6 +50,18 @@ function gdm {
   git diff main
 }
 
+function gdp {
+  git diff-parent
+}
+
+function gdpw {
+  git diff-parent -w
+}
+
+function gdw {
+  git diff HEAD --color-words
+}
+
 function gp {
   git push "$@"
 }
@@ -72,6 +84,10 @@ function gsa {
 
 function gss {
   git sync --stack
+}
+
+function gt {
+  git town "$@"
 }
 
 function gtc {
