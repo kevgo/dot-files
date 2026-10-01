@@ -10,6 +10,22 @@ function .... {
   cd ../../..
 }
 
+function al {
+  a lint
+}
+
+function ap {
+  a ps
+}
+
+function apsa {
+  a psa
+}
+
+function au {
+  a unit
+}
+
 function l {
   ls -1
 }
