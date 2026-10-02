@@ -10,6 +10,10 @@ function .... {
   cd ../../..
 }
 
+function af {
+  a fix
+}
+
 function al {
   a lint
 }
@@ -49,12 +53,23 @@ function ga {
 
 function gac {
   git add -A
-  git commit -m "$*"
+  git commit -m "${*:-progress}"
+}
+
+function gacs {
+  git add -A
+  git commit -m "${*:-progress} [skip ci]"
 }
 
 function gacp {
   git add -A
-  git commit -m "$*"
+  git commit -m "${*:-progress}"
+  git push
+}
+
+function gacsp {
+  git add -A
+  git commit -m "${*:-progress} [skip ci]"
   git push
 }
 
