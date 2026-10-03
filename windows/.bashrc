@@ -10,6 +10,14 @@ function .... {
   cd ../../..
 }
 
+function ac {
+  a cuke
+}
+
+function act {
+  a cuke-this
+}
+
 function af {
   a fix
 }
