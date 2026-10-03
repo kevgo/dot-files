@@ -15,7 +15,7 @@ function ac {
 }
 
 function act {
-  a cuke-this
+  a cukethis
 }
 
 function af {
