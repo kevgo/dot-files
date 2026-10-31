@@ -1,0 +1,313 @@
+{
+    "chat.sendElementsToChat.attachCSS": false,
+    "chat.sendElementsToChat.attachImages": false,
+    "chat.sendElementsToChat.enabled": false,
+    "[cucumber]": {
+        "editor.defaultFormatter": "CucumberOpen.cucumber-official"
+    },
+    "debug.onTaskErrors": "abort",
+    "diffEditor.experimental.showEmptyDecorations": true,
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.experimental.useTrueInlineView": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderIndicators": false,
+    "editor.accessibilitySupport": "off",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.codeActionWidget.includeNearbyQuickFixes": true,
+    "editor.colorDecorators": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSurroundingLines": 100,
+    "editor.dragAndDrop": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.find.replaceHistory": "never",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.hover.sticky": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.largeFileOptimizations": false,
+    "editor.linkedEditing": false,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorMergeOverlapping": false,
+    "editor.multiDocumentOccurrencesHighlight": true,
+    "editor.occurrencesHighlightDelay": 0,
+    "editor.quickSuggestions": {
+        "comments": true,
+        "other": true,
+        "strings": true
+    },
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.roundedSelection": false,
+    "editor.scrollBeyondLastLine": true,
+    "editor.selectionHighlight": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggest.matchOnWordStartOnly": false,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.preview": true,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.occurrencesHighlight": "singleFile",
+    "editor.tabSize": 2,
+    "errorLens.fontStyleItalic": true,
+    "errorLens.followCursor": "closestProblem",
+    "errorLens.gutterIconsEnabled": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.decorations.badges": false,
+    "explorer.incrementalNaming": "disabled",
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.mdx": "markdown"
+    },
+    "files.enableTrash": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.hotExit": "off",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.enableSmartCommit": true,
+    "git.enableStatusBarSync": false,
+    "git.ignoreLimitWarning": true,
+    "git.ignoreMissingGitWarning": false,
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.editor.enableAutoCompletions": false,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "go.editorContextMenuCommands": {
+        "fillStruct": true,
+        "generateTestForFile": true,
+        "playground": false,
+        "testFile": true,
+        "generateTestForPackage": true
+    },
+    "go.formatTool": "gofumpt",
+    "go.lintOnSave": "workspace",
+    "go.showWelcome": false,
+    "go.testOnSave": false,
+    "go.testExplorer.showDynamicSubtestsInEditor": true,
+    "go.testExplorer.showOutput": true,
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
+    "go.vetOnSave": "off",
+    "[html]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "[ignore]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "javascript.preferences.importModuleSpecifierEnding": "js",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "json.sortOnSave.enable": true,
+    "[json]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "keyboard.dispatch": "keyCode",
+    "lldb.suppressUpdateNotifications": true,
+    "[markdown]": {
+        "editor.occurrencesHighlight": "off",
+        "editor.selectionHighlight": false,
+        "editor.defaultFormatter": "rvben.rumdl",
+        "editor.autoClosingBrackets": "never"
+    },
+    "markdown.extension.toc.levels": "2..6",
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "markdown.validate.enabled": true,
+    "markdown.validate.referenceLinks.enabled": "ignore",
+    "markdown.math.enabled": false,
+    "mergeEditor.diffAlgorithm": "advanced",
+    "prettier.proseWrap": "always",
+    "prettier.semi": false,
+    "prettier.arrowParens": "avoid",
+    "prettier.useEditorConfig": false,
+    "prettier.ignorePath": "",
+    "python.formatting.provider": "black",
+    "redhat.telemetry.enabled": true,
+    "rust-analyzer.cachePriming.enable": false,
+    "rust-analyzer.imports.granularity.group": "module",
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.lens.implementations.enable": false,
+    "rust-analyzer.showUnlinkedFileNotification": false,
+    "[rust]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+
+    },
+    "scm.countBadge": "off",
+    "scm.diffDecorations": "none",
+    "scm.showInputActionButton": false,
+    "scm.showIncomingChanges": "never",
+    "scm.showOutgoingChanges": "never",
+    "search.smartCase": true,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorStyleInactive": "none",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.ignoreProcessNames": [
+        "bash",
+        "fish"
+    ],
+    "terminal.integrated.middleClickBehavior": "paste",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.profiles.osx": {
+        "fish": {
+            "path": "/opt/homebrew/bin/fish",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "terminal.integrated.showLinkHover": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "[toml]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vim.camelCaseMotion.enable": true,
+    "vim.changeWordIncludesWhitespace": true,
+    "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-b>": false,
+        "<C-c>": false,
+        "<C-t>": false
+    },
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "after": [
+                "i",
+                "<space>",
+                "<esc>"
+            ],
+            "before": [
+                "<space>"
+            ]
+        },
+        {
+            "after": [
+                "o",
+                "<esc>",
+                "k"
+            ],
+            "before": [
+                "<enter>"
+            ]
+        },
+        {
+            "after": [
+                "l"
+            ],
+            "before": [
+                "s"
+            ]
+        },
+        {
+            "after": [
+                "s"
+            ],
+            "before": [
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "?"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                ":"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ]
+        }
+    ],
+    "window.autoDetectColorScheme": true,
+    "window.autoDetectHighContrast": false,
+    "window.commandCenter": false,
+    "window.title": "${rootName}",
+    "window.titleBarStyle": "custom",
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorCustomizations": {
+        "[Default Light+]": {
+            "editor.lineHighlightBackground": "#f4f4ff"
+        }
+    },
+    "workbench.editor.decorations.badges": false,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.revealIfOpen": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.list.defaultFindMode": "filter",
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.startupEditor": "none",
+    "workbench.localHistory.enabled": false,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "write-good.only-lint-on-save": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "window.zoomLevel": 1,
+    "cursor.cpp.enablePartialAccepts": true,
+    "workbench.preferredLightColorTheme": "Cursor Light",
+    "cursor.composer.usageSummaryDisplay": "always",
+    "git.blame.editorDecoration.enabled": false,
+    "git.blame.statusBarItem.enabled": false,
+    "workbench.agentsWindowButton.enabled": false,
+    "cursor.composer.shouldChimeAfterChatFinishes": true,
+    "cursor.composer.queueMessageDefaultBehavior": "stop-and-send"
+}
