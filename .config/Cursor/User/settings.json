@@ -115,6 +115,7 @@
     },
     "javascript.preferences.importModuleSpecifierEnding": "js",
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "json.schemaDownload.enable": true,
     "json.sortOnSave.enable": true,
     "[json]": {
         "editor.defaultFormatter": "dprint.dprint"
