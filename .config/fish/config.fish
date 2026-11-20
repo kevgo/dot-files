@@ -147,6 +147,7 @@ end
 abbr -ag b git b
 abbr -ag br git town branch
 abbr -ag co git checkout
+abbr -ag d git town down
 abbr -ag gp git push
 abbr -ag gpf git push --force
 abbr -ag gpr git propose
@@ -160,6 +161,7 @@ abbr -ag gtc git town continue
 abbr -ag gts git town switch
 abbr -ag gtsa git town switch -a
 abbr -ag st git status
+abbr -ag u git town up
 
 function ga
   git add -A
